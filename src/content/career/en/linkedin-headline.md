@@ -46,3 +46,9 @@ Each BIO:ON Insight issue includes a role angle (the Korea angle and relevant ro
 - Is there **at least one thing you've actually done**, beyond your degree?
 - Can someone confirm your headline claims in your **experience, activity or posts**?
 - Have you removed **adjectives nobody searches for**, like "passionate" or "hardworking"?
+
+## Sources
+
+- The 220-character headline limit: [LinkedIn Character Limits 2026 (OutX)](https://www.outx.ai/blog/linkedin-about-section-character-limit) — not official LinkedIn documentation, but the figure is consistent across guides.
+- The deal figures in the example post ($3.35B headline, about $100M guaranteed): [Fierce Biotech](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+- The headline formula and checklist are the editor's own advice.

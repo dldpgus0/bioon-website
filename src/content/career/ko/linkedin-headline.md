@@ -48,3 +48,9 @@ BIO:ON Insight의 각 호에는 직무별로 읽는 법(국내 시사점, 관련
 - 전공 외에 **내가 실제로 해본 것**이 하나라도 들어갔나요?
 - 헤드라인에 쓴 내용을 **경험·활동·게시물**에서 확인할 수 있나요?
 - "Passionate", "Hardworking"처럼 **검색되지 않는 형용사**를 뺐나요?
+
+## 출처
+
+- 헤드라인 글자 수 제한 220자: [LinkedIn Character Limits 2026 (OutX)](https://www.outx.ai/blog/linkedin-about-section-character-limit) — LinkedIn 공식 문서가 아니라 여러 가이드에서 공통으로 확인한 수치예요.
+- 게시물 예시의 딜 숫자(총액 33.5억 달러 중 확정 약 1억 달러): [Fierce Biotech](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+- 헤드라인 공식과 체크리스트는 에디터의 의견과 경험을 정리한 거예요.

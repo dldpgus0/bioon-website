@@ -3,9 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EmailFrame } from "@/components/EmailFrame";
 import { formatDate } from "@/components/IssueCard";
+import { icons } from "@/components/Icons";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { getIssue, getIssueSlugs } from "@/lib/content";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
+import { roleLabel, topicLabel } from "@/lib/taxonomy";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getIssueSlugs().map((slug) => ({ lang, slug })));
@@ -52,8 +54,10 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
         <h1 className="mt-2 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">{issue.title}</h1>
         <p className="mt-4 leading-relaxed text-muted">{issue.summary}</p>
         <div className="mt-5 flex flex-wrap items-center gap-2">
-          {issue.tags.map((t) => (
-            <span key={t} className="rounded-full bg-teal-soft px-2.5 py-1 text-xs font-medium text-teal">{t}</span>
+          {issue.topics.map((t) => (
+            <span key={t} className="rounded-full bg-teal-soft px-2.5 py-1 text-xs font-medium text-teal">
+              {topicLabel(t, lang)}
+            </span>
           ))}
           <span className="ml-auto text-sm">
             {otherIssue ? (
@@ -66,6 +70,36 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
           </span>
         </div>
       </header>
+
+      {issue.aiSummary.length > 0 && (
+        <section className="mt-8 rounded-2xl border border-teal/30 bg-teal-soft/50 p-6">
+          <div className="flex items-center gap-2">
+            <span className="h-4 w-4 text-teal">{icons.ai}</span>
+            <h2 className="text-sm font-bold text-ink">{dict.insight.aiSummary}</h2>
+          </div>
+          <ol className="mt-3 space-y-2">
+            {issue.aiSummary.map((line, i) => (
+              <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-text">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal text-[11px] font-bold text-white">
+                  {i + 1}
+                </span>
+                {line}
+              </li>
+            ))}
+          </ol>
+          {issue.roles.length > 0 && (
+            <p className="mt-4 flex flex-wrap items-center gap-1.5 text-sm text-muted">
+              <span className="mr-1 font-semibold text-ink">{dict.insight.rolesLabel}</span>
+              {issue.roles.map((r) => (
+                <span key={r} className="rounded-md bg-white px-2 py-0.5 text-xs font-medium text-brand">
+                  {roleLabel(r, lang)}
+                </span>
+              ))}
+            </p>
+          )}
+          <p className="mt-3 text-xs text-muted">{dict.insight.aiNote}</p>
+        </section>
+      )}
 
       <div className="mt-8">
         <EmailFrame src={`/newsletters/${lang}/${slug}.html`} title={issue.title} />

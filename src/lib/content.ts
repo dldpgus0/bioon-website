@@ -4,11 +4,13 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import insight from "@/content/insight.json";
+import insightAi from "@/content/insight-ai.json";
 import type { Locale } from "./i18n";
+import type { RoleId, TopicId } from "./taxonomy";
 
 // ---------- Insight (newsletter archive) ----------
 
-export type Issue = {
+type RawIssue = {
   lang: Locale;
   number: number;
   date: string;
@@ -18,7 +20,36 @@ export type Issue = {
   tags: string[];
 };
 
-const issues = insight as Issue[];
+type IssueAnalysis = {
+  topics: TopicId[];
+  roles: RoleId[];
+  summary: Record<Locale, string[]>;
+  questions: Record<Locale, string[]>;
+  keywords: string[];
+};
+
+/** An issue plus its AI analysis (src/content/insight-ai.json), localized to the issue's language. */
+export type Issue = RawIssue & {
+  topics: TopicId[];
+  roles: RoleId[];
+  aiSummary: string[];
+  questions: string[];
+  keywords: string[];
+};
+
+const analysis = insightAi as unknown as Record<string, IssueAnalysis>;
+
+const issues: Issue[] = (insight as RawIssue[]).map((raw) => {
+  const ai = analysis[raw.slug];
+  return {
+    ...raw,
+    topics: ai?.topics ?? [],
+    roles: ai?.roles ?? [],
+    aiSummary: ai?.summary[raw.lang] ?? [],
+    questions: ai?.questions[raw.lang] ?? [],
+    keywords: ai?.keywords ?? [],
+  };
+});
 
 export function getIssues(lang: Locale) {
   return issues.filter((i) => i.lang === lang).sort((a, b) => b.date.localeCompare(a.date));

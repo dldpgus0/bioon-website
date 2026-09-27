@@ -17,7 +17,7 @@ export default async function InsightPage({ params }: PageProps<"/[lang]/insight
     <>
       <PageHeader eyebrow="BIO:ON Insight" title={dict.insight.title} lede={dict.insight.lede} />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <IssueGrid issues={getIssues(lang)} dict={dict} />
+        <IssueGrid issues={getIssues(lang)} dict={dict} lang={lang} />
       </div>
     </>
   );

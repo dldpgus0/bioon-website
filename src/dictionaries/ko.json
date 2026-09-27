@@ -101,7 +101,7 @@
   },
   "insight": {
     "title": "BIO:ON Insight 아카이브",
-    "lede": "지금까지 발행한 모든 호를 모았어요. 태그를 눌러 관심 주제만 골라보세요.",
+    "lede": "지금까지 발행한 모든 호를 모았어요. AI가 분류한 주제와 관련 직무로 골라 보세요.",
     "all": "전체",
     "issue": "호",
     "read": "읽기",
@@ -109,8 +109,14 @@
     "otherLang": "English edition",
     "noOtherLang": "이 호의 영문판은 준비 중이에요 (AI 번역 파이프라인 예정).",
     "empty": "해당 태그의 호가 없어요.",
-    "moreTags": "태그 더보기",
-    "lessTags": "접기"
+    "topicsLabel": "주제",
+    "rolesLabel": "관련 직무",
+    "aiSummary": "AI 3줄 요약",
+    "aiNote": "AI가 본문을 분석해 생성한 요약·분류예요.",
+    "questionsLabel": "이 호에서 답할 수 있는 질문",
+    "keywordsLabel": "원문 태그",
+    "clear": "필터 초기화",
+    "count": "편"
   },
   "career": {
     "title": "바이오 커리어",

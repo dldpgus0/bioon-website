@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Issue } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n";
+import { topicLabel } from "@/lib/taxonomy";
 
 export function formatDate(date: string, lang: string) {
   return new Date(`${date}T00:00:00`).toLocaleDateString(lang === "ko" ? "ko-KR" : "en-US", {
@@ -27,11 +28,11 @@ export function IssueCard({ issue, dict }: { issue: Issue; dict: Dictionary }) {
       <div className="flex-1">
         <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">{issue.summary}</p>
       </div>
-      {issue.tags.length > 0 && (
+      {issue.topics.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-1.5">
-          {issue.tags.map((t) => (
+          {issue.topics.map((t) => (
             <span key={t} className="rounded-full bg-teal-soft px-2.5 py-1 text-xs font-medium text-teal">
-              {t}
+              {topicLabel(t, issue.lang)}
             </span>
           ))}
         </div>

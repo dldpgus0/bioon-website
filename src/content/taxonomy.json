@@ -1,0 +1,25 @@
+{
+  "topics": {
+    "obesity": { "ko": "비만·대사질환", "en": "Obesity & metabolic" },
+    "oncology": { "ko": "항암·면역항암", "en": "Oncology & IO" },
+    "modality": { "ko": "신규 모달리티", "en": "New modalities" },
+    "cell-gene": { "ko": "세포·유전자치료", "en": "Cell & gene therapy" },
+    "ai": { "ko": "AI 신약개발", "en": "AI drug discovery" },
+    "bd": { "ko": "BD·라이선싱·M&A", "en": "BD, licensing & M&A" },
+    "regulatory": { "ko": "허가·규제", "en": "Regulatory & approvals" },
+    "access": { "ko": "시장접근·약가", "en": "Market access & pricing" },
+    "cmc": { "ko": "제조·품질(CMC)", "en": "Manufacturing & quality" },
+    "specialty": { "ko": "자가면역·희귀·감염", "en": "Immunology, rare & infectious" }
+  },
+  "roles": {
+    "bd": { "ko": "BD·사업개발", "en": "BD" },
+    "ra": { "ko": "RA·인허가", "en": "Regulatory affairs" },
+    "clinical": { "ko": "임상개발·CRA", "en": "Clinical development" },
+    "access": { "ko": "Market Access", "en": "Market access" },
+    "cmc": { "ko": "CMC·QA/QC", "en": "CMC & QA" },
+    "medical": { "ko": "메디컬·MSL", "en": "Medical affairs" },
+    "rnd": { "ko": "R&D·연구", "en": "R&D" },
+    "sales": { "ko": "영업·마케팅", "en": "Sales & marketing" },
+    "ir": { "ko": "투자·IR", "en": "Investment & IR" }
+  }
+}

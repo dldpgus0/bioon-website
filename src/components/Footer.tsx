@@ -18,6 +18,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <Link href={`/${lang}/resources`} className="hover:text-ink">{dict.nav.resources}</Link>
           <Link href={`/${lang}/about`} className="hover:text-ink">{dict.nav.about}</Link>
           <Link href={`/${lang}/subscribe`} className="hover:text-ink">{dict.nav.subscribe}</Link>
+          <Link href={`/${lang}/faq`} className="hover:text-ink">{dict.nav.faq}</Link>
         </nav>
       </div>
       <div className="border-t border-line">

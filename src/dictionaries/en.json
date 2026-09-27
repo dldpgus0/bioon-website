@@ -9,7 +9,8 @@
     "resources": "Resources",
     "about": "About",
     "subscribe": "Subscribe",
-    "switchLang": "한국어"
+    "switchLang": "한국어",
+    "faq": "FAQ"
   },
   "home": {
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
@@ -162,7 +163,11 @@
       "cta": "Practise now",
       "allRoles": "All roles",
       "rolesLabel": "Role",
-      "kinds": { "concept": "Explain a concept", "issue": "Industry issue", "case": "On-the-job scenario" },
+      "kinds": {
+        "concept": "Explain a concept",
+        "issue": "Industry issue",
+        "case": "On-the-job scenario"
+      },
       "count": " questions",
       "practice": "🎲 5 random questions",
       "practiceAll": "Show all questions",
@@ -255,6 +260,105 @@
         "degree": "BSc Pharmacology",
         "school": "University College London (UCL)",
         "note": "Graduated"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "lede": "Common questions about the BIO:ON Insight newsletter and this site.",
+    "more": "Anything else? Just email us.",
+    "sections": [
+      {
+        "title": "The newsletter",
+        "items": [
+          {
+            "q": "What is BIO:ON Insight?",
+            "a": "Every Tuesday morning, we pick last week’s three biggest global biotech and pharma stories and explain them simply, with the Korean market angle and the roles they matter for. Each issue also has a Word of the Week, a deep dive, the stocks that moved and the dates to watch next week."
+          },
+          {
+            "q": "Does it cost anything?",
+            "a": "No. The newsletter is free. Some paid resources are in the works."
+          },
+          {
+            "q": "Who writes it?",
+            "a": "Editor Yaehyun Lee, who studied Pharmacology at UCL (BSc) and is now on the MSc Biotechnology & Pharmaceutical Management at UCL, reads the original sources and writes every issue.",
+            "link": {
+              "href": "/about",
+              "label": "About the editor"
+            }
+          },
+          {
+            "q": "Is there an English edition?",
+            "a": "Yes. A separate English email edition has gone out since August 2026. On the web archive, every issue from #1 is available in English (the early issues are web-only translations). Subscribe on the English site to get the English edition.",
+            "link": {
+              "href": "/insight",
+              "label": "Browse the archive"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Managing your subscription",
+        "items": [
+          {
+            "q": "Can I get both the Korean and English editions?",
+            "a": "Yes. Subscribe once on the Korean site and once on the English site with the same email, and you’ll get both."
+          },
+          {
+            "q": "I’m not getting the emails.",
+            "a": "Check your spam or promotions folder first. Adding the sender to your contacts moves future issues to your inbox. If they’re still missing, email us."
+          },
+          {
+            "q": "How do I unsubscribe?",
+            "a": "Click the unsubscribe link at the bottom of any issue and you’re out straight away."
+          },
+          {
+            "q": "How is my personal data used?",
+            "a": "We only collect your name and email when you subscribe. They’re used only to send the newsletter and are managed in Stibee, our email service."
+          }
+        ]
+      },
+      {
+        "title": "Content and AI",
+        "items": [
+          {
+            "q": "How do you use AI?",
+            "a": "We use AI to gather and do a first translation of international news, to summarise and tag each issue, and to draft interview questions. The editor checks everything against the original sources, and AI-generated summaries and tags are labelled on the site."
+          },
+          {
+            "q": "Is the stocks section investment advice?",
+            "a": "No. It’s a simple sketch of which way a stock moved alongside the news. Check a real brokerage chart for exact prices, and make your own investment decisions."
+          },
+          {
+            "q": "Where can I find past issues?",
+            "a": "Every issue is in the Insight archive. Filter by topic or role, or ask a question in the Ask BIO.ON search box to find the issues that answer it.",
+            "link": {
+              "href": "/insight",
+              "label": "Try Ask BIO.ON"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Careers",
+        "items": [
+          {
+            "q": "Who is the career content for?",
+            "a": "Students and early-career people preparing for jobs in biotech and pharma. It shows how to turn the issues in the newsletter into material for interviews, applications and LinkedIn."
+          },
+          {
+            "q": "Is there anything to help with interviews?",
+            "a": "The interview question bank has role-by-role questions and answer points built from newsletter issues, plus a five-random-questions practice mode. An AI mock interview and AI résumé feedback are in the works.",
+            "link": {
+              "href": "/career/interview",
+              "label": "Open the question bank"
+            }
+          },
+          {
+            "q": "How can I get in touch or collaborate?",
+            "a": "Email yaehyun.lee59@gmail.com or reach out on LinkedIn."
+          }
+        ]
       }
     ]
   },

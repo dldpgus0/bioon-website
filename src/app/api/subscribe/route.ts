@@ -1,6 +1,5 @@
 // Adds a subscriber to the Stibee address book.
 // Env: STIBEE_API_KEY, STIBEE_LIST_ID (Stibee → 워크스페이스 설정 → API 키).
-// TODO(phase 2): verify payload against the current Stibee API docs and test with a real list.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request: Request) {

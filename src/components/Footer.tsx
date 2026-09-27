@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { Wordmark } from "./Logo";
+import { SocialLinks } from "./SocialLinks";
 
 export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
@@ -9,6 +10,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
         <div className="max-w-xs">
           <Wordmark className="h-12 w-auto" />
           <p className="mt-4 text-sm text-muted">{dict.footer.tagline}</p>
+          <SocialLinks className="mt-5" size="h-[18px] w-[18px]" />
         </div>
         <nav className="grid grid-cols-2 gap-x-12 gap-y-2 text-sm text-muted">
           <Link href={`/${lang}/insight`} className="hover:text-ink">{dict.nav.insight}</Link>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { icons } from "@/components/Icons";
 import { IssueCard } from "@/components/IssueCard";
 import { SectionTitle } from "@/components/SectionTitle";
+import { SocialLinks } from "@/components/SocialLinks";
 import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 
@@ -45,6 +46,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               {t.ctaArchive}
             </Link>
           </div>
+          <SocialLinks className="mt-8" />
         </div>
 
         <div className="order-1 flex justify-center md:order-2">

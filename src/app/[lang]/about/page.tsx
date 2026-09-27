@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { VerticalLogo } from "@/components/Logo";
+import { SocialLinks } from "@/components/SocialLinks";
 import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 
@@ -30,6 +31,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           <h1 className="mt-1 text-3xl font-extrabold tracking-tight text-ink">{t.name}</h1>
           <p className="mt-1 font-medium text-muted">{t.role}</p>
           <p className="mt-4 leading-relaxed text-text">{t.bio}</p>
+          <SocialLinks className="mt-5" />
         </div>
       </section>
 

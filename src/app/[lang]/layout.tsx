@@ -14,7 +14,10 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   return {
     title: { default: dict.meta.title, template: "%s · BIO:ON" },
     description: dict.meta.description,
-    alternates: { languages: { ko: "/ko", en: "/en" } },
+    alternates: {
+      languages: { ko: "/ko", en: "/en" },
+      types: { "application/rss+xml": [{ url: lang === "en" ? "/feed.xml?lang=en" : "/feed.xml", title: "BIO:ON Insight" }] },
+    },
   };
 }
 
@@ -31,8 +34,16 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         />
       </head>
       <body className="flex min-h-screen flex-col">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+        >
+          {dict.a11y.skip}
+        </a>
         <Header lang={lang} dict={dict} />
-        <main className="flex-1">{children}</main>
+        <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">
+          {children}
+        </main>
         <Footer lang={lang} dict={dict} />
       </body>
     </html>

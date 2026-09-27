@@ -33,7 +33,7 @@ export default async function SubscribePage({ params }: PageProps<"/[lang]/subsc
         <SubscribeForm labels={t} lang={lang} />
         <p className="mt-4 text-xs leading-relaxed text-muted">{t.privacy}</p>
         <Link href={`/${lang}/faq`} className="mt-2 inline-block text-xs font-semibold text-teal hover:underline">
-          {dict.faq.title} →
+          {dict.faq.title}<span aria-hidden> →</span>
         </Link>
       </div>
     </div>

@@ -27,7 +27,7 @@ export default async function CareerPostPage({ params }: PageProps<"/[lang]/care
   return (
     <article className="mx-auto max-w-2xl px-4 py-10 sm:px-6">
       <Link href={`/${lang}/career`} className="text-sm font-medium text-muted hover:text-ink">
-        ← {dict.career.back}
+        <span aria-hidden>← </span>{dict.career.back}
       </Link>
       <header className="mt-6 border-b border-line pb-8">
         <div className="flex flex-wrap items-center gap-2 text-sm font-semibold">

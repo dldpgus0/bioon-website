@@ -28,7 +28,7 @@ export default async function ToolsPage({ params }: PageProps<"/[lang]/career/to
               <p className="mt-3 leading-relaxed text-muted">{tool.body}</p>
               {i === 1 && (
                 <Link href={`/${lang}/career/interview`} className="mt-4 inline-block text-sm font-semibold text-teal hover:underline">
-                  {dict.career.interview.cardTitle}: {dict.career.interview.cta} →
+                  {dict.career.interview.cardTitle}: {dict.career.interview.cta}<span aria-hidden> →</span>
                 </Link>
               )}
             </div>

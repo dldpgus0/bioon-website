@@ -124,7 +124,9 @@
     "askTry": "Try asking",
     "askResults": " matching issues",
     "askEmpty": "No matching issues. Try different words.",
-    "askClear": "Clear search"
+    "askClear": "Clear search",
+    "filtersLabel": "Issue filters",
+    "resultsLabel": "Issue list"
   },
   "career": {
     "title": "Bio careers",
@@ -177,12 +179,19 @@
       "points": "Answer points",
       "source": "Based on",
       "issue": "Issue",
-      "note": "Questions and answer points were drafted by AI from the newsletter text and reviewed by the editor. Use them as a skeleton for your answer, not a script."
-    }
+      "note": "Questions and answer points were drafted by AI from the newsletter text and reviewed by the editor. Use them as a skeleton for your answer, not a script.",
+      "lockedTitle": "🔒 The remaining answer points are for subscribers",
+      "lockedBody": "Enter your email to unlock the answer points for every question.",
+      "lockedShow": "🔒 Unlock answer points",
+      "freeNote": "Answer points for the first three questions are open to everyone.",
+      "filtersLabel": "Question filters",
+      "download": "Get the question pack as a PDF"
+    },
+    "filtersLabel": "Post categories"
   },
   "resources": {
     "title": "Resources",
-    "lede": "Free resources are yours for an email address. Paid resources are on the way.",
+    "lede": "Free resources unlock as soon as you enter your email. Paid resources are coming soon.",
     "free": "Free",
     "paid": "Paid",
     "comingSoon": "Coming soon",
@@ -190,20 +199,28 @@
     "items": [
       {
         "title": "Bio interview question bank",
-        "body": "Frequent questions and answer structures for pharma sales, CRA, RA and BD roles.",
-        "type": "free"
+        "body": "34 interview questions with answer points, built from BIO:ON issues, indexed across 9 roles including BD, RA, clinical and market access.",
+        "type": "free",
+        "id": "interview-questions"
       },
       {
         "title": "Biotech glossary",
-        "body": "Every 'Word of the Week' from the newsletter, in one place.",
-        "type": "free"
+        "body": "All 17 Words of the Week from the newsletter, each with a definition and an analogy.",
+        "type": "free",
+        "id": "glossary"
       },
       {
         "title": "Role-specific résumé templates",
         "body": "Templates built from the structure of successful applications.",
-        "type": "paid"
+        "type": "paid",
+        "id": "cover-letter"
       }
-    ]
+    ],
+    "unlockTitle": "Enter your email to get it now",
+    "consent": "You'll be subscribed to the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
+    "unlocked": "Unlocked for subscribers",
+    "download": "Open resource (save as PDF)",
+    "cancel": "Cancel"
   },
   "subscribe": {
     "title": "Subscribe to BIO:ON Insight",
@@ -365,5 +382,15 @@
   "footer": {
     "tagline": "Biotech & pharma news, turned into career insight.",
     "built": "Built with Next.js and Claude Code"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "BIO:ON home",
+    "menu": "Menu",
+    "mainNav": "Main",
+    "footerNav": "Site links",
+    "newTab": "opens in a new tab",
+    "rss": "RSS feed",
+    "profile": "Portrait of editor Yaehyun Lee"
   }
 }

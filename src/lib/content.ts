@@ -78,6 +78,8 @@ export type InterviewQuestion = {
   why: string;
   points: string[];
   issue: { slug: string; number: number; title: string } | null;
+  /** True when `why` and `points` were withheld behind the email gate. */
+  locked?: boolean;
 };
 
 type RawQuestion = {

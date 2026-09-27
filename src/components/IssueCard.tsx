@@ -14,34 +14,36 @@ export function formatDate(date: string, lang: string) {
 /** `match`: the AI summary line that answers an Ask BIO.ON search, shown instead of the issue summary. */
 export function IssueCard({ issue, dict, match }: { issue: Issue; dict: Dictionary; match?: string | null }) {
   return (
-    <Link
-      href={`/${issue.lang}/insight/${issue.slug}`}
-      className="group flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-all hover:-translate-y-0.5 hover:border-teal hover:shadow-[0_8px_30px_-12px_rgba(25,127,131,0.35)]"
-    >
-      <div className="flex items-center justify-between text-xs font-semibold">
-        <span className="text-teal">
-          {issue.lang === "ko" ? `#${issue.number}${dict.insight.issue}` : `${dict.insight.issue} #${issue.number}`}
-        </span>
-        <time className="text-muted" dateTime={issue.date}>{formatDate(issue.date, issue.lang)}</time>
-      </div>
-      <h3 className="mt-3 text-lg font-bold leading-snug text-ink group-hover:text-brand">{issue.title}</h3>
-      {/* line-clamp breaks if the clamped element itself stretches, so the wrapper takes flex-1 */}
-      <div className="flex-1">
-        {match ? (
-          <p className="mt-2 border-l-2 border-teal pl-3 text-sm leading-relaxed text-ink">{match}</p>
-        ) : (
-          <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">{issue.summary}</p>
-        )}
-      </div>
-      {issue.topics.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-1.5">
-          {issue.topics.map((t) => (
-            <span key={t} className="rounded-full bg-teal-soft px-2.5 py-1 text-xs font-medium text-teal">
-              {topicLabel(t, issue.lang)}
-            </span>
-          ))}
+    <article className="h-full">
+      <Link
+        href={`/${issue.lang}/insight/${issue.slug}`}
+        className="group flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-all hover:-translate-y-0.5 hover:border-teal hover:shadow-[0_8px_30px_-12px_rgba(25,127,131,0.35)]"
+      >
+        <div className="flex items-center justify-between text-xs font-semibold">
+          <span className="text-teal">
+            {issue.lang === "ko" ? `#${issue.number}${dict.insight.issue}` : `${dict.insight.issue} #${issue.number}`}
+          </span>
+          <time className="text-muted" dateTime={issue.date}>{formatDate(issue.date, issue.lang)}</time>
         </div>
-      )}
-    </Link>
+        <h3 className="mt-3 text-lg font-bold leading-snug text-ink group-hover:text-brand">{issue.title}</h3>
+        {/* line-clamp breaks if the clamped element itself stretches, so the wrapper takes flex-1 */}
+        <div className="flex-1">
+          {match ? (
+            <p className="mt-2 border-l-2 border-teal pl-3 text-sm leading-relaxed text-ink">{match}</p>
+          ) : (
+            <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">{issue.summary}</p>
+          )}
+        </div>
+        {issue.topics.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            {issue.topics.map((t) => (
+              <span key={t} className="rounded-full bg-teal-soft px-2.5 py-1 text-xs font-medium text-teal">
+                {topicLabel(t, issue.lang)}
+              </span>
+            ))}
+          </div>
+        )}
+      </Link>
+    </article>
   );
 }

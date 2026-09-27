@@ -1,12 +1,17 @@
-// Adds a subscriber to the Stibee address book.
-// Env: STIBEE_API_KEY, STIBEE_LIST_ID (Stibee → 워크스페이스 설정 → API 키).
+// Adds a subscriber to the Stibee address book (API v2, https://developers.stibee.com),
+// then puts them in the group for the language they signed up in, so the Korean and
+// English editions can be sent to separate groups.
+// Env: STIBEE_API_KEY, STIBEE_LIST_ID, and optionally STIBEE_GROUP_KO / STIBEE_GROUP_EN
+// (group IDs from Stibee → 주소록 → 그룹). Without a group ID the group step is skipped.
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const STIBEE = "https://api.stibee.com/v2";
 
 export async function POST(request: Request) {
   const body = await request.json().catch(() => null);
   const email = typeof body?.email === "string" ? body.email.trim() : "";
   const name = typeof body?.name === "string" ? body.name.trim().slice(0, 50) : "";
-  if (!EMAIL_RE.test(email)) {
+  const lang = body?.lang === "en" ? "en" : "ko";
+  if (!EMAIL_RE.test(email) || email.length > 64) {
     return Response.json({ error: "invalid_email" }, { status: 400 });
   }
   if (!name) {
@@ -18,35 +23,41 @@ export async function POST(request: Request) {
   if (!apiKey || !listId) {
     // Lets the form be exercised locally before Stibee is wired up.
     if (process.env.NODE_ENV !== "production") {
-      console.log(`[subscribe] (mock, Stibee not configured) ${email}`);
+      console.log(`[subscribe] (mock, Stibee not configured) ${lang} ${email}`);
       return Response.json({ ok: true, mock: true });
     }
     return Response.json({ error: "not_configured" }, { status: 503 });
   }
 
-  const res = await fetch(`https://api.stibee.com/v1/lists/${listId}/subscribers`, {
+  const headers = { "Content-Type": "application/json", AccessToken: apiKey };
+
+  // updateEnabled: someone already on the list (e.g. subscribing again from the
+  // other language's site) gets their name updated instead of a 400.
+  const added = await fetch(`${STIBEE}/lists/${listId}/subscribers`, {
     method: "POST",
-    headers: { "Content-Type": "application/json", AccessToken: apiKey },
+    headers,
     body: JSON.stringify({
-      eventOccuredBy: "SUBSCRIBER",
-      confirmEmailYN: "N",
-      subscribers: [{ email, name }],
+      subscriber: { email, status: "subscribed", fields: { name } },
+      updateEnabled: true,
     }),
   });
-
-  // Stibee can answer 200 with { Ok: false, Error: ... } in the body, so check both.
-  const text = await res.text();
-  const data = (() => {
-    try {
-      return JSON.parse(text);
-    } catch {
-      return null;
-    }
-  })();
-  if (!res.ok || data?.Ok === false) {
-    console.error("[subscribe] Stibee error", res.status, text);
+  if (!added.ok) {
+    console.error("[subscribe] Stibee add failed", added.status, await added.text());
     return Response.json({ error: "upstream" }, { status: 502 });
   }
-  console.log("[subscribe] Stibee ok", text);
+
+  const groupId = lang === "en" ? process.env.STIBEE_GROUP_EN : process.env.STIBEE_GROUP_KO;
+  if (groupId) {
+    const assigned = await fetch(`${STIBEE}/lists/${listId}/groups/${groupId}/assign`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ subscriber: email }),
+    });
+    // The subscriber is already saved, so don't fail the sign-up; just log it for follow-up.
+    if (!assigned.ok) {
+      console.error(`[subscribe] Stibee group assign failed (${lang})`, assigned.status, await assigned.text());
+    }
+  }
+
   return Response.json({ ok: true });
 }

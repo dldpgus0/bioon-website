@@ -33,4 +33,4 @@ npm run import     # re-import newsletter issues from the newsletter/template fo
 | `public/newsletters/` | Web copies of the email issues (generated) |
 | `scripts/prepare-logos.ps1` | Turns the logo PNGs in `brand-src/` into transparent web assets |
 
-Environment variables for the subscribe form: `STIBEE_API_KEY`, `STIBEE_LIST_ID`.
+Environment variables for the subscribe form: `STIBEE_API_KEY`, `STIBEE_LIST_ID`, and optionally `STIBEE_GROUP_KO` / `STIBEE_GROUP_EN` (Stibee group IDs; sign-ups from each language site are assigned to that group).

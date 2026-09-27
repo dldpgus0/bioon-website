@@ -1,5 +1,18 @@
 [
   {
+    "lang": "en",
+    "originalNumber": 1,
+    "number": 1,
+    "date": "2026-06-07",
+    "slug": "2026-06-07",
+    "title": "AI designs it, genes get edited, and an ‘impossible’ target cracks",
+    "summary": "AI designs it, genes get edited, an ‘undruggable’ target cracks: Cambridge’s AI vaccine clears a world-first human trial, KRAS drug daraxonrasib doubles pancreatic cancer survival, CRISPR Therapeutics’ gene-editing pipeline",
+    "tags": [
+      "Three Waves of Bio Innovation"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-06-07.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 3,
     "number": 1,
@@ -13,6 +26,17 @@
     "sourceFile": "BIO.ON Insight #3.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 2,
+    "number": 2,
+    "date": "2026-06-09",
+    "slug": "2026-06-09",
+    "title": "Proving biotech’s real value with data",
+    "summary": "Proving biotech’s real value with data — Zenas’s FDA filing, BPGbio at ASCO, and a biotech that reinvented itself as AI and space",
+    "tags": [],
+    "sourceFile": "BIO.ON Insight EN 2026-06-09.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 3,
     "number": 2,
@@ -22,6 +46,21 @@
     "summary": "데이터로 증명하는 바이오의 진짜 가치 — Zenas FDA 허가신청, BPGbio ASCO, 그리고 AI·우주로 변신한 바이오 기업",
     "tags": [],
     "sourceFile": "BIO.ON Insight #1.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 3,
+    "number": 3,
+    "date": "2026-06-15",
+    "slug": "2026-06-15",
+    "title": "Buy for $10.6B, prove it at a conference, and two giants build it together",
+    "summary": "GSK buys a $10.6B lung cancer pipeline, K-bio outshines Novo and Lilly at ADA, and Gilead × Merck’s once-weekly oral HIV pill succeeds in Phase 3",
+    "tags": [
+      "Buy",
+      "Prove",
+      "Partner"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-06-15.html"
   },
   {
     "lang": "ko",
@@ -39,6 +78,19 @@
     "sourceFile": "BIO.ON Insight #4.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 4,
+    "number": 4,
+    "date": "2026-06-16",
+    "slug": "2026-06-16",
+    "title": "Copy, combine, new target — three paths of drug innovation",
+    "summary": "Copy, combine, new target — three paths of drug innovation: Bio-Thera wins FDA approval for the first golimumab biosimilar, BioNTech and BMS’s PD-L1×VEGF bispecific in lung cancer Phase 2, and Orion’s oral pan-TEAD inhibitor in Phase 1",
+    "tags": [
+      "Special: New Drug Modalities"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-06-16.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 4,
     "number": 4,
@@ -50,6 +102,21 @@
       "신약 모달리티 특집"
     ],
     "sourceFile": "BIO.ON Insight #2.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 5,
+    "number": 5,
+    "date": "2026-06-30",
+    "slug": "2026-06-30",
+    "title": "The solid-tumour wall falls, immunity gets reset, and a pill threatens the injection",
+    "summary": "The world’s first solid-tumour CAR-T approval, Moderna unveils an in vivo CAR-T for autoimmune disease, Corxel’s oral GLP-1 succeeds in Phase 2 — the week ‘impossible’ hit its expiry date",
+    "tags": [
+      "First",
+      "Shift",
+      "Challenge"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-06-30.html"
   },
   {
     "lang": "ko",
@@ -67,6 +134,21 @@
     "sourceFile": "BIO.ON Insight #6.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 6,
+    "number": 6,
+    "date": "2026-07-06",
+    "slug": "2026-07-06",
+    "title": "Fill it with AI, get chased by generics, defend with M&A",
+    "summary": "Takeda × Insilico’s $600M AI drug deal, a generic challenge to Zepbound, AbbVie’s $10.9B acquisition — three ways Big Pharma survives the patent cliff",
+    "tags": [
+      "AI",
+      "Generics",
+      "M&A"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-07-06.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 7,
     "number": 6,
@@ -80,6 +162,21 @@
       "M&A"
     ],
     "sourceFile": "BIO.ON Insight #7.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 7,
+    "number": 7,
+    "date": "2026-07-12",
+    "slug": "2026-07-12",
+    "title": "The drug is finished — now comes the war over coverage, channels and trust",
+    "summary": "The real reason Eli Lilly’s oral obesity pill is off to a slow start, GSK and Hansoh’s ADC wins a historic Phase 3 in small cell lung cancer, AI drug start-up Xaira steps into the open — the drug is finished, so why isn’t it being prescribed?",
+    "tags": [
+      "Oral Obesity Pill",
+      "ADC",
+      "AI Drugs"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-07-12.html"
   },
   {
     "lang": "ko",
@@ -97,6 +194,21 @@
     "sourceFile": "BIO.ON Insight #8.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 8,
+    "number": 8,
+    "date": "2026-07-19",
+    "slug": "2026-07-19",
+    "title": "The trial is a success — so why does nothing change?",
+    "summary": "Biogen’s tau-targeting Alzheimer’s drug heads to Phase 3, the FDA resumes publishing drug rejection letters, IQVIA data on Foundayo’s slow start — why clinical success and market success differ",
+    "tags": [
+      "Alzheimer’s",
+      "FDA Transparency",
+      "Obesity Drug Channels"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-07-19.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 9,
     "number": 8,
@@ -112,6 +224,21 @@
     "sourceFile": "BIO.ON Insight #9.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 9,
+    "number": 9,
+    "date": "2026-07-28",
+    "slug": "2026-07-28",
+    "title": "Drugs keep getting more complex — so why do they keep getting easier for patients?",
+    "summary": "Lilly’s triple agonist cuts weight by 22.6%, J&J’s bispecific combo lowers progression risk by 89%, Merck sets up supply before approval — drugs keep getting more complex, so why do they keep getting easier for patients?",
+    "tags": [
+      "Triple Agonist",
+      "Bispecifics",
+      "Oral PrEP"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-07-28.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 10,
     "number": 9,
@@ -125,6 +252,21 @@
       "경구PrEP"
     ],
     "sourceFile": "BIO.ON Insight #10.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 10,
+    "number": 10,
+    "date": "2026-08-04",
+    "slug": "2026-08-04",
+    "title": "Rejected three times, fighting for ten years — so why did all three win this week?",
+    "summary": "J&J offers $5.5B to settle 76,000 talc lawsuits, GSK and Relation sign a $110M AI data deal, twice-rejected Replimune RP1 wins an FDA advisory vote — rejected three times, fighting for ten years, so why did all three win this week?",
+    "tags": [
+      "Talc Settlement",
+      "AI Data Deal",
+      "FDA Advisory Committee"
+    ],
+    "sourceFile": "BIO.ON Insight EN 2026-08-04.html"
   },
   {
     "lang": "ko",
@@ -144,7 +286,7 @@
   {
     "lang": "en",
     "originalNumber": 1,
-    "number": 1,
+    "number": 11,
     "date": "2026-08-18",
     "slug": "2026-08-18",
     "title": "The week a drug learned to erase proteins, a recall came down to a shard of glass",
@@ -174,7 +316,7 @@
   {
     "lang": "en",
     "originalNumber": 2,
-    "number": 2,
+    "number": 12,
     "date": "2026-08-25",
     "slug": "2026-08-25",
     "title": "Stand beside a giant, and you win. Stand against one, and you lose. Why?",
@@ -204,7 +346,7 @@
   {
     "lang": "en",
     "originalNumber": 3,
-    "number": 3,
+    "number": 13,
     "date": "2026-09-01",
     "slug": "2026-09-01",
     "title": "Nobody was supposed to clear that wall. Someone did, this week.",
@@ -234,7 +376,7 @@
   {
     "lang": "en",
     "originalNumber": 4,
-    "number": 4,
+    "number": 14,
     "date": "2026-09-08",
     "slug": "2026-09-08",
     "title": "A whole company on one platform — so what proves the platform?",
@@ -264,7 +406,7 @@
   {
     "lang": "en",
     "originalNumber": 5,
-    "number": 5,
+    "number": 15,
     "date": "2026-09-15",
     "slug": "2026-09-15",
     "title": "Same word, \"success\" — not the same grade of evidence",
@@ -294,7 +436,7 @@
   {
     "lang": "en",
     "originalNumber": 6,
-    "number": 6,
+    "number": 16,
     "date": "2026-09-22",
     "slug": "2026-09-22",
     "title": "The edge in drugs is moving — from what you discover to how you make it",
@@ -324,7 +466,7 @@
   {
     "lang": "en",
     "originalNumber": 7,
-    "number": 7,
+    "number": 17,
     "date": "2026-09-29",
     "slug": "2026-09-29",
     "title": "One company, three battlegrounds — same week, same headline name",

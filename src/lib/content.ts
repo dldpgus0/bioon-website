@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import insight from "@/content/insight.json";
 import insightAi from "@/content/insight-ai.json";
+import interviewBank from "@/content/interview-bank.json";
 import type { Locale } from "./i18n";
 import type { RoleId, TopicId } from "./taxonomy";
 
@@ -62,6 +63,49 @@ export function getIssue(lang: Locale, slug: string) {
 /** Every date that has at least one edition, in any language. */
 export function getIssueSlugs() {
   return [...new Set(issues.map((i) => i.slug))];
+}
+
+// ---------- Interview question bank ----------
+
+export type QuestionKind = "concept" | "issue" | "case";
+
+/** A question from src/content/interview-bank.json, localized, with the issue it draws on. */
+export type InterviewQuestion = {
+  id: string;
+  kind: QuestionKind;
+  roles: RoleId[];
+  q: string;
+  why: string;
+  points: string[];
+  issue: { slug: string; number: number; title: string } | null;
+};
+
+type RawQuestion = {
+  id: string;
+  issue: string;
+  kind: QuestionKind;
+  roles: RoleId[];
+  q: Record<Locale, string>;
+  why: Record<Locale, string>;
+  points: Record<Locale, string[]>;
+};
+
+/** Questions newest issue first, so the latest news comes up first. */
+export function getInterviewQuestions(lang: Locale): InterviewQuestion[] {
+  return (interviewBank.questions as RawQuestion[])
+    .map((raw) => {
+      const issue = getIssue(lang, raw.issue);
+      return {
+        id: raw.id,
+        kind: raw.kind,
+        roles: raw.roles,
+        q: raw.q[lang],
+        why: raw.why[lang],
+        points: raw.points[lang],
+        issue: issue ? { slug: issue.slug, number: issue.number, title: issue.title } : null,
+      };
+    })
+    .sort((a, b) => (b.issue?.slug ?? "").localeCompare(a.issue?.slug ?? ""));
 }
 
 // ---------- Career posts (markdown) ----------

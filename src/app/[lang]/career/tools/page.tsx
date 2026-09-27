@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { getDictionary, getLocale } from "@/lib/i18n";
@@ -25,6 +26,11 @@ export default async function ToolsPage({ params }: PageProps<"/[lang]/career/to
               <span className="text-3xl">{i === 0 ? "📝" : "🎙️"}</span>
               <h2 className="mt-4 text-xl font-bold text-ink">{tool.title}</h2>
               <p className="mt-3 leading-relaxed text-muted">{tool.body}</p>
+              {i === 1 && (
+                <Link href={`/${lang}/career/interview`} className="mt-4 inline-block text-sm font-semibold text-teal hover:underline">
+                  {dict.career.interview.cardTitle}: {dict.career.interview.cta} →
+                </Link>
+              )}
             </div>
           ))}
         </div>

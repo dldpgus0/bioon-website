@@ -1,0 +1,892 @@
+{
+  "_meta": {
+    "note": "Mock interview question bank built from BIO:ON Insight issues. Each question links to the issue it draws on. Generated with Claude in Claude Code from the issue analysis and reviewed by the editor.",
+    "generated": "2026-09-27"
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "issue": "2026-06-07",
+      "kind": "concept",
+      "roles": ["rnd", "clinical"],
+      "q": {
+        "ko": "유전자치료의 ex vivo와 in vivo 방식을 비교해서 설명해 보세요.",
+        "en": "Compare ex vivo and in vivo approaches to gene therapy."
+      },
+      "why": {
+        "ko": "기전을 쉬운 말로 풀어낼 수 있는지, 그리고 기술 차이를 제조·비용·안전성 같은 실무 이슈와 연결하는지 봐요.",
+        "en": "Whether you can explain a mechanism in plain words, and link a technical difference to practical issues like manufacturing, cost and safety."
+      },
+      "points": {
+        "ko": [
+          "Ex vivo: 세포를 꺼내 편집 후 재주입 (예: Casgevy). 정확도는 높지만 제조가 복잡하고 비싸요.",
+          "In vivo: 편집 도구를 몸에 직접 전달 (예: CTX310). 간편하지만 전달 효율·표적 외 편집이 관건이에요.",
+          "지원 직무와 연결: 임상이라면 장기 추적 안전성, R&D라면 전달체(LNP·AAV) 기술을 짚으세요."
+        ],
+        "en": [
+          "Ex vivo: cells are taken out, edited and re-infused (e.g. Casgevy). High accuracy, but complex and costly to make.",
+          "In vivo: the editing tool is delivered straight into the body (e.g. CTX310). Simpler, but delivery efficiency and off-target editing are the hurdles.",
+          "Link it to the role: for clinical, long-term safety follow-up; for R&D, delivery vehicles (LNP, AAV)."
+        ]
+      }
+    },
+    {
+      "id": "q02",
+      "issue": "2026-06-07",
+      "kind": "issue",
+      "roles": ["rnd", "bd"],
+      "q": {
+        "ko": "KRAS가 30년간 '표적 불가'였던 이유와, 최근 이를 뚫은 접근법을 설명해 보세요.",
+        "en": "Why was KRAS ‘undruggable’ for 30 years, and how has a recent drug got around it?"
+      },
+      "why": {
+        "ko": "업계의 오래된 난제를 알고 있는지, 그리고 '정공법이 막히면 우회한다'는 문제 해결 사고를 보여줄 수 있는지 봐요.",
+        "en": "Whether you know one of the industry’s long-standing problems, and can show problem-solving thinking — ‘if the direct route is blocked, find a detour.’"
+      },
+      "points": {
+        "ko": [
+          "KRAS는 표면이 매끈해 약이 붙을 포켓이 없어서 오랫동안 표적이 어려웠어요.",
+          "daraxonrasib는 사이클로필린A를 경유해 KRAS를 간접 억제 → 췌장암 3상 생존 6.7→13.2개월.",
+          "시사점: 폐암·대장암으로 확장 가능성, '불가능'이라는 전제를 의심하는 태도가 혁신을 만든다는 점."
+        ],
+        "en": [
+          "KRAS has a smooth surface with no pocket for a drug to bind, so it was long out of reach.",
+          "Daraxonrasib inhibits KRAS indirectly via cyclophilin A → pancreatic cancer Phase 3 survival 6.7 → 13.2 months.",
+          "Takeaway: potential to expand into lung and colorectal cancer, and innovation comes from questioning the premise of ‘impossible.’"
+        ]
+      }
+    },
+    {
+      "id": "q03",
+      "issue": "2026-06-09",
+      "kind": "case",
+      "roles": ["ir", "bd"],
+      "q": {
+        "ko": "매출도 제품도 없는 바이오 기업의 주가가 사명 변경만으로 60% 올랐어요. 이 기업의 가치를 어떻게 평가하겠어요?",
+        "en": "A biotech with no revenue and no product saw its stock jump 60% just from a name change. How would you judge its value?"
+      },
+      "why": {
+        "ko": "테마와 실체를 구분하는 비판적 사고, 그리고 바이오 기업 가치 평가의 기본 틀(데이터·규제·매출)을 아는지 봐요.",
+        "en": "Critical thinking that separates hype from substance, and whether you know the basic framework for valuing a biotech (data, regulation, revenue)."
+      },
+      "points": {
+        "ko": [
+          "근거의 등급을 나눠요: RCT 데이터 > 작용기전·학회 발표 > 사명 변경 같은 '서사'.",
+          "확인할 것: 파이프라인 임상 단계, 현금 소진 속도, 매출, 규제 이정표.",
+          "결론: 단기 주가는 심리로 움직여도 장기 가치는 재현 가능한 데이터가 만든다는 점을 말하세요."
+        ],
+        "en": [
+          "Rank the evidence: RCT data > mechanism and conference data > a ‘narrative’ like a name change.",
+          "Check: pipeline clinical stage, cash burn, revenue and regulatory milestones.",
+          "Conclude that short-term prices move on sentiment, but long-term value is built on reproducible data."
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "issue": "2026-06-09",
+      "kind": "concept",
+      "roles": ["ra", "clinical"],
+      "q": {
+        "ko": "3상 결과를 보고할 때 위험비(HR)와 p값은 각각 무엇을 말해 주나요?",
+        "en": "When a Phase 3 result is reported, what do the hazard ratio and the p-value each tell you?"
+      },
+      "why": {
+        "ko": "임상 데이터를 스스로 읽을 수 있는지 봐요. 규제·임상 직무에서는 기본 중의 기본이에요.",
+        "en": "Whether you can read clinical data yourself — the absolute basics for regulatory and clinical roles."
+      },
+      "points": {
+        "ko": [
+          "위험비: 사건(재발 등) 위험의 상대적 크기. obexelimab HR 0.44 = 위약 대비 재발 위험 56%↓.",
+          "p값: 이 차이가 우연일 가능성. p=0.0005면 우연으로 보기 매우 어려워요.",
+          "한계도 언급: 통계적 유의성과 임상적 의미는 다르고, 2차 평가변수·안전성도 함께 봐야 해요."
+        ],
+        "en": [
+          "Hazard ratio: the relative risk of an event (e.g. a flare). Obexelimab HR 0.44 = 56% lower flare risk vs placebo.",
+          "p-value: how likely the difference is due to chance. p=0.0005 makes chance very unlikely.",
+          "Mention the limits: statistical significance isn’t clinical meaning, and secondary endpoints and safety matter too."
+        ]
+      }
+    },
+    {
+      "id": "q05",
+      "issue": "2026-06-15",
+      "kind": "concept",
+      "roles": ["bd", "ir"],
+      "q": {
+        "ko": "빅파마가 인수 프리미엄 40%를 지불하는 논리를 설명해 보세요.",
+        "en": "Explain the logic behind Big Pharma paying a 40% acquisition premium."
+      },
+      "why": {
+        "ko": "BD·투자 직무의 핵심인 가치평가 논리를 이해하는지 봐요.",
+        "en": "Whether you understand the valuation logic at the heart of BD and investment roles."
+      },
+      "points": {
+        "ko": [
+          "프리미엄 = 미래 파이프라인 가치에 대한 베팅. Peak Sales × 성공확률(PoS) × 남은 특허기간.",
+          "GSK-Nuvalent: 이미 FDA 심사 중인 자산 2개라 성공확률이 높고, 혁신·희귀의약품 지정이 가치를 더해요.",
+          "배경: 2028년 HIV 특허절벽. '왜 지금, 왜 이 가격인가'를 함께 말하세요."
+        ],
+        "en": [
+          "The premium is a bet on future pipeline value: peak sales × probability of success × remaining patent life.",
+          "GSK–Nuvalent: two assets already under FDA review means high PoS, and Breakthrough and Orphan designations add value.",
+          "Context: the 2028 HIV patent cliff. Cover ‘why now, and why at this price.’"
+        ]
+      }
+    },
+    {
+      "id": "q06",
+      "issue": "2026-06-15",
+      "kind": "issue",
+      "roles": ["clinical", "bd"],
+      "q": {
+        "ko": "노보·릴리가 장악한 비만약 시장에서 후발 주자는 어떻게 차별화할 수 있을까요?",
+        "en": "In an obesity market dominated by Novo and Lilly, how can a latecomer differentiate?"
+      },
+      "why": {
+        "ko": "경쟁 구도를 읽고 차별화 전략을 구체적으로 제시할 수 있는지 봐요. 국내 기업 사례를 알면 가산점이에요.",
+        "en": "Whether you can read the competitive landscape and propose concrete differentiation. Knowing Korean company examples is a plus."
+      },
+      "points": {
+        "ko": [
+          "같은 체중 감소로는 이기기 어려우니 다른 축에서 경쟁해요.",
+          "체성분(근육 보존, 한미 HM17321), 장기 보호(심장·간, 동아ST DA-1726), 편의성(월 1회 주사, 펩트론).",
+          "결론: '체성분 개선 + 장기 보호' 조합이 기술수출 가능성이 가장 높은 영역이라고 정리하세요."
+        ],
+        "en": [
+          "It’s hard to win on the same weight loss, so compete on a different axis.",
+          "Body composition (muscle preservation, Hanmi HM17321), organ protection (heart, liver, Dong-A ST DA-1726), convenience (monthly injections, Peptron).",
+          "Conclude that ‘better body composition + organ protection’ is the combination most likely to lead to licensing deals."
+        ]
+      }
+    },
+    {
+      "id": "q07",
+      "issue": "2026-06-16",
+      "kind": "concept",
+      "roles": ["ra", "cmc"],
+      "q": {
+        "ko": "바이오시밀러와 합성의약품 제네릭은 무엇이 다른가요? 왜 '최초 진입'이 중요한가요?",
+        "en": "How is a biosimilar different from a small-molecule generic, and why does being the first entrant matter?"
+      },
+      "why": {
+        "ko": "한국이 강한 바이오시밀러 분야의 기본 개념과 시장 논리를 아는지 봐요.",
+        "en": "Whether you know the basics and market logic of biosimilars, an area where Korea is strong."
+      },
+      "points": {
+        "ko": [
+          "제네릭은 화학적으로 동일, 바이오시밀러는 살아있는 세포로 만들어 '임상적으로 차이가 없음'을 입증해요.",
+          "그래서 분석·비교 임상·제조 품질(CMC) 요구가 훨씬 까다로워요.",
+          "최초 진입자(예: Bio-Thera 골리무맙)가 처방·계약을 선점하고 이후 약가 인하의 출발점이 돼요."
+        ],
+        "en": [
+          "A generic is chemically identical; a biosimilar is made in living cells and must show ‘no clinically meaningful difference.’",
+          "So analytical, comparative clinical and manufacturing quality (CMC) requirements are much stricter.",
+          "The first entrant (e.g. Bio-Thera’s golimumab) locks in prescribing and contracts, and starts the fall in prices."
+        ]
+      }
+    },
+    {
+      "id": "q08",
+      "issue": "2026-06-16",
+      "kind": "issue",
+      "roles": ["rnd", "bd"],
+      "q": {
+        "ko": "바이오시밀러, 이중항체, 신표적(first-in-class) 중 하나에 투자한다면 어디에, 왜 하겠어요?",
+        "en": "If you had to invest in one of biosimilars, bispecifics or a first-in-class new target, which would you choose and why?"
+      },
+      "why": {
+        "ko": "정답보다 리스크와 보상을 구조적으로 비교하는 사고 과정을 봐요.",
+        "en": "Less about the ‘right’ answer, more about how you structure a comparison of risk and reward."
+      },
+      "points": {
+        "ko": [
+          "스펙트럼으로 정리: 카피(낮은 리스크·가격 경쟁) → 결합(중간) → 신표적(높은 리스크·독점 가능).",
+          "선택 기준을 먼저 밝혀요: 회사의 현금 여력, 기간, 기존 역량.",
+          "한 가지를 고르고 근거 한 줄 + 리스크 대응 한 줄로 마무리하세요."
+        ],
+        "en": [
+          "Lay it out as a spectrum: copy (low risk, price competition) → combine (medium) → new target (high risk, possible monopoly).",
+          "State your criteria first: the company’s cash, time horizon and existing capabilities.",
+          "Pick one and close with one line of rationale plus one line on managing the risk."
+        ]
+      }
+    },
+    {
+      "id": "q09",
+      "issue": "2026-06-30",
+      "kind": "issue",
+      "roles": ["ra", "bd"],
+      "q": {
+        "ko": "중국 NMPA가 세계 최초 고형암 CAR-T를 허가했어요. 이게 글로벌 허가를 의미하나요?",
+        "en": "China’s NMPA approved the world’s first solid-tumour CAR-T. Does that mean global approval?"
+      },
+      "why": {
+        "ko": "규제 지역별 허가 범위를 구분하는지 봐요. RA·BD 직무에서 자주 틀리는 부분이에요.",
+        "en": "Whether you separate approval scope by region — a common mistake in RA and BD roles."
+      },
+      "points": {
+        "ko": [
+          "아니요. NMPA 허가는 중국 시장에서만 유효하고, FDA·EMA는 별도 데이터와 심사가 필요해요.",
+          "그래도 의미는 커요: 고형암에서 CAR-T가 작동한다는 규제기관의 첫 인정(CLDN18.2 표적).",
+          "다음 확인점: 글로벌 임상 계획, 가격·급여 전략, 국내 식약처의 심사 기준 논의."
+        ],
+        "en": [
+          "No. An NMPA approval is valid only in China; the FDA and EMA need separate data and review.",
+          "It still matters: the first regulatory recognition that CAR-T can work in a solid tumour (targeting CLDN18.2).",
+          "Next checkpoints: global trial plans, pricing and reimbursement strategy, and review standards at Korea’s MFDS."
+        ]
+      }
+    },
+    {
+      "id": "q10",
+      "issue": "2026-06-30",
+      "kind": "case",
+      "roles": ["cmc", "clinical"],
+      "q": {
+        "ko": "인비보 CAR-T가 상용화되면 CAR-T 제조·공급망은 어떻게 달라질까요?",
+        "en": "If in vivo CAR-T is commercialised, how would CAR-T manufacturing and supply change?"
+      },
+      "why": {
+        "ko": "새 기술이 현장(제조·품질·물류)에 미칠 영향을 구체적으로 상상할 수 있는지 봐요.",
+        "en": "Whether you can picture concretely how a new technology would change operations (manufacturing, quality, logistics)."
+      },
+      "points": {
+        "ko": [
+          "지금: 환자별 세포 채취 → 수 주 제조 → 재주입. 체인 오브 커스터디·수억 원 비용이 병목이에요.",
+          "인비보: mRNA-LNP 주사로 체내 변환 → 오프더셸프 대량 생산, 콜드체인 중심 물류.",
+          "새 과제: LNP 제형·품질, 표적 외 변환 안전성 검증. 국내 CMO의 LNP 역량이 기회가 돼요."
+        ],
+        "en": [
+          "Today: per-patient cell collection → weeks of manufacturing → re-infusion. Chain of custody and six-figure costs are the bottleneck.",
+          "In vivo: an mRNA-LNP injection converts cells in the body → off-the-shelf mass production, cold-chain logistics.",
+          "New challenges: LNP formulation and quality, and proving off-target safety. LNP capacity at Korean CMOs becomes an opportunity."
+        ]
+      }
+    },
+    {
+      "id": "q11",
+      "issue": "2026-07-06",
+      "kind": "concept",
+      "roles": ["bd", "ir"],
+      "q": {
+        "ko": "특허절벽이 무엇이고, 빅파마는 어떤 방법으로 대응하나요?",
+        "en": "What is the patent cliff, and how does Big Pharma respond to it?"
+      },
+      "why": {
+        "ko": "빅파마 전략의 가장 큰 동력을 이해하는지 봐요. BD·투자 면접의 단골 질문이에요.",
+        "en": "Whether you understand the biggest driver of Big Pharma strategy — a staple in BD and investment interviews."
+      },
+      "points": {
+        "ko": [
+          "특허 만료 후 제네릭·바이오시밀러 진입으로 가격이 80~90% 떨어지고 매출이 급감하는 현상 (예: 휴미라).",
+          "대응 세 가지: AI 파트너십(다케다×Insilico), 특허 방어(릴리), M&A(AbbVie×Apogee).",
+          "각 전략이 만드는 직무 수요(BD, IP, 실사)까지 연결하면 좋아요."
+        ],
+        "en": [
+          "After patent expiry, generics and biosimilars enter, prices fall 80–90% and revenue collapses (e.g. Humira).",
+          "Three responses: AI partnerships (Takeda × Insilico), patent defence (Lilly), M&A (AbbVie × Apogee).",
+          "Bonus: link each strategy to the roles it creates demand for (BD, IP, due diligence)."
+        ]
+      }
+    },
+    {
+      "id": "q12",
+      "issue": "2026-07-06",
+      "kind": "case",
+      "roles": ["bd", "ra"],
+      "q": {
+        "ko": "'최대 6억 달러 규모 AI 신약 계약' 뉴스를 보면 무엇부터 확인하겠어요?",
+        "en": "You see a headline: ‘AI drug deal worth up to $600M.’ What do you check first?"
+      },
+      "why": {
+        "ko": "헤드라인 숫자(바이오달러)에 속지 않고 계약 구조를 읽는지 봐요.",
+        "en": "Whether you read the deal structure instead of taking the headline number (bio-dollars) at face value."
+      },
+      "points": {
+        "ko": [
+          "계약금(upfront) vs 마일스톤 비율. 발표 금액은 '잠재 총액'이에요.",
+          "마일스톤 조건: 임상 진입·허가·매출 목표 중 무엇에 걸려 있는지.",
+          "플랫폼 검증 수준: 이미 임상에 들어간 AI 설계 물질이 있는지(Insilico ISM001-055 2b상)."
+        ],
+        "en": [
+          "The upfront vs milestone split. The headline figure is the ‘total potential value.’",
+          "Milestone triggers: clinical entry, approval or sales targets.",
+          "How validated the platform is: does it already have AI-designed molecules in the clinic (Insilico’s ISM001-055 in Phase 2b)?"
+        ]
+      }
+    },
+    {
+      "id": "q13",
+      "issue": "2026-07-12",
+      "kind": "case",
+      "roles": ["access", "sales"],
+      "q": {
+        "ko": "효과가 입증된 신약인데 출시 첫 달 처방이 부진해요. 원인과 대응책을 말해 보세요.",
+        "en": "A new drug with proven efficacy is off to a slow first month of prescriptions. What are the likely causes, and what would you do?"
+      },
+      "why": {
+        "ko": "'좋은 약이면 팔린다'는 착각을 넘어 보험·채널 구조를 이해하는지 봐요. Market Access·영업 직무의 핵심이에요.",
+        "en": "Whether you get past ‘a good drug sells itself’ to understand coverage and channels — core to Market Access and sales roles."
+      },
+      "points": {
+        "ko": [
+          "원인 진단: 보험 등재(미국 PBM formulary, 한국 급여) 지연 → 환자 부담↑ → 의사가 처방을 꺼림 (예: Foundayo).",
+          "대응: 가치 근거 자료(HEOR) 준비, 보험자 협상, 환자 지원 프로그램, 현금가 전략.",
+          "영업 관점: 등재 전후로 타깃 의료진과 메시지를 다르게 가져가요."
+        ],
+        "en": [
+          "Diagnose: delayed coverage (US PBM formularies, Korean reimbursement) → higher patient cost → doctors hold back (e.g. Foundayo).",
+          "Respond: value evidence (HEOR), payer negotiations, patient support programmes, cash-price strategy.",
+          "Sales angle: target different prescribers and messages before and after listing."
+        ]
+      }
+    },
+    {
+      "id": "q14",
+      "issue": "2026-07-12",
+      "kind": "concept",
+      "roles": ["rnd", "medical", "sales"],
+      "q": {
+        "ko": "ADC(항체-약물 접합체)를 비전공자에게 설명해 보세요.",
+        "en": "Explain an ADC (antibody-drug conjugate) to someone without a science background."
+      },
+      "why": {
+        "ko": "전문 개념을 쉬운 말로 전달하는 커뮤니케이션 능력을 봐요. 메디컬·영업 직무에서 특히 중요해요.",
+        "en": "Your ability to communicate a technical concept simply — especially important in medical affairs and sales."
+      },
+      "points": {
+        "ko": [
+          "비유: 항체는 암세포 주소를 찾아가는 유도 미사일, 약물은 탄두. 암세포 안에서만 터져요.",
+          "장점: 기존 화학요법보다 정상 세포 피해가 적고 효과는 높일 수 있어요.",
+          "최근 사례 한 줄: GSK·한소의 B7-H3 ADC가 소세포폐암 3상에서 생존 연장."
+        ],
+        "en": [
+          "Analogy: the antibody is a guided missile that finds the cancer cell’s address; the drug is the warhead that goes off only inside it.",
+          "Benefit: less damage to normal cells than chemotherapy, with potentially stronger effect.",
+          "One recent example: GSK and Hansoh’s B7-H3 ADC extended survival in small cell lung cancer Phase 3."
+        ]
+      }
+    },
+    {
+      "id": "q15",
+      "issue": "2026-07-19",
+      "kind": "concept",
+      "roles": ["ra", "medical"],
+      "q": {
+        "ko": "FDA의 CRL(완전대응서신)이 무엇이고, 공개 정책이 기업에 어떤 영향을 주나요?",
+        "en": "What is an FDA complete response letter (CRL), and how does publishing them affect companies?"
+      },
+      "why": {
+        "ko": "규제 절차와 최근 정책 변화를 따라가고 있는지 봐요.",
+        "en": "Whether you follow regulatory procedure and recent policy changes."
+      },
+      "points": {
+        "ko": [
+          "CRL = 허가 거절 공식 서신. 영구 거절이 아니라 '보완 후 재신청' 요구예요.",
+          "공개 전: 기업이 거절 이유를 유리하게 공시할 수 있었어요. 공개 후: FDA 원문을 누구나 읽어요.",
+          "영향: 공시·IR 전략이 정교해져야 하고, 규제 커뮤니케이션 역량의 가치가 커져요."
+        ],
+        "en": [
+          "A CRL is the FDA’s formal letter declining approval — not a permanent rejection but a request to ‘fix and resubmit.’",
+          "Before: companies could frame the reasons favourably. After: anyone can read the FDA’s original text.",
+          "Impact: disclosure and IR strategy must be more careful, and regulatory communication skills gain value."
+        ]
+      }
+    },
+    {
+      "id": "q16",
+      "issue": "2026-07-19",
+      "kind": "case",
+      "roles": ["clinical", "medical"],
+      "q": {
+        "ko": "2상에서 1차 평가변수를 놓쳤는데 3상 진행을 결정했어요. 이 결정을 어떻게 평가하겠어요?",
+        "en": "A drug missed its primary endpoint in Phase 2, but the company decided to go to Phase 3. How would you judge that decision?"
+      },
+      "why": {
+        "ko": "'실패 = 끝'이라는 단순 해석을 넘어 데이터를 다층적으로 읽는지 봐요.",
+        "en": "Whether you read data on multiple layers instead of ‘missed = over.’"
+      },
+      "points": {
+        "ko": [
+          "근거 확인: 바이오마커(Biogen diranersen 타우 50~65% 감소), 2차 평가변수, 하위군 결과.",
+          "리스크: 3상 비용·기간, 인지기능 개선을 입증할 수 있는 설계인지(평가변수·대상군·기간).",
+          "결론: 생물학적 신호가 강하면 합리적일 수 있지만, 3상 설계가 2상의 약점을 보완하는지가 관건이에요."
+        ],
+        "en": [
+          "Check the evidence: biomarkers (diranersen cut tau 50–65%), secondary endpoints, subgroup results.",
+          "Risks: Phase 3 cost and time, and whether the design can prove cognitive benefit (endpoint, population, duration).",
+          "Conclude: it can be rational if the biological signal is strong, but the key is whether Phase 3 fixes Phase 2’s weaknesses."
+        ]
+      }
+    },
+    {
+      "id": "q17",
+      "issue": "2026-07-28",
+      "kind": "concept",
+      "roles": ["clinical", "sales"],
+      "q": {
+        "ko": "GLP-1 단일, GLP-1·GIP 이중, 삼중작용제는 무엇이 다른가요?",
+        "en": "What’s the difference between single GLP-1, dual GLP-1/GIP and triple agonist obesity drugs?"
+      },
+      "why": {
+        "ko": "가장 뜨거운 치료 영역의 제품 차이를 정확히 아는지 봐요. 영업·임상 직무 모두 자주 묻는 질문이에요.",
+        "en": "Whether you know the product differences in the hottest therapy area — asked often in both sales and clinical roles."
+      },
+      "points": {
+        "ko": [
+          "GLP-1 단일(위고비): 식욕 억제·혈당 조절. 이중(젭바운드): GIP를 더해 효과를 높였어요.",
+          "삼중(레타트루타이드): 글루카곤 수용체까지 더해 에너지 소비를 늘림 → 3상 체중 최대 22.6% 감소.",
+          "균형 잡힌 시각: 기전이 복잡해질수록 부작용·가격·보험 등재도 함께 따져야 해요."
+        ],
+        "en": [
+          "Single GLP-1 (Wegovy): appetite and blood sugar control. Dual (Zepbound): adds GIP for a stronger effect.",
+          "Triple (retatrutide): adds the glucagon receptor to raise energy use → up to 22.6% weight loss in Phase 3.",
+          "Balanced view: a more complex mechanism also means weighing side effects, price and coverage."
+        ]
+      }
+    },
+    {
+      "id": "q18",
+      "issue": "2026-07-28",
+      "kind": "case",
+      "roles": ["access", "cmc"],
+      "q": {
+        "ko": "승인 전에 공급망부터 구축하는 전략(예: 머크 알리마트라비르)의 장단점을 말해 보세요.",
+        "en": "What are the pros and cons of building a supply chain before approval (e.g. Merck’s alimatravir)?"
+      },
+      "why": {
+        "ko": "출시 전략을 리스크와 함께 따지는 균형 감각을 봐요.",
+        "en": "Your sense of balance in weighing a launch strategy against its risks."
+      },
+      "points": {
+        "ko": [
+          "장점: 승인 즉시 출시, 고소득국·중저소득국 동시 진입, 시장 선점.",
+          "단점: 최종 데이터가 기대에 못 미치면 재고·계약·유통 투자가 부담이 돼요.",
+          "조건: 앞선 임상 데이터의 확실성, 제조 역량, 파트너 계약 구조에 따라 판단해요."
+        ],
+        "en": [
+          "Pros: launch the moment it’s approved, enter high- and low-income countries at once, grab the market first.",
+          "Cons: if final data disappoints, inventory, contracts and distribution become a burden.",
+          "It depends on how solid earlier data is, manufacturing capacity and how partner contracts are structured."
+        ]
+      }
+    },
+    {
+      "id": "q19",
+      "issue": "2026-08-04",
+      "kind": "concept",
+      "roles": ["ra", "ir"],
+      "q": {
+        "ko": "FDA 자문위원회 찬성 표결과 최종 승인은 어떻게 다른가요?",
+        "en": "How is a favourable FDA advisory committee vote different from final approval?"
+      },
+      "why": {
+        "ko": "규제 단계를 정확히 구분하고, 중간 단계의 좋은 소식을 과대해석하지 않는지 봐요.",
+        "en": "Whether you separate regulatory stages precisely and don’t over-read good news at an intermediate step."
+      },
+      "points": {
+        "ko": [
+          "자문위: 외부 전문가 권고. 법적 구속력은 없어요.",
+          "최종 승인: PDUFA 날짜에 FDA가 내리는 공식 결정. 대부분 권고를 따르지만 뒤집는 경우도 있어요.",
+          "사례: Replimune RP1은 두 번의 CRL 후 실사용 데이터로 자문위 찬성을 얻었지만 최종 결정은 남아 있어요."
+        ],
+        "en": [
+          "Advisory committee: a recommendation from outside experts, not legally binding.",
+          "Final approval: the FDA’s official decision on the PDUFA date. It usually follows the vote, but not always.",
+          "Example: Replimune’s RP1 won a favourable vote with real-world data after two CRLs, but the final decision is still pending."
+        ]
+      }
+    },
+    {
+      "id": "q20",
+      "issue": "2026-08-04",
+      "kind": "issue",
+      "roles": ["bd", "rnd"],
+      "q": {
+        "ko": "AI 신약개발의 경쟁력이 '연산'에서 '데이터'로 옮겨간다는 말에 동의하나요?",
+        "en": "Do you agree that the edge in AI drug discovery is shifting from ‘compute’ to ‘data’?"
+      },
+      "why": {
+        "ko": "트렌드에 대한 자기 의견을 근거와 함께 말할 수 있는지 봐요.",
+        "en": "Whether you can give your own view on a trend, backed by evidence."
+      },
+      "points": {
+        "ko": [
+          "입장을 먼저: 대체로 동의 — 좋은 모델에는 좋은 데이터가 먼저 필요해요.",
+          "근거: GSK가 1.1억 달러로 Relation의 단일세포 데이터셋을 확보한 사례.",
+          "국내 시사점: 고해상도 바이오뱅크 인프라가 부족해 국가 바이오빅데이터 사업의 방향이 중요해요."
+        ],
+        "en": [
+          "State your position first: broadly agree — good models need good data first.",
+          "Evidence: GSK paying $110M for Relation’s single-cell datasets.",
+          "Korea angle: limited high-resolution biobank infrastructure makes the national bio big data project’s direction important."
+        ]
+      }
+    },
+    {
+      "id": "q21",
+      "issue": "2026-08-18",
+      "kind": "case",
+      "roles": ["cmc", "ra"],
+      "q": {
+        "ko": "승인된 바이오시밀러 한 배치에서 유리 이물질이 발견됐어요. 품질 담당자라면 무엇부터 하겠어요?",
+        "en": "Glass particles are found in one batch of an approved biosimilar. As the quality lead, what do you do first?"
+      },
+      "why": {
+        "ko": "품질 사고 대응 절차와 환자 안전 우선 원칙을 아는지 봐요. QA/QC·CMC 면접의 대표 상황 질문이에요.",
+        "en": "Whether you know the quality incident process and put patient safety first — a classic scenario in QA/QC and CMC interviews."
+      },
+      "points": {
+        "ko": [
+          "즉시: 해당 배치 격리·출하 중단, 규제기관 보고와 리콜 필요성 판단.",
+          "원인 조사(CAPA): 바이알 공급사·세척·멸균 공정, 다른 배치·시설로 확산 여부.",
+          "재발 방지: 공급사 관리 강화, 검사 기준 보완. 효능이 아니라 '용기' 문제라도 환자 안전이 우선이에요."
+        ],
+        "en": [
+          "Immediately: quarantine the batch, stop shipments, report to regulators and assess whether a recall is needed.",
+          "Root cause (CAPA): vial supplier, washing and sterilisation steps, and whether other batches or sites are affected.",
+          "Prevent recurrence: tighter supplier control, updated inspection criteria. Even a ‘container’ problem comes second to patient safety."
+        ]
+      }
+    },
+    {
+      "id": "q22",
+      "issue": "2026-08-18",
+      "kind": "concept",
+      "roles": ["rnd", "cmc"],
+      "q": {
+        "ko": "분자 접착제(표적단백질분해)는 기존 억제제와 무엇이 다른가요?",
+        "en": "How is a molecular glue (targeted protein degradation) different from a traditional inhibitor?"
+      },
+      "why": {
+        "ko": "새 모달리티의 기전을 이해하고, 왜 '표적 불가' 단백질을 여는지 설명할 수 있는지 봐요.",
+        "en": "Whether you understand a new modality’s mechanism and can explain why it opens up ‘undruggable’ proteins."
+      },
+      "points": {
+        "ko": [
+          "억제제: 단백질 포켓에 붙어 기능만 막아요. 포켓이 없으면 약을 못 만들어요.",
+          "분자 접착제: 표적 단백질을 세포의 분해 효소(E3 리가아제)와 연결해 아예 없애요.",
+          "의미: BMS가 세계 최초로 허가받으며 TPD 플랫폼의 상업적 가치가 입증됐어요."
+        ],
+        "en": [
+          "An inhibitor binds a protein’s pocket and blocks its function. No pocket, no drug.",
+          "A molecular glue links the target to the cell’s disposal enzyme (E3 ligase) so it gets destroyed entirely.",
+          "Why it matters: BMS’s world-first approval proved the commercial value of TPD platforms."
+        ]
+      }
+    },
+    {
+      "id": "q23",
+      "issue": "2026-08-25",
+      "kind": "issue",
+      "roles": ["clinical", "bd"],
+      "q": {
+        "ko": "키트루다와 정면 승부하는 전략과 병용하는 전략, 어느 쪽이 유리할까요?",
+        "en": "Is it better to go head-to-head with Keytruda, or to combine with it?"
+      },
+      "why": {
+        "ko": "표준치료(SoC)와의 경쟁 구도를 임상 설계 관점에서 이해하는지 봐요.",
+        "en": "Whether you understand competition with the standard of care from a trial design perspective."
+      },
+      "points": {
+        "ko": [
+          "병용: 표준치료에 더하는 방식이라 성공 확률이 상대적으로 높아요 (머크·모더나 mRNA 암백신 + 키트루다).",
+          "정면 승부: 이기면 판도가 바뀌지만 실패 위험이 커요 (아스트라제네카 볼루스토믹 중단 vs 아케소 이보네시맙 승리).",
+          "결론: 자산의 차별성·데이터 강도에 따라 선택. 근거 사례를 하나씩 드세요."
+        ],
+        "en": [
+          "Combination: adds on top of standard care, so the odds of success are relatively higher (Merck–Moderna mRNA cancer vaccine + Keytruda).",
+          "Head-to-head: a win reshapes the market, but the risk of failure is high (AstraZeneca’s volrustomig stopped vs Akeso’s ivonescimab win).",
+          "Conclude: it depends on how differentiated the asset is and how strong its data is. Give one example for each."
+        ]
+      }
+    },
+    {
+      "id": "q24",
+      "issue": "2026-08-25",
+      "kind": "concept",
+      "roles": ["rnd", "medical"],
+      "q": {
+        "ko": "맞춤형 mRNA 암백신은 어떻게 작동하나요?",
+        "en": "How does a personalised mRNA cancer vaccine work?"
+      },
+      "why": {
+        "ko": "최신 항암 모달리티의 원리를 정확하고 간결하게 설명할 수 있는지 봐요.",
+        "en": "Whether you can explain a cutting-edge cancer modality accurately and briefly."
+      },
+      "points": {
+        "ko": [
+          "환자 종양을 시퀀싱해 그 환자만의 신생항원(neoantigen)을 찾아요.",
+          "그 항원 정보를 mRNA에 담아 주사 → 면역계가 암세포를 알아보도록 훈련해요.",
+          "면역관문억제제(키트루다)와 병용해 흑색종 재발 위험을 낮춘 데이터가 있어요. 개인별 제조가 과제예요."
+        ],
+        "en": [
+          "The patient’s tumour is sequenced to find neoantigens unique to them.",
+          "Those antigens are encoded in mRNA and injected → the immune system is trained to recognise the cancer.",
+          "Combined with a checkpoint inhibitor (Keytruda), it lowered melanoma recurrence risk. Per-patient manufacturing is the challenge."
+        ]
+      }
+    },
+    {
+      "id": "q25",
+      "issue": "2026-09-01",
+      "kind": "case",
+      "roles": ["bd", "ir"],
+      "q": {
+        "ko": "한미약품-로슈 비만약 딜(최대 25억 달러)을 경영진에게 한 문단으로 보고해 보세요.",
+        "en": "Brief your leadership on the Hanmi–Roche obesity deal (up to $2.5B) in one paragraph."
+      },
+      "why": {
+        "ko": "딜을 구조적으로 요약하는 보고 능력을 봐요. BD 직무에서 매일 하는 일이에요.",
+        "en": "Your ability to summarise a deal in a structured way — daily work in BD."
+      },
+      "points": {
+        "ko": [
+          "무엇: 로슈가 한미의 '근손실 없는' 비만약 후보 도입, 총액 최대 25억 달러.",
+          "구조: 계약금 vs 마일스톤 비율을 분리해서 말하고, 확정액이 얼마인지 짚어요.",
+          "의미: K-바이오 비만 파이프라인의 글로벌 가치 인정 + 체성분 차별화 전략의 검증."
+        ],
+        "en": [
+          "What: Roche licenses Hanmi’s ‘muscle-sparing’ obesity candidate, up to $2.5B in total.",
+          "Structure: split out the upfront vs milestones, and say how much is actually guaranteed.",
+          "Why it matters: global recognition of K-bio obesity pipelines + validation of the body-composition differentiation strategy."
+        ]
+      }
+    },
+    {
+      "id": "q26",
+      "issue": "2026-09-01",
+      "kind": "issue",
+      "roles": ["ra", "clinical"],
+      "q": {
+        "ko": "유전자치료제의 벡터 안전성 이슈가 허가에 어떤 영향을 주나요?",
+        "en": "How do vector safety issues in gene therapy affect approval?"
+      },
+      "why": {
+        "ko": "세포·유전자치료(CGT) 규제의 핵심 리스크를 이해하는지 봐요.",
+        "en": "Whether you understand a core regulatory risk in cell and gene therapy (CGT)."
+      },
+      "points": {
+        "ko": [
+          "사례: 리젠엑스바이오 헌터증후군 치료제가 척수 MRI 이상 소견으로 재신청에 제동이 걸렸어요.",
+          "벡터(AAV 등)는 장기 추적이 필요한 안전성 신호를 만들 수 있어요.",
+          "대응: 장기 추적 관찰 설계, 위해성 관리 계획(RMP), 규제기관과의 조기 소통."
+        ],
+        "en": [
+          "Example: Regenxbio’s Hunter syndrome therapy had its refiling halted over spinal MRI findings.",
+          "Vectors (such as AAV) can produce safety signals that need long-term follow-up.",
+          "Response: long-term follow-up design, a risk management plan (RMP), and early dialogue with regulators."
+        ]
+      }
+    },
+    {
+      "id": "q27",
+      "issue": "2026-09-08",
+      "kind": "concept",
+      "roles": ["ra", "rnd"],
+      "q": {
+        "ko": "안티센스 올리고뉴클레오티드(ASO) 치료제는 어떻게 작동하나요?",
+        "en": "How does an antisense oligonucleotide (ASO) therapy work?"
+      },
+      "why": {
+        "ko": "RNA 치료제라는 플랫폼 기술의 원리를 아는지 봐요.",
+        "en": "Whether you know the principle behind RNA therapeutics as a platform technology."
+      },
+      "points": {
+        "ko": [
+          "짧은 합성 핵산이 질병 유전자의 mRNA에 결합해 단백질 생성을 줄이거나 바꿔요.",
+          "사례: 아이오니스 Zanvastro가 알렉산더병 최초의 질환조절 RNA 치료제로 허가받았어요.",
+          "플랫폼의 장점: 같은 화학 구조로 여러 희귀질환에 빠르게 적용할 수 있어요."
+        ],
+        "en": [
+          "A short synthetic strand of nucleic acid binds a disease gene’s mRNA to reduce or change the protein made.",
+          "Example: Ionis’s Zanvastro was approved as the first disease-modifying RNA therapy for Alexander disease.",
+          "Platform advantage: the same chemistry can be applied quickly across many rare diseases."
+        ]
+      }
+    },
+    {
+      "id": "q28",
+      "issue": "2026-09-08",
+      "kind": "case",
+      "roles": ["clinical", "medical"],
+      "q": {
+        "ko": "진행 중인 임상에서 환자 사망이 보고됐어요. 임상팀은 어떻게 대응해야 하나요?",
+        "en": "A patient death is reported in an ongoing trial. How should the clinical team respond?"
+      },
+      "why": {
+        "ko": "안전성 사건 대응 절차와 윤리적 판단을 아는지 봐요.",
+        "en": "Whether you know the safety event process and can show ethical judgement."
+      },
+      "points": {
+        "ko": [
+          "즉시: 중대한 이상사례(SAE) 보고, 규제기관·IRB 통보, 필요하면 투약·등록 일시 중단.",
+          "평가: 약물 관련성, 다른 환자에게 공통된 신호가 있는지, 독립 데이터모니터링위원회(DMC) 검토.",
+          "사례: 자가면역 CAR-T 임상에서 3명 사망 후 노바티스·BMS가 임상을 중단했어요."
+        ],
+        "en": [
+          "Immediately: report the serious adverse event (SAE), notify regulators and the IRB, and pause dosing or enrolment if needed.",
+          "Assess: relatedness to the drug, whether other patients show the same signal, and review by the independent DMC.",
+          "Example: Novartis and BMS halted autoimmune CAR-T trials after three patient deaths."
+        ]
+      }
+    },
+    {
+      "id": "q29",
+      "issue": "2026-09-15",
+      "kind": "concept",
+      "roles": ["medical", "clinical"],
+      "q": {
+        "ko": "대리지표(PFS 등)와 전체생존(OS)의 차이는 무엇이고, 왜 중요한가요?",
+        "en": "What’s the difference between a surrogate endpoint (like PFS) and overall survival (OS), and why does it matter?"
+      },
+      "why": {
+        "ko": "근거의 '급'을 구분하는지 봐요. 메디컬·임상 직무의 기본기예요.",
+        "en": "Whether you can tell the ‘grade’ of evidence apart — a basic skill in medical and clinical roles."
+      },
+      "points": {
+        "ko": [
+          "대리지표: 빨리 측정할 수 있지만 실제 생존 연장을 보장하진 않아요.",
+          "OS: 가장 확실한 근거지만 시간이 오래 걸려요.",
+          "사례: 이보네시맙이 WCLC에서 최종 OS 데이터로 키트루다를 앞서며 근거의 급이 올라갔어요."
+        ],
+        "en": [
+          "Surrogate endpoints can be measured quickly but don’t guarantee longer survival.",
+          "OS is the strongest evidence, but takes a long time.",
+          "Example: ivonescimab’s final OS data beating Keytruda at WCLC raised the grade of its evidence."
+        ]
+      }
+    },
+    {
+      "id": "q30",
+      "issue": "2026-09-15",
+      "kind": "issue",
+      "roles": ["ra", "medical"],
+      "q": {
+        "ko": "FDA가 자문위 반대 표결에도 신약을 승인했어요. 어떻게 해석하겠어요?",
+        "en": "The FDA approved a drug despite a negative advisory committee vote. How would you read that?"
+      },
+      "why": {
+        "ko": "규제 결정의 맥락(미충족 수요, 위험-편익)을 읽는지 봐요.",
+        "en": "Whether you read the context behind a regulatory decision (unmet need, risk–benefit)."
+      },
+      "points": {
+        "ko": [
+          "자문위는 권고일 뿐이고, FDA는 전체 위험-편익을 따져 최종 판단해요.",
+          "사례: 아스트라제네카 카미제스트란트(경구 SERD) 유방암 승인.",
+          "시사점: 승인 후 조건(추가 연구·라벨 제한)과 처방 현장의 신뢰를 함께 봐야 해요."
+        ],
+        "en": [
+          "The committee only recommends; the FDA makes the final call on overall risk–benefit.",
+          "Example: AstraZeneca’s camizestrant (oral SERD) approved in breast cancer.",
+          "Takeaway: also watch post-approval conditions (further studies, label limits) and prescriber confidence."
+        ]
+      }
+    },
+    {
+      "id": "q31",
+      "issue": "2026-09-22",
+      "kind": "concept",
+      "roles": ["cmc", "ra"],
+      "q": {
+        "ko": "CMC가 무엇이고, 왜 '제조 문제'로 신약이 거절되기도 하나요?",
+        "en": "What is CMC, and why do drugs sometimes get rejected over ‘manufacturing issues’?"
+      },
+      "why": {
+        "ko": "연구 이후의 영역, 특히 제조·품질이 허가에 미치는 영향을 이해하는지 봐요.",
+        "en": "Whether you understand what happens after research — especially how manufacturing and quality affect approval."
+      },
+      "points": {
+        "ko": [
+          "CMC = Chemistry, Manufacturing & Controls. 약을 매번 같은 품질로 만들 수 있다는 증명이에요.",
+          "효능이 좋아도 제조 일관성을 입증하지 못하면 허가가 안 나요.",
+          "사례: 울트라제닉스 Fayuvi는 제조 문제로 거절됐다가 보완 후 허가(395만 달러)를 받았어요."
+        ],
+        "en": [
+          "CMC = Chemistry, Manufacturing & Controls: proof that the drug can be made to the same quality every time.",
+          "However good the efficacy, no approval without proven manufacturing consistency.",
+          "Example: Ultragenyx’s Fayuvi was rejected over manufacturing, then approved after fixes ($3.95M)."
+        ]
+      }
+    },
+    {
+      "id": "q32",
+      "issue": "2026-09-22",
+      "kind": "case",
+      "roles": ["access", "ir"],
+      "q": {
+        "ko": "한 번 투여에 395만 달러인 유전자치료제의 가격, 어떻게 정당화할 수 있을까요?",
+        "en": "How can a one-time gene therapy priced at $3.95M be justified?"
+      },
+      "why": {
+        "ko": "약가·시장접근의 논리(가치 기반 가격, 지불 모델)를 아는지 봐요.",
+        "en": "Whether you know the logic of pricing and market access (value-based pricing, payment models)."
+      },
+      "points": {
+        "ko": [
+          "평생 치료·돌봄 비용 대비 가치: 한 번으로 질환 진행을 멈춘다면 장기 비용을 줄여요.",
+          "지불 모델: 성과 기반 계약, 분할 지급으로 보험자 부담을 나눠요.",
+          "한계도 인정: 장기 효과 불확실성, 예산 충격. 한국 급여 체계에서의 과제를 짚으세요."
+        ],
+        "en": [
+          "Value vs lifetime treatment and care costs: if one dose stops the disease, long-term costs fall.",
+          "Payment models: outcomes-based contracts and instalments spread the burden for payers.",
+          "Acknowledge the limits: uncertain long-term effect and budget impact. Note the challenge within Korea’s reimbursement system."
+        ]
+      }
+    },
+    {
+      "id": "q33",
+      "issue": "2026-09-29",
+      "kind": "case",
+      "roles": ["medical", "sales"],
+      "q": {
+        "ko": "허가 전 제품에 대해 '혁신적인 치료'라는 보도자료를 내자는 요청을 받았어요. 어떻게 하겠어요?",
+        "en": "You’re asked to put out a press release calling a not-yet-approved product ‘an innovative treatment.’ What do you do?"
+      },
+      "why": {
+        "ko": "컴플라이언스 감각을 봐요. 영업·메디컬·마케팅 직무에서 반드시 확인하는 부분이에요.",
+        "en": "Your compliance instincts — always checked in sales, medical and marketing roles."
+      },
+      "points": {
+        "ko": [
+          "미승인 의약품 홍보는 규제 위반이 될 수 있어요 (사례: 영국 PMCPA가 릴리 보도자료를 위반으로 판정).",
+          "대안: 사실 중심의 기업·임상 뉴스로 표현을 바꾸고, 메디컬·법무·컴플라이언스 검토를 거쳐요.",
+          "태도: 성과 압박이 있어도 규정을 지키는 게 장기적으로 회사와 브랜드를 지킨다고 말하세요."
+        ],
+        "en": [
+          "Promoting an unapproved medicine can breach the rules (example: the UK PMCPA ruled against a Lilly press release).",
+          "Alternative: reframe it as factual corporate or clinical news, reviewed by medical, legal and compliance.",
+          "Attitude: say that sticking to the rules under pressure protects the company and the brand in the long run."
+        ]
+      }
+    },
+    {
+      "id": "q34",
+      "issue": "2026-09-29",
+      "kind": "concept",
+      "roles": ["bd", "access", "sales"],
+      "q": {
+        "ko": "'최대 33.5억 달러 계약'인데 확정액은 약 3%예요. 바이오달러란 무엇인가요?",
+        "en": "A deal is ‘worth up to $3.35B,’ but only about 3% is guaranteed. What are bio-dollars?"
+      },
+      "why": {
+        "ko": "헤드라인 숫자를 비판적으로 읽는지 봐요. BD뿐 아니라 모든 직무에서 신뢰를 주는 태도예요.",
+        "en": "Whether you read headline numbers critically — an attitude that earns trust in any role, not just BD."
+      },
+      "points": {
+        "ko": [
+          "바이오달러 = 계약 발표 총액. 대부분 조건부 마일스톤이에요.",
+          "릴리×이노케어: 최대 33.5억 달러 중 확정 계약금·단기 지급은 약 1억 달러(약 3%).",
+          "습관: 계약금, 마일스톤 조건, 로열티를 나눠서 보고 '실제 가치'를 말해요."
+        ],
+        "en": [
+          "Bio-dollars = the headline total of a deal, mostly conditional milestones.",
+          "Lilly × Innocare: of up to $3.35B, the guaranteed upfront and near-term payments were about $100M (~3%).",
+          "Habit: split out the upfront, milestone conditions and royalties, and talk about the ‘real value.’"
+        ]
+      }
+    }
+  ]
+}

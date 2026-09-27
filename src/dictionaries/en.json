@@ -153,7 +153,27 @@
         "body": "Choose a role and company type (Korean pharma, multinational, biotech) and answer five questions — including industry questions drawn from recent BIO:ON issues."
       }
     ],
-    "toolsNotify": "Subscribers hear first when they launch."
+    "toolsNotify": "Subscribers hear first when they launch.",
+    "interview": {
+      "title": "Biotech interview question bank",
+      "lede": "Interview questions built from the real industry news BIO:ON has covered. Pick a role, answer out loud first, then compare with the answer points.",
+      "cardTitle": "Interview question bank",
+      "cardBody": "Role-by-role interview questions and answer points, built from newsletter issues.",
+      "cta": "Practise now",
+      "allRoles": "All roles",
+      "rolesLabel": "Role",
+      "kinds": { "concept": "Explain a concept", "issue": "Industry issue", "case": "On-the-job scenario" },
+      "count": " questions",
+      "practice": "🎲 5 random questions",
+      "practiceAll": "Show all questions",
+      "practiceOn": "Practice mode: five questions picked at random. Say your answer out loud first, then open the points.",
+      "show": "Show answer points",
+      "why": "What the interviewer is looking for",
+      "points": "Answer points",
+      "source": "Based on",
+      "issue": "Issue",
+      "note": "Questions and answer points were drafted by AI from the newsletter text and reviewed by the editor. Use them as a skeleton for your answer, not a script."
+    }
   },
   "resources": {
     "title": "Resources",

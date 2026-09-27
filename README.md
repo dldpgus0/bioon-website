@@ -12,6 +12,9 @@ Designed and built by [이예현 (Yaehyun Lee)](https://github.com/dldpgus0) tog
 - **Career** section for aspiring bio/pharma professionals (LinkedIn, résumé, interviews, industry trends)
 - **Interview question bank** (`/career/interview`) — 34 role-tagged mock interview questions with answer points, each built from a newsletter issue (`src/content/interview-bank.json`), with a random 5-question practice mode
 - **FAQ** (`/faq`) — newsletter, subscription, AI use and career questions, with FAQPage structured data
+- **Lead magnets** — the resources page (interview question pack, industry glossary) and the interview bank's answer points unlock after an email sign-up. The subscribe API sets a signed HttpOnly cookie (`src/lib/lead.ts`); `/api/resources/[id]` and `/api/interview-points` check it server-side, and gated content is never in the page HTML
+- **RSS** — `/feed.xml` (Korean) and `/feed.xml?lang=en`, the latest 10 issues
+- **Analytics skeleton** — `src/hooks/useAnalytics.ts` logs events (filters, search, subscribe clicks and submissions, unlocks, downloads) to the console and forwards them to GA4 (`gtag`) or Mixpanel once either snippet is added
 - **Subscribe** form wired to the Stibee API
 - Planned: AI topic tagging, KO→EN translation pipeline, AI résumé feedback, AI mock interview, archive chatbot, paid resources
 
@@ -36,5 +39,7 @@ npm run import     # re-import issues from the newsletter/template folder and ne
 | `public/newsletters/` | Web copies of the email issues (generated) |
 | `newsletter-src/` | Web-only issue sources kept in the repo (English editions of #1–#10), read by `npm run import` |
 | `scripts/prepare-logos.ps1` | Turns the logo PNGs in `brand-src/` into transparent web assets |
+
+Optional: `LEAD_COOKIE_SECRET` signs the lead-magnet unlock cookie (falls back to `STIBEE_API_KEY`).
 
 Environment variables for the subscribe form: `STIBEE_API_KEY`, `STIBEE_LIST_ID`, and optionally `STIBEE_GROUP_KO` / `STIBEE_GROUP_EN` (Stibee group IDs; sign-ups from each language site are assigned to that group).

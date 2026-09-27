@@ -13,6 +13,7 @@ export function LangSwitch({ lang, label }: { lang: "ko" | "en"; label: string }
     <Link
       href={href}
       hrefLang={other}
+      lang={other}
       className="text-[13px] font-medium tracking-wide text-muted transition-colors hover:text-teal"
     >
       {label}

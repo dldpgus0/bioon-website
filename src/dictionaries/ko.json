@@ -124,7 +124,9 @@
     "askTry": "이런 질문은 어때요?",
     "askResults": "개 호에서 찾았어요",
     "askEmpty": "관련된 호를 찾지 못했어요. 다른 단어로 물어보세요.",
-    "askClear": "검색 지우기"
+    "askClear": "검색 지우기",
+    "filtersLabel": "호 필터",
+    "resultsLabel": "호 목록"
   },
   "career": {
     "title": "바이오 커리어",
@@ -177,12 +179,19 @@
       "points": "답변 포인트",
       "source": "이 질문의 근거",
       "issue": "호",
-      "note": "질문과 답변 포인트는 AI가 뉴스레터 본문을 바탕으로 만들고 에디터가 검토했어요. 모범답안이 아니라 답변의 뼈대로 활용하세요."
-    }
+      "note": "질문과 답변 포인트는 AI가 뉴스레터 본문을 바탕으로 만들고 에디터가 검토했어요. 모범답안이 아니라 답변의 뼈대로 활용하세요.",
+      "lockedTitle": "🔒 나머지 답변 포인트는 구독자 전용이에요",
+      "lockedBody": "이메일을 입력하면 모든 질문의 답변 포인트가 바로 열려요.",
+      "lockedShow": "🔒 답변 포인트 열기",
+      "freeNote": "처음 3개 질문의 답변 포인트는 누구나 볼 수 있어요.",
+      "filtersLabel": "질문 필터",
+      "download": "질문 모음 PDF로 받기"
+    },
+    "filtersLabel": "글 분류"
   },
   "resources": {
     "title": "자료실",
-    "lede": "무료 자료는 이메일만 입력하면 받아볼 수 있어요. 유료 자료는 준비 중이에요.",
+    "lede": "무료 자료는 이메일만 입력하면 바로 받을 수 있어요. 유료 자료는 준비 중이에요.",
     "free": "무료",
     "paid": "유료",
     "comingSoon": "준비 중",
@@ -190,20 +199,28 @@
     "items": [
       {
         "title": "바이오 직무 면접 질문 모음",
-        "body": "제약영업·CRA·RA·BD 직무별 빈출 질문과 답변 구조.",
-        "type": "free"
+        "body": "BIO:ON 이슈로 만든 면접 질문 34개와 답변 포인트. BD·RA·임상·Market Access 등 9개 직무별 색인 포함.",
+        "type": "free",
+        "id": "interview-questions"
       },
       {
         "title": "바이오 산업 용어집",
-        "body": "뉴스레터 '이번 주의 단어'를 모은 용어집.",
-        "type": "free"
+        "body": "뉴스레터 '이번 주의 단어' 17개를 정의와 비유로 정리한 용어집.",
+        "type": "free",
+        "id": "glossary"
       },
       {
         "title": "직무별 자소서 템플릿",
         "body": "합격 자소서 구조를 분석한 직무별 템플릿.",
-        "type": "paid"
+        "type": "paid",
+        "id": "cover-letter"
       }
-    ]
+    ],
+    "unlockTitle": "이메일을 입력하고 바로 받기",
+    "consent": "입력하면 BIO:ON Insight 뉴스레터(무료, 매주 화요일)를 구독하게 돼요. 언제든 수신 거부할 수 있어요.",
+    "unlocked": "구독자 인증 완료",
+    "download": "자료 열기 (PDF 저장 가능)",
+    "cancel": "닫기"
   },
   "subscribe": {
     "title": "BIO:ON Insight 구독하기",
@@ -365,5 +382,15 @@
   "footer": {
     "tagline": "바이오·제약 뉴스를 커리어 인사이트로.",
     "built": "Next.js와 Claude Code로 제작"
+  },
+  "a11y": {
+    "skip": "본문으로 건너뛰기",
+    "home": "BIO:ON 홈",
+    "menu": "메뉴",
+    "mainNav": "주 메뉴",
+    "footerNav": "사이트 링크",
+    "newTab": "새 창에서 열림",
+    "rss": "RSS 피드",
+    "profile": "에디터 이예현 프로필 사진"
   }
 }

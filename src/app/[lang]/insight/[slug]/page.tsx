@@ -35,7 +35,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
       <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
         <p className="text-lg text-muted">{dict.insight.noOtherLang}</p>
         <Link href={`/${other}/insight/${slug}`} className="mt-6 inline-block font-semibold text-teal hover:underline">
-          {otherIssue.title} →
+          {otherIssue.title}<span aria-hidden> →</span>
         </Link>
       </div>
     );
@@ -44,7 +44,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
   return (
     <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <Link href={`/${lang}/insight`} className="text-sm font-medium text-muted hover:text-ink">
-        ← {dict.insight.back}
+        <span aria-hidden>← </span>{dict.insight.back}
       </Link>
 
       <header className="mt-6">
@@ -62,7 +62,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
           <span className="ml-auto text-sm">
             {otherIssue ? (
               <Link href={`/${other}/insight/${slug}`} hrefLang={other} className="font-semibold text-brand hover:underline">
-                {dict.insight.otherLang} →
+                {dict.insight.otherLang}<span aria-hidden> →</span>
               </Link>
             ) : (
               lang === "ko" && <span className="text-muted">{dict.insight.noOtherLang}</span>

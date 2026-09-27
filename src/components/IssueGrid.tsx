@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useAnalytics } from "@/hooks/useAnalytics";
 import type { Issue } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n";
 import { searchIssues } from "@/lib/search";
@@ -11,6 +12,7 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
   const [topic, setTopic] = useState<TopicId | null>(null);
   const [role, setRole] = useState<RoleId | null>(null);
   const [query, setQuery] = useState("");
+  const { track } = useAnalytics();
 
   // ?q= makes a search shareable. Read after mount so the archive itself stays prerendered.
   useEffect(() => {
@@ -36,6 +38,15 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
   const topics = topicIds.filter((t) => issues.some((i) => i.topics.includes(t)));
   const roles = roleIds.filter((r) => issues.some((i) => i.roles.includes(r)));
 
+  const pickTopic = (t: TopicId | null) => {
+    setTopic(t);
+    track("filter_select", { page: "insight", type: "topic", value: t ?? "all", label: t ? topicLabel(t, lang) : "all", lang });
+  };
+  const pickRole = (r: RoleId | null) => {
+    setRole(r);
+    track("filter_select", { page: "insight", type: "role", value: r ?? "all", label: r ? roleLabel(r, lang) : "all", lang });
+  };
+
   const chip = (active: boolean) =>
     `rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
       active ? "border-teal bg-teal text-white" : "border-line bg-white text-muted hover:border-teal hover:text-teal"
@@ -43,14 +54,16 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
 
   return (
     <>
-      <section className="mb-10 rounded-2xl border border-teal/30 bg-teal-soft/50 p-6">
+      <section role="search" aria-label={dict.insight.askTitle} className="mb-10 rounded-2xl border border-teal/30 bg-teal-soft/50 p-6">
         <h2 className="text-lg font-bold text-ink">{dict.insight.askTitle}</h2>
         <p className="mt-1 text-sm text-muted">{dict.insight.askLede}</p>
         <form
           className="mt-4 flex gap-2"
           onSubmit={(e) => {
             e.preventDefault();
-            ask(String(new FormData(e.currentTarget).get("q") ?? ""));
+            const q = String(new FormData(e.currentTarget).get("q") ?? "");
+            ask(q);
+            if (q.trim()) track("search", { query: q, results: searchIssues(filtered, q, lang).length, lang });
           }}
         >
           <input
@@ -76,7 +89,10 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
               <button
                 key={q}
                 type="button"
-                onClick={() => ask(q)}
+                onClick={() => {
+                  ask(q);
+                  track("search", { query: q, suggested: true, lang });
+                }}
                 className="rounded-full border border-line bg-white px-3 py-1 text-left text-ink transition-colors hover:border-teal hover:text-teal"
               >
                 {q}
@@ -86,32 +102,36 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
         )}
       </section>
 
-      <div className="space-y-4">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-1 w-20 text-xs font-semibold uppercase tracking-wider text-ink">{dict.insight.topicsLabel}</span>
-          <button type="button" onClick={() => setTopic(null)} className={chip(topic === null)}>
+      <aside aria-label={dict.insight.filtersLabel} className="space-y-4">
+        <div role="group" aria-labelledby="filter-topics" className="flex flex-wrap items-center gap-2">
+          <span id="filter-topics" className="mr-1 w-20 text-xs font-semibold uppercase tracking-wider text-ink">
+            {dict.insight.topicsLabel}
+          </span>
+          <button type="button" onClick={() => pickTopic(null)} aria-pressed={topic === null} className={chip(topic === null)}>
             {dict.insight.all}
           </button>
           {topics.map((t) => (
-            <button key={t} type="button" onClick={() => setTopic(t === topic ? null : t)} className={chip(t === topic)}>
+            <button key={t} type="button" onClick={() => pickTopic(t === topic ? null : t)} aria-pressed={t === topic} className={chip(t === topic)}>
               {topicLabel(t, lang)}
             </button>
           ))}
         </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-1 w-20 text-xs font-semibold uppercase tracking-wider text-ink">{dict.insight.rolesLabel}</span>
-          <button type="button" onClick={() => setRole(null)} className={chip(role === null)}>
+        <div role="group" aria-labelledby="filter-roles" className="flex flex-wrap items-center gap-2">
+          <span id="filter-roles" className="mr-1 w-20 text-xs font-semibold uppercase tracking-wider text-ink">
+            {dict.insight.rolesLabel}
+          </span>
+          <button type="button" onClick={() => pickRole(null)} aria-pressed={role === null} className={chip(role === null)}>
             {dict.insight.all}
           </button>
           {roles.map((r) => (
-            <button key={r} type="button" onClick={() => setRole(r === role ? null : r)} className={chip(r === role)}>
+            <button key={r} type="button" onClick={() => pickRole(r === role ? null : r)} aria-pressed={r === role} className={chip(r === role)}>
               {roleLabel(r, lang)}
             </button>
           ))}
         </div>
-      </div>
+      </aside>
 
-      <p className="mt-6 text-sm text-muted">
+      <p className="mt-6 text-sm text-muted" aria-live="polite">
         {shown.length}
         {searching ? dict.insight.askResults : dict.insight.count}
         {(topic || role) && (
@@ -128,11 +148,11 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
         )}
       </p>
 
-      <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <section aria-label={dict.insight.resultsLabel} className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {hits.map(({ issue, line }) => (
           <IssueCard key={issue.slug} issue={issue} dict={dict} match={line} />
         ))}
-      </div>
+      </section>
       {shown.length === 0 && <p className="mt-8 text-muted">{searching ? dict.insight.askEmpty : dict.insight.empty}</p>}
     </>
   );

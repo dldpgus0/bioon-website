@@ -40,12 +40,12 @@ export default async function FaqPage({ params }: PageProps<"/[lang]/faq">) {
                 <details key={item.q} className="group px-6 py-4">
                   <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-semibold text-ink">
                     {item.q}
-                    <span className="mt-0.5 shrink-0 text-teal transition-transform group-open:rotate-45">+</span>
+                    <span aria-hidden className="mt-0.5 shrink-0 text-teal transition-transform group-open:rotate-45">+</span>
                   </summary>
                   <p className="mt-3 leading-relaxed text-muted">{item.a}</p>
                   {"link" in item && item.link && (
                     <Link href={`/${lang}${item.link.href}`} className="mt-3 inline-block text-sm font-semibold text-brand hover:underline">
-                      {item.link.label} →
+                      {item.link.label}<span aria-hidden> →</span>
                     </Link>
                   )}
                 </details>

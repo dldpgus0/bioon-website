@@ -1,0 +1,263 @@
+{
+  "_meta": {
+    "note": "Word of the Week from each BIO:ON Insight issue, extracted from the issue HTML (definition and analogy). Used for the gated glossary download.",
+    "generated": "2026-09-27"
+  },
+  "terms": [
+    {
+      "issue": "2026-06-07",
+      "term": {
+        "ko": "유전자편집 파이프라인",
+        "en": "Gene-Editing Pipeline"
+      },
+      "definition": {
+        "ko": "유전자편집(gene editing)은 CRISPR-Cas9 같은 도구로 세포 속 DNA를 정밀하게 잘라 수정하는 기술이에요. 파이프라인(pipeline)은 전임상 → 1상 → 2상 → 3상 → 허가 순으로 줄 서 있는 신약 후보들의 라인업이죠. '유전자편집 파이프라인'은 이 기술로 만든 치료제 후보들이 얼마나 준비됐는지를 한눈에 보여주는 로드맵이에요. CRISPR Therapeutics는 이미 겸상적혈구병 치료제 Casgevy로 FDA 허가를 받았고, 심혈관·혈액암으로 파이프라인을 넓혀가고 있어요.",
+        "en": "Gene editing uses tools like CRISPR-Cas9 to precisely cut and correct DNA inside cells. A pipeline is a company’s line-up of drug candidates queued up through preclinical → Phase 1 → Phase 2 → Phase 3 → approval. A ‘gene-editing pipeline’ is the roadmap showing how far along each therapy built with this technology is. CRISPR Therapeutics already won FDA approval for the sickle cell disease therapy Casgevy, and is expanding its pipeline into cardiovascular disease and blood cancers."
+      },
+      "analogy": {
+        "ko": "유전자편집은 세포 안의 'DNA 문서'에서 오타를 찾아 수정하는 편집기예요. Casgevy는 겸상적혈구병 환자의 혈액세포에서 잘못된 유전자 코드를 직접 고쳐요. 파이프라인은 이 편집기로 앞으로 고칠 수 있는 '문서 목록'이고요 — 지금은 심혈관 콜레스테롤 유전자, 혈액암 T세포가 다음 줄에 서 있어요.",
+        "en": "Gene editing is an editor that finds and fixes typos in the cell’s ‘DNA document.’ Casgevy directly corrects the faulty genetic code in the blood cells of sickle cell patients. The pipeline is the list of ‘documents’ this editor will fix next — right now, a cholesterol gene for heart disease and T cells for blood cancer are next in line."
+      }
+    },
+    {
+      "issue": "2026-06-09",
+      "term": {
+        "ko": "바르부르크 효과",
+        "en": "Warburg Effect"
+      },
+      "definition": {
+        "ko": "정상 세포는 산소가 있으면 미토콘드리아의 산화적 인산화(OXPHOS)로 에너지를 효율적으로 만들어요. 그런데 암세포는 산소가 충분해도 굳이 비효율적인 해당과정(glycolysis)에 의존해요. 1920년대 이를 발견한 오토 바르부르크의 이름을 따 '바르부르크 효과'라고 불러요. 암세포가 빠르게 증식하려고 대사를 재배선(rewiring)한 결과예요.",
+        "en": "When oxygen is available, normal cells make energy efficiently through oxidative phosphorylation (OXPHOS) in the mitochondria. Cancer cells, though, lean on inefficient glycolysis even when there’s plenty of oxygen. It’s called the ‘Warburg effect,’ after Otto Warburg, who discovered it in the 1920s — the result of cancer cells rewiring their metabolism to grow fast."
+      },
+      "analogy": {
+        "ko": "고속도로(미토콘드리아)가 멀쩡한데도 암세포는 일부러 좁은 골목길(해당과정)로만 다녀요. BPM31510은 암세포를 다시 고속도로로 끌어내(OXPHOS로 전환) 그 과정에서 생기는 산화 스트레스로 암세포를 무너뜨리는 전략이에요.",
+        "en": "The motorway (the mitochondria) is perfectly fine, yet cancer cells deliberately stick to narrow back alleys (glycolysis). BPM31510’s strategy is to force cancer cells back onto the motorway (switching them to OXPHOS) and let the oxidative stress this creates bring them down."
+      }
+    },
+    {
+      "issue": "2026-06-15",
+      "term": {
+        "ko": "장기지속형",
+        "en": "Long-Acting"
+      },
+      "definition": {
+        "ko": "장기지속형(Long-acting)은 약물이 체내에서 천천히 방출되거나 오래 머물도록 설계된 제형 또는 분자 전략이에요. 기존엔 하루 한 알, 매일 주사가 기본이었지만 — 장기지속형은 주 1회·월 1회로 투약 간격을 획기적으로 늘려요. 이번 주 길리어드·머크의 ISL/LEN 주 1회 경구 HIV 치료제와 한국 기업들의 월 1회 비만약 파이프라인이 모두 이 트렌드를 타고 있어요.",
+        "en": "Long-acting describes a formulation or molecular strategy designed so a drug is released slowly or stays in the body for a long time. The norm used to be one pill a day or a daily injection — long-acting drugs stretch dosing out to once a week or once a month. This week’s once-weekly oral HIV treatment ISL/LEN from Gilead and Merck and Korean companies’ once-monthly obesity drug pipelines are both riding this trend."
+      },
+      "analogy": {
+        "ko": "매일 밥을 먹어야 유지되는 에너지 vs. 천천히 소화되는 영양제 한 캡슐. 빠르게 흡수되는 약은 즉각적이지만 매일 복용해야 해요. 장기지속형은 체내에서 '조금씩 녹아내리는 양초'처럼 설계돼, 한 번 투여로 일주일 혹은 한 달을 커버해요.",
+        "en": "Energy that only lasts if you eat every day vs. a single slow-release supplement capsule. Fast-absorbed drugs act immediately but must be taken daily. Long-acting drugs are designed like ‘a candle that melts little by little’ inside the body, covering a week or a month with one dose."
+      }
+    },
+    {
+      "issue": "2026-06-16",
+      "term": {
+        "ko": "이중특이항체 (PD-L1×VEGF)",
+        "en": "Bispecific Antibody (PD-L1×VEGF)"
+      },
+      "definition": {
+        "ko": "보통 항체 한 개는 표적 하나에만 달라붙어요. 이중특이항체(bispecific antibody)는 한 분자에 서로 다른 두 표적을 동시에 붙잡는 '집게'를 달아둔 항체예요. 이번 주 pumitamig은 면역관문 단백질 PD-L1과 혈관신생인자 VEGF-A를 동시에 잡아요. 면역 브레이크를 풀면서(PD-L1) 종양 혈관도 정상화(VEGF-A)하는, 두 약을 하나로 합친 셈이에요.",
+        "en": "A normal antibody sticks to just one target. A bispecific antibody is fitted with two ‘pincers’ that grab two different targets on one molecule at the same time. This week’s pumitamig grabs the immune checkpoint protein PD-L1 and the blood-vessel growth factor VEGF-A together. It releases the immune brake (PD-L1) while also normalising tumour blood vessels (VEGF-A) — two drugs rolled into one."
+      },
+      "analogy": {
+        "ko": "단일항체가 한 손으로 문고리 하나만 잡는 손이라면, 이중특이항체는 양손으로 두 문고리를 동시에 잡는 손이에요. pumitamig은 한 손으론 'PD-L1' 문(면역세포의 브레이크)을 풀고, 다른 손으론 'VEGF-A' 문(엉킨 종양 혈관)을 정리해요. 두 알약을 따로 먹는 대신 한 분자가 두 일을 하니, 효과는 겹쳐 키우고 투여는 단순해지는 걸 노려요.",
+        "en": "If a single antibody is one hand gripping one door handle, a bispecific is two hands gripping two handles at once. With one hand pumitamig opens the ‘PD-L1’ door (the immune cells’ brake), and with the other it tidies up the ‘VEGF-A’ door (tangled tumour vessels). Instead of taking two drugs separately, one molecule does both jobs, aiming for stacked effects and simpler dosing."
+      }
+    },
+    {
+      "issue": "2026-06-30",
+      "term": {
+        "ko": "엑스비보 vs 인비보 세포치료",
+        "en": "Ex Vivo vs In Vivo Cell Therapy"
+      },
+      "definition": {
+        "ko": "엑스비보(Ex Vivo)는 환자 세포를 몸 밖으로 꺼내 실험실에서 유전자를 편집한 뒤 다시 주입하는 방식이에요. 지금까지 나온 대부분의 CAR-T 치료제(킴리아, 예스카타 등)가 이 방식이에요. 반면 인비보(In Vivo)는 세포를 꺼내지 않고, mRNA나 바이러스 벡터에 담긴 유전자 지시문을 체내에 주사하면 몸속 세포가 스스로 변환되는 방식이에요. Moderna mRNA-6007이 바로 이 접근법을 자가면역 치료에 적용하고 있어요.",
+        "en": "The concept behind the key difference between this week’s CARsgen gastric cancer CAR-T (Story 1) and Moderna’s mRNA-6007 (Story 2)"
+      },
+      "analogy": {
+        "ko": "엑스비보는 '공장에서 맞춤 제작한 뒤 배송하는 방식'이에요. 내 몸의 세포를 공장(실험실)으로 보내 수 주 동안 개조한 뒤 받는 거예요. 반면 인비보는 '현장에서 즉석 조립하는 방식' — 재료(mRNA 지시문)를 몸속으로 보내면 세포가 스스로 변환돼요. 배송 기간·비용이 없어지는 대신, 현장 조립이 정확히 작동하는지 검증하는 게 핵심 과제예요.",
+        "en": "Ex vivo is ‘custom-made in a factory, then shipped.’ Your cells go to the factory (the lab) to be modified for weeks before you get them back. In vivo is ‘assembled on site’ — send the parts (mRNA instructions) into the body and the cells convert themselves. Shipping time and cost disappear, but the key challenge is proving that on-site assembly works exactly as intended."
+      }
+    },
+    {
+      "issue": "2026-07-06",
+      "term": {
+        "ko": "특허절벽",
+        "en": "Patent Cliff"
+      },
+      "definition": {
+        "ko": "특허절벽(Patent Cliff)이란 블록버스터 의약품의 독점 특허가 만료되는 시점을 말해요. 특허가 살아 있는 동안은 원개발사가 고가로 독점 판매하지만, 만료 순간 제네릭·바이오시밀러가 진입해 가격이 80~90% 이상 떨어지고 매출이 절벽처럼 추락해요. 이번 주 세 뉴스는 모두 이 특허절벽을 앞두고, 혹은 이미 직면한 빅파마들이 내린 전략적 결정이에요 — AI 파트너십, 제네릭 공방, 대규모 M&A.",
+        "en": "The root of this week’s three strategies: Takeda’s AI deal (Story 1), generic tirzepatide (Story 2) and AbbVie’s M&A (Story 3)"
+      },
+      "analogy": {
+        "ko": "특허는 '20년짜리 독점 레시피 면허'예요. 내가 개발한 약의 레시피를 20년간 나만 쓸 수 있어요. 그 기간이 끝나면 누구나 같은 레시피로 훨씬 싸게 만들어요. 빅파마에게 특허절벽은 그 면허 만료일이에요 — 도착 전까지 새 레시피(신약 파이프라인)를 반드시 준비해야 해요.",
+        "en": "A patent is ‘a 20-year exclusive recipe licence.’ For 20 years, only you can use the recipe for the drug you developed. When that period ends, anyone can make it with the same recipe, far more cheaply. For Big Pharma, the patent cliff is the licence’s expiry date — new recipes (a pipeline of new drugs) must be ready before it arrives."
+      }
+    },
+    {
+      "issue": "2026-07-12",
+      "term": {
+        "ko": "항체-약물 접합체 (ADC)",
+        "en": "Antibody-Drug Conjugate (ADC)"
+      },
+      "definition": {
+        "ko": "ADC(항체-약물 접합체)는 두 가지를 하나로 연결한 항암 약물이에요. ① 암세포를 정확히 찾아가는 항체(guided missile)와 ② 암세포를 죽이는 강력한 세포독성 페이로드(warhead)를 화학적으로 연결(접합)해요. 항체가 암세포 표면의 특정 단백질을 인식하고 달라붙으면, 내부에서 독소가 방출돼 암세포만 선택적으로 파괴해요. GSK·한소가 Phase 3에서 생존 연장을 입증한 risvutatug rezetecan은 B7-H3 단백질을 표적으로 삼은 ADC예요 — 다수의 암종에서 과발현되는 이 단백질에 대한 최초의 Phase 3 생존 데이터예요.",
+        "en": "An ADC (antibody-drug conjugate) is a cancer drug that links two things into one: ① an antibody (the guided missile) that finds cancer cells precisely, chemically linked (conjugated) to ② a powerful cytotoxic payload (the warhead) that kills them. When the antibody recognises and binds a specific protein on the cancer cell surface, the toxin is released inside, selectively destroying only cancer cells. Risvutatug rezetecan, which GSK and Hansoh proved extends survival in Phase 3, is an ADC targeting the B7-H3 protein — the first Phase 3 survival data for this protein, which is overexpressed in many cancer types."
+      },
+      "analogy": {
+        "ko": "기존 항암화학요법은 '폭격기'예요 — 암세포 근처 정상 세포까지 피해를 줘요. ADC는 '스마트 미사일'이에요 — 암세포의 주소(항체)를 달고 날아가 정확히 그 집(암세포)에서만 폭발해요. 탈모·구역·면역저하 부작용을 줄이면서도 항암 효과를 높이는 게 ADC의 핵심 약속이에요.",
+        "en": "Traditional chemotherapy is a ‘bomber’ — it hits normal cells near the cancer too. An ADC is a ‘smart missile’ — it flies with the cancer cell’s address (the antibody) and explodes only at that exact house (the cancer cell). The core promise of ADCs is stronger anti-cancer effect with fewer side effects like hair loss, nausea and weakened immunity."
+      }
+    },
+    {
+      "issue": "2026-07-19",
+      "term": {
+        "ko": "완전대응서신 (CRL)",
+        "en": "Complete Response Letter (CRL)"
+      },
+      "definition": {
+        "ko": "CRL(완전대응서신)은 FDA가 신약 허가 신청을 승인하지 않을 때 제약사에 보내는 공식 거절 편지예요. 허가를 받으려면 무엇을 더 보완해야 하는지(추가 임상 데이터, 제조 공정 개선, 라벨링 수정 등)를 구체적으로 적은 문서예요. 중요한 점은 CRL은 \"영구 거절\"이 아니라 \"보완 후 재신청\"을 요구하는 서신이에요. 하지만 기업 주가는 CRL 발표 직후 급락하는 경우가 많아요 — 이 편지에 담긴 내용이 이제 공개되기 시작했어요.",
+        "en": "A CRL (complete response letter) is the formal rejection letter the FDA sends a drug company when it doesn’t approve a new drug application. It spells out what must be fixed to win approval (more clinical data, manufacturing improvements, labelling changes and so on). Importantly, a CRL isn’t a ‘permanent rejection’ but a letter asking the company to ‘fix and resubmit’. Even so, share prices often plunge right after a CRL is announced — and the contents of these letters are now starting to be made public."
+      },
+      "analogy": {
+        "ko": "FDA의 CRL은 대학원 논문 심사위원회가 보내는 '수정 요구 서한'과 같아요. 통과 못 한 것은 맞지만, 왜 어디서 무엇을 더 해야 하는지 구체적으로 알려줘요. 지금까지 이 편지는 기업과 FDA 사이의 비밀이었는데 — 이제 일반에 공개되기 시작한 거예요.",
+        "en": "An FDA CRL is like the ‘revisions required’ letter a thesis committee sends. You didn’t pass, but it tells you specifically why, where and what more you need to do. Until now this letter was a secret between the company and the FDA — and now it’s starting to be made public."
+      }
+    },
+    {
+      "issue": "2026-07-28",
+      "term": {
+        "ko": "오프더셸프",
+        "en": "Off-the-Shelf"
+      },
+      "definition": {
+        "ko": "오프더셸프(Off-the-Shelf)는 환자 개개인의 세포를 채취·가공하는 과정 없이, 이미 만들어져 창고에 있는 약을 바로 꺼내 투여할 수 있다는 뜻이에요. CAR-T 세포치료제는 환자의 T세포를 채취해 유전자를 조작한 뒤 다시 주입하는 '맞춤 제조' 방식이라 보통 몇 주가 걸려요. 반면 Tecvayli·Talvey 같은 이중항체(bispecific antibody)는 공장에서 대량 생산된 완제 의약품이라 처방 즉시 투여할 수 있어요. 이번 주 J&J가 89% 진행 위험 감소라는 CAR-T급 성적을 오프더셸프 약으로 냈다는 게 핵심이에요.",
+        "en": "Off-the-shelf means a drug that’s already made and sitting in storage can be taken out and given right away, with no need to collect and process each patient’s own cells. CAR-T cell therapy uses a ‘custom manufacturing’ model — collecting the patient’s T cells, genetically modifying them and infusing them back — which usually takes weeks. Bispecific antibodies like Tecvayli and Talvey, on the other hand, are finished medicines mass-produced in a factory, so they can be given as soon as they’re prescribed. The key this week is that J&J achieved CAR-T-level results — an 89% lower risk of progression — with off-the-shelf drugs."
+      },
+      "analogy": {
+        "ko": "CAR-T는 몸에 맞춰 재단하는 '맞춤 정장'이에요 — 치수를 재고, 재단하고, 몇 주를 기다려야 해요. 이중항체 병용은 매장에 걸려 있는 '기성복'이에요 — 사이즈만 맞으면 그 자리에서 바로 입을 수 있어요. 맞춤 정장이 더 잘 맞을 수 있지만, 환자에게 몇 주는 생사가 걸린 시간이에요.",
+        "en": "CAR-T is a ‘bespoke suit’ tailored to your body — you get measured, it gets cut, and you wait weeks. A bispecific combo is ‘off the rack’ — if the size fits, you wear it on the spot. The bespoke suit may fit better, but for a patient, those weeks can be a matter of life and death."
+      }
+    },
+    {
+      "issue": "2026-08-04",
+      "term": {
+        "ko": "자문위원회 (AdComm)",
+        "en": "FDA Advisory Committee (AdComm)"
+      },
+      "definition": {
+        "ko": "FDA 자문위원회(Advisory Committee)는 외부 전문가들이 모여 신약의 안전성·유효성을 검토하고 승인 여부에 대해 투표로 권고 의견을 내는 위원회예요. 중요한 건 이 표결이 법적 구속력이 없다는 점이에요 — 최종 승인 여부는 FDA 본심사에서 별도로 결정돼요. 하지만 실제로는 FDA가 자문위 권고를 따르는 경우가 대다수라, 시장은 표결 결과를 사실상 승인의 '중간 판결'처럼 받아들여요. RP1은 이 표결에서 찬성표를 얻으며 두 번의 CRL(거절)을 딛고 반전의 발판을 마련했어요.",
+        "en": "An FDA advisory committee is a panel of outside experts that reviews a new drug’s safety and efficacy and votes to give a recommendation on whether to approve it. The important point is that the vote isn’t legally binding — the final approval decision is made separately in the FDA’s own review. In practice, though, the FDA follows the committee’s recommendation in most cases, so the market treats the vote as a de facto ‘interim verdict’ on approval. By winning a favourable vote, RP1 set up a comeback after two CRLs (rejections)."
+      },
+      "analogy": {
+        "ko": "자문위 표결은 대학 입학사정관 면접과 비슷해요 — 면접관들이 만장일치로 \"이 학생을 뽑으라\"고 추천해도, 최종 합격 통지는 입학처(FDA)가 별도로 보내요. 면접관 추천이 강력한 신호인 건 맞지만, 그 자체가 합격증은 아니에요.",
+        "en": "An advisory committee vote is like an admissions interview — even if the interviewers unanimously recommend ‘admit this student,’ the final offer letter comes separately from the admissions office (the FDA). The interviewers’ recommendation is a strong signal, but it isn’t the offer itself."
+      }
+    },
+    {
+      "issue": "2026-08-18",
+      "term": {
+        "ko": "분자 접착제 (CELMoD)",
+        "en": "Molecular Glue (CELMoD)"
+      },
+      "definition": {
+        "ko": "기존 저해제(inhibitor)는 질병 유발 단백질에 달라붙어 기능만 막는 방식이에요. 반면 분자 접착제(molecular glue)는 표적 단백질과 세포 내 '폐기 처리 효소'인 E3 리가아제(cereblon)를 물리적으로 붙여줘요. 이렇게 붙으면 세포는 그 단백질에 \"폐기 딱지\"(유비퀴틴)를 붙이고, 프로테아좀이라는 분해 기계가 통째로 분해해 없애버려요. 단백질의 기능만 막는 게 아니라 존재 자체를 지워버리는 것이 핵심이에요. BMS의 Zenbexus는 이 기전으로 세계 최초 승인을 받았어요.",
+        "en": "A traditional inhibitor binds a disease-driving protein and blocks its function — nothing more. A molecular glue does something different: it physically links the target protein to E3 ligase (cereblon), the cell's own \"disposal enzyme.\" Once linked, the cell tags the protein with ubiquitin — a molecular \"trash sticker\" — and the proteasome, the cell's shredder, breaks it down entirely. The point isn't just blocking function — it's erasing the protein's existence. That's the mechanism behind BMS's world-first approval."
+      },
+      "analogy": {
+        "ko": "기존 저해제는 고장 난 기계에 청테이프를 붙여 스위치를 못 누르게 막는 거예요 — 기계는 여전히 그 자리에 있어요. 분자 접착제는 그 고장 난 기계에 '폐기물' 스티커를 붙여서 청소차가 통째로 실어가게 만드는 거예요 — 기계 자체가 사라져요.",
+        "en": "A traditional inhibitor is masking tape over a broken machine's power switch — the machine is still sitting right there. A molecular glue slaps a \"garbage\" sticker on that same broken machine so the trash truck hauls the whole thing away — the machine is simply gone."
+      }
+    },
+    {
+      "issue": "2026-08-25",
+      "term": {
+        "ko": "GLP-1 길항제",
+        "en": "GLP-1 Receptor Antagonist"
+      },
+      "definition": {
+        "ko": "GLP-1(글루카곤 유사 펩타이드-1)은 원래 인슐린 분비를 촉진하고 식욕을 억제하는 호르몬이에요. 오젬픽·위고비·마운자로 같은 요즘 가장 핫한 비만·당뇨 치료제는 전부 이 수용체를 \"활성화\"하는 작용제(agonist)예요. 그런데 위절제술을 받은 일부 환자는 몸이 GLP-1을 과도하게 분비해 인슐린이 지나치게 많이 나오고, 그 결과 위험할 정도로 혈당이 떨어지는 저혈당증(PBH)을 겪어요. 아벡시티드는 이 수용체를 정반대로 \"차단\"하는 길항제(antagonist)예요 — 같은 수용체, 정반대 작용으로 정반대 문제를 풀어요.",
+        "en": "GLP-1 is a hormone that normally triggers insulin release and suppresses appetite. Ozempic, Wegovy, and Mounjaro — the biggest obesity and diabetes drugs on the market right now — are all agonists that activate that same receptor. But some patients who've had bariatric surgery release too much GLP-1 on their own, triggering excess insulin and dangerously low blood sugar (post-bariatric hypoglycemia, or PBH). Avexitide does the opposite: it's an antagonist that blocks that receptor. Same receptor, opposite action, opposite problem solved."
+      },
+      "analogy": {
+        "ko": "GLP-1 작용제(오젬픽 등)는 가속 페달을 밟아 식욕과 혈당을 조절하는 약이에요. 반대로 길항제(아벡시티드)는 브레이크를 밟아 과도하게 나온 인슐린 반응을 진정시키는 약이에요. 같은 자동차, 정반대 페달이에요.",
+        "en": "GLP-1 agonists (Ozempic and friends) are the gas pedal — they control appetite and blood sugar by stepping on it. Avexitide is the brake pedal — it calms an overactive insulin response by stepping on that instead. Same car, opposite pedal."
+      }
+    },
+    {
+      "issue": "2026-09-01",
+      "term": {
+        "ko": "PD-1×VEGF 이중항체",
+        "en": "PD-1×VEGF Bispecific Antibody"
+      },
+      "definition": {
+        "ko": "지난 호에서 다룬 AZ의 볼루스토믹은 PD-1과 CTLA-4, 같은 종류의 면역 \"브레이크\"를 두 개 동시에 푸는 이중항체였어요 — 결과는 임상 중단이었죠. 반면 아케소의 이보네시맙은 PD-1(면역 브레이크 해제)과 VEGF(종양에 산소·영양을 공급하는 혈관 생성 억제), 전혀 다른 두 기전을 하나로 묶었어요. 브레이크 두 개를 푸는 것과, 브레이크를 풀면서 동시에 적의 보급선을 끊는 것은 완전히 다른 전략이에요.",
+        "en": "Last issue's AstraZeneca story was about a bispecific that combined PD-1 and CTLA-4 — two checkpoint \"brakes\" of the same kind, released at once (result: trial halted). Akeso's ivonescimab does something different: it combines PD-1 (releasing an immune brake) with VEGF (blocking the blood vessels that feed a tumor) — two completely different mechanisms in one antibody. Releasing two brakes is one strategy. Releasing a brake while also cutting off the enemy's supply line is a different one entirely."
+      },
+      "analogy": {
+        "ko": "축구에서 수비수 한 명을 더 빼서 공격을 강화하는 것(AZ, 같은 포지션을 중복 배치)과, 공격 인원은 그대로 두고 상대 골키퍼의 시야까지 가리는 것(아케소, 전혀 다른 방식으로 동시 공략)은 완전히 다른 전술이에요.",
+        "en": "Pulling one more defender off the field to reinforce your attack (AstraZeneca — doubling up on the same position) is one tactic. Leaving your attackers as they are but also blinding the opposing goalkeeper (Akeso — attacking on a completely different front at the same time) is a different one. Same sport, very different game plan."
+      }
+    },
+    {
+      "issue": "2026-09-08",
+      "term": {
+        "ko": "안티센스 올리고뉴클레오티드 (ASO)",
+        "en": "Antisense Oligonucleotide (ASO)"
+      },
+      "definition": {
+        "ko": "우리 몸은 DNA(설계도) → mRNA(작업지시서) → 단백질(완성품) 순서로 물질을 만들어요. 대부분의 약(저분자·항체)은 이미 만들어진 완성품 단계에서 작동하죠. ASO는 짧게 합성한 유전자 조각으로, 특정 mRNA에 달라붙어 그 단백질이 아예 만들어지지 않게 하거나 잘못 만들어진 부분을 교정해요. 알렉산더병은 GFAP라는 단백질이 뇌세포에 과하게 쌓여 생기는데, zilganersen은 GFAP mRNA를 표적해 독성 단백질 생산 자체를 줄여요.",
+        "en": "Your cells make things in a fixed order: DNA (the blueprint) → mRNA (the work order) → protein (the finished product). Most drugs — small molecules, antibodies — act on the finished protein. An ASO is a short, lab-made strand of genetic code that binds a specific mRNA and stops that protein from being made (or corrects how it's spliced). Alexander disease is driven by too much of a protein called GFAP building up in brain cells; zilganersen targets GFAP mRNA to turn the production down at the source."
+      },
+      "analogy": {
+        "ko": "공장에서 불량품이 계속 나온다고 해봐요. 저분자·항체 약은 이미 나온 불량품을 하나하나 골라내는 방식이에요. ASO는 아예 생산 라인에 붙은 '작업지시서'를 회수해 불량품이 처음부터 안 만들어지게 하는 방식이고요. 원인에 더 가까운 지점에서 개입하는 거예요.",
+        "en": "A factory keeps turning out defective units. A small-molecule or antibody drug is like inspecting the line and pulling the bad units one by one. An ASO is like walking up to the line and removing the work order so the defective units are never built. It intervenes closer to the cause."
+      }
+    },
+    {
+      "issue": "2026-09-15",
+      "term": {
+        "ko": "대리지표 vs 전체생존",
+        "en": "Surrogate Endpoint vs Overall Survival"
+      },
+      "definition": {
+        "ko": "임상시험이 증명해야 하는 \"진짜 결과\"는 결국 환자가 얼마나 오래, 얼마나 잘 사는가예요. 이를 직접 재는 게 전체생존기간(OS, Overall Survival) 같은 확정 임상종결점이에요. 그런데 OS를 확인하려면 수년이 걸리니, 실무에서는 종양 크기 감소·무진행 생존기간(PFS)처럼 \"최종 결과와 상관관계가 있다고 알려진\" 대리지표로 먼저 승인하는 경우가 많아요. 문제는 상관관계가 100%는 아니라는 것 — 대리지표가 좋아졌다고 OS까지 반드시 좋아진다는 보장은 없어요.",
+        "en": "vs. Overall Survival — the key difference between ivonescimab's final data (Story 1) and camizestrant's approval basis (Story 2)"
+      },
+      "analogy": {
+        "ko": "OS는 기말고사 성적이에요 — 한 학기 전체를 다 봐야 나와요. 대리지표는 중간고사·쪽지시험이고요. 중간고사를 잘 보면 기말고사도 잘 볼 확률이 높지만, 100% 보장은 아니죠. 이번 주 이보네시맙은 \"기말고사까지 다 본\" 성적이고, 카미제스트란트는 \"중간고사 성적으로 먼저 합격시켜준\" 케이스예요.",
+        "en": "OS is the final exam — you only get the grade after the whole semester. A surrogate endpoint is the midterm. Ace the midterm and you're likely to pass the final, but it's not guaranteed. This week, ivonescimab is a final-exam grade. Camizestrant is a \"let's admit them on the midterm\" case."
+      }
+    },
+    {
+      "issue": "2026-09-22",
+      "term": {
+        "ko": "제조·품질관리 (CMC)",
+        "en": "CMC (Chemistry, Manufacturing & Controls)"
+      },
+      "definition": {
+        "ko": "CMC는 \"약을 어떻게 만들고, 어떻게 품질을 보증하나\"를 다루는 분야예요. 효능·안전성 임상이 \"이 약이 듣는가\"를 증명한다면, CMC는 \"이 약을 매번 똑같은 품질로 만들 수 있는가\"를 증명해요. FDA는 임상 데이터가 아무리 좋아도 제조 시설·공정·품질 기준이 부족하면 허가를 내주지 않아요. 특히 유전자치료제·세포치료제·방사성의약품처럼 '살아있거나 금방 힘을 잃는' 약일수록 CMC가 승인과 공급 전체를 좌우해요.",
+        "en": "CMC covers how a drug is made and how its quality is guaranteed. Clinical trials prove \"does this drug work?\"; CMC proves \"can you make it the same way, every time?\" The FDA won't approve a drug on great clinical data alone if the facility, process, or quality controls fall short. And for gene therapies, cell therapies, and radiopharmaceuticals — drugs that are alive or fast-fading — CMC shapes approval and supply more than anywhere else."
+      },
+      "analogy": {
+        "ko": "임상시험이 \"이 레시피로 만든 요리는 맛있다\"를 보여주는 시식회라면, CMC는 \"어느 주방에서, 몇 번을 만들어도 똑같은 맛이 나온다\"를 보증하는 주방 심사예요. 맛이 아무리 좋아도 주방이 기준에 못 미치면 영업허가가 안 나요. 방사성의약품은 여기에 \"금방 상하는 음식이니 손님 가까이에서 만들어야 한다\"는 조건까지 붙는 셈이에요.",
+        "en": "A clinical trial is the tasting event that shows \"this recipe makes a great dish.\" CMC is the kitchen inspection that shows it comes out the same in any kitchen, every time. A brilliant dish still can't be sold if the kitchen fails inspection. Radiopharma adds a twist: the dish spoils fast, so the kitchen has to be close to the diner."
+      }
+    },
+    {
+      "issue": "2026-09-29",
+      "term": {
+        "ko": "바이오달러 vs 확정 계약금",
+        "en": "Biobucks vs Guaranteed Upfront"
+      },
+      "definition": {
+        "ko": "신약 라이선싱 계약이 발표되면 \"총 계약규모 최대 OO억 달러!\" 같은 큰 숫자가 헤드라인을 장식하죠. 근데 이 총액, 대부분은 임상·허가·매출 단계마다 목표를 달성해야만 받는 마일스톤이라고 해요. 업계에서는 이걸 '바이오달러(biobucks)'라고 불러요 — 진짜 현금이 아니라 조건부로 쌓이는 숫자라는 뜻이에요. 지금 확정적으로 받는 돈은 계약금(upfront)뿐이고, 이 비중은 딜마다 천차만별이라고.",
+        "en": "When a licensing deal is announced, the headline is a big number: \"deal worth up to $X billion.\" Most of that total is milestone payments — money paid only if the program hits specific clinical, regulatory, or sales targets. The industry calls this \"biobucks\": conditional value, not cash in hand. What's actually guaranteed the day the deal signs is the upfront payment — and that share varies wildly deal to deal."
+      },
+      "analogy": {
+        "ko": "스포츠 선수 계약 뉴스에서 \"5년 1억 달러 계약!\" 하고 나와도 보장액은 그중 일부이고 나머지는 성과 인센티브인 것과 똑같아요. 헤드라인 숫자는 '최대치'를 말하는 것이지, 지금 통장에 꽂히는 돈이 아니에요.",
+        "en": "A \"5-year, $100 million\" sports contract is mostly the same story — a chunk is guaranteed, the rest is performance bonuses that may never get paid. The headline number describes a ceiling, not what's in the bank today."
+      }
+    }
+  ]
+}

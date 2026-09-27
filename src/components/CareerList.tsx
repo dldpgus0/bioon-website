@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useAnalytics } from "@/hooks/useAnalytics";
 import type { Post } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n";
 import { formatDate } from "./IssueCard";
@@ -12,15 +13,20 @@ export function CareerList({ posts, dict, lang }: { posts: Post[]; dict: Diction
   const [cat, setCat] = useState<Category>("all");
   const cats = Object.keys(dict.career.categories) as Category[];
   const shown = cat === "all" ? posts : posts.filter((p) => p.category === cat);
+  const { track } = useAnalytics();
 
   return (
     <>
-      <div className="flex flex-wrap gap-2">
+      <div role="group" aria-label={dict.career.filtersLabel} className="flex flex-wrap gap-2">
         {cats.map((c) => (
           <button
             key={c}
             type="button"
-            onClick={() => setCat(c)}
+            onClick={() => {
+              setCat(c);
+              track("filter_select", { page: "career", type: "category", value: c, label: dict.career.categories[c], lang });
+            }}
+            aria-pressed={c === cat}
             className={`rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
               c === cat ? "border-teal bg-teal text-on-brand" : "border-line bg-surface text-muted hover:border-teal hover:text-teal"
             }`}

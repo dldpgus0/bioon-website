@@ -9,6 +9,9 @@ export async function POST(request: Request) {
   if (!EMAIL_RE.test(email)) {
     return Response.json({ error: "invalid_email" }, { status: 400 });
   }
+  if (!name) {
+    return Response.json({ error: "name_required" }, { status: 400 });
+  }
 
   const apiKey = process.env.STIBEE_API_KEY;
   const listId = process.env.STIBEE_LIST_ID;

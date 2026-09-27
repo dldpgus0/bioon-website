@@ -39,7 +39,15 @@ export function SubscribeForm({ labels, lang, compact = false }: { labels: Label
 
   return (
     <form onSubmit={onSubmit} className={compact ? "flex flex-col gap-2 sm:flex-row" : "flex flex-col gap-3"}>
-      {!compact && <input name="name" type="text" placeholder={labels.name} autoComplete="name" className={input} />}
+      <input
+        name="name"
+        type="text"
+        required
+        maxLength={50}
+        placeholder={labels.name}
+        autoComplete="name"
+        className={compact ? `${input} sm:w-40 sm:shrink-0` : input}
+      />
       <input name="email" type="email" required placeholder={labels.email} autoComplete="email" className={input} />
       <button
         type="submit"

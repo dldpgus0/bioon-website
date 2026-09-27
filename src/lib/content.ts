@@ -122,7 +122,6 @@ export type Post = {
   category: CareerCategory;
   roles: string[];
   summary: string;
-  sample: boolean;
 };
 
 const careerDir = (lang: Locale) => path.join(process.cwd(), "src", "content", "career", lang);
@@ -137,7 +136,6 @@ function readPost(lang: Locale, file: string) {
     category: data.category,
     roles: data.roles ?? [],
     summary: data.summary ?? "",
-    sample: Boolean(data.sample),
   };
   return { post, content };
 }

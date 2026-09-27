@@ -33,9 +33,6 @@ export default async function CareerPostPage({ params }: PageProps<"/[lang]/care
         <div className="flex flex-wrap items-center gap-2 text-sm font-semibold">
           <span className="text-teal">{dict.career.categories[post.category]}</span>
           <span className="text-muted">· {formatDate(post.date, lang)}</span>
-          {post.sample && (
-            <span className="rounded-full border border-line px-2 py-0.5 text-xs text-muted">{dict.career.sample}</span>
-          )}
         </div>
         <h1 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">{post.title}</h1>
         <p className="mt-4 text-lg leading-relaxed text-muted">{post.summary}</p>

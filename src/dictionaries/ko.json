@@ -139,7 +139,6 @@
       "industry": "업계·채용 동향"
     },
     "roles": "관련 직무",
-    "sample": "샘플 글",
     "back": "커리어로",
     "empty": "아직 글이 없어요.",
     "toolsTitle": "AI 커리어 도구",
@@ -390,7 +389,6 @@
     "mainNav": "주 메뉴",
     "footerNav": "사이트 링크",
     "newTab": "새 창에서 열림",
-    "rss": "RSS 피드",
-    "profile": "에디터 이예현 프로필 사진"
+    "rss": "RSS 피드"
   }
 }

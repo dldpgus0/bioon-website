@@ -32,9 +32,19 @@ export async function POST(request: Request) {
     }),
   });
 
-  if (!res.ok) {
-    console.error("[subscribe] Stibee error", res.status, await res.text());
+  // Stibee can answer 200 with { Ok: false, Error: ... } in the body, so check both.
+  const text = await res.text();
+  const data = (() => {
+    try {
+      return JSON.parse(text);
+    } catch {
+      return null;
+    }
+  })();
+  if (!res.ok || data?.Ok === false) {
+    console.error("[subscribe] Stibee error", res.status, text);
     return Response.json({ error: "upstream" }, { status: 502 });
   }
+  console.log("[subscribe] Stibee ok", text);
   return Response.json({ ok: true });
 }

@@ -8,6 +8,7 @@ Designed and built by [이예현 (Yaehyun Lee)](https://github.com/dldpgus0) tog
 
 - **Korean / English** routing (`/ko`, `/en`) with automatic language detection
 - **Insight archive** — every issue imported straight from the Stibee email HTML, shown exactly as subscribers received it, with KO/EN editions paired by date
+- **Ask BIO.ON** — question search over the archive, ranked by each issue's AI keywords, summaries and answerable questions (`src/lib/search.ts`, runs in the browser; `?q=` links are shareable)
 - **Career** section for aspiring bio/pharma professionals (LinkedIn, résumé, interviews, industry trends)
 - **Subscribe** form wired to the Stibee API
 - Planned: AI topic tagging, KO→EN translation pipeline, AI résumé feedback, AI mock interview, archive chatbot, paid resources

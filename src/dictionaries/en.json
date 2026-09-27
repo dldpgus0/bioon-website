@@ -116,7 +116,14 @@
     "questionsLabel": "Questions this issue answers",
     "keywordsLabel": "Original tags",
     "clear": "Clear filters",
-    "count": " issues"
+    "count": " issues",
+    "askTitle": "Ask BIO.ON",
+    "askLede": "Ask a question and we'll find the issues that answer it, using each issue's AI summary and keywords.",
+    "askPlaceholder": "e.g. Who is winning the obesity drug race?",
+    "askTry": "Try asking",
+    "askResults": " matching issues",
+    "askEmpty": "No matching issues. Try different words.",
+    "askClear": "Clear search"
   },
   "career": {
     "title": "Bio careers",

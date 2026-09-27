@@ -11,7 +11,8 @@ export function formatDate(date: string, lang: string) {
   });
 }
 
-export function IssueCard({ issue, dict }: { issue: Issue; dict: Dictionary }) {
+/** `match`: the AI summary line that answers an Ask BIO.ON search, shown instead of the issue summary. */
+export function IssueCard({ issue, dict, match }: { issue: Issue; dict: Dictionary; match?: string | null }) {
   return (
     <Link
       href={`/${issue.lang}/insight/${issue.slug}`}
@@ -26,7 +27,11 @@ export function IssueCard({ issue, dict }: { issue: Issue; dict: Dictionary }) {
       <h3 className="mt-3 text-lg font-bold leading-snug text-ink group-hover:text-brand">{issue.title}</h3>
       {/* line-clamp breaks if the clamped element itself stretches, so the wrapper takes flex-1 */}
       <div className="flex-1">
-        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">{issue.summary}</p>
+        {match ? (
+          <p className="mt-2 border-l-2 border-teal pl-3 text-sm leading-relaxed text-ink">{match}</p>
+        ) : (
+          <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">{issue.summary}</p>
+        )}
       </div>
       {issue.topics.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-1.5">

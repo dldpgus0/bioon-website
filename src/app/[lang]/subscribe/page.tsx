@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { VerticalLogo } from "@/components/Logo";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { getDictionary, getLocale } from "@/lib/i18n";
@@ -31,6 +32,9 @@ export default async function SubscribePage({ params }: PageProps<"/[lang]/subsc
       <div className="rounded-3xl border border-line bg-surface p-6 shadow-sm sm:p-8">
         <SubscribeForm labels={t} lang={lang} />
         <p className="mt-4 text-xs leading-relaxed text-muted">{t.privacy}</p>
+        <Link href={`/${lang}/faq`} className="mt-2 inline-block text-xs font-semibold text-teal hover:underline">
+          {dict.faq.title} →
+        </Link>
       </div>
     </div>
   );

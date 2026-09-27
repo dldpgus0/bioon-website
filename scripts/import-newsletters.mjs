@@ -1,14 +1,23 @@
 // Imports Stibee email HTML issues into the site.
-//   node scripts/import-newsletters.mjs [sourceDir]
+//   node scripts/import-newsletters.mjs [sourceDir ...]
+// Default sources: the local newsletter template folder, plus newsletter-src/ in this repo
+// (web-only editions such as the English translations of issues #1–#10).
 // - copies each issue's HTML to public/newsletters/<lang>/<slug>.html (web version)
 // - writes src/content/insight.json with metadata parsed from the issue header
 import fs from "node:fs";
 import path from "node:path";
 
-const SOURCE =
-  process.argv[2] ||
-  "C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter/template";
 const ROOT = path.resolve(import.meta.dirname, "..");
+const SOURCES = process.argv.length > 2
+  ? process.argv.slice(2)
+  : ["C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter/template", path.join(ROOT, "newsletter-src")];
+// The output folder is wiped below, so a missing source would silently drop its issues.
+for (const dir of SOURCES) {
+  if (!fs.existsSync(dir)) {
+    console.error(`source folder not found: ${dir}`);
+    process.exit(1);
+  }
+}
 const OUT_HTML = path.join(ROOT, "public", "newsletters");
 const OUT_JSON = path.join(ROOT, "src", "content", "insight.json");
 
@@ -41,9 +50,11 @@ function parseDate(raw) {
 }
 
 const issues = [];
-for (const file of fs.readdirSync(SOURCE)) {
+const sourcePath = {};
+for (const [dir, file] of SOURCES.flatMap((d) => fs.readdirSync(d).map((f) => [d, f]))) {
   if (!/^BIO\.ON Insight .*\.html$/.test(file)) continue;
-  const html = fs.readFileSync(path.join(SOURCE, file), "utf8");
+  sourcePath[file] = path.join(dir, file);
+  const html = fs.readFileSync(sourcePath[file], "utf8");
   const lines = toLines(html);
   const h = lines.findIndex((l) => /Insight\s*(EN\s*)?#\d+\s*·/.test(l));
   if (h < 0) {
@@ -105,7 +116,7 @@ function rewriteNumbers(html, it) {
 fs.rmSync(OUT_HTML, { recursive: true, force: true });
 for (const lang of ["ko", "en"]) fs.mkdirSync(path.join(OUT_HTML, lang), { recursive: true });
 for (const it of issues) {
-  const html = fs.readFileSync(path.join(SOURCE, it.sourceFile), "utf8");
+  const html = fs.readFileSync(sourcePath[it.sourceFile], "utf8");
   fs.writeFileSync(path.join(OUT_HTML, it.lang, `${it.slug}.html`), rewriteNumbers(html, it));
   if (it.number !== it.originalNumber) console.log(`${it.lang} ${it.date}: #${it.originalNumber} → #${it.number}`);
 }

@@ -42,9 +42,6 @@ export function CareerList({ posts, dict, lang }: { posts: Post[]; dict: Diction
             <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
               <span className="text-teal">{dict.career.categories[p.category]}</span>
               <span className="text-muted">· {formatDate(p.date, lang)}</span>
-              {p.sample && (
-                <span className="rounded-full border border-line px-2 py-0.5 text-[11px] text-muted">{dict.career.sample}</span>
-              )}
             </div>
             <h3 className="mt-2 text-lg font-bold text-ink group-hover:text-brand">{p.title}</h3>
             <p className="mt-1.5 text-sm leading-relaxed text-muted">{p.summary}</p>

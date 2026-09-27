@@ -7,7 +7,6 @@ import { SocialLinks } from "@/components/SocialLinks";
 import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { TrackedLink } from "@/components/TrackedLink";
-import profilePhoto from "../../../public/brand/profile.jpg";
 
 const pillarIcons = [icons.newsletter, icons.career, icons.ai, icons.resources];
 
@@ -54,27 +53,24 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
 
         <div className="order-1 flex justify-center md:order-2">
-          {/* Editor portrait: strict 3:4, sharp-edged frame. It's the hero's largest image, so it's preloaded. */}
-          <figure className="relative w-52 sm:w-64">
-            <div className="border border-ink/15 bg-white p-2 shadow-[0_24px_48px_-28px_rgba(19,42,76,0.45)]">
-              <Image
-                src={profilePhoto}
-                alt={dict.a11y.profile}
-                placeholder="blur"
-                preload
-                sizes="(min-width: 640px) 256px, 208px"
-                className="aspect-[3/4] w-full object-cover"
-              />
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-full border border-dashed border-teal/40" aria-hidden />
+            <Image
+              src="/brand/profile.jpg"
+              alt={dict.about.name}
+              width={320}
+              height={320}
+              preload
+              className="relative h-56 w-56 rounded-full object-cover shadow-[0_20px_50px_-20px_rgba(19,42,76,0.45)] sm:h-72 sm:w-72"
+            />
+            <div className="absolute -left-6 bottom-6 rounded-2xl bg-white px-4 py-2.5 shadow-[0_10px_30px_-10px_rgba(19,42,76,0.3)]">
+              <p className="text-xl font-bold leading-none text-brand">{issueCount}</p>
+              <p className="mt-1 text-xs font-medium text-muted">{t.badgeIssues}</p>
             </div>
-            <figcaption className="mt-3 flex items-baseline justify-between border-t border-ink/15 pt-2 text-[11px] font-medium uppercase tracking-[0.18em] text-muted">
-              <span>{dict.about.name} · Editor</span>
-              <span>KO · EN</span>
-            </figcaption>
-            <p className="absolute -left-10 bottom-20 border border-ink/10 bg-white px-4 py-2.5 shadow-[0_10px_30px_-12px_rgba(19,42,76,0.3)]">
-              <span className="block text-xl font-semibold leading-none text-brand">{issueCount}</span>
-              <span className="mt-1 block text-xs font-medium text-muted">{t.badgeIssues}</span>
-            </p>
-          </figure>
+            <div className="absolute -right-4 top-8 rounded-full bg-white px-3.5 py-2 text-xs font-semibold text-teal shadow-[0_10px_30px_-10px_rgba(19,42,76,0.3)]">
+              KO · EN
+            </div>
+          </div>
         </div>
       </section>
 

@@ -4,8 +4,6 @@ import { VerticalLogo } from "@/components/Logo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
-// Static import so next/image knows the size and generates the blur placeholder at build time.
-import profilePhoto from "../../../../public/brand/profile.jpg";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/about">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
@@ -20,30 +18,22 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
-      {/* Profile: strict 3:4 portrait in a plain, sharp-edged frame. */}
-      <header className="grid gap-8 border-y border-ink/80 py-10 sm:grid-cols-[220px_1fr] sm:gap-12">
-        <figure className="w-44 sm:w-full">
-          <div className="border border-ink/20 bg-white p-1.5">
-            <Image
-              src={profilePhoto}
-              alt={dict.a11y.profile}
-              placeholder="blur"
-              preload
-              sizes="(min-width: 640px) 220px, 176px"
-              className="aspect-[3/4] w-full object-cover"
-            />
-          </div>
-          <figcaption className="mt-2 text-[11px] font-medium uppercase tracking-[0.2em] text-muted">Editor · BIO:ON Insight</figcaption>
-        </figure>
-        <div className="sm:pt-2">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted">{t.title}</p>
-          <h1 className="mt-2 text-3xl font-semibold tracking-tight text-ink">{t.name}</h1>
-          <p className="mt-1 text-sm text-muted">{t.role}</p>
-          <hr className="my-6 w-12 border-t-2 border-brand" />
-          <p className="max-w-xl leading-relaxed text-text">{t.bio}</p>
-          <SocialLinks className="mt-6" />
+      <section className="flex flex-col gap-8 sm:flex-row sm:items-center">
+        <Image
+          src="/brand/profile.jpg"
+          alt={t.name}
+          width={144}
+          height={144}
+          className="h-32 w-32 shrink-0 rounded-full border-4 border-surface object-cover shadow-md sm:h-36 sm:w-36"
+        />
+        <div>
+          <p className="text-sm font-semibold text-teal">{t.title}</p>
+          <h1 className="mt-1 text-3xl font-extrabold tracking-tight text-ink">{t.name}</h1>
+          <p className="mt-1 font-medium text-muted">{t.role}</p>
+          <p className="mt-4 leading-relaxed text-text">{t.bio}</p>
+          <SocialLinks className="mt-5" />
         </div>
-      </header>
+      </section>
 
       <section className="mt-16">
         <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-teal">{t.educationTitle}</h2>

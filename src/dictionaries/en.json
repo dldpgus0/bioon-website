@@ -139,7 +139,6 @@
       "industry": "Industry & hiring trends"
     },
     "roles": "Relevant roles",
-    "sample": "Sample post",
     "back": "Back to career",
     "empty": "No posts yet.",
     "toolsTitle": "AI career tools",
@@ -390,7 +389,6 @@
     "mainNav": "Main",
     "footerNav": "Site links",
     "newTab": "opens in a new tab",
-    "rss": "RSS feed",
-    "profile": "Portrait of editor Yaehyun Lee"
+    "rss": "RSS feed"
   }
 }

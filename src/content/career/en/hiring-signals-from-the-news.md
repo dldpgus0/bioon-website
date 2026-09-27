@@ -13,16 +13,15 @@ This isn't hiring data — it's **the direction the news points in**. Always che
 ## 1. The battleground moves to where drugs are made — CMC & quality
 
 - Ultragenyx's Sanfilippo syndrome gene therapy Fayuvi was rejected once over manufacturing, then approved after fixes. ([Issue #16](/en/insight/2026-09-22))
-- Novartis signed a $1.2B manufacturing deal for the supply chain of its radiopharmaceutical Pluvicto. ([Issue #16](/en/insight/2026-09-22))
 - A batch of Fresenius's biosimilar was recalled over glass particles in the vials. ([Issue #11](/en/insight/2026-08-18))
 
-**How to read it:** As more hard-to-make drugs arrive — cell and gene therapies, radiopharmaceuticals — proof that a drug can be made to the same quality every time is deciding approval and supply as much as efficacy.
+**How to read it:** As more hard-to-make drugs like gene therapies arrive, proof that a drug can be made to the same quality every time is deciding approval and supply as much as efficacy.
 
 **What to prepare:** GMP basics, the ideas of deviations and CAPA, and one example of why CMC affects approval.
 
 ## 2. Good drugs don't always get prescribed — Market access
 
-- Lilly's oral obesity drug Foundayo had slow early prescriptions because of delayed PBM formulary coverage, not efficacy. ([Issue #7](/en/insight/2026-07-12), [Issue #8](/en/insight/2026-07-19))
+- Lilly's oral obesity drug Foundayo got off to a slower start than its competitor, and coverage from the three biggest US PBMs only began in June, about two months after launch. ([Issue #7](/en/insight/2026-07-12), [Issue #8](/en/insight/2026-07-19))
 - Later, amid an oral GLP-1 price war, Foundayo cut its cash price and took one in three new prescriptions. ([Issue #17](/en/insight/2026-09-29))
 - With ultra-expensive drugs like a $3.95M gene therapy, how to justify the price and who pays keeps coming up. ([Issue #16](/en/insight/2026-09-22))
 
@@ -43,7 +42,7 @@ This isn't hiring data — it's **the direction the news points in**. Always che
 ## 4. People who read the structure behind the headline number — BD
 
 - The Lilly × InnoCare deal was worth up to $3.35B, but only about 3% was guaranteed. ([Issue #17](/en/insight/2026-09-29))
-- Roche put up to $2.5B on Hanmi's 'muscle-sparing' obesity candidate. ([Issue #13](/en/insight/2026-09-01))
+- Roche paid $190M upfront, with up to $2.3B more in milestones, for Hanmi's 'muscle-sparing' obesity candidate HM17321. ([Issue #13](/en/insight/2026-09-01))
 - Big acquisitions like GSK's ($10.6B) and AbbVie's ($10.9B) were strategies to fill the patent cliff. ([Issue #3](/en/insight/2026-06-15), [Issue #6](/en/insight/2026-07-06))
 
 **How to read it:** Deals keep getting bigger and more frequent, but the yardstick for value is the upfront, milestone and royalty structure — not the total. Korean companies are increasingly the ones being licensed or acquired.
@@ -55,3 +54,15 @@ This isn't hiring data — it's **the direction the news points in**. Always che
 All four signals come down to **the ability to read behind the headline**. If you can take one story and talk through fact → interpretation → your role, you'll stand out in any interview. The method is in our [three-step interview answer guide](/en/career/industry-news-interview).
 
 We'll keep flagging new signals in the newsletter every Tuesday.
+
+## Sources
+
+1. Fayuvi: [Ultragenyx — CRL for UX111 (CMC-related, July 2025)](https://ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-receives-complete-response-letter-fda-ux111-aav-gene), [BioSpace — approval and $3.95M price](https://www.biospace.com/fda/ultragenyx-wins-fda-greenlight-for-first-sanfilippo-therapy-priced-at-nearly-4m)
+2. Fresenius recall: [FDA recall notice](https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-nationwide-recall-tyenner-tocilizumab-aazg-injection-400-mg20-ml-vials-due)
+3. Foundayo: [Fierce Pharma — early prescriptions](https://www.fiercepharma.com/pharma/lilly-touts-encouraging-early-days-foundayo-obesity-launch-even-glp-1-pill-appears-lag-novos), [Eli Lilly — coverage by the three biggest PBMs](https://www.prnewswire.com/news-releases/foundayo-and-zepbound-now-covered-for-millions-of-americans-302784360.html), [CNBC — one in three new oral GLP-1 patients (Sep 21, 2026)](https://www.cnbc.com/2026/09/21/lilly-is-ramping-up-future-manufacturing-for-foundayo-obesity-pill.html)
+4. FDA CRL publication: [FDA — radical transparency, publishing CRLs](https://www.fda.gov/news-events/press-announcements/fda-embraces-radical-transparency-publishing-complete-response-letters), [BioSpace — pause and resumption](https://www.biospace.com/fda/fdas-radical-transparency-policy-for-rejections-runs-into-legal-uncertainty)
+5. RP1 advisory committee (10–3 in favour): [Replimune announcement](https://ir.replimune.com/news-releases/news-release-details/replimune-announces-favorable-outcome-fdas-cellular-tissue-and)
+6. Camizestrant: [FDA approval notice](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative); ivonescimab OS: [BioSpace](https://www.biospace.com/press-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026)
+7. Lilly × InnoCare: [Fierce Biotech](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+8. Roche × Hanmi: [BioSpace](https://www.biospace.com/deals/roche-bets-up-to-2-3b-in-hanmi-pact-for-next-gen-weight-loss-drug)
+9. GSK × Nuvalent ($10.6B): [GSK press release](https://www.gsk.com/en-gb/media/press-releases/gsk-enters-agreement-to-acquire-nuvalent-inc/); AbbVie × Apogee ($10.9B): [AbbVie press release](https://investors.abbvie.com/news-releases/news-release-details/abbvie-acquire-apogee-therapeutics-deepening-immunology)

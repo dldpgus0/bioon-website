@@ -13,16 +13,15 @@ summary: 6월부터 9월까지 BIO:ON Insight에서 다룬 뉴스를 직무 관�
 ## 1. 약의 승부처가 '만드는 곳'으로 — CMC·품질
 
 - 울트라제닉스의 산필리포증후군 유전자치료제 Fayuvi는 제조 문제로 한 번 거절됐다가 보완 후 FDA 허가를 받았어요. ([#16호](/ko/insight/2026-09-22))
-- 노바티스는 방사성의약품 플루빅토 공급망에 12억 달러 규모의 제조 계약을 맺었어요. ([#16호](/ko/insight/2026-09-22))
 - Fresenius의 바이오시밀러 한 배치는 바이알 속 유리 입자 때문에 리콜됐어요. ([#11호](/ko/insight/2026-08-18))
 
-**읽는 법:** 세포·유전자치료제, 방사성의약품처럼 만들기 어려운 약이 늘수록, 효능만큼 '매번 같은 품질로 만들 수 있다는 증명'이 허가와 공급을 가르고 있어요.
+**읽는 법:** 유전자치료제처럼 만들기 어려운 약이 늘수록, 효능만큼 '매번 같은 품질로 만들 수 있다는 증명'이 허가와 공급을 가르고 있어요.
 
 **준비할 것:** GMP 기본, 일탈·CAPA 개념, 그리고 CMC가 허가에 왜 영향을 주는지 설명할 수 있는 사례 하나.
 
 ## 2. 좋은 약도 처방이 안 나올 수 있다 — Market Access
 
-- 릴리의 경구 비만약 Foundayo는 효능이 아니라 보험 목록(PBM) 등재 지연 때문에 초기 처방이 부진했어요. ([#7호](/ko/insight/2026-07-12), [#8호](/ko/insight/2026-07-19))
+- 릴리의 경구 비만약 Foundayo는 출시 초기 처방이 경쟁 제품보다 느렸고, 미국 3대 PBM의 보험 적용은 출시 두 달쯤 뒤인 6월에야 시작됐어요. ([#7호](/ko/insight/2026-07-12), [#8호](/ko/insight/2026-07-19))
 - 이후 경구 GLP-1 가격 경쟁 속에서 Foundayo는 현금가를 낮춰 신규 처방 3건 중 1건을 차지했어요. ([#17호](/ko/insight/2026-09-29))
 - 395만 달러짜리 유전자치료제처럼 초고가 약이 늘면서, 가격을 어떻게 정당화하고 누가 지불할지가 계속 쟁점이 되고 있어요. ([#16호](/ko/insight/2026-09-22))
 
@@ -43,7 +42,7 @@ summary: 6월부터 9월까지 BIO:ON Insight에서 다룬 뉴스를 직무 관�
 ## 4. 헤드라인 숫자 뒤의 구조를 읽는 사람 — BD
 
 - 릴리 × 이노케어 딜은 최대 33.5억 달러였지만 확정액은 약 3%였어요. ([#17호](/ko/insight/2026-09-29))
-- 로슈는 한미약품의 '근손실 없는' 비만약 후보에 최대 25억 달러를 걸었어요. ([#13호](/ko/insight/2026-09-01))
+- 로슈는 한미약품의 '근손실 없는' 비만약 후보 HM17321에 계약금 1.9억 달러와 마일스톤 최대 23억 달러를 걸었어요. ([#13호](/ko/insight/2026-09-01))
 - GSK(106억 달러), AbbVie(109억 달러) 같은 대형 인수는 특허절벽을 메우기 위한 전략이었어요. ([#3호](/ko/insight/2026-06-15), [#6호](/ko/insight/2026-07-06))
 
 **읽는 법:** 딜은 계속 크고 많아지지만, 가치를 판단하는 기준은 총액이 아니라 계약금·마일스톤·로열티 구조예요. 한국 기업이 인수·라이선싱 대상이 되는 사례도 늘고 있어요.
@@ -55,3 +54,15 @@ summary: 6월부터 9월까지 BIO:ON Insight에서 다룬 뉴스를 직무 관�
 네 신호 모두 결국 **"헤드라인 뒤를 읽는 힘"**으로 모여요. 뉴스 한 건을 보고 사실 → 해석 → 내 직무로 이어서 말할 수 있으면, 어느 직무 면접에서도 차이가 나요. 방법은 [면접 답변 3단계 글](/ko/career/industry-news-interview)에 정리해 두었어요.
 
 매주 화요일 뉴스레터에서 새 신호를 계속 짚어 드릴게요.
+
+## 출처
+
+1. Fayuvi: [Ultragenyx — CRL for UX111 (CMC 관련, 2025.07)](https://ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-receives-complete-response-letter-fda-ux111-aav-gene), [BioSpace — 허가와 395만 달러 가격](https://www.biospace.com/fda/ultragenyx-wins-fda-greenlight-for-first-sanfilippo-therapy-priced-at-nearly-4m)
+2. Fresenius 리콜: [FDA 리콜 공지](https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-nationwide-recall-tyenner-tocilizumab-aazg-injection-400-mg20-ml-vials-due)
+3. Foundayo: [Fierce Pharma — 초기 처방](https://www.fiercepharma.com/pharma/lilly-touts-encouraging-early-days-foundayo-obesity-launch-even-glp-1-pill-appears-lag-novos), [Eli Lilly — 3대 PBM 보험 적용](https://www.prnewswire.com/news-releases/foundayo-and-zepbound-now-covered-for-millions-of-americans-302784360.html), [CNBC — 신규 경구 GLP-1 환자 3명 중 1명 (2026.09.21)](https://www.cnbc.com/2026/09/21/lilly-is-ramping-up-future-manufacturing-for-foundayo-obesity-pill.html)
+4. FDA CRL 공개: [FDA — radical transparency, publishing CRLs](https://www.fda.gov/news-events/press-announcements/fda-embraces-radical-transparency-publishing-complete-response-letters), [BioSpace — 중단과 재개](https://www.biospace.com/fda/fdas-radical-transparency-policy-for-rejections-runs-into-legal-uncertainty)
+5. RP1 자문위 (10:3 찬성): [Replimune 발표](https://ir.replimune.com/news-releases/news-release-details/replimune-announces-favorable-outcome-fdas-cellular-tissue-and)
+6. 카미제스트란트: [FDA 승인 공지](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative), 이보네시맙 OS: [BioSpace](https://www.biospace.com/press-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026)
+7. 릴리 × 이노케어: [Fierce Biotech](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+8. 로슈 × 한미: [BioSpace](https://www.biospace.com/deals/roche-bets-up-to-2-3b-in-hanmi-pact-for-next-gen-weight-loss-drug)
+9. GSK × Nuvalent (106억 달러): [GSK 보도자료](https://www.gsk.com/en-gb/media/press-releases/gsk-enters-agreement-to-acquire-nuvalent-inc/), AbbVie × Apogee (109억 달러): [AbbVie 보도자료](https://investors.abbvie.com/news-releases/news-release-details/abbvie-acquire-apogee-therapeutics-deepening-immunology)

@@ -44,7 +44,7 @@ summary: 바이오·제약 면접 단골 질문에 뉴스 요약이 아니라 '�
 
 > **사실:** 릴리의 경구 비만약 Foundayo가 출시 초기에 처방이 기대보다 저조했습니다.
 >
-> **해석:** 원인은 약효가 아니라 미국 PBM의 보험 목록 등재 지연이었습니다. 3대 PBM이 처방약 시장의 약 80%를 관리하기 때문에, 등재가 안 되면 좋은 약도 환자에게 닿기 어렵습니다.
+> **해석:** 효능 데이터는 좋았지만, 미국 3대 PBM(약국급여관리사)의 보험 적용은 출시 두 달쯤 뒤인 6월부터 시작됐습니다. 보험 적용 전에는 환자 부담이 커서, 좋은 약도 처방이 빠르게 늘기 어렵다는 걸 보여준 사례라고 생각했습니다.
 >
 > **내 직무:** 한국에서도 급여 등재가 같은 역할을 하기 때문에, Market Access 담당자는 허가 전부터 가치 근거와 약가 전략을 준비해야 한다고 생각했습니다.
 
@@ -72,3 +72,11 @@ summary: 바이오·제약 면접 단골 질문에 뉴스 요약이 아니라 '�
 1. 지원 직무를 정하고, 최근 뉴스레터에서 그 직무 태그가 붙은 호를 2~3개 골라요. 인사이트 아카이브에서 직무 필터를 쓰면 바로 찾을 수 있어요.
 2. 호마다 위 3단계로 답을 써 보고, 소리 내어 60초 안에 말해 봐요.
 3. [면접 질문은행](/ko/career/interview)에서 같은 직무 질문을 무작위로 뽑아 꼬리 질문까지 연습해요.
+
+## 출처
+
+- 릴리 × 이노케어: [Fierce Biotech — Lilly puts up $100M, plus billions on the backend, to form 5-target deal with China's InnoCare](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+- 카미제스트란트 승인: [FDA — accelerated approval to camizestrant](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative), [BioSpace — AstraZeneca's SERD pill overcomes adcomm defeat](https://www.biospace.com/fda/astrazenecas-serd-pill-overcomes-adcomm-defeat-to-win-fda-nod-in-breast-cancer)
+- 이보네시맙 OS: [BioSpace — HARMONi-2 overall survival results at WCLC 2026](https://www.biospace.com/press-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026)
+- Foundayo 초기 처방: [Fierce Pharma — Lilly touts 'encouraging' early days for Foundayo](https://www.fiercepharma.com/pharma/lilly-touts-encouraging-early-days-foundayo-obesity-launch-even-glp-1-pill-appears-lag-novos), 보험 적용: [Eli Lilly — Foundayo and Zepbound now covered for millions of Americans](https://www.prnewswire.com/news-releases/foundayo-and-zepbound-now-covered-for-millions-of-americans-302784360.html)
+- Fresenius 리콜: [FDA — Fresenius Kabi issues nationwide recall of Tyenne](https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-nationwide-recall-tyenner-tocilizumab-aazg-injection-400-mg20-ml-vials-due)

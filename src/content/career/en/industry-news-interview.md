@@ -44,7 +44,7 @@ Source: [Issue #15](/en/insight/2026-09-15)
 
 > **Fact:** Lilly's oral obesity drug Foundayo got off to a slower start in prescriptions than expected.
 >
-> **Interpretation:** The cause wasn't efficacy but delays in getting onto US PBM formularies. The three biggest PBMs manage about 80% of prescriptions, so without coverage even a good drug struggles to reach patients.
+> **Interpretation:** The efficacy data was strong, but coverage from the three biggest US pharmacy benefit managers only started in June, about two months after launch. Before coverage, patients pay much more — so even a good drug struggles to pick up prescriptions quickly.
 >
 > **Your role:** Reimbursement plays the same role in Korea and elsewhere, so market access teams need value evidence and a pricing strategy ready well before approval.
 
@@ -72,3 +72,11 @@ Source: [Issue #11](/en/insight/2026-08-18)
 1. Pick your target role and choose two or three recent issues tagged with it — the role filter in the [Insight archive](/en/insight) finds them quickly.
 2. Write an answer for each using the three steps, then say it out loud in under 60 seconds.
 3. Use the [interview question bank](/en/career/interview) to draw random questions for the same role and practise the follow-ups.
+
+## Sources
+
+- Lilly × InnoCare: [Fierce Biotech — Lilly puts up $100M, plus billions on the backend, to form 5-target deal with China's InnoCare](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+- Camizestrant approval: [FDA — accelerated approval to camizestrant](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative), [BioSpace — AstraZeneca's SERD pill overcomes adcomm defeat](https://www.biospace.com/fda/astrazenecas-serd-pill-overcomes-adcomm-defeat-to-win-fda-nod-in-breast-cancer)
+- Ivonescimab OS: [BioSpace — HARMONi-2 overall survival results at WCLC 2026](https://www.biospace.com/press-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026)
+- Foundayo's early prescriptions: [Fierce Pharma — Lilly touts 'encouraging' early days for Foundayo](https://www.fiercepharma.com/pharma/lilly-touts-encouraging-early-days-foundayo-obesity-launch-even-glp-1-pill-appears-lag-novos); coverage: [Eli Lilly — Foundayo and Zepbound now covered for millions of Americans](https://www.prnewswire.com/news-releases/foundayo-and-zepbound-now-covered-for-millions-of-americans-302784360.html)
+- Fresenius recall: [FDA — Fresenius Kabi issues nationwide recall of Tyenne](https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/fresenius-kabi-issues-nationwide-recall-tyenner-tocilizumab-aazg-injection-400-mg20-ml-vials-due)

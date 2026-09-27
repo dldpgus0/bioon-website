@@ -1,0 +1,575 @@
+<!--
+  ============================================================
+  BIO:ON Insight EN #1  (English edition — same source news as KR #12)
+  ------------------------------------------------------------
+  [Audience] Biotech/pharma graduate students & early-career job-seekers, global, English-reading.
+  [Brand colors] #1A5688 (deep blue) / #197F83 (teal) — same as Korean edition.
+  [Structural note] Independent issue-numbering track from the Korean edition (EN #1, EN #2, ...).
+   Built by translating/restructuring the Korean edition's HTML shell — same table layout,
+   same !important-on-every-color discipline, same dark-mode defeat. See
+   .claude/skills/bioweekly-insight/references/sections-en.md for the full spec.
+  [Key structural changes vs. Korean edition]
+   - 🇰🇷 국내 시사점 box replaced with 🎓 Career Lens box in every news card
+   - Deep Dive career block raised to a cross-cutting "career takeaway" instead of restating
+     the per-card Career Lens points
+   - Stock Movers cards gain a one-line hiring-signal read
+   - Calendar gains a career-relevant date (conferences/application windows)
+   - New "Roles to Watch" section added after Stock Movers, before Calendar
+  [Images] Header hero + 3 news photos reused from KR #12 (same Unsplash stock, freely replaceable).
+  ============================================================
+-->
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+  :root { color-scheme: light only; supported-color-schemes: light; }
+  @media (prefers-color-scheme: dark) {
+    html, body { color-scheme: light only !important; }
+  }
+</style>
+
+<div style="display:none;max-height:0;overflow:hidden;">
+  &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+</div>
+<div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">BMS wins the world's first molecular glue approval, ex-Pfizer chemists raise $95M to turn injections into pills, a biosimilar gets recalled over glass particles — the week a drug learned to erase proteins, the recall came down to a shard of glass.</div>
+<div style="color-scheme:light !important;supported-color-schemes:light;">
+
+<div style="background-color: #EDF1F4 !important; padding: 24px 12px 24px 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+<div style="max-width: 600px; width: 100%; margin: 0 auto; background-color: #ffffff !important; border-radius: 14px; overflow: hidden;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+
+
+  <!-- ===== Header ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important;">
+    <tr>
+      <td>
+        <img src="https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?w=600&q=80&fit=crop"
+          alt="Pharmaceutical research lab"
+          width="600"
+          style="width: 100%; max-width: 600px; height: 180px; object-fit: cover; opacity: 0.40; display: block;" />
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 22px 36px 28px 36px;">
+        <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.14em; color: #7FD2D5 !important; text-transform: uppercase; margin: 0 0 10px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">BIO:ON Insight EN #1 · Aug 18, 2026 · Molecular Glue · Oral Switch · Quality Recall</p>
+        <h1 style="font-size: 23px; color: #ffffff !important; line-height: 1.4; margin: 0 0 12px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">The week a drug learned to erase proteins,<br>a recall came down to a shard of glass</h1>
+        <p style="font-size: 13px; color: #BFE3E4 !important; line-height: 1.7; border-left: 3px solid #197F83; padding: 0 0 0 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          BMS's first-ever molecular glue approval, a $95M bet to turn injections into pills,<br>and a glass-particle recall that grounded a biosimilar — this week's three stories, read for your career.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ===== Editor intro ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #E6F2F1 !important; border-bottom: 1px solid #DCE3EA;">
+    <tr>
+      <td width="58" style="padding: 16px 0 16px 36px; vertical-align: top;">
+        <img src="https://img2.stibee.com/453287_3442432_1781526301971820185.jpg"
+          alt="Editor"
+          width="44" height="44"
+          style="width: 44px; height: 44px; border-radius: 50%; border: 2px solid #197F83; display: block; object-fit: cover;" />
+      </td>
+      <td style="padding: 16px 36px 16px 14px; vertical-align: top;">
+        <div style="font-size: 13px; color: #444444 !important; line-height: 1.75;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          Three stories, one question I keep coming back to: <strong>does a drug ever get finished by the molecule alone?</strong> BMS just won the world's first approval for a "molecular glue" that doesn't block a protein — it makes the cell throw it away entirely. Days later, a group of ex-Pfizer chemists raised $95M to try turning an antibody infusion into a pill you'd swallow at home. And in the same week, Fresenius pulled an entire batch of a biosimilar because of microscopic glass in the vial. Design, formulation, manufacturing — three completely different gates, and this week proved all three matter equally.
+        </div>
+        <div style="padding-top: 5px; font-size: 11px; color: #999999 !important;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">— Editor · MSc Biotechnology &amp; Pharmaceutical Management</div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ===== Word of the Week ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; padding-top: 0; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔤 Word of the Week</p>
+    <div style="background-color: #EAF0F5 !important; border-radius: 10px; padding: 20px 22px 20px 22px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+      <p style="font-size: 19px; font-weight: 700; color: #1a1a1a !important; margin: 0; padding-bottom: 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Molecular Glue (CELMoD)</p>
+      <p style="font-size: 11px; color: #999999 !important; font-style: italic; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">The mechanism behind BMS Zenbexus's world-first approval (Story 1)</p>
+      <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">A traditional inhibitor binds a disease-driving protein and <strong>blocks its function</strong> — nothing more. A <strong>molecular glue</strong> does something different: it physically links the target protein to E3 ligase (cereblon), the cell's own "disposal enzyme." Once linked, the cell tags the protein with ubiquitin — a molecular "trash sticker" — and the proteasome, the cell's shredder, <strong>breaks it down entirely</strong>. The point isn't just blocking function — it's <strong>erasing the protein's existence</strong>. That's the mechanism behind BMS's world-first approval.</p>
+      <div style="background-color: #E2F0F0 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 11px 14px 11px 14px; font-size: 13px; color: #0F5A5E !important; line-height: 1.7; margin-bottom: 14px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        💡 <strong>Analogy:</strong> A traditional inhibitor is masking tape over a broken machine's power switch — the machine is still sitting right there. A molecular glue slaps a "garbage" sticker on that same broken machine so the trash truck hauls the whole thing away — the machine is simply gone.
+      </div>
+      <!-- word-compare: vertical stack (mobile-friendly) -->
+      <div style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 7px; padding: 12px 13px 12px 13px; margin-bottom: 8px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #1A5688 !important; padding-bottom: 5px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Traditional Inhibitor — Blocks Function Only</p>
+        <p style="font-size: 13px; color: #444444 !important; line-height: 1.7; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Binds a "pocket" on the target protein's surface to shut down its function. The protein stays in the cell. No pocket, no drug — that ruled out most historically "undruggable" targets.</p>
+      </div>
+      <div style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 7px; padding: 12px 13px 12px 13px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #197F83 !important; padding-bottom: 5px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Molecular Glue — Degrades It Entirely</p>
+        <p style="font-size: 13px; color: #444444 !important; line-height: 1.7; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Connects the target protein to the cell's own disposal machinery and lets the cell destroy it completely. Works even without a binding pocket, which is exactly what opens up "undruggable" targets.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Top 3 News ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📰 This Week's Top 3 Stories</p>
+
+    <!-- Story 1 -->
+    <div style="border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+      <!-- NEWS-IMG 1 (molecular biology / protein research — swap freely) -->
+      <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&q=80&fit=crop"
+        alt="Molecular biology protein research" width="600"
+        style="width: 100%; max-width: 600px; height: 130px; object-fit: cover; display: block;" />
+      <div style="padding: 12px 18px 12px 18px; background-color: #E7EFF6 !important; border-bottom: 1px solid #C9DAEA;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <span style="display: inline-block; background-color: #1A5688 !important; color: #ffffff !important; font-size: 9px; font-weight: 700; padding: 2px 8px 2px 8px; border-radius: 4px; margin: 0 6px 6px 0; vertical-align: middle;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">STORY 1 · TARGETED PROTEIN DEGRADATION</span>
+        <p style="font-size: 14px; font-weight: 700; color: #12344F !important; line-height: 1.4; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">BMS Wins the World's First FDA Approval for a "Molecular Glue" Protein Degrader</p>
+        <p style="font-size: 10px; color: #999999 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fierce Pharma · Bristol Myers Squibb (NYSE: BMY) | Aug 14, 2026</p>
+      </div>
+      <div style="padding: 15px 18px 15px 18px;">
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Facts</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Bristol Myers Squibb won the <strong>world's first FDA approval for a CELMoD</strong> (cereblon E3 ligase modulator) — a targeted protein degrader — with <strong>Zenbexus (iberdomide)</strong>, for relapsed or refractory multiple myeloma. Instead of blocking a disease-driving protein the way most drugs do, Zenbexus <strong>hijacks the cell's own disposal system to break the protein down entirely</strong>. The approval is the first real commercial proof for targeted protein degradation (TPD), a platform Big Pharma has poured <strong>over a decade of R&amp;D</strong> into, and it opens the door to targets previously considered "undruggable."</p>
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Plain-English Breakdown 🧩</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Traditional antibodies and inhibitors need a <strong>"pocket" on a protein's surface to grab onto</strong> — no pocket, no drug. Molecular glues don't care whether there's a pocket: they physically link the target protein to the cell's disposal machinery, so the cell <strong>tags it for destruction and takes it apart entirely</strong>. That's a fundamentally different toolkit for the many disease-related proteins that have historically had no pocket to grab.</p>
+        <div style="background-color: #E6F2F1 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 10px 13px 10px 13px; margin-bottom: 10px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 10px; font-weight: 700; color: #0F5A5E !important; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎓 Career Lens</p>
+          <p style="font-size: 12px; color: #134E50 !important; line-height: 1.75; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This is a <strong>Discovery Chemistry / Chemical Biology</strong> story. TPD platforms live and die on people fluent in E3 ligase biology and the ubiquitin-proteasome system — a genuinely niche skill set that just went from "interesting research area" to "commercially validated platform" overnight. If you're asked in an interview what excites you about drug discovery right now, "targeted protein degradation, because it just won its first approval" is a sharp, specific answer.</p>
+        </div>
+        <p style="font-size: 12px; color: #999999 !important; font-style: italic; border-top: 1px solid #E7ECF1; padding-top: 9px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📌 The world's first CELMoD approval — over a decade of platform investment in targeted protein degradation just proved its commercial worth. — Fierce Pharma summary</p>
+      </div>
+    </div>
+
+    <!-- Story 2 -->
+    <div style="border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+      <!-- NEWS-IMG 2 (oral pills / formulation — swap freely) -->
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80&fit=crop"
+        alt="Oral pill formulation research" width="600"
+        style="width: 100%; max-width: 600px; height: 130px; object-fit: cover; display: block;" />
+      <div style="padding: 12px 18px 12px 18px; background-color: #E2F0F0 !important; border-bottom: 1px solid #BDDDDD;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <span style="display: inline-block; background-color: #197F83 !important; color: #ffffff !important; font-size: 9px; font-weight: 700; padding: 2px 8px 2px 8px; border-radius: 4px; margin: 0 6px 6px 0; vertical-align: middle;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">STORY 2 · ORAL REFORMULATION · BIOTECH LAUNCH</span>
+        <p style="font-size: 14px; font-weight: 700; color: #12344F !important; line-height: 1.4; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Ex-Pfizer Chemists Launch a $95M Biotech to Turn Injections Into Pills</p>
+        <p style="font-size: 10px; color: #999999 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fierce Biotech · Khartis Therapeutics | Aug 13, 2026</p>
+      </div>
+      <div style="padding: 15px 18px 15px 18px;">
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Facts</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">A group of former Pfizer chemistry leaders has officially launched <strong>Khartis Therapeutics with a $95M Series A</strong> round. Their first program is an <strong>oral small-molecule pill for thyroid eye disease</strong> — a condition currently treated only with expensive antibody infusions. The bet: replace an IV biologic with a <strong>tablet patients take at home</strong>. It's part of a much bigger industry-wide race to convert antibody-dominated targets across metabolic, autoimmune, and endocrine disease into oral small molecules.</p>
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Plain-English Breakdown 🧩</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Antibodies are large, complex proteins — stomach acid destroys them, so they can only be given by infusion or injection. Khartis is trying to re-engineer the same biological target using a <strong>much smaller molecule that can survive the gut and get absorbed</strong> — essentially compressing a hospital-administered biologic into something you swallow. It's one of the hardest, most competitive problems in chemistry right now.</p>
+        <div style="background-color: #E6F2F1 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 10px 13px 10px 13px; margin-bottom: 10px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 10px; font-weight: 700; color: #0F5A5E !important; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎓 Career Lens</p>
+          <p style="font-size: 12px; color: #134E50 !important; line-height: 1.75; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This is the <strong>CMC / Formulation Science</strong> story of the week. Reformulating a biologic target into an oral small molecule needs people fluent in solubility, bioavailability, and formulation chemistry — not just target biology. If you're choosing a specialization for a thesis or PhD, "oral reformulation of biologic-dominated targets" is a genuinely hot, fundable niche to say you're chasing.</p>
+        </div>
+        <p style="font-size: 12px; color: #999999 !important; font-style: italic; border-top: 1px solid #E7ECF1; padding-top: 9px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📌 $95M says the next battleground in metabolic, autoimmune, and endocrine disease is who can turn an injection into a pill. — Fierce Biotech summary</p>
+      </div>
+    </div>
+
+    <!-- Story 3 -->
+    <div style="border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; margin-bottom: 4px;">
+      <!-- NEWS-IMG 3 (manufacturing / quality control — swap freely) -->
+      <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=600&q=80&fit=crop"
+        alt="Pharmaceutical manufacturing quality control" width="600"
+        style="width: 100%; max-width: 600px; height: 130px; object-fit: cover; display: block;" />
+      <div style="padding: 12px 18px 12px 18px; background-color: #FBF1E4 !important; border-bottom: 1px solid #EFD9B8;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <span style="display: inline-block; background-color: #B45309 !important; color: #ffffff !important; font-size: 9px; font-weight: 700; padding: 2px 8px 2px 8px; border-radius: 4px; margin: 0 6px 6px 0; vertical-align: middle;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">STORY 3 · QUALITY RECALL · SUPPLY CHAIN</span>
+        <p style="font-size: 14px; font-weight: 700; color: #12344F !important; line-height: 1.4; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fresenius Recalls a Biosimilar Batch Over Glass Particles — Because Even the Best Science Needs a Clean Vial</p>
+        <p style="font-size: 10px; color: #999999 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fierce Pharma · Fresenius Kabi | Aug 12, 2026</p>
+      </div>
+      <div style="padding: 15px 18px 15px 18px;">
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Facts</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fresenius Kabi issued a <strong>voluntary, nationwide recall of one batch</strong> of its IL-6 biosimilar Tyenne (referencing Roche's Actemra) after routine quality inspection found <strong>microscopic glass particles shedding inside 20mL vials</strong>. The drug itself isn't the problem — but glass particulate entering a patient's bloodstream can cause <strong>vascular inflammation and injection-site irritation</strong>. It's a reminder that no matter how sophisticated the molecule or the formulation, a defect in the final "fill-and-finish" step can still pull an entire batch off the market.</p>
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Plain-English Breakdown 🧩</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Glass vials are molded and sterilized at high heat before the drug ever goes in, and that process can leave <strong>microscopic flaking on the inside surface</strong> — invisible to the eye, but caught by rigorous quality testing. It has <strong>nothing to do with the drug's efficacy</strong>; it's purely a "container" problem. But patient safety means the whole batch gets pulled anyway.</p>
+        <div style="background-color: #E6F2F1 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 10px 13px 10px 13px; margin-bottom: 10px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 10px; font-weight: 700; color: #0F5A5E !important; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎓 Career Lens</p>
+          <p style="font-size: 12px; color: #134E50 !important; line-height: 1.75; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This is the <strong>Quality Assurance / Quality Control and Manufacturing</strong> story — honestly the most underrated career path for students who only think about bench research. QA/QC and CMC manufacturing roles are in constant, high demand and typically far less competitive than discovery roles. If you want a faster route into a biosimilar or biologics manufacturer, quality functions are often the door that opens first — and this story is exactly why they matter.</p>
+        </div>
+        <p style="font-size: 12px; color: #999999 !important; font-style: italic; border-top: 1px solid #E7ECF1; padding-top: 9px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📌 One batch, one microscopic glass particle, one nationwide recall — proof that manufacturing quality is never the boring part of the story. — Fierce Pharma summary</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Deep Dive ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔬 This Week's Deep Dive</p>
+  </div>
+  <!-- Deep Dive body: single table, no nested divs, for email safety -->
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="padding: 0 36px 0 36px;">
+        <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important; border-radius: 10px;">
+          <tr>
+            <td style="padding: 24px 24px 6px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Deep Dive · The Three Gates Every Drug Has to Clear</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 16px 24px; border-bottom: 1px solid #2E5F86;">
+              <p style="font-size: 17px; color: #ffffff !important; line-height: 1.45; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Molecular design, a pill reborn, and one glass vial —<br>no gate is optional</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 24px 4px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">① Same industry, different gates</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 14px 24px;">
+              <p style="font-size: 12px; color: #BFE3E4 !important; line-height: 1.8; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This week's three stories sit in completely different corners of the industry, but they map onto the same <strong>three gates every drug has to clear</strong> before it reaches a patient. BMS cleared the <strong>"molecular design" gate</strong> first in the world — a completely new way to erase a target protein. Khartis just started knocking on the <strong>"formulation" gate</strong> — turning an injection into a pill. Fresenius got tripped up at the <strong>"manufacturing" gate</strong> — recalled over glass particles. Line the three up, and drug development stops looking like one science — it looks like <strong>several layers of engineering stacked on top of each other</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 4px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">② This week's three gates, side by side</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 14px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                <tr>
+                  <th width="33%" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 7px 8px 7px 8px; text-align: left; font-size: 10px; letter-spacing: 0.04em; border-bottom: 1px solid #2E5F86;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">BMS (Design)</th>
+                  <th width="33%" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 7px 8px 7px 8px; text-align: left; font-size: 10px; letter-spacing: 0.04em; border-bottom: 1px solid #2E5F86;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Khartis (Formulation)</th>
+                  <th width="34%" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 7px 8px 7px 8px; text-align: left; font-size: 10px; letter-spacing: 0.04em; border-bottom: 1px solid #2E5F86;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fresenius (Manufacturing)</th>
+                </tr>
+                <tr>
+                  <td colspan="3" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 5px 8px 3px 8px; border-top: 1px solid #2E5F86; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Surface-Level Result</td>
+                </tr>
+                <tr>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">World's first CELMoD approval</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">$95M Series A raised</td>
+                  <td style="color: #F4C9C2 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">1 batch recalled</td>
+                </tr>
+                <tr>
+                  <td colspan="3" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 5px 8px 3px 8px; border-top: 1px solid #2E5F86; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">What the Gate Is About</td>
+                </tr>
+                <tr>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How the molecule erases its target</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How the patient swallows and absorbs it</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How pure and safe it's made</td>
+                </tr>
+                <tr>
+                  <td colspan="3" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 5px 8px 3px 8px; border-top: 1px solid #2E5F86; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How to Read It</td>
+                </tr>
+                <tr>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Signals "undruggable" targets are opening up</td>
+                  <td style="color: #F4C9C2 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto sans KR', sans-serif">Still a long way from the clinic</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Exposes fragility in biosimilar manufacturing</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 4px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">③ Why this distinction matters — no gate is optional</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 14px 24px;">
+              <p style="font-size: 12px; color: #BFE3E4 !important; line-height: 1.8; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Headlines calling something a "breakthrough" almost always mean the design gate. But a drug only reaches a patient if it also clears <strong>formulation</strong> (can they actually take it?) and <strong>manufacturing</strong> (can it be made safely and purely, every single time?). BMS's molecular design can be brilliant and still never reach the market if formulation or manufacturing fails — and as Fresenius just showed, <strong>even an already-approved drug can get pulled entirely over a single manufacturing defect</strong>. None of the three gates is optional.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 6px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">④ Career takeaway — where in this chain do you want to work?</p>
+            </td>
+          </tr>
+          <!-- scenario stack -->
+          <tr>
+            <td style="padding: 6px 24px 12px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#134E50" data-ogsc="#134E50" style="background-color: #134E50 !important; border-radius: 7px;">
+                <tr>
+                  <td style="padding: 12px 13px 12px 13px;">
+                    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #7FD2D5 !important; margin: 0 0 6px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">✓ Skill to build</p>
+                    <p style="font-size: 13px; line-height: 1.7; color: #BFE3E4 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Learn to place a drug story on the design→formulation→manufacturing map the moment you read it. Recruiters notice candidates who understand exactly where a role sits in that chain — "I want to work in biotech" is vague; "I want to work in CMC because that's where the injection-to-pill problem gets solved" is not.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 24px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#5A2A2A" data-ogsc="#5A2A2A" style="background-color: #5A2A2A !important; border-radius: 7px;">
+                <tr>
+                  <td style="padding: 12px 13px 12px 13px;">
+                    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #F0A99F !important; margin: 0 0 6px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">⚠ Trap</p>
+                    <p style="font-size: 13px; line-height: 1.7; color: #F4C9C2 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Assuming Discovery is the only prestigious or interesting path in the industry. CMC and Quality roles get far less headline attention, but this week's Fresenius story shows they're not lesser — <strong>they're load-bearing</strong>. They're also, for what it's worth, often more open to early-career candidates than Discovery is.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Editor's Insight ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">💡 Editor's Insight</p>
+    <div style="border-left: 4px solid #1A5688; background-color: #E7EFF6 !important; border-radius: 0 8px 8px 0; padding: 14px 17px 14px 17px; font-size: 13px; color: #12344F !important; line-height: 1.85;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+If there's one sentence for this week, it's this: <strong>a drug is never finished by its molecule alone.</strong> BMS opened the design gate, Khartis just started knocking on the formulation gate, and Fresenius got tripped up at the manufacturing gate. Next time a headline calls something a "breakthrough," ask which gate it's actually about — that's the reading habit I'm hoping this newsletter builds in you, one issue at a time. See you next week. 🙏
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Numbers of the Week ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📊 Numbers of the Week</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 8px;">
+      <tr>
+        <td width="30%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 16px 14px 16px 14px; vertical-align: middle; text-align: center;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 22px; font-weight: 700; color: #1A5688 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">10+ years</p>
+        </td>
+        <td width="4%"></td>
+        <td style="vertical-align: middle; padding: 0 0 0 4px;">
+          <p style="font-size: 13px; font-weight: 700; color: #1a1a1a !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How long Big Pharma has invested in targeted protein degradation (TPD)</p>
+          <p style="font-size: 12px; color: #888888 !important; line-height: 1.55; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">BMS's first-ever CELMoD approval just proved that decade-plus bet has real commercial value.</p>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 8px;">
+      <tr>
+        <td width="30%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 16px 14px 16px 14px; vertical-align: middle; text-align: center;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 28px; font-weight: 700; color: #1A5688 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">$95M</p>
+        </td>
+        <td width="4%"></td>
+        <td style="vertical-align: middle; padding: 0 0 0 4px;">
+          <p style="font-size: 13px; font-weight: 700; color: #1a1a1a !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Khartis Therapeutics' Series A round</p>
+          <p style="font-size: 12px; color: #888888 !important; line-height: 1.55; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Early-stage capital betting antibody infusions can become daily pills. Likely still pre-clinical.</p>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="30%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 16px 14px 16px 14px; vertical-align: middle; text-align: center;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 24px; font-weight: 700; color: #1A5688 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">1 batch</p>
+        </td>
+        <td width="4%"></td>
+        <td style="vertical-align: middle; padding: 0 0 0 4px;">
+          <p style="font-size: 13px; font-weight: 700; color: #1a1a1a !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How many Tyenne batches Fresenius recalled</p>
+          <p style="font-size: 12px; color: #888888 !important; line-height: 1.55; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Only one batch was flagged so far — whether the defect extends to other batches or facilities is the open question.</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ===== Stock Movers ===== -->
+    <div style="margin-top: 22px; background-color: #EAF0F5 !important; border-radius: 10px; padding: 18px 18px 16px 18px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+      <p style="font-size: 12px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📈 3 Stocks That Moved This Week</p>
+      <p style="font-size: 11px; color: #7C8A99 !important; line-height: 1.6; margin: 0 0 14px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Direction and catalyst, sketched — not exact prices. Check a real chart for that.</p>
+
+      <!-- Stock 1 · Bristol Myers Squibb (Zenbexus first-ever approval, up) -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+        <tr>
+          <td width="44%" style="padding: 11px 8px 11px 13px; vertical-align: middle;">
+            <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Bristol Myers Squibb</p>
+            <p style="font-size: 10px; color: #999999 !important; margin: 2px 0 0 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">NYSE: BMY</p>
+          </td>
+          <td width="32%" style="padding: 11px 4px 11px 4px; vertical-align: middle; text-align: center;">
+            <!-- sparkline: up -->
+            <table cellpadding="0" cellspacing="0" align="center" style="height: 34px;"><tr style="vertical-align: bottom;">
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 14px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 16px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 19px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 22px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 23px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 23px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 24px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+            </tr></table>
+          </td>
+          <td width="24%" style="padding: 11px 13px 11px 4px; vertical-align: middle; text-align: right;">
+            <span style="display: inline-block; background-color: #E2F0F0 !important; color: #146064 !important; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 5px; white-space: nowrap;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">▲ Up</span>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: #555555 !important; line-height: 1.65; margin: 0 0 14px 0; padding: 0 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Zenbexus's world-first CELMoD approval validated over a decade of targeted-protein-degradation investment, drawing buying interest. <strong>Hiring signal:</strong> first-in-class approvals like this usually mean the Discovery/Chemical Biology team is about to grow. (Directional sketch.)</p>
+
+      <!-- Stock 2 · Fresenius SE (Tyenne recall, down) -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+        <tr>
+          <td width="44%" style="padding: 11px 8px 11px 13px; vertical-align: middle;">
+            <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fresenius SE</p>
+            <p style="font-size: 10px; color: #999999 !important; margin: 2px 0 0 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">OTC: FSNUY</p>
+          </td>
+          <td width="32%" style="padding: 11px 4px 11px 4px; vertical-align: middle; text-align: center;">
+            <!-- sparkline: down -->
+            <table cellpadding="0" cellspacing="0" align="center" style="height: 34px;"><tr style="vertical-align: bottom;">
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 23px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 22px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 20px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 18px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 16px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 15px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 14px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+            </tr></table>
+          </td>
+          <td width="24%" style="padding: 11px 13px 11px 4px; vertical-align: middle; text-align: right;">
+            <span style="display: inline-block; background-color: #EAF0F5 !important; color: #555555 !important; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 5px; white-space: nowrap;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">▽ Down</span>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: #555555 !important; line-height: 1.65; margin: 0 0 14px 0; padding: 0 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">The Tyenne glass-particle recall dented confidence in quality control, even though it's contained to one batch — it exposed a broader vulnerability in biosimilar manufacturing supply chains. <strong>Hiring signal:</strong> recalls like this often trigger a quality-team hiring push to prevent a repeat. (Directional sketch.)</p>
+
+      <!-- Stock 3 · Amgen (Khartis oral threat to Tepezza, slightly down) -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+        <tr>
+          <td width="44%" style="padding: 11px 8px 11px 13px; vertical-align: middle;">
+            <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Amgen</p>
+            <p style="font-size: 10px; color: #999999 !important; margin: 2px 0 0 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">NASDAQ: AMGN</p>
+          </td>
+          <td width="32%" style="padding: 11px 4px 11px 4px; vertical-align: middle; text-align: center;">
+            <!-- sparkline: slightly down -->
+            <table cellpadding="0" cellspacing="0" align="center" style="height: 34px;"><tr style="vertical-align: bottom;">
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 21px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 20px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 20px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 19px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 19px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 18px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 18px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+            </tr></table>
+          </td>
+          <td width="24%" style="padding: 11px 13px 11px 4px; vertical-align: middle; text-align: right;">
+            <span style="display: inline-block; background-color: #EAF0F5 !important; color: #555555 !important; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 5px; white-space: nowrap;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">▽ Slightly down</span>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: #555555 !important; line-height: 1.65; margin: 0 0 14px 0; padding: 0 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Read as a long-term competitive risk to Tepezza, Amgen's thyroid eye disease antibody, now that Khartis is chasing an oral alternative. Khartis is still Series A-stage, so this isn't an immediate threat. <strong>Hiring signal:</strong> none directly — this one's a pure market read, not a staffing one. (Directional sketch.)</p>
+
+      <!-- pattern summary -->
+      <div style="background-color: #E2F0F0 !important; border-left: 4px solid #197F83; border-radius: 0 7px 7px 0; padding: 12px 14px 12px 14px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 11px; font-weight: 700; color: #0F5A5E !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔎 Why this pattern</p>
+        <p style="font-size: 12px; color: #134E50 !important; line-height: 1.7; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This week, all three stock moves tracked the <strong>same three gates from the Deep Dive</strong>: BMS cleared the design gate and rallied, Fresenius stumbled at the manufacturing gate and dropped, and Amgen dipped on a formulation-gate threat that hasn't even reached the clinic yet. The market is pricing each gate separately — worth remembering next time a headline calls something a "breakthrough." (All directional sketches — check a real chart for exact prices.)</p>
+      </div>
+
+      <!-- ===== Roles to Watch ===== -->
+      <div style="margin-top: 22px; background-color: #E6F2F1 !important; border-radius: 10px; padding: 18px 18px 16px 18px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 12px; font-weight: 700; color: #0F5A5E !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎯 Roles to Watch This Week</p>
+        <p style="font-size: 11px; color: #7C8A99 !important; line-height: 1.6; margin: 0 0 14px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Functions worth watching based on this issue's news — not live postings, so check each company's current careers page before you get excited.</p>
+
+        <!-- Role 1 · BMS -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+          <tr>
+            <td style="padding: 12px 14px 12px 14px;">
+              <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Bristol Myers Squibb — Discovery Chemistry / Chemical Biology</p>
+              <p style="font-size: 12px; color: #555555 !important; line-height: 1.6; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"><strong>Why now:</strong> a first-in-class molecular glue platform just cleared FDA approval — teams working on E3 ligase biology and targeted protein degradation are the most likely to expand next. Look under "Discovery" or "Chemical Biology" on BMS Careers.</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Role 2 · Khartis -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+          <tr>
+            <td style="padding: 12px 14px 12px 14px;">
+              <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Khartis Therapeutics — Formulation Scientist / CMC</p>
+              <p style="font-size: 12px; color: #555555 !important; line-height: 1.6; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"><strong>Why now:</strong> a fresh $95M Series A at a company whose entire thesis is turning a biologic into a small-molecule pill means early formulation/CMC hires are likely imminent. Small teams at this stage often mean broader responsibility, faster.</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Role 3 · Fresenius Kabi -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px;">
+          <tr>
+            <td style="padding: 12px 14px 12px 14px;">
+              <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fresenius Kabi — Quality Assurance / Quality Control</p>
+              <p style="font-size: 12px; color: #555555 !important; line-height: 1.6; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"><strong>Why now:</strong> a recall like this typically triggers reinforced QA/QC hiring to prevent a repeat. Quality functions are also one of the more approachable entry points into large-scale biologics manufacturing for early-career candidates.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Calendar ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🗓️ Dates to Watch</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 1px solid #DCE3EA;">
+      <tr>
+        <th width="45%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; padding: 8px 12px 8px 12px; font-size: 9px; font-weight: 700; color: #888888 !important; letter-spacing: 0.08em; text-transform: uppercase; text-align: left; border-bottom: 1px solid #DCE3EA;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">When / Event</th>
+        <th bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; padding: 8px 12px 8px 12px; font-size: 9px; font-weight: 700; color: #888888 !important; letter-spacing: 0.08em; text-transform: uppercase; text-align: left; border-bottom: 1px solid #DCE3EA;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Why It Matters</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">H2 2026 (expected)</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">BMS — Zenbexus early prescription data</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Real-world prescription tracking (e.g. IQVIA) will show whether the "world's first" approval is translating into actual scripts — the first real test of commercial confidence in the TPD platform.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">H2 2026 – 2027 (expected)</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Khartis Therapeutics — IND filing / Phase 1 start</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Still presumed preclinical. An IND filing and trial design would be the first real evidence the "injection to pill" bet is technically working.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">H2 2026 (expected)</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fresenius Kabi — recall follow-up investigation</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Whether the glass-particle defect is contained to this one batch, or extends to other batches or facilities, determines how big the supply disruption gets.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Check exact dates before booking</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Biotech conference season — BIO International Convention, JPM Healthcare Conference</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">These events often offer discounted student passes and are some of the best low-cost ways to network into Discovery, CMC, or Quality roles — confirm each event's exact dates for the year before you plan around them.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ===== Closing ===== -->
+  <div style="padding: 26px 36px 28px 36px;">
+    <div style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 18px 22px 18px 22px; font-size: 13px; color: #444444 !important; line-height: 1.85; margin-bottom: 22px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+This week we looked at the three gates every drug has to clear to reach a patient — design, formulation, and manufacturing — through BMS's first-ever molecular glue approval, Khartis's injection-to-pill bet, and Fresenius's glass-particle recall. If you take one thing from this issue: the next time you see a flashy "breakthrough" headline, ask which gate it's actually about, and which of the three functions you'd actually want to work in. That question is worth more than any resume buzzword. See you in the next issue. 🙏
+    </div>
+
+    <!-- feedback -->
+    <div style="border-top: 1px solid #DCE3EA; padding-top: 22px; margin-bottom: 22px; text-align: center;">
+      <p style="font-size: 13px; font-weight: 700; color: #1A5688 !important; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How was this issue?</p>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="text-align: center;">
+            <a href="https://forms.gle/vP1aVAiedhknHtqT8" target="_blank" style="display: inline-block; padding: 10px 28px 10px 28px; border-radius: 7px; font-size: 13px; font-weight: 700; text-decoration: none; background-color: #E2F0F0 !important; color: #0F5A5E !important; border: 1px solid #197F83; margin-right: 8px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">👍 Loved it</a>
+            <a href="https://forms.gle/vP1aVAiedhknHtqT8" target="_blank" style="display: inline-block; padding: 10px 28px 10px 28px; border-radius: 7px; font-size: 13px; font-weight: 700; text-decoration: none; background-color: #EAF0F5 !important; color: #555555 !important; border: 1px solid #C7D0D9;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🤔 Could be better</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CTA -->
+    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important; border-radius: 10px; margin-bottom: 22px;">
+      <tr>
+        <td style="padding: 20px 22px 20px 22px; text-align: center;">
+          <p style="font-size: 13px; font-weight: 700; color: #BFE3E4 !important; margin: 0 0 12px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Found this useful? Share it with a classmate. 📤</p>
+          <a href="https://page.stibee.com/subscriptions/491592" style="display: inline-block; background-color: #197F83 !important; color: #ffffff !important; font-size: 13px; font-weight: 700; padding: 10px 26px 10px 26px; border-radius: 7px; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Share the subscribe link</a>
+          <p style="padding-top: 12px; font-size: 11px; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Follow along → @bio.on_insight</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Sources -->
+    <div style="border-top: 1px solid #DCE3EA; padding-top: 16px;">
+      <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 10px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔗 Sources</p>
+      <a href="https://www.fiercepharma.com/pharma/bms-bags-first-fda-approval-celmod-franchise-zenbexus-multiple-myeloma-nod" target="_blank" style="display: block; font-size: 12px; color: #1A5688 !important; padding: 5px 0 5px 0; border-bottom: 1px solid #E7ECF1; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">① BMS Zenbexus — world's first CELMoD targeted protein degrader approved by FDA (Fierce Pharma, Aug 14, 2026)</a>
+      <a href="https://www.fiercebiotech.com/biotech/chutes-ladders-former-legend-ceo-lands-role-k2-therapeutics" target="_blank" style="display: block; font-size: 12px; color: #1A5688 !important; padding: 5px 0 5px 0; border-bottom: 1px solid #E7ECF1; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">② Khartis Therapeutics — $95M Series A, betting injections can become pills (Fierce Biotech, Aug 13, 2026)</a>
+      <a href="https://www.fiercepharma.com/pharma/fresenius-pulls-one-batch-actemra-biosim-over-glass-particle-concerns" target="_blank" style="display: block; font-size: 12px; color: #1A5688 !important; padding: 5px 0 5px 0; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">③ Fresenius Kabi — Tyenne biosimilar recalled over glass particles (Fierce Pharma, Aug 12, 2026)</a>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important;">
+    <tr>
+      <td style="padding: 22px 36px 22px 36px; text-align: center;">
+        <img src="https://img2.stibee.com/453287_3442432_1781526279024219172.png" alt="BIO:ON Insight" width="80" height="80" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #7FD2D5 !important; background-color: #ffffff !important; display: block; margin: 0 auto 10px auto; object-fit: contain;" />
+        <p style="font-size: 11px; color: #7FD2D5 !important; line-height: 1.65; margin: 0 0 10px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Global biotech &amp; pharma news, translated into career signal —<br>every week, for students and early-career professionals.</p>
+        <p style="font-size: 10px; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">© 2026 BIO:ON Insight · <a href="$%unsubscribe%$" style="color: #BFE3E4 !important; text-decoration: underline;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Unsubscribe here</a>.</p>
+      </td>
+    </tr>
+  </table>
+
+</div>
+</div>
+
+</div>

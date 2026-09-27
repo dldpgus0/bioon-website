@@ -1,0 +1,575 @@
+<!--
+  ============================================================
+  BIO:ON Insight EN #4  (English edition — same source news as KR #15)
+  ------------------------------------------------------------
+  [Audience] Biotech/pharma graduate students & early-career job-seekers, global, English-reading.
+  [Brand colors] #1A5688 (deep blue) / #197F83 (teal) — same as Korean edition.
+  [Structural note] Independent issue-numbering track from the Korean edition (EN #1, EN #2, ...).
+   Built by translating/restructuring the Korean edition's HTML shell — same table layout,
+   same !important-on-every-color discipline, same dark-mode defeat. See
+   .claude/skills/bioweekly-insight/references/sections-en.md for the full spec.
+  [Key structural changes vs. Korean edition]
+   - 🇰🇷 국내 시사점 box replaced with 🎓 Career Lens box in every news card
+   - Deep Dive career block raised to a cross-cutting "career takeaway" instead of restating
+     the per-card Career Lens points
+   - Stock Movers cards gain a one-line hiring-signal read
+   - Calendar gains a career-relevant date (conferences/application windows)
+   - New "Roles to Watch" section added after Stock Movers, before Calendar
+  [Images] Header hero + 3 news photos match KR #15 topics (RNA therapy, cell-therapy safety, pharma M&A).
+  ============================================================
+-->
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+  :root { color-scheme: light only; supported-color-schemes: light; }
+  @media (prefers-color-scheme: dark) {
+    html, body { color-scheme: light only !important; }
+  }
+</style>
+
+<div style="display:none;max-height:0;overflow:hidden;">
+  &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+</div>
+<div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">Ionis wins FDA approval for an RNA drug in Alexander disease — solo, no Big Pharma. Autoimmune CAR-T trials halt after 3 patient deaths. Lilly buys an antibody-degradation platform for $2.9B. Same word, "platform" — three very different companies.</div>
+<div style="color-scheme:light !important;supported-color-schemes:light;">
+
+<div style="background-color: #EDF1F4 !important; padding: 24px 12px 24px 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+<div style="max-width: 600px; width: 100%; margin: 0 auto; background-color: #ffffff !important; border-radius: 14px; overflow: hidden;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+
+
+  <!-- ===== Header ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important;">
+    <tr>
+      <td>
+        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=80&fit=crop"
+          alt="Gene and cell therapy platform research"
+          width="600"
+          style="width: 100%; max-width: 600px; height: 180px; object-fit: cover; opacity: 0.40; display: block;" />
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 22px 36px 28px 36px;">
+        <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.14em; color: #7FD2D5 !important; text-transform: uppercase; margin: 0 0 10px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">BIO:ON Insight EN #4 · Sep 8, 2026 · RNA Drug Approval · CAR-T Trial Halt · Platform M&A</p>
+        <h1 style="font-size: 23px; color: #ffffff !important; line-height: 1.4; margin: 0 0 12px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">A whole company on one platform —<br>so what proves the platform?</h1>
+        <p style="font-size: 13px; color: #BFE3E4 !important; line-height: 1.7; border-left: 3px solid #197F83; padding: 0 0 0 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          Ionis's solo FDA approval in Alexander disease, autoimmune CAR-T trials halted after 3 deaths,<br>and Lilly's $2.9B platform buy — this week's three stories, read for your career.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ===== Editor intro ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #E6F2F1 !important; border-bottom: 1px solid #DCE3EA;">
+    <tr>
+      <td width="58" style="padding: 16px 0 16px 36px; vertical-align: top;">
+        <img src="https://img2.stibee.com/453287_3442432_1781526301971820185.jpg"
+          alt="Editor"
+          width="44" height="44"
+          style="width: 44px; height: 44px; border-radius: 50%; border: 2px solid #197F83; display: block; object-fit: cover;" />
+      </td>
+      <td style="padding: 16px 36px 16px 14px; vertical-align: top;">
+        <div style="font-size: 13px; color: #444444 !important; line-height: 1.75;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+Put this week's news side by side and one question jumps out: <strong>biotechs are now valued on a single "platform" — so what actually proves one?</strong> Ionis got an RNA drug approved for an ultra-rare disease <strong>on its own, with no Big Pharma partner</strong>. Novartis and Bristol Myers Squibb's autoimmune CAR-T programs <strong>stopped after three patient deaths</strong>. And Lilly paid <strong>$2.9B for an antibody-degradation platform that has barely any clinical data yet</strong>. Same label, "platform biotech" — but these three companies are standing in front of three completely different gates: approval, safety, and capital.
+        </div>
+        <div style="padding-top: 5px; font-size: 11px; color: #999999 !important;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">— Editor · MSc Biotechnology &amp; Pharmaceutical Management</div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ===== Word of the Week ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; padding-top: 0; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔤 Word of the Week</p>
+    <div style="background-color: #EAF0F5 !important; border-radius: 10px; padding: 20px 22px 20px 22px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+      <p style="font-size: 19px; font-weight: 700; color: #1a1a1a !important; margin: 0; padding-bottom: 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Antisense Oligonucleotide (ASO)</p>
+      <p style="font-size: 11px; color: #999999 !important; font-style: italic; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">The mechanism behind Ionis's Zanvastro / zilganersen (Story 1)</p>
+      <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Your cells make things in a fixed order: <strong>DNA (the blueprint) → mRNA (the work order) → protein (the finished product)</strong>. Most drugs — small molecules, antibodies — act on the <strong>finished protein</strong>. An ASO is a short, lab-made strand of genetic code that <strong>binds a specific mRNA and stops that protein from being made</strong> (or corrects how it's spliced). Alexander disease is driven by too much of a protein called GFAP building up in brain cells; zilganersen targets GFAP mRNA to <strong>turn the production down at the source</strong>.</p>
+      <div style="background-color: #E2F0F0 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 11px 14px 11px 14px; font-size: 13px; color: #0F5A5E !important; line-height: 1.7; margin-bottom: 14px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        💡 <strong>Analogy:</strong> A factory keeps turning out defective units. A small-molecule or antibody drug is like <strong>inspecting the line and pulling the bad units one by one</strong>. An ASO is like <strong>walking up to the line and removing the work order</strong> so the defective units are never built. It intervenes closer to the cause.
+      </div>
+      <!-- word-compare: vertical stack (mobile-friendly) -->
+      <div style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 7px; padding: 12px 13px 12px 13px; margin-bottom: 8px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #1A5688 !important; padding-bottom: 5px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Targeting the Finished Product — Small Molecules & Antibodies</p>
+        <p style="font-size: 13px; color: #444444 !important; line-height: 1.7; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Bind the active site of a protein that already exists and block its function. The target needs a "pocket" the drug can grab — proteins like structural scaffolds inside the cell are hard to reach this way.</p>
+      </div>
+      <div style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 7px; padding: 12px 13px 12px 13px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #197F83 !important; padding-bottom: 5px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Targeting the Work Order — ASO & siRNA (RNA-Targeted)</p>
+        <p style="font-size: 13px; color: #444444 !important; line-height: 1.7; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">If you know the sequence, you can in principle design against almost any gene. Well suited to diseases where a protein is <strong>over-produced</strong>, like GFAP — and the platform Ionis has spent 20+ years refining.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Top 3 News ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📰 This Week's Top 3 Stories</p>
+
+    <!-- Story 1 -->
+    <div style="border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+      <!-- NEWS-IMG 1 (RNA / neurological disease research — swap freely) -->
+      <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=600&q=80&fit=crop"
+        alt="RNA gene therapy research" width="600"
+        style="width: 100%; max-width: 600px; height: 130px; object-fit: cover; display: block;" />
+      <div style="padding: 12px 18px 12px 18px; background-color: #E7EFF6 !important; border-bottom: 1px solid #C9DAEA;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <span style="display: inline-block; background-color: #1A5688 !important; color: #ffffff !important; font-size: 9px; font-weight: 700; padding: 2px 8px 2px 8px; border-radius: 4px; margin: 0 6px 6px 0; vertical-align: middle;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">STORY 1 · DRUG APPROVAL · RNA THERAPY</span>
+        <p style="font-size: 14px; font-weight: 700; color: #12344F !important; line-height: 1.4; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Rewriting Genetic Fate: FDA Approves Ionis's First Solo RNA Therapy for Alexander Disease</p>
+        <p style="font-size: 10px; color: #999999 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Fierce Pharma · Ionis Pharmaceuticals (NASDAQ: IONS) | Sep 3, 2026</p>
+      </div>
+      <div style="padding: 15px 18px 15px 18px;">
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Facts</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">The FDA approved Ionis's <strong>Zanvastro (zilganersen)</strong> for pediatric and adult patients with <strong>Alexander disease</strong>, a fatal, ultra-rare neurodegenerative disorder caused by <strong>GFAP mutations</strong> that let a toxic protein accumulate in astrocytes. There has been <strong>no disease-modifying treatment</strong> until now. Zilganersen is an <strong>antisense oligonucleotide (ASO)</strong> that targets GFAP mRNA to cut toxic protein production. Crucially, this is Ionis's <strong>first fully independent commercial launch from its neurology pipeline</strong> — developed, approved, and marketed without a Big Pharma licensee.</p>
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Plain-English Breakdown 🧩</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Most rare-disease drugs manage symptoms or replace a missing enzyme. Zanvastro instead <strong>lowers how much of the toxic protein gets made</strong> in the first place. The bigger story is the business model: Ionis is commercializing this <strong>itself</strong>, keeping the full value instead of licensing it out. It's proof that an ASO platform can build a rare-disease franchise <strong>on its own</strong>.</p>
+        <div style="background-color: #E6F2F1 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 10px 13px 10px 13px; margin-bottom: 10px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 10px; font-weight: 700; color: #0F5A5E !important; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎓 Career Lens</p>
+          <p style="font-size: 12px; color: #134E50 !important; line-height: 1.75; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This is a <strong>Regulatory Affairs + Commercial / Launch</strong> story, plus <strong>Oligonucleotide CMC</strong>. A company standing up its own first commercial launch has to build medical affairs, market access, and manufacturing scale-up more or less at once. Interview-ready line: "Ionis's Alexander disease approval is a test of whether an ASO platform can carry a franchise end-to-end — discovery through commercial — without a partner."</p>
+        </div>
+        <p style="font-size: 12px; color: #999999 !important; font-style: italic; border-top: 1px solid #E7ECF1; padding-top: 9px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📌 Ionis's first solo commercial launch from its neurology pipeline — a proof point for ASO-platform independence. — Fierce Pharma summary</p>
+      </div>
+    </div>
+
+    <!-- Story 2 -->
+    <div style="border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+      <!-- NEWS-IMG 2 (cell therapy / immune safety research — swap freely) -->
+      <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&q=80&fit=crop"
+        alt="CAR-T cell therapy immune response research" width="600"
+        style="width: 100%; max-width: 600px; height: 130px; object-fit: cover; display: block;" />
+      <div style="padding: 12px 18px 12px 18px; background-color: #E2F0F0 !important; border-bottom: 1px solid #BDDDDD;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <span style="display: inline-block; background-color: #197F83 !important; color: #ffffff !important; font-size: 9px; font-weight: 700; padding: 2px 8px 2px 8px; border-radius: 4px; margin: 0 6px 6px 0; vertical-align: middle;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">STORY 2 · TRIAL HALT · CELL THERAPY SAFETY</span>
+        <p style="font-size: 14px; font-weight: 700; color: #12344F !important; line-height: 1.4; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Hard Truths for Autoimmune CAR-T: Novartis and BMS Halt Trials After Three Patient Deaths</p>
+        <p style="font-size: 10px; color: #999999 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">PharmaVoice / MedPage Today · Novartis (NYSE: NVS), Bristol Myers Squibb (NYSE: BMY) | Sep 1, 2026</p>
+      </div>
+      <div style="padding: 15px 18px 15px 18px;">
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Facts</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Novartis and Bristol Myers Squibb <strong>paused multiple trials</strong> testing CAR-T cell therapies in autoimmune diseases such as lupus, after <strong>three patient deaths</strong> attributed to <strong>severe hyperinflammatory immune reactions</strong> (cytokine-release-type). CAR-T reprograms a patient's own T cells — a "living drug." In cancer, the toxicity is accepted because the disease is lethal. In a <strong>chronic autoimmune disease that isn't immediately life-threatening</strong>, the same toxicity sits on a completely different risk-benefit line.</p>
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Plain-English Breakdown 🧩</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">In cancer CAR-T, "it's this or nothing" makes severe side effects tolerable. Give the same therapy to a lupus patient and <strong>"it works" isn't enough — "is it safe enough?" becomes the gate</strong>. The live debate splits two ways: did the <strong>ultra-fast, automated manufacturing</strong> drive the toxicity, or will rivals using slower, traditional processes (Kyverna, Cabaletta) pick up the field?</p>
+        <div style="background-color: #E6F2F1 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 10px 13px 10px 13px; margin-bottom: 10px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 10px; font-weight: 700; color: #0F5A5E !important; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎓 Career Lens</p>
+          <p style="font-size: 12px; color: #134E50 !important; line-height: 1.75; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This is a <strong>Clinical Safety / Pharmacovigilance</strong> and <strong>Cell Therapy CMC / Manufacturing</strong> story. Whether the culprit is a process step or patient selection, both functions get pulled in. Interview-ready line: "The autoimmune CAR-T halt shows risk-benefit is indication-specific — a toxicity profile that clears the bar in oncology can fail it in a non-lethal disease, and manufacturing consistency becomes central to the safety case."</p>
+        </div>
+        <p style="font-size: 12px; color: #999999 !important; font-style: italic; border-top: 1px solid #E7ECF1; padding-top: 9px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📌 The risk-benefit math that works in cancer didn't carry over to a disease that isn't immediately fatal. — PharmaVoice summary</p>
+      </div>
+    </div>
+
+    <!-- Story 3 -->
+    <div style="border: 1px solid #DCE3EA; border-radius: 10px; overflow: hidden; margin-bottom: 4px;">
+      <!-- NEWS-IMG 3 (pharma M&A / immunology platform research — swap freely) -->
+      <img src="https://images.unsplash.com/photo-1554260570-e9689a3418b8?w=600&q=80&fit=crop"
+        alt="Pharma acquisition immunology research" width="600"
+        style="width: 100%; max-width: 600px; height: 130px; object-fit: cover; display: block;" />
+      <div style="padding: 12px 18px 12px 18px; background-color: #FBF1E4 !important; border-bottom: 1px solid #EFD9B8;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <span style="display: inline-block; background-color: #B45309 !important; color: #ffffff !important; font-size: 9px; font-weight: 700; padding: 2px 8px 2px 8px; border-radius: 4px; margin: 0 6px 6px 0; vertical-align: middle;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">STORY 3 · M&A · CAPITAL ALLOCATION</span>
+        <p style="font-size: 14px; font-weight: 700; color: #12344F !important; line-height: 1.4; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Reinvesting the Obesity Windfall: Lilly Buys Merida Biosciences for Up to $2.9B to Degrade Rogue Antibodies</p>
+        <p style="font-size: 10px; color: #999999 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Quartz / Becker's Hospital Review · Eli Lilly (NYSE: LLY) × Merida Biosciences | Aug 31, 2026</p>
+      </div>
+      <div style="padding: 15px 18px 15px 18px;">
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Facts</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Flush with cash from Mounjaro and Zepbound, Eli Lilly agreed to acquire <strong>Merida Biosciences for up to $2.875B</strong> (milestones included). Merida's platform <strong>selectively degrades the specific autoantibodies driving a disease</strong> — rather than broadly suppressing the immune system the way steroids do. Target indications include <strong>thyroid eye disease and food allergy</strong> (IgG/IgE-mediated conditions). It's a clean example of an obesity-market leader deploying profits into an <strong>early-stage platform</strong> to build a long-term immunology moat.</p>
+        <p style="font-size: 9px; font-weight: 700; color: #bbbbbb !important; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 4px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Plain-English Breakdown 🧩</p>
+        <p style="font-size: 13px; color: #333333 !important; line-height: 1.8; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Most autoimmune treatment dampens the whole immune system. Merida's approach <strong>picks off only the antibodies causing the damage</strong> — think of it as the antibody version of targeted protein degradation. But it's <strong>still an early platform with limited clinical data</strong>: Lilly is paying $2.9B for a <strong>likely</strong> outcome, not a proven drug.</p>
+        <div style="background-color: #E6F2F1 !important; border-left: 3px solid #197F83; border-radius: 0 6px 6px 0; padding: 10px 13px 10px 13px; margin-bottom: 10px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 10px; font-weight: 700; color: #0F5A5E !important; padding-bottom: 3px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎓 Career Lens</p>
+          <p style="font-size: 12px; color: #134E50 !important; line-height: 1.75; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This is a <strong>Business Development / Corporate Strategy</strong> story, with a <strong>Protein Degradation / Antibody Engineering</strong> science core. Interview-ready line: "Lilly is converting a cash-flow advantage from obesity into a platform position in immunology — a capital-allocation move to build a moat, not a near-term revenue play." If you work in targeted protein degradation, the 'antibody-degradation' extension is a hiring area worth tracking.</p>
+        </div>
+        <p style="font-size: 12px; color: #999999 !important; font-style: italic; border-top: 1px solid #E7ECF1; padding-top: 9px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📌 Obesity profits redeployed into an early-stage immunology platform — buying a long-term moat. — Quartz summary</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Deep Dive ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔬 This Week's Deep Dive</p>
+  </div>
+  <!-- Deep Dive body: single table, no nested divs, for email safety -->
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="padding: 0 36px 0 36px;">
+        <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important; border-radius: 10px;">
+          <tr>
+            <td style="padding: 24px 24px 6px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Deep Dive · What Proves a Platform</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 16px 24px; border-bottom: 1px solid #2E5F86;">
+              <p style="font-size: 17px; color: #ffffff !important; line-height: 1.45; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">An approved platform, a platform that killed patients, a platform bought on promise —<br>three "platform biotechs," three completely different companies</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 24px 4px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">① Same "platform," different gate</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 14px 24px;">
+              <p style="font-size: 12px; color: #BFE3E4 !important; line-height: 1.8; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Biotechs today are valued on a <strong>"platform"</strong> — one method that can produce many drugs. All three stories this week are platform stories, but each one is at a different point. Ionis's ASO platform <strong>cleared the approval gate</strong> — and did it without a Big Pharma partner. The autoimmune CAR-T platform <strong>hit the safety gate</strong>, with patient deaths and a halt. And Merida's antibody-degradation platform <strong>hasn't reached a gate yet</strong> — Lilly paid $2.9B for a likely future.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 4px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">② Three platforms, three stages of proof</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 14px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                <tr>
+                  <th width="33%" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 7px 8px 7px 8px; text-align: left; font-size: 10px; letter-spacing: 0.04em; border-bottom: 1px solid #2E5F86;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Ionis ASO</th>
+                  <th width="33%" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 7px 8px 7px 8px; text-align: left; font-size: 10px; letter-spacing: 0.04em; border-bottom: 1px solid #2E5F86;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Autoimmune CAR-T</th>
+                  <th width="34%" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 7px 8px 7px 8px; text-align: left; font-size: 10px; letter-spacing: 0.04em; border-bottom: 1px solid #2E5F86;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Lilly &times; Merida</th>
+                </tr>
+                <tr>
+                  <td colspan="3" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 5px 8px 3px 8px; border-top: 1px solid #2E5F86; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This Week's Signal</td>
+                </tr>
+                <tr>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">FDA approval</td>
+                  <td style="color: #F4C9C2 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">3 patient deaths, trials halted</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Up to $2.9B acquisition</td>
+                </tr>
+                <tr>
+                  <td colspan="3" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 5px 8px 3px 8px; border-top: 1px solid #2E5F86; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Platform Maturity</td>
+                </tr>
+                <tr>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Approved product — validated</td>
+                  <td style="color: #F4C9C2 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Clinical stage — hit a safety wall</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Preclinical / early — promise only</td>
+                </tr>
+                <tr>
+                  <td colspan="3" bgcolor="#15466E" data-ogsc="#15466E" style="background-color: #15466E !important; color: #7FD2D5 !important; padding: 5px 8px 3px 8px; border-top: 1px solid #2E5F86; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Key Risk</td>
+                </tr>
+                <tr>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Ultra-rare — small addressable market</td>
+                  <td style="color: #F4C9C2 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Non-lethal disease resets risk-benefit</td>
+                  <td style="color: #BFE3E4 !important; padding: 5px 8px 8px 8px; font-size: 12px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Loss if clinical data disappoint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 4px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">③ Why this distinction matters — not "has a platform," but "proven how far"</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 24px 14px 24px;">
+              <p style="font-size: 12px; color: #BFE3E4 !important; line-height: 1.8; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">"Innovative platform" is on every careers page and pitch deck. What separates real companies is <strong>how far the platform has actually been proven</strong>. A platform with an approved product (Ionis) has run the full loop once — science, regulatory, commercial. A platform stopped on safety in the clinic (autoimmune CAR-T) carries <strong>live, unresolved risk</strong>. A platform that's still just a promise (Merida) is <strong>high-risk, high-reward</strong>. Same phrase, three different companies — and your career and investment calls should treat them differently.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 6px 24px;">
+              <p style="font-size: 10px; font-weight: 700; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">④ Career takeaway — reading platform maturity</p>
+            </td>
+          </tr>
+          <!-- scenario stack -->
+          <tr>
+            <td style="padding: 6px 24px 12px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#134E50" data-ogsc="#134E50" style="background-color: #134E50 !important; border-radius: 7px;">
+                <tr>
+                  <td style="padding: 12px 13px 12px 13px;">
+                    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #7FD2D5 !important; margin: 0 0 6px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">✓ Skill to build</p>
+                    <p style="font-size: 13px; line-height: 1.7; color: #BFE3E4 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Learn to grade a platform's maturity yourself: check its <strong>approval history, clinical stage, and safety events</strong> (holds, halts, deaths) before you believe the pitch. The three stories this week share one demand — people who can <strong>read both the science and the deal</strong>: regulatory and clinical-data literacy, plus cell/gene/RNA-therapy CMC and manufacturing. Those are the fastest-growing skill areas across RA, Clinical Development, CMC, and Pharmacovigilance right now.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 24px 24px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#5A2A2A" data-ogsc="#5A2A2A" style="background-color: #5A2A2A !important; border-radius: 7px;">
+                <tr>
+                  <td style="padding: 12px 13px 12px 13px;">
+                    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #F0A99F !important; margin: 0 0 6px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">⚠ Trap</p>
+                    <p style="font-size: 13px; line-height: 1.7; color: #F4C9C2 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Getting dazzled by the word "platform." RNA, cell therapy, protein degradation are all genuinely the future — but the <strong>validation stage varies wildly by company</strong>. Before you apply, work out whether a company's "innovative platform" is <strong>approved-product-backed, in the clinic, or a preclinical promise</strong>. Memorize "platform = innovation" without that distinction and you'll trip up in both interviews and investment calls.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Editor's Insight ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">💡 Editor's Insight</p>
+    <div style="border-left: 4px solid #1A5688; background-color: #E7EFF6 !important; border-radius: 0 8px 8px 0; padding: 14px 17px 14px 17px; font-size: 13px; color: #12344F !important; line-height: 1.85;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+If there's one sentence for this week, it's this: <strong>a platform is a promise, and every promise sends an invoice — in approvals, in safety data, in clinical results.</strong> Ionis spent 20+ years and finally collected on the ASO platform with an approval. Autoimmune CAR-T got its safety invoice, paid in patient deaths. Lilly pre-paid $2.9B on a platform whose invoice hasn't arrived yet. The next time you read a "first-ever" headline, ask which gate the platform is actually standing in front of. That question tells you more than any headline number. See you next issue. 🙏
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Numbers of the Week ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📊 Numbers of the Week</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 8px;">
+      <tr>
+        <td width="30%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 16px 14px 16px 14px; vertical-align: middle; text-align: center;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 22px; font-weight: 700; color: #1A5688 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">$2.9B</p>
+        </td>
+        <td width="4%"></td>
+        <td style="vertical-align: middle; padding: 0 0 0 4px;">
+          <p style="font-size: 13px; font-weight: 700; color: #1a1a1a !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Max value Lilly is paying for Merida Biosciences</p>
+          <p style="font-size: 12px; color: #888888 !important; line-height: 1.55; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Up to $2.875B including milestones — obesity cash flow redeployed into an early-stage immunology platform.</p>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 8px;">
+      <tr>
+        <td width="30%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 16px 14px 16px 14px; vertical-align: middle; text-align: center;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 28px; font-weight: 700; color: #1A5688 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">3</p>
+        </td>
+        <td width="4%"></td>
+        <td style="vertical-align: middle; padding: 0 0 0 4px;">
+          <p style="font-size: 13px; font-weight: 700; color: #1a1a1a !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Patient deaths reported in autoimmune CAR-T trials</p>
+          <p style="font-size: 12px; color: #888888 !important; line-height: 1.55; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Attributed to severe hyperinflammatory immune reactions — enough for Novartis and BMS to pause multiple trials.</p>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="30%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 16px 14px 16px 14px; vertical-align: middle; text-align: center;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 24px; font-weight: 700; color: #1A5688 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">20+ years</p>
+        </td>
+        <td width="4%"></td>
+        <td style="vertical-align: middle; padding: 0 0 0 4px;">
+          <p style="font-size: 13px; font-weight: 700; color: #1a1a1a !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How long Ionis has been refining its ASO platform</p>
+          <p style="font-size: 12px; color: #888888 !important; line-height: 1.55; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This week it produced Ionis's first neurology drug taken all the way to market solo — no Big Pharma partner.</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ===== Stock Movers ===== -->
+    <div style="margin-top: 22px; background-color: #EAF0F5 !important; border-radius: 10px; padding: 18px 18px 16px 18px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+      <p style="font-size: 12px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">📈 3 Stocks That Moved This Week</p>
+      <p style="font-size: 11px; color: #7C8A99 !important; line-height: 1.6; margin: 0 0 14px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Direction and catalyst, sketched — not exact prices. Check a real chart for that.</p>
+
+      <!-- Stock 1 · Ionis (Alexander disease approval, up) -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+        <tr>
+          <td width="44%" style="padding: 11px 8px 11px 13px; vertical-align: middle;">
+            <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Ionis Pharmaceuticals</p>
+            <p style="font-size: 10px; color: #999999 !important; margin: 2px 0 0 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">NASDAQ: IONS</p>
+          </td>
+          <td width="32%" style="padding: 11px 4px 11px 4px; vertical-align: middle; text-align: center;">
+            <!-- sparkline: sharp up -->
+            <table cellpadding="0" cellspacing="0" align="center" style="height: 34px;"><tr style="vertical-align: bottom;">
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 10px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 11px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 12px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 13px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 18px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 25px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 30px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+            </tr></table>
+          </td>
+          <td width="24%" style="padding: 11px 13px 11px 4px; vertical-align: middle; text-align: right;">
+            <span style="display: inline-block; background-color: #E2F0F0 !important; color: #146064 !important; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 5px; white-space: nowrap;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">▲ Up</span>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: #555555 !important; line-height: 1.65; margin: 0 0 14px 0; padding: 0 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Shares rose on the <strong>FDA approval of Zanvastro in Alexander disease</strong> — the first solo neurology launch validates Ionis's "no partner needed" thesis. <strong>Hiring signal:</strong> a first independent commercial launch usually means the medical affairs, market access, and commercial teams grow fast — worth watching for openings. (Directional sketch.)</p>
+
+      <!-- Stock 2 · Novartis (autoimmune CAR-T trial halt, down) -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+        <tr>
+          <td width="44%" style="padding: 11px 8px 11px 13px; vertical-align: middle;">
+            <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Novartis</p>
+            <p style="font-size: 10px; color: #999999 !important; margin: 2px 0 0 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">NYSE: NVS</p>
+          </td>
+          <td width="32%" style="padding: 11px 4px 11px 4px; vertical-align: middle; text-align: center;">
+            <!-- sparkline: down -->
+            <table cellpadding="0" cellspacing="0" align="center" style="height: 34px;"><tr style="vertical-align: bottom;">
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 23px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 22px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 20px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 18px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 16px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 15px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 14px; background-color: #9AB7CC !important; border-radius: 1px;"></div></td>
+            </tr></table>
+          </td>
+          <td width="24%" style="padding: 11px 13px 11px 4px; vertical-align: middle; text-align: right;">
+            <span style="display: inline-block; background-color: #EAF0F5 !important; color: #555555 !important; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 5px; white-space: nowrap;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">▽ Down</span>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: #555555 !important; line-height: 1.65; margin: 0 0 14px 0; padding: 0 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Shares slipped after <strong>three patient deaths halted its autoimmune CAR-T trials</strong>. As a co-leader in the space alongside BMS, the setback reset expectations across the autoimmune cell-therapy pipeline. <strong>Hiring signal:</strong> expect Pharmacovigilance and Cell Therapy CMC roles to get more scrutiny, not fewer openings — this is exactly the kind of moment those teams get pulled in. (Directional sketch.)</p>
+
+      <!-- Stock 3 · Cabaletta Bio (traditional-manufacturing CAR-T read-through, up) -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+        <tr>
+          <td width="44%" style="padding: 11px 8px 11px 13px; vertical-align: middle;">
+            <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Cabaletta Bio</p>
+            <p style="font-size: 10px; color: #999999 !important; margin: 2px 0 0 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">NASDAQ: CABA</p>
+          </td>
+          <td width="32%" style="padding: 11px 4px 11px 4px; vertical-align: middle; text-align: center;">
+            <!-- sparkline: up -->
+            <table cellpadding="0" cellspacing="0" align="center" style="height: 34px;"><tr style="vertical-align: bottom;">
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 14px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 17px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 19px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 22px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 24px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 25px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+              <td style="padding: 0 1px;"><div style="width: 6px; height: 26px; background-color: #197F83 !important; border-radius: 1px;"></div></td>
+            </tr></table>
+          </td>
+          <td width="24%" style="padding: 11px 13px 11px 4px; vertical-align: middle; text-align: right;">
+            <span style="display: inline-block; background-color: #E2F0F0 !important; color: #146064 !important; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 5px; white-space: nowrap;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">▲ Up</span>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: #555555 !important; line-height: 1.65; margin: 0 0 14px 0; padding: 0 2px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Buying interest picked up on the read-through that <strong>Novartis and BMS's halt could benefit rivals using slower, traditional manufacturing</strong>. A safety question at the leaders quickly becomes a manufacturing-method contest. <strong>Hiring signal:</strong> smaller autoimmune cell-therapy players tend to expand Clinical and Process Development when the field's leaders stumble. (Directional sketch.)</p>
+
+      <!-- pattern summary -->
+      <div style="background-color: #E2F0F0 !important; border-left: 4px solid #197F83; border-radius: 0 7px 7px 0; padding: 12px 14px 12px 14px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 11px; font-weight: 700; color: #0F5A5E !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔎 Why this pattern</p>
+        <p style="font-size: 12px; color: #134E50 !important; line-height: 1.7; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">This week, <strong>"which gate the platform is standing in front of" decided the stock reaction</strong>: Ionis cleared the approval gate and rose, Novartis hit the safety gate and slid, and Cabaletta rose on the read-through from that same setback. The market responded to <strong>what each platform is currently proving</strong> as much as to what each company owns. (All directional sketches — check a real chart for exact prices.)</p>
+      </div>
+
+      <!-- ===== Roles to Watch ===== -->
+      <div style="margin-top: 22px; background-color: #E6F2F1 !important; border-radius: 10px; padding: 18px 18px 16px 18px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+        <p style="font-size: 12px; font-weight: 700; color: #0F5A5E !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🎯 Roles to Watch This Week</p>
+        <p style="font-size: 11px; color: #7C8A99 !important; line-height: 1.6; margin: 0 0 14px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Functions worth watching based on this issue's news — not live postings, so check each company's current careers page before you get excited.</p>
+
+        <!-- Role 1 · Ionis -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+          <tr>
+            <td style="padding: 12px 14px 12px 14px;">
+              <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Ionis — Market Access / Medical Affairs (rare disease launch)</p>
+              <p style="font-size: 12px; color: #555555 !important; line-height: 1.6; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"><strong>Why now:</strong> a first solo commercial launch in an ultra-rare disease means Ionis is building payer strategy, patient-finding, and field medical from a small base. Look under "Commercial," "Market Access," or "Medical Affairs" on its careers page. Oligonucleotide CMC/manufacturing roles are the parallel science track.</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Role 2 · Novartis / BMS -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px; margin-bottom: 9px;">
+          <tr>
+            <td style="padding: 12px 14px 12px 14px;">
+              <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Novartis / BMS — Pharmacovigilance / Cell Therapy CMC</p>
+              <p style="font-size: 12px; color: #555555 !important; line-height: 1.6; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"><strong>Why now:</strong> trials halted over patient deaths need people who can run the safety investigation, trace whether manufacturing is a factor, and rebuild the protocol and FDA case. Clinical safety and cell-therapy process expertise gets more valuable in moments like this, not less.</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Role 3 · Lilly / Merida -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff !important; border: 1px solid #DCE3EA; border-radius: 8px;">
+          <tr>
+            <td style="padding: 12px 14px 12px 14px;">
+              <p style="font-size: 13px; font-weight: 700; color: #12344F !important; margin: 0 0 4px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Lilly / Merida — Antibody Engineering / Translational (protein degradation)</p>
+              <p style="font-size: 12px; color: #555555 !important; line-height: 1.6; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"><strong>Why now:</strong> integrating an antibody-degradation platform means Lilly needs people who bridge protein engineering and disease biology to move Merida's programs into the clinic. Watch Lilly Immunology and "protein degradation" postings once the deal closes; the science overlaps heavily with TPD.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- divider -->
+  <div style="height: 1px; background-color: #DCE3EA; margin: 26px 36px 0 36px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif"></div>
+
+  <!-- ===== Calendar ===== -->
+  <div style="padding: 26px 36px 0 36px;">
+    <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 16px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🗓️ Dates to Watch</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 1px solid #DCE3EA;">
+      <tr>
+        <th width="45%" bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; padding: 8px 12px 8px 12px; font-size: 9px; font-weight: 700; color: #888888 !important; letter-spacing: 0.08em; text-transform: uppercase; text-align: left; border-bottom: 1px solid #DCE3EA;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">When / Event</th>
+        <th bgcolor="#EAF0F5" style="background-color: #EAF0F5 !important; padding: 8px 12px 8px 12px; font-size: 9px; font-weight: 700; color: #888888 !important; letter-spacing: 0.08em; text-transform: uppercase; text-align: left; border-bottom: 1px solid #DCE3EA;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Why It Matters</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Q4 2026 (expected)</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Ionis — Zanvastro US launch, first prescriptions and early revenue guidance</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Whether a solo ultra-rare launch actually converts to revenue and patient access — the first report card on Ionis's independent neurology franchise.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Oct–Nov 2026 (expected)</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Novartis & BMS — root-cause analysis of the deaths, trial restart or redesign</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Whether the cause is a manufacturing step, patient selection, or dose will set the pace for the entire autoimmune cell-therapy field.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">H1 2027 (expected)</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Lilly — Merida acquisition close, antibody-degradation pipeline integration plan</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Which indication Lilly takes into the clinic first — thyroid eye disease or food allergy — will show how it's prioritizing the platform.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; vertical-align: top; line-height: 1.55;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+          <p style="font-size: 11px; font-weight: 700; color: #1A5688 !important; margin: 0 0 3px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Check exact dates before booking</p>
+          <p style="font-size: 12px; color: #333333 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Cell & gene therapy meeting season — ASGCT, Meeting on the Mesa, plus JPM Healthcare in January</p>
+        </td>
+        <td style="padding: 10px 12px 10px 12px; border-top: 1px solid #DCE3EA; font-size: 12px; color: #555555 !important; vertical-align: top; line-height: 1.6;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Relevant to this issue's CAR-T and RNA themes. Several offer discounted student or trainee passes and are among the cheapest ways to network into Discovery, CMC, or Clinical roles — confirm each event's exact dates for the year before planning.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ===== Closing ===== -->
+  <div style="padding: 26px 36px 28px 36px;">
+    <div style="background-color: #EAF0F5 !important; border-radius: 9px; padding: 18px 22px 18px 22px; font-size: 13px; color: #444444 !important; line-height: 1.85; margin-bottom: 22px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+This week we looked at three "platform biotechs" at three different points: Ionis cleared the approval gate solo, autoimmune CAR-T hit the safety gate with patient deaths, and Lilly pre-paid $2.9B for a platform that hasn't reached a gate yet. If you take one thing from this issue: the next time you read a "first-ever" or "platform" headline, ask which gate the company is actually standing in front of — approval, safety, or capital. That question tells you more than any headline number does. See you in the next issue. 🙏
+    </div>
+
+    <!-- feedback -->
+    <div style="border-top: 1px solid #DCE3EA; padding-top: 22px; margin-bottom: 22px; text-align: center;">
+      <p style="font-size: 13px; font-weight: 700; color: #1A5688 !important; padding-bottom: 12px; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">How was this issue?</p>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="text-align: center;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFQfE7uG2shzhBV0Kk0TAOJugqj3NqVBBv0CEidjkBqVRMVA/viewform" target="_blank" style="display: inline-block; padding: 10px 28px 10px 28px; border-radius: 7px; font-size: 13px; font-weight: 700; text-decoration: none; background-color: #E2F0F0 !important; color: #0F5A5E !important; border: 1px solid #197F83; margin-right: 8px;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">👍 Loved it</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFQfE7uG2shzhBV0Kk0TAOJugqj3NqVBBv0CEidjkBqVRMVA/viewform" target="_blank" style="display: inline-block; padding: 10px 28px 10px 28px; border-radius: 7px; font-size: 13px; font-weight: 700; text-decoration: none; background-color: #EAF0F5 !important; color: #555555 !important; border: 1px solid #C7D0D9;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🤔 Could be better</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CTA -->
+    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important; border-radius: 10px; margin-bottom: 22px;">
+      <tr>
+        <td style="padding: 20px 22px 20px 22px; text-align: center;">
+          <p style="font-size: 13px; font-weight: 700; color: #BFE3E4 !important; margin: 0 0 12px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Found this useful? Share it with a classmate. 📤</p>
+          <a href="https://mailchi.mp/19ef3d8ae3d5/bioweekly-insight" style="display: inline-block; background-color: #197F83 !important; color: #ffffff !important; font-size: 13px; font-weight: 700; padding: 10px 26px 10px 26px; border-radius: 7px; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Share the subscribe link</a>
+          <p style="padding-top: 12px; font-size: 11px; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Follow along → @bio.on_insight</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Sources -->
+    <div style="border-top: 1px solid #DCE3EA; padding-top: 16px;">
+      <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #7C8A99 !important; text-transform: uppercase; border-bottom: 1px solid #DCE3EA; padding-bottom: 8px; margin: 0 0 10px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">🔗 Sources</p>
+      <a href="https://www.fiercepharma.com/pharma/ionis-breakthrough-alexander-disease-approval-establishes-pillar-rare-disease-pipeline" target="_blank" style="display: block; font-size: 12px; color: #1A5688 !important; padding: 5px 0 5px 0; border-bottom: 1px solid #E7ECF1; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">① Ionis wins FDA approval for first disease-modifying RNA therapy in Alexander disease (Fierce Pharma, Sep 3, 2026)</a>
+      <a href="https://www.pharmavoice.com/news/autoimmune-cell-therapy-safety-novartis-bristol-kyverna-cabaletta/829479/" target="_blank" style="display: block; font-size: 12px; color: #1A5688 !important; padding: 5px 0 5px 0; border-bottom: 1px solid #E7ECF1; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">② Autoimmune cell therapy safety: Novartis and BMS halt trials after patient deaths (PharmaVoice / MedPage Today, Sep 1, 2026)</a>
+      <a href="https://qz.com/eli-lilly-merida-biosciences-acquisition-autoimmune-083126" target="_blank" style="display: block; font-size: 12px; color: #1A5688 !important; padding: 5px 0 5px 0; text-decoration: none;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">③ Eli Lilly to acquire Merida Biosciences for up to $2.9B (Quartz / Becker's Hospital Review, Aug 31, 2026)</a>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#1A5688" data-ogsc="#1A5688" style="background-color: #1A5688 !important;">
+    <tr>
+      <td style="padding: 22px 36px 22px 36px; text-align: center;">
+        <img src="https://img2.stibee.com/453287_3442432_1781526279024219172.png" alt="BIO:ON Insight" width="80" height="80" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #7FD2D5 !important; background-color: #ffffff !important; display: block; margin: 0 auto 10px auto; object-fit: contain;" />
+        <p style="font-size: 11px; color: #7FD2D5 !important; line-height: 1.65; margin: 0 0 10px 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Global biotech &amp; pharma news, translated into career signal —<br>every week, for students and early-career professionals.</p>
+        <p style="font-size: 10px; color: #7FD2D5 !important; margin: 0;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">© 2026 BIO:ON Insight · <a href="$%unsubscribe%$" style="color: #BFE3E4 !important; text-decoration: underline;; font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Unsubscribe here</a>.</p>
+      </td>
+    </tr>
+  </table>
+
+</div>
+</div>
+
+</div>

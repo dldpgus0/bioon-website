@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* Brand tokens — light-only, matching the newsletter (#1A5688 deep blue / #197F83 teal). */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f4f7fa;
+  --ink: #132a4c;
+  --text: #2c3b50;
+  --muted: #66758a;
+  --line: #e4eaf0;
+  --brand: #1a5688;
+  --teal: #197f83;
+  --teal-soft: #e8f4f3;
+  --brand-soft: #eaf1f8;
+  --on-brand: #ffffff;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+  --font-sans: "Pretendard Variable", Pretendard, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--teal-soft);
+  color: var(--ink);
+}
+
+/* Long-form markdown (career posts) */
+.prose-bioon {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+.prose-bioon h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.prose-bioon h3 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.prose-bioon p,
+.prose-bioon ul,
+.prose-bioon ol {
+  margin: 1rem 0;
+}
+.prose-bioon ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.prose-bioon ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+.prose-bioon li {
+  margin: 0.35rem 0;
+}
+.prose-bioon strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+.prose-bioon a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-bioon blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--teal);
+  background: var(--teal-soft);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: var(--ink);
+}
+.prose-bioon code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.3em;
+  background: var(--surface-2);
+}

@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "BIO:ON — Biotech & pharma news, turned into career insight",
+    "description": "Every Tuesday morning, BIO:ON Insight turns last week's three biggest biotech and pharma stories into insight — with the Korean angle and what they mean for your career."
+  },
+  "nav": {
+    "insight": "Insight",
+    "career": "Career",
+    "resources": "Resources",
+    "about": "About",
+    "subscribe": "Subscribe",
+    "switchLang": "한국어"
+  },
+  "home": {
+    "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
+    "title1": "Biotech & pharma news,",
+    "title2": "turned into career insight",
+    "lede": "Last week's three stories that matter — explained plainly, with the Korean market angle and which roles they matter for.",
+    "ctaSubscribe": "Subscribe for free",
+    "ctaArchive": "Browse past issues",
+    "latest": "Latest insight",
+    "viewAll": "View all",
+    "pillarsTitle": "What you'll find here",
+    "pillars": [
+      {
+        "title": "Weekly Insight",
+        "body": "Last week's top 3 news + word of the week + a deep dive. Catch up in five minutes.",
+        "href": "/insight"
+      },
+      {
+        "title": "Bio careers",
+        "body": "LinkedIn, résumé and interview guides for aspiring pharma sales, CRA, RA and BD professionals.",
+        "href": "/career"
+      },
+      {
+        "title": "AI career tools",
+        "body": "AI feedback on your résumé and LinkedIn, plus role-specific AI mock interviews. Coming soon.",
+        "href": "/career/tools"
+      },
+      {
+        "title": "Resources",
+        "body": "Free and paid downloads like interview question banks and résumé templates.",
+        "href": "/resources"
+      }
+    ],
+    "careerTitle": "Reading the news is job prep",
+    "careerBody": "Every BIO:ON story notes which roles it matters for — so when an interviewer asks \"What industry news caught your eye recently?\", you have a sharp answer ready.",
+    "careerCta": "Explore career guides",
+    "hello": "Hello! I'm Yaehyun",
+    "heroLede": "I studied Pharmacology (BSc) at UCL in London and am now doing an MSc in Biotechnology & Pharmaceutical Management there, while publishing BIO:ON Insight — last week's three biggest biotech and pharma stories, every Tuesday, read through a Korean lens and a career lens.",
+    "badgeIssues": "issues published",
+    "badgeWeekly": "Every Tuesday",
+    "latestSub": "Last week in biotech & pharma",
+    "pillarsSub": "From newsletter to career",
+    "journeyTitle": "Journey",
+    "journeySub": "From pharmacology at UCL to biotech media",
+    "journey": [
+      {
+        "date": "Jun 2024",
+        "title": "BSc Pharmacology, UCL",
+        "body": "Graduated from University College London, UK.",
+        "upcoming": false
+      },
+      {
+        "date": "Jun 2026",
+        "title": "BIO:ON Insight launches",
+        "body": "The first issue: three biotech and pharma stories a week, with the Korean angle.",
+        "upcoming": false
+      },
+      {
+        "date": "Jun 2026",
+        "title": "Card-news pipeline",
+        "body": "A workflow that turns each issue into an Instagram carousel automatically.",
+        "upcoming": false
+      },
+      {
+        "date": "Aug 2026",
+        "title": "English edition begins",
+        "body": "BIO:ON Insight EN for international readers.",
+        "upcoming": false
+      },
+      {
+        "date": "Sep 2026",
+        "title": "Started MSc at UCL",
+        "body": "MSc Biotechnology & Pharmaceutical Management.",
+        "upcoming": false
+      },
+      {
+        "date": "Sep 2026",
+        "title": "Website launch",
+        "body": "An archive and career platform built from scratch in Next.js.",
+        "upcoming": false
+      },
+      {
+        "date": "Oct 2027",
+        "title": "MSc graduation (expected)",
+        "body": "MSc Biotechnology & Pharmaceutical Management, UCL.",
+        "upcoming": true
+      }
+    ]
+  },
+  "insight": {
+    "title": "BIO:ON Insight archive",
+    "lede": "Every issue we've published. Tap a tag to filter by topic.",
+    "all": "All",
+    "issue": "Issue",
+    "read": "Read",
+    "back": "Back to archive",
+    "otherLang": "한국어판 보기",
+    "noOtherLang": "This issue is only available in Korean for now — an AI translation pipeline is on the way.",
+    "empty": "No issues with this tag.",
+    "moreTags": "More tags",
+    "lessTags": "Show less"
+  },
+  "career": {
+    "title": "Bio careers",
+    "lede": "Practical guides for breaking into biotech and pharma — connecting the industry stories we cover to your interviews and applications.",
+    "categories": {
+      "all": "All",
+      "linkedin": "LinkedIn",
+      "resume": "Résumé & cover letter",
+      "interview": "Interviews",
+      "industry": "Industry & hiring trends"
+    },
+    "roles": "Relevant roles",
+    "sample": "Sample post",
+    "back": "Back to career",
+    "empty": "No posts yet.",
+    "toolsTitle": "AI career tools",
+    "toolsLede": "Prepare your applications and interviews with role-specific AI feedback.",
+    "toolsCta": "See the tools",
+    "comingSoon": "Coming soon",
+    "tools": [
+      {
+        "title": "AI résumé & LinkedIn feedback",
+        "body": "Pick a target role and paste your text to get section-by-section feedback on structure, role keywords and specificity — with rewrite suggestions. Nothing you paste is stored."
+      },
+      {
+        "title": "AI mock interview",
+        "body": "Choose a role and company type (Korean pharma, multinational, biotech) and answer five questions — including industry questions drawn from recent BIO:ON issues."
+      }
+    ],
+    "toolsNotify": "Subscribers hear first when they launch."
+  },
+  "resources": {
+    "title": "Resources",
+    "lede": "Free resources are yours for an email address. Paid resources are on the way.",
+    "free": "Free",
+    "paid": "Paid",
+    "comingSoon": "Coming soon",
+    "getFree": "Get it by email",
+    "items": [
+      {
+        "title": "Bio interview question bank",
+        "body": "Frequent questions and answer structures for pharma sales, CRA, RA and BD roles.",
+        "type": "free"
+      },
+      {
+        "title": "Biotech glossary",
+        "body": "Every 'Word of the Week' from the newsletter, in one place.",
+        "type": "free"
+      },
+      {
+        "title": "Role-specific résumé templates",
+        "body": "Templates built from the structure of successful applications.",
+        "type": "paid"
+      }
+    ]
+  },
+  "subscribe": {
+    "title": "Subscribe to BIO:ON Insight",
+    "lede": "Every Tuesday morning, last week's three biotech and pharma stories that matter — distilled into insight, in your inbox. Unsubscribe any time.",
+    "email": "Email address",
+    "name": "Name (optional)",
+    "submit": "Subscribe",
+    "submitting": "Submitting…",
+    "success": "Thanks for subscribing! Check your inbox.",
+    "error": "Something went wrong. Please try again shortly.",
+    "privacy": "Your email is used only to send the newsletter and is managed through Stibee.",
+    "points": [
+      "Top 3 news, explained plainly",
+      "Korean market angle & relevant roles",
+      "Word of the week · deep dive"
+    ]
+  },
+  "about": {
+    "title": "About",
+    "name": "Yaehyun Lee",
+    "role": "Editor, BIO:ON · MSc Biotechnology & Pharmaceutical Management, UCL",
+    "bio": "BIO:ON is a newsletter that reads biotech and pharma news through a Korean lens and a career lens. Each week I read the original global coverage and add the context people preparing for the industry actually need.",
+    "aiTitle": "A media project built with AI",
+    "aiLede": "BIO:ON runs on an AI-assisted workflow from research to publishing. This site itself was designed and coded with Claude Code.",
+    "aiSteps": [
+      {
+        "title": "Research & translation",
+        "body": "Global press releases are gathered and machine-translated first, then checked line by line against the originals."
+      },
+      {
+        "title": "Newsletter production",
+        "body": "An email-safe HTML template co-designed with AI keeps the structure fixed while the content changes weekly."
+      },
+      {
+        "title": "Card news & reels",
+        "body": "A pipeline turns each issue into an Instagram carousel automatically."
+      },
+      {
+        "title": "This website",
+        "body": "Built from scratch in Next.js — bilingual, with automatic archive import, and AI translation, summaries and a chatbot on the way."
+      }
+    ],
+    "contact": "Get in touch",
+    "educationTitle": "Education",
+    "education": [
+      {
+        "date": "Sep 2026 – Oct 2027",
+        "degree": "MSc Biotechnology & Pharmaceutical Management",
+        "school": "University College London (UCL)",
+        "note": "Expected"
+      },
+      {
+        "date": "Jun 2024",
+        "degree": "BSc Pharmacology",
+        "school": "University College London (UCL)",
+        "note": "Graduated"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Biotech & pharma news, turned into career insight.",
+    "built": "Built with Next.js and Claude Code"
+  }
+}

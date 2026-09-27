@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "BIO:ON — 바이오·제약 뉴스를 커리어 인사이트로",
+    "description": "매주 화요일 아침, 지난주 바이오·제약 핵심 뉴스 3개를 한국 관점과 직무 관점의 인사이트로 정리해 보내드리는 뉴스레터, BIO:ON Insight."
+  },
+  "nav": {
+    "insight": "인사이트",
+    "career": "커리어",
+    "resources": "자료실",
+    "about": "소개",
+    "subscribe": "구독하기",
+    "switchLang": "English"
+  },
+  "home": {
+    "eyebrow": "매주 화요일 아침 · 바이오·제약 뉴스레터",
+    "title1": "바이오·제약 뉴스를",
+    "title2": "커리어 인사이트로",
+    "lede": "지난주 꼭 알아야 할 뉴스 3개를 골라, 쉬운 설명과 국내 시사점, 그리고 어떤 직무에 중요한지까지 인사이트로 정리해 드려요.",
+    "ctaSubscribe": "무료로 구독하기",
+    "ctaArchive": "지난 호 보기",
+    "latest": "최신 인사이트",
+    "viewAll": "전체 보기",
+    "pillarsTitle": "BIO:ON에서 할 수 있는 것",
+    "pillars": [
+      {
+        "title": "주간 인사이트",
+        "body": "지난주 뉴스 3개 + 이번 주의 단어 + 딥다이브. 5분이면 한 주 흐름이 잡혀요.",
+        "href": "/insight"
+      },
+      {
+        "title": "바이오 커리어",
+        "body": "제약영업·CRA·RA·BD 지망생을 위한 링크드인, 자소서, 면접 가이드.",
+        "href": "/career"
+      },
+      {
+        "title": "AI 커리어 도구",
+        "body": "자소서·링크드인 AI 피드백과 직무별 AI 모의면접. 곧 공개돼요.",
+        "href": "/career/tools"
+      },
+      {
+        "title": "자료실",
+        "body": "면접 질문집, 자소서 템플릿 같은 무료·유료 자료.",
+        "href": "/resources"
+      }
+    ],
+    "careerTitle": "뉴스를 읽는 게 곧 취업 준비예요",
+    "careerBody": "BIO:ON의 모든 뉴스에는 '어떤 직군에 중요한 이야기인지'가 붙어 있어요. 면접에서 \"최근 관심 있게 본 업계 이슈는?\"이라는 질문에 자신 있게 답할 수 있도록요.",
+    "careerCta": "커리어 가이드 보기",
+    "hello": "안녕하세요! 이예현입니다",
+    "heroLede": "영국 UCL에서 약리학(BSc)을 전공하고 같은 학교에서 Biotechnology & Pharmaceutical Management 석사 과정을 밟으며, 매주 화요일 지난주 바이오·제약 핵심 뉴스 3개를 한국 관점과 직무 관점으로 풀어 BIO:ON Insight를 발행하고 있어요.",
+    "badgeIssues": "발행한 뉴스레터",
+    "badgeWeekly": "매주 화요일 발행",
+    "latestSub": "지난주 바이오·제약 핵심 이슈",
+    "pillarsSub": "뉴스레터에서 커리어까지",
+    "journeyTitle": "커리어 여정",
+    "journeySub": "UCL 약리학 전공에서 바이오 미디어까지",
+    "journey": [
+      {
+        "date": "2024.06",
+        "title": "UCL BSc Pharmacology 졸업",
+        "body": "영국 University College London에서 약리학 학사 학위 취득.",
+        "upcoming": false
+      },
+      {
+        "date": "2026.06",
+        "title": "BIO:ON Insight 창간",
+        "body": "매주 바이오·제약 뉴스 3개를 한국 관점으로 풀어낸 첫 호 발행.",
+        "upcoming": false
+      },
+      {
+        "date": "2026.06",
+        "title": "카드뉴스 파이프라인 구축",
+        "body": "뉴스레터 내용을 인스타그램 카드뉴스로 자동 변환하는 워크플로우.",
+        "upcoming": false
+      },
+      {
+        "date": "2026.08",
+        "title": "영문판 발행 시작",
+        "body": "해외 독자를 위한 BIO:ON Insight EN 발행.",
+        "upcoming": false
+      },
+      {
+        "date": "2026.09",
+        "title": "UCL MSc 입학",
+        "body": "MSc Biotechnology & Pharmaceutical Management 과정 시작.",
+        "upcoming": false
+      },
+      {
+        "date": "2026.09",
+        "title": "웹사이트 오픈",
+        "body": "Next.js로 직접 개발한 아카이브·커리어 플랫폼.",
+        "upcoming": false
+      },
+      {
+        "date": "2027.10",
+        "title": "MSc 졸업 예정",
+        "body": "UCL MSc Biotechnology & Pharmaceutical Management 졸업 예정.",
+        "upcoming": true
+      }
+    ]
+  },
+  "insight": {
+    "title": "BIO:ON Insight 아카이브",
+    "lede": "지금까지 발행한 모든 호를 모았어요. 태그를 눌러 관심 주제만 골라보세요.",
+    "all": "전체",
+    "issue": "호",
+    "read": "읽기",
+    "back": "아카이브로",
+    "otherLang": "English edition",
+    "noOtherLang": "이 호의 영문판은 준비 중이에요 (AI 번역 파이프라인 예정).",
+    "empty": "해당 태그의 호가 없어요.",
+    "moreTags": "태그 더보기",
+    "lessTags": "접기"
+  },
+  "career": {
+    "title": "바이오 커리어",
+    "lede": "바이오·제약 업계 취업을 준비하는 분들을 위한 실전 가이드. 뉴스레터에서 다룬 업계 이슈를 면접과 자소서에 연결해 드려요.",
+    "categories": {
+      "all": "전체",
+      "linkedin": "링크드인",
+      "resume": "자소서·이력서",
+      "interview": "면접",
+      "industry": "업계·채용 동향"
+    },
+    "roles": "관련 직무",
+    "sample": "샘플 글",
+    "back": "커리어로",
+    "empty": "아직 글이 없어요.",
+    "toolsTitle": "AI 커리어 도구",
+    "toolsLede": "직무에 맞춘 AI 피드백으로 서류와 면접을 준비하세요.",
+    "toolsCta": "도구 둘러보기",
+    "comingSoon": "곧 공개",
+    "tools": [
+      {
+        "title": "AI 자소서·링크드인 피드백",
+        "body": "지원 직무를 고르고 글을 붙여넣으면, 두괄식 구조·직무 키워드·구체성 기준으로 항목별 피드백과 개선 예시를 드려요. 입력한 글은 저장하지 않아요."
+      },
+      {
+        "title": "AI 모의면접",
+        "body": "직무와 회사 유형(국내 제약사·외국계·바이오텍)을 고르면 질문 5개가 나와요. 최근 BIO:ON 이슈를 활용한 산업 이해도 질문도 포함돼요."
+      }
+    ],
+    "toolsNotify": "공개되면 뉴스레터로 가장 먼저 알려드려요."
+  },
+  "resources": {
+    "title": "자료실",
+    "lede": "무료 자료는 이메일만 입력하면 받아볼 수 있어요. 유료 자료는 준비 중이에요.",
+    "free": "무료",
+    "paid": "유료",
+    "comingSoon": "준비 중",
+    "getFree": "이메일로 받기",
+    "items": [
+      {
+        "title": "바이오 직무 면접 질문 모음",
+        "body": "제약영업·CRA·RA·BD 직무별 빈출 질문과 답변 구조.",
+        "type": "free"
+      },
+      {
+        "title": "바이오 산업 용어집",
+        "body": "뉴스레터 '이번 주의 단어'를 모은 용어집.",
+        "type": "free"
+      },
+      {
+        "title": "직무별 자소서 템플릿",
+        "body": "합격 자소서 구조를 분석한 직무별 템플릿.",
+        "type": "paid"
+      }
+    ]
+  },
+  "subscribe": {
+    "title": "BIO:ON Insight 구독하기",
+    "lede": "매주 화요일 아침, 지난주 바이오·제약 핵심 뉴스 3개를 인사이트로 정리해 메일함으로 보내드려요. 언제든 구독을 취소할 수 있어요.",
+    "email": "이메일 주소",
+    "name": "이름 (선택)",
+    "submit": "구독하기",
+    "submitting": "처리 중…",
+    "success": "구독해 주셔서 감사해요! 메일함을 확인해 주세요.",
+    "error": "문제가 생겼어요. 잠시 후 다시 시도해 주세요.",
+    "privacy": "이메일은 뉴스레터 발송에만 사용하고, 스티비(Stibee)를 통해 관리돼요.",
+    "points": [
+      "뉴스 Top 3 + 쉬운 설명",
+      "국내 시사점과 관련 직무",
+      "이번 주의 단어 · 딥다이브"
+    ]
+  },
+  "about": {
+    "title": "소개",
+    "name": "이예현",
+    "role": "BIO:ON 에디터 · UCL MSc Biotechnology & Pharmaceutical Management",
+    "bio": "BIO:ON은 바이오·제약 뉴스를 한국 관점과 커리어 관점으로 풀어내는 뉴스레터예요. 매주 해외 원문 뉴스를 직접 읽고, 업계를 준비하는 사람에게 진짜 필요한 맥락을 더합니다.",
+    "aiTitle": "AI와 함께 만드는 미디어",
+    "aiLede": "BIO:ON은 기획부터 발행까지 AI를 워크플로우에 녹여 운영해요. 이 사이트 역시 Claude Code와 함께 직접 설계하고 코딩했어요.",
+    "aiSteps": [
+      {
+        "title": "리서치·번역",
+        "body": "해외 보도자료를 수집하고 AI로 1차 번역한 뒤, 원문과 대조해 직접 검수해요."
+      },
+      {
+        "title": "뉴스레터 제작",
+        "body": "이메일 HTML 템플릿을 AI와 함께 설계해, 매주 구조는 유지하고 내용만 교체해요."
+      },
+      {
+        "title": "카드뉴스·릴스",
+        "body": "뉴스레터 내용을 인스타그램 카드뉴스로 자동 변환하는 파이프라인을 만들었어요."
+      },
+      {
+        "title": "이 웹사이트",
+        "body": "Next.js로 직접 개발. 한/영 지원, 아카이브 자동 임포트, AI 번역·요약·챗봇을 단계적으로 추가하고 있어요."
+      }
+    ],
+    "contact": "연락하기",
+    "educationTitle": "학력",
+    "education": [
+      {
+        "date": "2026.09 – 2027.10",
+        "degree": "MSc Biotechnology & Pharmaceutical Management",
+        "school": "University College London (UCL)",
+        "note": "졸업 예정"
+      },
+      {
+        "date": "2024.06",
+        "degree": "BSc Pharmacology",
+        "school": "University College London (UCL)",
+        "note": "졸업"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "바이오·제약 뉴스를 커리어 인사이트로.",
+    "built": "Next.js와 Claude Code로 제작"
+  }
+}

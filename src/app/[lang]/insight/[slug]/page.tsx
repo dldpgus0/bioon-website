@@ -5,7 +5,8 @@ import { EmailFrame } from "@/components/EmailFrame";
 import { formatDate } from "@/components/IssueCard";
 import { icons } from "@/components/Icons";
 import { SubscribeForm } from "@/components/SubscribeForm";
-import { getIssue, getIssueSlugs } from "@/lib/content";
+import { References } from "@/components/References";
+import { getIssue, getIssueReferences, getIssueSlugs } from "@/lib/content";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import { roleLabel, topicLabel } from "@/lib/taxonomy";
 
@@ -17,7 +18,25 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/insight/[s
   const lang = await getLocale(params);
   const issue = getIssue(lang, (await params).slug);
   if (!issue) return {};
-  return { title: issue.title, description: issue.summary };
+  // Article metadata for link previews (LinkedIn reads og:*); the image comes from opengraph-image.tsx.
+  const title = `#${issue.number} ${issue.title}`;
+  return {
+    title: issue.title,
+    description: issue.summary,
+    alternates: { canonical: `/${lang}/insight/${issue.slug}` },
+    openGraph: {
+      type: "article",
+      title,
+      description: issue.summary,
+      url: `/${lang}/insight/${issue.slug}`,
+      siteName: "BIO:ON Insight",
+      locale: lang === "ko" ? "ko_KR" : "en_GB",
+      publishedTime: issue.date,
+      authors: [lang === "ko" ? "이예현" : "Yaehyun Lee"],
+      tags: issue.tags,
+    },
+    twitter: { card: "summary_large_image", title, description: issue.summary },
+  };
 }
 
 export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[slug]">) {
@@ -91,7 +110,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
             <p className="mt-4 flex flex-wrap items-center gap-1.5 text-sm text-muted">
               <span className="mr-1 font-semibold text-ink">{dict.insight.rolesLabel}</span>
               {issue.roles.map((r) => (
-                <span key={r} className="rounded-md bg-white px-2 py-0.5 text-xs font-medium text-brand">
+                <span key={r} className="rounded-md bg-surface px-2 py-0.5 text-xs font-medium text-brand">
                   {roleLabel(r, lang)}
                 </span>
               ))}
@@ -103,6 +122,10 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
 
       <div className="mt-8">
         <EmailFrame src={`/newsletters/${lang}/${slug}.html`} title={issue.title} />
+      </div>
+
+      <div className="mt-8">
+        <References items={getIssueReferences(lang, slug)} title={dict.insight.references} newTab={dict.a11y.newTab} />
       </div>
 
       <aside className="mt-12 rounded-2xl border border-line bg-surface p-6 sm:p-8">

@@ -49,7 +49,7 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
 
   const chip = (active: boolean) =>
     `rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
-      active ? "border-teal bg-teal text-white" : "border-line bg-white text-muted hover:border-teal hover:text-teal"
+      active ? "border-teal bg-teal text-white" : "border-line bg-surface text-muted hover:border-teal hover:text-teal"
     }`;
 
   return (
@@ -74,7 +74,7 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
             onChange={(e) => ask(e.target.value)}
             placeholder={dict.insight.askPlaceholder}
             aria-label={dict.insight.askTitle}
-            className="min-w-0 flex-1 rounded-full border border-line bg-white px-4 py-2.5 text-[15px] text-ink outline-none focus:border-teal"
+            className="min-w-0 flex-1 rounded-full border border-line bg-surface px-4 py-2.5 text-[15px] text-ink outline-none focus:border-teal"
           />
           {searching && (
             <button type="button" onClick={() => ask("")} className="shrink-0 text-sm font-semibold text-teal hover:underline">
@@ -93,7 +93,7 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
                   ask(q);
                   track("search", { query: q, suggested: true, lang });
                 }}
-                className="rounded-full border border-line bg-white px-3 py-1 text-left text-ink transition-colors hover:border-teal hover:text-teal"
+                className="rounded-full border border-line bg-surface px-3 py-1 text-left text-ink transition-colors hover:border-teal hover:text-teal"
               >
                 {q}
               </button>

@@ -46,7 +46,7 @@ export function InterviewBank({ questions, dict, lang }: { questions: InterviewQ
 
   const chip = (active: boolean) =>
     `rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
-      active ? "border-teal bg-teal text-white" : "border-line bg-white text-muted hover:border-teal hover:text-teal"
+      active ? "border-teal bg-teal text-white" : "border-line bg-surface text-muted hover:border-teal hover:text-teal"
     }`;
   const selectRole = (r: RoleId | null) => {
     setRole(r);
@@ -116,7 +116,7 @@ export function InterviewBank({ questions, dict, lang }: { questions: InterviewQ
                   <span className="text-teal">Q{i + 1}</span>
                   <span className="rounded-full bg-teal-soft px-2.5 py-1 text-teal">{t.kinds[q.kind]}</span>
                   {q.roles.map((r) => (
-                    <span key={r} className="rounded-md bg-white px-2 py-0.5 font-medium text-brand">
+                    <span key={r} className="rounded-md bg-surface px-2 py-0.5 font-medium text-brand">
                       {roleLabel(r, lang)}
                     </span>
                   ))}
@@ -157,7 +157,7 @@ export function InterviewBank({ questions, dict, lang }: { questions: InterviewQ
                   ) : unlocked ? (
                     <p className="mt-4 text-sm text-muted" aria-live="polite">…</p>
                   ) : (
-                    <div className="mt-4 rounded-xl border border-line bg-white p-4">
+                    <div className="mt-4 rounded-xl border border-line bg-surface p-4">
                       <p className="text-sm font-semibold text-ink">{t.lockedTitle}</p>
                       <p className="mb-3 mt-1 text-sm text-muted">{t.lockedBody}</p>
                       <SubscribeForm

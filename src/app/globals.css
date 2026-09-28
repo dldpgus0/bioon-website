@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-/* Brand tokens — light-only, matching the newsletter (#1A5688 deep blue / #197F83 teal). */
+/* dark: follows the theme toggle (class on <html>), not only the OS setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Brand tokens, matching the newsletter (#1A5688 deep blue / #197F83 teal).
+   Dark mode (next-themes adds .dark to <html>) swaps the same tokens, so components need no dark: variants. */
 :root {
   color-scheme: light;
   --bg: #ffffff;
@@ -14,6 +18,22 @@
   --teal: #197f83;
   --teal-soft: #e8f4f3;
   --brand-soft: #eaf1f8;
+  --on-brand: #ffffff;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #0e1620;
+  --surface: #141e2a;
+  --surface-2: #1a2634;
+  --ink: #e6edf5;
+  --text: #c8d3df;
+  --muted: #8d9db0;
+  --line: #243242;
+  --brand: #3b7cbd;
+  --teal: #2a9ea3;
+  --teal-soft: #11302f;
+  --brand-soft: #142739;
   --on-brand: #ffffff;
 }
 
@@ -41,6 +61,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
+  /* Long-form reading: generous leading, Pretendard's recommended slight negative tracking. */
+  line-height: 1.7;
+  letter-spacing: -0.011em;
   word-break: keep-all;
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
@@ -54,7 +77,8 @@ body {
 /* Long-form markdown (career posts) */
 .prose-bioon {
   font-size: 1.0625rem;
-  line-height: 1.85;
+  line-height: 1.8;
+  letter-spacing: -0.006em;
 }
 .prose-bioon h2 {
   margin: 2.5rem 0 0.75rem;

@@ -3,6 +3,7 @@ import type { Dictionary, Locale } from "@/lib/i18n";
 import { Wordmark } from "./Logo";
 import { LangSwitch } from "./LangSwitch";
 import { MobileNav } from "./MobileNav";
+import { ThemeToggle } from "./ThemeToggle";
 import { TrackedLink } from "./TrackedLink";
 
 export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
@@ -14,7 +15,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-40 bg-bg/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href={`/${lang}`} aria-label={dict.a11y.home}>
           <Wordmark />
@@ -29,12 +30,13 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
         </nav>
 
         <div className="flex items-center gap-3">
+          <ThemeToggle label={dict.a11y.theme} />
           <LangSwitch lang={lang} label={dict.nav.switchLang} />
           <TrackedLink
             href={`/${lang}/subscribe`}
             event="subscribe_click"
             payload={{ location: "header", lang }}
-            className="hidden rounded-full border border-brand px-4 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand hover:text-white sm:inline-block"
+            className="hidden rounded-full border border-brand px-4 py-1.5 text-sm font-medium text-brand transition-colors hover:bg-brand hover:text-on-brand sm:inline-block"
           >
             {dict.nav.subscribe}
           </TrackedLink>

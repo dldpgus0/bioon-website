@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
-import { ResourceList } from "@/components/ResourceList";
+import { ResourceHub } from "@/components/ResourceHub";
 import { getDictionary, getLocale } from "@/lib/i18n";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/resources">): Promise<Metadata> {
@@ -16,7 +16,7 @@ export default async function ResourcesPage({ params }: PageProps<"/[lang]/resou
     <>
       <PageHeader eyebrow="Resources" title={dict.resources.title} lede={dict.resources.lede} />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <ResourceList dict={dict} lang={lang} />
+        <ResourceHub dict={dict} lang={lang} />
       </div>
     </>
   );

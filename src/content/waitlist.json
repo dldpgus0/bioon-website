@@ -1,61 +1,8 @@
 {
   "_meta": {
-    "note": "Three reader tracks for the Career and Resources pages. posts = career post slugs, resources = resource ids from the dictionaries, waitlist = items below that aren't built yet (shown as 'Waitlist open' cards with an email capture). An item can sit in more than one track."
+    "note": "Items not built yet, shown as 'Waitlist open' cards with an email capture. AI tools (ai-*) appear on the AI tools page; the rest at the bottom of the resources page."
   },
-  "tracks": [
-    {
-      "id": "students",
-      "posts": [
-        "biotech-career-orientation",
-        "linkedin-headline"
-      ],
-      "resources": [
-        "acronyms",
-        "glossary",
-        "trial-data-guide"
-      ],
-      "waitlist": [
-        "lab-to-business",
-        "msc-roadmap"
-      ]
-    },
-    {
-      "id": "seekers",
-      "posts": [
-        "industry-news-interview",
-        "cover-letter-industry-news",
-        "linkedin-headline"
-      ],
-      "resources": [
-        "interview-questions",
-        "cv-template",
-        "acronyms"
-      ],
-      "waitlist": [
-        "cover-letter",
-        "ai-feedback",
-        "ai-interview"
-      ]
-    },
-    {
-      "id": "pros",
-      "posts": [
-        "hiring-signals-from-the-news",
-        "biotech-career-orientation"
-      ],
-      "resources": [
-        "pipeline-tracker",
-        "trial-data-guide",
-        "acronyms"
-      ],
-      "waitlist": [
-        "career-pivot",
-        "jd-analyzer",
-        "conference-tracker"
-      ]
-    }
-  ],
-  "waitlist": {
+  "items": {
     "lab-to-business": {
       "kind": "guide",
       "ko": {

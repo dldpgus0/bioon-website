@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CareerHub } from "@/components/CareerHub";
+import { CareerList } from "@/components/CareerList";
 import { PageHeader } from "@/components/PageHeader";
 import { getPosts } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
@@ -19,7 +19,7 @@ export default async function CareerPage({ params }: PageProps<"/[lang]/career">
       <PageHeader eyebrow="BIO:ON Career" title={dict.career.title} lede={dict.career.lede} />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_320px]">
         <div>
-          <CareerHub posts={getPosts(lang)} dict={dict} lang={lang} />
+          <CareerList posts={getPosts(lang)} dict={dict} lang={lang} />
         </div>
         <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
           <Link

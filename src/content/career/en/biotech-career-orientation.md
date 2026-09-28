@@ -6,9 +6,9 @@ roles: [R&D, CRA, Regulatory affairs, Pharmacovigilance, QA & QC, MSL, Market ac
 summary: The five stages of bringing a drug to market, where people work, what nine core roles do and require, and four questions to find your direction. Every role description is grounded in an official source.
 ---
 
-"I want to work in biotech, but I don't know which job I'd actually do." This orientation is for you. It covers how the industry works, which roles exist, and who tends to suit each one.
+"I want to work in biotech, but I don't know which job I'd actually do." This orientation is for you. It covers how the industry works, which roles exist, and which skills each role values — written up the way I've been learning it myself.
 
-**How to read this:** factual statements carry a number like `[1]`, which matches the **Sources** list at the end. "Who it suits" is **the editor's opinion**, not official guidance, and is labelled as such.
+**How to read this:** facts and the skills listed for each role carry a number like `[1]`, which matches the **Sources** list at the end. I'm still a student myself, so rather than give my own verdicts on each role I've gathered what published industry sources and people in the roles say. Only **"What I've learned"** and the **four questions** at the end are my own thoughts, and they're labelled.
 
 ## 1. How a drug reaches patients — five stages
 
@@ -20,7 +20,7 @@ The US FDA describes drug development in five steps [1].
 4. **FDA review** — regulators examine all the submitted data and decide whether to approve
 5. **Post-market safety monitoring** — watching safety after the drug is on the market
 
-Most roles attach to part of this flow. Read the role map below in this order and you'll see which stage each job works in. Assigning roles to stages is the editor's simplification to aid understanding; in practice many roles span several stages.
+Most roles attach to part of this flow. Read the role map below in this order and you'll see which stage each job works in. Assigning roles to stages is my own simplification to make it easier to follow; in practice many roles span several stages.
 
 ## 2. Where people work
 
@@ -35,61 +35,57 @@ Most roles attach to part of this flow. Read the role map below in this order an
 
 - **What it does:** everything from the initial search for a molecule to treat a disease through to having a product ready to market [4].
 - **What it usually takes:** mostly scientists — chiefly biologists and chemists — with specialist skills in toxicology, pharmacology, genetics, statistics and mathematical modelling [4].
-- **Who it suits (editor's opinion):** people who can stay patient when results take years, and who enjoy digging into why an experiment failed.
+- **What sources highlight:** research often means making observations over long periods, so patience and perseverance matter [16].
 
 ### Clinical development / CRA (clinical)
 
 - **What it does:** makes sure clinical trials run safely and in line with regulations and Good Clinical Practice (GCP), that participants' rights and safety are protected, and that trial data is reliable [3]. In Korea the legal standard is the MFDS "Good Clinical Practice for pharmaceuticals" [5]; the international standard is ICH E6 [6].
 - **What it usually takes:** a life science, medical or healthcare degree; organisation to manage several sites and visits; attention to detail to spot data errors; communication with site staff; and often regular travel between sites [3].
-- **Who it suits (editor's opinion):** people comfortable following a checklist to the end, who enjoy coordinating many people and schedules, and don't mind being on the move.
 
 ### Regulatory affairs (review)
 
 - **What it does:** manages regulatory timelines, coordinates input from R&D, clinical, quality and manufacturing, and writes and reviews product information such as labelling and patient leaflets [7].
 - **What it usually takes:** a life or medical science degree; clear writing; attention to detail; analysing complex information; working to deadlines; and the negotiation skills to explain decisions and influence stakeholders [7].
-- **Who it suits (editor's opinion):** people who like handling rules and documents precisely, and can argue logically why a data package is or isn't enough.
 - **In BIO:ON:** the FDA starting to publish rejection letters ([Issue #9](/en/insight/2026-07-19)); an approval despite a negative advisory vote ([Issue #16](/en/insight/2026-09-15)).
 
 ### Pharmacovigilance / drug safety (clinical to post-market)
 
 - **What it does:** detects, assesses, understands and prevents side effects to weigh a medicine's risks and benefits — collecting and evaluating information from patients and healthcare professionals, assessing adverse event reports, entering them into safety databases, and writing periodic safety update reports (PSURs) [8].
 - **Worth knowing:** safety monitoring is continuous — during trials, after licensing, and for as long as the medicine is used [8].
-- **Who it suits (editor's opinion):** people who don't let small signals slip, and who enjoy spotting patterns in repeated reviews.
+- **What people in the role say:** a Drug Safety Associate profiled by the ABPI named completing work accurately and precisely as the most important skill, because small errors can cause compliance problems. They also named working to set timeframes and instructions under pressure, and communicating well with the team [17].
 
 ### QA, QC and CMC (manufacturing and quality)
 
 - **What it does:** Quality control is **product-oriented**, testing everything from raw materials to the finished product to make sure there are no defects. Quality assurance is **process-oriented**, building repeatable quality into the process rather than relying only on testing at the end [9]. The legal responsibility for certifying each batch before release lies with the Qualified Person (QP), supported by QA and QC teams [10].
-- **Who it suits (editor's opinion):** people who value principles and records, and who will trace a deviation all the way to its cause.
+- **What people in the role say:** a clinical QA advisor profiled by the ABPI named a keen eye for detail and a good understanding of GCP and local regulations as the most important skills, adding that being disciplined, organised and open-minded helps [18].
 - **In BIO:ON:** a recall over glass particles in vials ([Issue #12](/en/insight/2026-08-18)); a gene therapy rejected over manufacturing, then approved ([Issue #17](/en/insight/2026-09-22)).
 
 ### Medical affairs / MSL (around launch)
 
 - **What it does:** the **scientific link** between the company and clinicians and researchers — helping healthcare professionals understand the clinical data behind new treatments and sharing accurate, balanced, evidence-based information, usually for a region and therapeutic area [11].
 - **What it usually takes:** a life science, medical or pharmacy degree; many roles ask for a PhD, PharmD or MD because of the depth of research and data interpretation involved [11].
-- **Who it suits (editor's opinion):** people who love reading papers and explaining them, and want to talk science rather than sell.
 
 ### Market access and pricing (approval to market)
 
 - **What it does:** creates an environment where the right patients can access medicines at the right time and in the right place, working as a partner with the health system [12].
 - **What it usually takes:** there's no single path. The ABPI's example Head of Market Access has a chemistry BSc, a medical biochemistry MSc and an MBA, and worked as a hospital scientist before moving through sales, marketing and market access in pharma [12].
-- **Who it suits (editor's opinion):** people interested in translating clinical data into the language of budgets and policy, who like both numbers and persuasion.
 - **In BIO:ON:** an effective oral obesity drug with slow early prescriptions ([Issue #8](/en/insight/2026-07-12)).
 
 ### Sales and marketing (on the market)
 
 - **What it does:** promotes and sells the company's medicines or equipment to doctors, nurses and pharmacists, usually across a territory with a lot of travel [13].
 - **What it usually takes:** strong product knowledge, since customers are healthcare professionals — and sales and customer service skills matter just as much, with annual targets to meet [13].
-- **Who it suits (editor's opinion):** people who get energy from meeting others and do their best work with a clear target.
+- **What sources highlight:** patience and self-motivation, initiative, planning, analytical and organisational skills, teamwork and networking, commercial awareness, and working well under pressure [13].
 
 ### Business development
 
 - **What it does:** alongside sales, marketing and market access, business development is part of a pharma company's commercial function [14]. It grows the pipeline and business through licensing in and out, partnerships, and mergers and acquisitions.
-- **Who it suits (editor's opinion):** people who read science and numbers together, and enjoy negotiation and the fine print of deal structures.
+- **What I've learned:** writing up deal news taught me to check the guaranteed upfront payment before the headline total. The Lilly × InnoCare deal below is a good example.
 - **In BIO:ON:** the Lilly × InnoCare deal, worth up to $3.35B but with about $100M guaranteed [15] ([Issue #18](/en/insight/2026-09-29)).
 
-## 4. Finding your direction — four questions (editor's opinion)
+## 4. Finding your direction — four questions (my own list)
 
-This isn't a test with right answers. Answer honestly and you'll narrow down where to look first.
+These aren't official criteria — they're questions I put together while reading the role descriptions above. This isn't a test with right answers. Answer honestly and you'll narrow down where to look first.
 
 1. **What do you get absorbed in?** Experiments and data → R&D, pharmacovigilance / rules and documents → RA, QA / people and persuasion → sales, MSL, BD / numbers and policy → market access
 2. **Where do you want to work?** Lab or plant → R&D, QC / office → RA, pharmacovigilance, market access / out and about → CRA, sales, MSL
@@ -121,5 +117,8 @@ If you can't pick one, that's completely normal. Many people build experience in
 13. [Prospects — Medical sales representative](https://www.prospects.ac.uk/job-profiles/medical-sales-representative/)
 14. [ABPI — Commercial](https://www.abpi.org.uk/careers/working-in-the-industry/commercial/)
 15. [Fierce Biotech — Lilly puts up $100M, plus billions on the backend, to form 5-target deal with China's InnoCare](https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare)
+16. [Prospects — Research scientist (life sciences)](https://www.prospects.ac.uk/job-profiles/research-scientist-life-sciences/)
+17. [ABPI — Drug Safety Associate (job case study)](https://www.abpi.org.uk/careers/job-case-studies/drug-safety-associate/)
+18. [ABPI — Clinical Quality Assurance Advisor (job case study)](https://www.abpi.org.uk/careers/job-case-studies/clinical-quality-assurance-advisor/)
 
 The ABPI is the Association of the British Pharmaceutical Industry; Prospects is the UK's graduate careers service. Role definitions are broadly the same across countries, but details such as degree requirements and pay vary.

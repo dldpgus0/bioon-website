@@ -17,7 +17,7 @@
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
     "title1": "Biotech & pharma news,",
     "title2": "turned into career insight",
-    "lede": "Last week's three stories that matter — explained plainly, with the Korean market angle and which roles they matter for.",
+    "lede": "Last week's three stories that matter — explained the way I worked them out while studying, with the Korean market angle and the roles they matter for.",
     "ctaSubscribe": "Subscribe for free",
     "ctaArchive": "Browse past issues",
     "latest": "Latest insight",
@@ -48,8 +48,8 @@
     "careerTitle": "Reading the news is job prep",
     "careerBody": "Every BIO:ON story notes which roles it matters for — so when an interviewer asks \"What industry news caught your eye recently?\", you have a sharp answer ready.",
     "careerCta": "Explore career guides",
-    "hello": "Yaehyun Lee · Editor, BIO:ON Insight",
-    "heroLede": "Read through a dual lens: navigating global pharma careers, and bridging insights with the APAC/Korean biotech market. Every Tuesday, last week's three biggest biotech and pharma stories — from a UCL Pharmacology graduate now on the MSc in Biotechnology & Pharmaceutical Management.",
+    "hello": "Hello! I'm Yaehyun",
+    "heroLede": "I studied Pharmacology (BSc) at UCL in London and am now doing an MSc in Biotechnology & Pharmaceutical Management there, while publishing BIO:ON Insight — last week's three biggest biotech and pharma stories, every Tuesday, read through a Korean lens and a career lens.",
     "badgeIssues": "issues published",
     "badgeWeekly": "Every Tuesday",
     "latestSub": "Last week in biotech & pharma",
@@ -105,7 +105,7 @@
   },
   "insight": {
     "title": "BIO:ON Insight archive",
-    "lede": "Every issue we have published. Filter by AI-classified topic or by the roles each issue matters for.",
+    "lede": "Every issue I've published. Filter by AI-classified topic or by the roles each issue matters for.",
     "all": "All",
     "issue": "Issue",
     "read": "Read",
@@ -122,7 +122,7 @@
     "clear": "Clear filters",
     "count": " issues",
     "askTitle": "Ask BIO.ON",
-    "askLede": "Ask a question and we'll find the issues that answer it, using each issue's AI summary and keywords.",
+    "askLede": "Ask a question and I'll point you to the issues that answer it, using each issue's AI summary and keywords.",
     "askPlaceholder": "e.g. Who is winning the obesity drug race?",
     "askTry": "Try asking",
     "askResults": " matching issues",
@@ -134,7 +134,7 @@
   },
   "career": {
     "title": "Bio careers",
-    "lede": "Practical guides for breaking into biotech and pharma — connecting the industry stories we cover to your interviews and applications.",
+    "lede": "Things I've looked up and written down while preparing for a biotech or pharma career. Where expert judgement is needed, I've gathered published industry sources and accounts from people in the roles — with sources.",
     "categories": {
       "all": "All",
       "linkedin": "LinkedIn",
@@ -182,7 +182,7 @@
       "points": "Answer points",
       "source": "Based on",
       "issue": "Issue",
-      "note": "Questions and answer points were drafted by AI from the newsletter text and reviewed by the editor. Use them as a skeleton for your answer, not a script.",
+      "note": "Questions and answer points were drafted by AI from the newsletter text and reviewed by me. Use them as a skeleton for your answer, not a script.",
       "lockedTitle": "🔒 The remaining answer points are for subscribers",
       "lockedBody": "Enter your email to unlock the answer points for every question.",
       "lockedShow": "🔒 Unlock answer points",
@@ -212,7 +212,7 @@
         "type": "free",
         "format": "html",
         "title": "Interview question bank + Behavioral Interview (STAR)",
-        "body": "34 news-based questions with answer points built from BIO:ON issues, 25 competency and scenario questions by role (sales, BD, RA, clinical, CMC), and the STAR(R) answer structure. The competency questions are common question types compiled by the editor, not real past questions."
+        "body": "34 news-based questions with answer points built from BIO:ON issues, 25 competency and scenario questions by role (sales, BD, RA, clinical, CMC), and the STAR(R) answer structure. The competency questions are common question types I compiled, not real past questions."
       },
       {
         "id": "trial-data-guide",
@@ -274,8 +274,8 @@
   "about": {
     "title": "About",
     "name": "Yaehyun Lee",
-    "role": "Editor, BIO:ON · MSc Biotechnology & Pharmaceutical Management, UCL",
-    "bio": "BIO:ON is a newsletter that reads biotech and pharma news through a Korean lens and a career lens. Each week I read the original global coverage and add the context people preparing for the industry actually need.",
+    "role": "MSc student, Biotechnology & Pharmaceutical Management, UCL · I write BIO:ON",
+    "bio": "BIO:ON is the newsletter I write each week while learning about the biotech and pharma industry. I read the original global coverage and share what I've understood through a Korean lens and a career lens. I'm still learning, so where expert judgement is needed I gather published industry sources and accounts from people in the roles, always with sources.",
     "aiTitle": "A media project built with AI",
     "aiLede": "BIO:ON runs on an AI-assisted workflow from research to publishing. This site itself was designed and coded with Claude Code.",
     "aiSteps": [
@@ -316,14 +316,14 @@
   "faq": {
     "title": "FAQ",
     "lede": "Common questions about the BIO:ON Insight newsletter and this site.",
-    "more": "Anything else? Just email us.",
+    "more": "Anything else? Just email me.",
     "sections": [
       {
         "title": "The newsletter",
         "items": [
           {
             "q": "What is BIO:ON Insight?",
-            "a": "Every Tuesday morning, we pick last week’s three biggest global biotech and pharma stories and explain them simply, with the Korean market angle and the roles they matter for. Each issue also has a Word of the Week, a deep dive, the stocks that moved and the dates to watch next week."
+            "a": "Every Tuesday morning, I pick last week’s three biggest global biotech and pharma stories and explain them simply, with the Korean market angle and the roles they matter for. Each issue also has a Word of the Week, a deep dive, the stocks that moved and the dates to watch next week."
           },
           {
             "q": "Does it cost anything?",
@@ -331,10 +331,10 @@
           },
           {
             "q": "Who writes it?",
-            "a": "Editor Yaehyun Lee, who studied Pharmacology at UCL (BSc) and is now on the MSc Biotechnology & Pharmaceutical Management at UCL, reads the original sources and writes every issue.",
+            "a": "Yaehyun Lee, who studied Pharmacology at UCL (BSc) and is now on the MSc Biotechnology & Pharmaceutical Management at UCL, reads the original sources and writes every issue while studying.",
             "link": {
               "href": "/about",
-              "label": "About the editor"
+              "label": "About me"
             }
           },
           {
@@ -356,7 +356,7 @@
           },
           {
             "q": "I’m not getting the emails.",
-            "a": "Check your spam or promotions folder first. Adding the sender to your contacts moves future issues to your inbox. If they’re still missing, email us."
+            "a": "Check your spam or promotions folder first. Adding the sender to your contacts moves future issues to your inbox. If they’re still missing, email me."
           },
           {
             "q": "How do I unsubscribe?",
@@ -364,7 +364,7 @@
           },
           {
             "q": "How is my personal data used?",
-            "a": "We only collect your name and email when you subscribe. They’re used only to send the newsletter and are managed in Stibee, our email service."
+            "a": "I only collect your name and email when you subscribe. They’re used only to send the newsletter and are managed in Stibee, the email service I use."
           }
         ]
       },
@@ -373,7 +373,7 @@
         "items": [
           {
             "q": "How do you use AI?",
-            "a": "We use AI to gather and do a first translation of international news, to summarise and tag each issue, and to draft interview questions. The editor checks everything against the original sources, and AI-generated summaries and tags are labelled on the site."
+            "a": "I use AI to gather and do a first translation of international news, to summarise and tag each issue, and to draft interview questions. I check everything against the original sources, and AI-generated summaries and tags are labelled on the site."
           },
           {
             "q": "Is the stocks section investment advice?",
@@ -439,8 +439,8 @@
         "lede": "Applications and interviews: guides and resources for your Cover Letter, ATS-Optimized Résumé and Behavioral Interview (STAR)."
       },
       "pros": {
-        "name": "Professionals & Career Changers",
-        "lede": "Planning your next move from inside the industry: hiring signals, deal and pipeline tracking, and pivoting to a new role."
+        "name": "Going Deeper",
+        "lede": "For anyone who wants to follow the industry one level deeper — deals, pipelines and hiring signals. Collected so it can be useful to people already working or thinking about a move, too."
       }
     },
     "postsHeading": "Guides in this track",
@@ -456,13 +456,13 @@
     "badge": "Waitlist open",
     "join": "Join the waitlist",
     "title": "Join the waitlist",
-    "lede": "We'll email you first when it launches. You'll also get the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
-    "success": "You're on the waitlist! We'll let you know first when it launches.",
+    "lede": "I'll email you first when it launches. You'll also get the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
+    "success": "You're on the waitlist! I'll let you know first when it launches.",
     "close": "Close"
   },
   "wiki": {
     "title": "BIO:ON Wiki",
-    "lede": "The 51 stories covered in the newsletter, re-linked by category and by company, drug and regulator — so you can follow one company or drug across issues.",
+    "lede": "My study notes: the 51 stories covered in the newsletter, re-linked by category and by company, drug and regulator — so you can follow one company or drug across issues.",
     "categoriesTitle": "Categories",
     "entitiesTitle": "Companies, drugs & regulators",
     "types": {
@@ -480,8 +480,8 @@
     "related": "Related insights",
     "relatedSub": "Other issues covering the same companies, drugs or topics",
     "shared": "Shared",
-    "takeaway": "Editor's takeaway",
-    "takeawayNote": "Quoted from this issue's Editor's Insight.",
+    "takeaway": "What I learned this week",
+    "takeawayNote": "Quoted from the Editor's Insight I wrote for this issue.",
     "categoryFilter": "Category",
     "metaTitle": "Wiki",
     "entityLede": "{n} BIO:ON Insight stories about {name}."

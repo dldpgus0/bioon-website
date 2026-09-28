@@ -43,7 +43,7 @@ Results come as tables that usually include:
 
 **Results don't include conclusions or interpretations** [4]. Interpretation comes from papers, conference presentations and press releases — which is why it's worth practising telling the raw data apart from the spin. Results are usually submitted no later than a year after the study ends [4].
 
-**Editor's tip:** check the Record History to see whether the primary outcome changed partway through. Thinking about why it changed makes good interview material.
+**What worked for me:** check the Record History to see whether the primary outcome changed partway through. Thinking about why it changed makes good interview material.
 
 ## 2. FDA — approval histories and review documents
 
@@ -60,7 +60,7 @@ The FDA's Center for Drug Evaluation and Research (CDER) publishes a yearly list
    - **Review** — the FDA's review documents, which may include a Summary Review, Medical Review, Chemistry Review and Pharmacology Review [6]
 4. Some confidential information may be redacted, but there's usually enough to understand the review [6].
 
-**Start with the Summary Review (editor's tip).** It's the shortest account of why the FDA approved the drug and what concerns it had.
+**Start with the Summary Review (what worked for me).** It's the shortest account of why the FDA approved the drug and what concerns it had.
 
 ### Reading expedited-programme labels
 
@@ -76,7 +76,7 @@ The EMA publishes an **EPAR (European Public Assessment Report)** for every cent
 
 You can filter by therapeutic area or type (orphan, generic, biosimilar and so on), and also find medicines that were refused or withdrawn [8].
 
-**Editor's tip:** read the FDA review and the EPAR for the same drug side by side to see how two regulators weighed the same data.
+**What worked for me:** read the FDA review and the EPAR for the same drug side by side to see how two regulators weighed the same data.
 
 ## 4. MFDS Drug Safety Nara — Korean approvals and trials
 

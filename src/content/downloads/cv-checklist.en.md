@@ -19,15 +19,15 @@ Many multinationals read applications with an ATS first. Software parses and sor
 
 - **No date of birth and no photo**, unless you're applying for acting or modelling [3].
 - Contact details: name, home address, mobile number and email [3].
-- Korean companies often use their own application forms — when applying to one, follow its format (editor's opinion).
+- Korean companies often use their own application forms — when applying to one, follow its format (my own view).
 
-## 3. Writing the content (editor's opinion)
+## 3. Writing the content
 
-- **One line of experience = verb + what + result (a number).** e.g. `Analysed 17 weekly biotech news issues and published role-specific takeaways for [N] subscribers` — every number must be true.
-- **Use the job ad's own words.** If the ad says "GCP", "regulatory submissions" or "stakeholder management", use those words — for things you've actually done.
-- **Use biotech-friendly sections:** Technical Skills (lab techniques, data tools), Training & Certifications (GCP, GMP), Projects, Publications & Posters.
-- **Keep the Summary to three lines:** target role, two core strengths, one differentiator — the same formula as a LinkedIn headline.
-- **One to two pages.** For graduates, one page reads best.
+- **Show achievements, not duties — with numbers where you can.** What changed because of your work? Start lines with active verbs such as 'created' and 'analysed', and avoid over-used phrases like 'team player' [3]. e.g. `Analysed 17 weekly biotech news issues and published role-specific takeaways for [N] subscribers` — every number must be true.
+- **Work backwards from the job description.** Find what the employer values most, reflect it with the same language and examples, and put the most important achievements first. Embed keywords naturally in your achievement lines rather than stuffing them in [3].
+- **Keep the profile at the top short:** two or three sentences on your education, experience and the role you want, tailored to the job [5].
+- **Length:** one page early in your career, up to two pages with several years of experience [3].
+- **For biotech roles, consider these sections (my own suggestion):** Technical Skills (lab techniques, data tools), Training & Certifications (GCP, GMP), Projects, Publications & Posters.
 
 ## 4. Pre-submission checklist
 
@@ -55,5 +55,6 @@ The headline formula and role-by-role examples are in BIO:ON Career's [LinkedIn 
 2. [Indeed — ATS-Friendly Resume: Tips to Pass Applicant Tracking Systems](https://www.indeed.com/career-advice/resumes-cover-letters/automated-screening-resume)
 3. [Prospects — How to write a CV](https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/how-to-write-a-cv/)
 4. [LinkedIn Character Limits 2026 (OutX)](https://www.outx.ai/blog/linkedin-about-section-character-limit) — not official LinkedIn documentation, but the figure is consistent across guides.
+5. [Prospects — Writing a personal statement for your CV](https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/writing-a-personal-statement-for-your-cv/)
 
-Anything marked "editor's opinion" is the editor's own experience and judgement, not official guidance.
+Anything marked "my own view" or "my own suggestion" isn't official guidance — it's what I've put together while preparing my own applications.

@@ -19,15 +19,15 @@
 
 - **생년월일과 사진은 넣지 않아요.** 연기·모델 직무가 아니라면 필요 없어요 [3].
 - 연락처는 이름, 집 주소, 휴대전화, 이메일을 넣어요 [3].
-- 국내 기업은 자체 양식을 쓰는 경우가 많으니, 국내사에 지원할 때는 회사 양식을 우선하세요 (에디터 의견).
+- 국내 기업은 자체 양식을 쓰는 경우가 많으니, 국내사에 지원할 때는 회사 양식을 우선하세요 (제 생각).
 
-## 3. 내용 쓰는 법 (에디터 의견)
+## 3. 내용 쓰는 법
 
-- **경험 한 줄 = 동사 + 무엇을 + 결과(숫자)**. 예: `Analysed 17 weekly biotech news issues and published role-specific takeaways for [N] subscribers` — 숫자는 반드시 사실이어야 해요.
-- **채용공고의 단어를 그대로 쓰세요.** 공고에 "GCP", "regulatory submissions", "stakeholder management"가 있다면, 해본 경험에 한해 같은 단어로 써요.
-- **바이오 직무용 섹션을 활용하세요:** Technical Skills(실험 기법, 데이터 도구), Training & Certifications(GCP, GMP 교육), Projects, Publications & Posters.
-- **Summary는 3줄 이내로 쓰세요:** 목표 직무, 핵심 역량 2개, 차별점 1개. 링크드인 헤드라인과 같은 공식이에요.
-- **1~2쪽 안에 담으세요.** 신입이라면 1쪽이 읽기 좋아요.
+- **업무 나열보다 성과를, 가능하면 숫자로 쓰세요.** 무엇이 달라졌는지 보여주는 게 핵심이에요. 'created', 'analysed'처럼 능동 동사로 시작하고, 'team player'처럼 흔한 표현은 피하라고 해요 [3]. 예: `Analysed 17 weekly biotech news issues and published role-specific takeaways for [N] subscribers` — 숫자는 반드시 사실이어야 해요.
+- **채용공고에서 거꾸로 시작하세요.** 회사가 가장 중요하게 보는 걸 찾아 같은 단어와 사례로 반영하고, 중요한 성과가 먼저 오도록 순서를 바꿔요. 키워드를 억지로 채우기보다 성과 문장 안에 자연스럽게 넣으라고 해요 [3].
+- **맨 위 요약(Profile)은 짧게.** 2~3문장으로 학력, 경험, 원하는 직무를 소개하고 지원하는 역할에 맞춰 써요 [5].
+- **분량:** 경력 초기라면 1쪽, 경력이 몇 년 있다면 2쪽까지 [3].
+- **바이오 직무라면 이런 섹션도 (제 생각):** Technical Skills(실험 기법, 데이터 도구), Training & Certifications(GCP·GMP 교육), Projects, Publications & Posters.
 
 ## 4. 제출 전 체크리스트
 
@@ -55,5 +55,6 @@
 2. [Indeed — ATS-Friendly Resume: Tips to Pass Applicant Tracking Systems](https://www.indeed.com/career-advice/resumes-cover-letters/automated-screening-resume)
 3. [Prospects — How to write a CV](https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/how-to-write-a-cv/)
 4. [LinkedIn Character Limits 2026 (OutX)](https://www.outx.ai/blog/linkedin-about-section-character-limit) — LinkedIn 공식 문서는 아니지만 여러 가이드에서 공통으로 확인한 수치예요.
+5. [Prospects — Writing a personal statement for your CV](https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/writing-a-personal-statement-for-your-cv/)
 
-"에디터 의견"으로 표시한 부분은 공식 자료가 아니라 에디터의 경험과 판단을 정리한 거예요.
+"제 생각"으로 표시한 부분은 공식 자료가 아니라, 저도 취업을 준비하면서 정리해 본 거예요.

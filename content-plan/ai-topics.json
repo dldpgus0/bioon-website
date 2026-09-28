@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "note": "Queue for the weekly Thursday routine. AI & research-tool topics alternate with news-based career posts: if the most recent career post has category 'ai', write a news-based post; otherwise take the first topic here with status 'todo'. Reviewed with the owner on 2026-09-28.",
+    "toolsUsedByAuthor": ["Consensus", "ChatGPT", "Claude", "AlphaFold DB", "Gemini", "Perplexity", "Higgsfield"],
+    "experienceRule": "First-person experience ('I've used…') only for tools in toolsUsedByAuthor, and never invent specific results, prompts or screenshots the author didn't produce. Everything else is written from official documentation plus an exercise readers can follow. Tool features and pricing change: say when the official docs were checked.",
+    "categoryForPosts": "ai"
+  },
+  "topics": [
+    {
+      "id": "ai-hallucination-checklist",
+      "status": "todo",
+      "format": "resource + short post",
+      "ko": "AI 답변 검증 체크리스트 — 가짜 논문 인용, 없는 임상 결과, 틀린 유전자 이름 걸러내기",
+      "en": "Checking AI answers — catching fake citations, non-existent trial results and wrong gene names",
+      "scope": "Checklist: verify every citation (DOI/PubMed), check trial claims on ClinicalTrials.gov, check gene symbols against HGNC, cross-check numbers with the primary source. Cite research on citation hallucination and official databases. Ties to the site's own sourcing rule."
+    },
+    {
+      "id": "fda-docs-10k-pipeline",
+      "status": "todo",
+      "format": "post",
+      "ko": "FDA 자문위 브리핑 문서와 10-K에서 임상 결과·1차 평가변수만 골라 읽기",
+      "en": "Reading FDA briefing documents and 10-Ks for trial results and primary endpoints",
+      "scope": "Part 2 of the trial data guide. Use a real document tied to an issue (e.g. the camizestrant advisory committee briefing document, issue #16). Explain 10-K vs 8-K (US) and DART (Korea). AI is used to locate sections and draft a summary table; every number is checked against the page it came from."
+    },
+    {
+      "id": "ctgov-trial-comparison",
+      "status": "todo",
+      "format": "post + comparison template (xlsx)",
+      "ko": "ClinicalTrials.gov로 같은 분야 임상시험 조건 비교하기 — 포함·제외 기준을 표로",
+      "en": "Comparing trials on ClinicalTrials.gov — inclusion/exclusion criteria in one table",
+      "scope": "Use the official search and download (and the documented API) to pull trials for one target covered in the newsletter (e.g. ivonescimab or KRAS). AI structures eligibility criteria and dosing into a table; readers check each row against the record."
+    },
+    {
+      "id": "literature-scan-consensus-perplexity",
+      "status": "todo",
+      "format": "post + summary-table template",
+      "ko": "Consensus·Perplexity로 선행 연구 빠르게 훑기 — 서론 흐름, 연구 방법, 대조군을 요약표로",
+      "en": "Scanning prior research with Consensus and Perplexity — intro logic, methods and controls in one table",
+      "scope": "No '3 minutes' claims. Official docs for features and limits; the author has used both tools. Always open the paper itself before citing. Elicit mentioned only as an alternative, from its docs."
+    },
+    {
+      "id": "moa-diagram-prompts",
+      "status": "todo",
+      "format": "post",
+      "ko": "신약 작용 기전을 도식으로 — AI에게 Mermaid 다이어그램 그려 달라고 하기",
+      "en": "Drawing a drug's mechanism of action — asking AI for Mermaid diagrams",
+      "scope": "Examples from newsletter deep dives (ADC, bispecifics, targeted protein degraders). Render every Mermaid snippet to check it works. Step to compare the diagram with a figure from the paper or label, since AI diagrams can be scientifically wrong. Image tools (e.g. Higgsfield) only for concept visuals, clearly marked as illustrations."
+    },
+    {
+      "id": "bio-data-viz-with-ai",
+      "status": "todo",
+      "format": "post + example files",
+      "ko": "AI가 짠 시각화 코드를 돌려 보고 검증하기 — 세포 생존율·발현 데이터를 ggplot2·Seaborn으로",
+      "en": "Running and checking AI-written plotting code — cell viability and expression data in ggplot2 and Seaborn",
+      "scope": "Public example datasets only (no invented data). Run every code snippet and include the real output. Checks: axes, units, statistics the AI added, error bars."
+    },
+    {
+      "id": "sop-abstract-prompts",
+      "status": "todo",
+      "format": "resource (prompt templates)",
+      "ko": "실험 프로토콜(SOP)과 영문 초록 다듬기 프롬프트 템플릿",
+      "en": "Prompt templates for polishing lab SOPs and English abstracts",
+      "scope": "Language only: the AI must not change procedures, quantities or results. Point readers to their university's and target journal's generative-AI policy (cite examples) and disclosure rules."
+    },
+    {
+      "id": "personal-bio-wiki",
+      "status": "todo",
+      "format": "post",
+      "ko": "뉴스와 논문 요약을 태그로 묶어 나만의 바이오 위키 만들기",
+      "en": "Building your own biotech wiki from news and paper notes",
+      "scope": "Based on how this site's wiki was actually built (story index, categories, company/drug tags, related links). No class notes. Tools: Claude/ChatGPT for tagging drafts, human check before saving."
+    },
+    {
+      "id": "alphafold-db-news-target",
+      "status": "todo",
+      "format": "post",
+      "ko": "뉴스에 나온 약의 표적 단백질, AlphaFold DB로 구조 들여다보기",
+      "en": "Looking up a drug target from the news in AlphaFold DB",
+      "scope": "Web viewer only (no PyMOL). A target from the newsletter (e.g. KRAS). Explain pLDDT/PAE confidence from the official docs and when experimental structures (PDB) are better. The author has used AlphaFold DB."
+    },
+    {
+      "id": "reading-patents",
+      "status": "todo",
+      "format": "post",
+      "ko": "바이오 특허 문서와 청구항 읽는 법 — 뉴스 속 특허 분쟁 따라가기",
+      "en": "How to read a biotech patent and its claims — following a patent fight from the news",
+      "scope": "Narrowed on review: no freedom-to-operate or design-around advice (that is a patent attorney's legal judgement; say so). Search via Google Patents/WIPO Patentscope from their docs. Example: the tirzepatide patent challenge (issue #7)."
+    }
+  ]
+}

@@ -199,7 +199,7 @@ export function getInterviewQuestions(lang: Locale): InterviewQuestion[] {
 
 // ---------- Career posts (markdown) ----------
 
-export const careerCategories = ["linkedin", "resume", "interview", "industry"] as const;
+export const careerCategories = ["linkedin", "resume", "interview", "industry", "ai"] as const;
 export type CareerCategory = (typeof careerCategories)[number];
 
 export type Post = {

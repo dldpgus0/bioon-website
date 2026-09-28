@@ -474,5 +474,51 @@
     "accept": "Accept",
     "decline": "Decline",
     "settings": "Cookie settings"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "lede": "Which cookies and browser storage this site uses, and why.",
+    "necessaryTitle": "Strictly necessary (no consent needed)",
+    "necessaryNote": "Needed to provide features you ask for, so they work without consent. None of them hold anything that identifies you.",
+    "analyticsTitle": "Visit statistics (only with your consent)",
+    "analyticsNote": "Only switched on if you click 'Accept' in the banner. If you decline, Google Analytics isn't even loaded.",
+    "cols": {
+      "name": "Name",
+      "purpose": "Purpose",
+      "duration": "Kept for",
+      "type": "Type"
+    },
+    "items": {
+      "lead": {
+        "purpose": "Lets you open the free resources after entering your email. It holds only an issue time and a signature — no email or name.",
+        "duration": "1 year",
+        "type": "Cookie (HttpOnly)"
+      },
+      "consent": {
+        "purpose": "Remembers whether you accepted or declined analytics cookies.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
+      },
+      "theme": {
+        "purpose": "Remembers your dark or light mode choice.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
+      },
+      "ga": {
+        "purpose": "Distinguishes visitors so visits can be counted (Google Analytics).",
+        "duration": "2 years",
+        "type": "Cookie (Google)"
+      },
+      "gaid": {
+        "purpose": "Keeps the session state (Google Analytics).",
+        "duration": "2 years",
+        "type": "Cookie (Google)"
+      }
+    },
+    "changeTitle": "Changing your choice",
+    "changeBody": "Click 'Cookie settings' at the bottom of any page to see the banner again. You can also clear cookies and site data in your browser settings.",
+    "sourcesTitle": "Sources",
+    "updated": "Last checked: 28 September 2026",
+    "more": "Learn more"
   }
 }

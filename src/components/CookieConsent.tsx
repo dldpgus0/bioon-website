@@ -1,6 +1,7 @@
 "use client";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Link from "next/link";
 import { useSyncExternalStore } from "react";
 
 // Analytics consent. Google Analytics only loads after the visitor clicks "Accept"
@@ -40,9 +41,9 @@ function subscribe(cb: () => void) {
 // On the server (and during hydration) render nothing: no banner flash, no GA.
 const useChoice = () => useSyncExternalStore(subscribe, read, () => "pending" as const);
 
-type Labels = { text: string; accept: string; decline: string };
+type Labels = { text: string; accept: string; decline: string; more: string };
 
-export function CookieConsent({ gaId, labels }: { gaId?: string; labels: Labels }) {
+export function CookieConsent({ gaId, labels, moreHref }: { gaId?: string; labels: Labels; moreHref: string }) {
   const choice = useChoice();
   if (!gaId || choice === "pending") return null;
   if (choice === "granted") return <GoogleAnalytics gaId={gaId} />;
@@ -54,7 +55,12 @@ export function CookieConsent({ gaId, labels }: { gaId?: string; labels: Labels 
       aria-label={labels.text}
       className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-xl rounded-2xl border border-line bg-surface p-5 shadow-2xl"
     >
-      <p className="text-sm leading-relaxed text-text">{labels.text}</p>
+      <p className="text-sm leading-relaxed text-text">
+        {labels.text}{" "}
+        <Link href={moreHref} className="font-semibold text-teal underline underline-offset-2">
+          {labels.more}
+        </Link>
+      </p>
       <div className="mt-4 flex gap-2">
         <button
           type="button"

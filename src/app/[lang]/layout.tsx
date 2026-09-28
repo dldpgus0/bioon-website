@@ -58,7 +58,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         <Footer lang={lang} dict={dict} />
         </ThemeProvider>
         {/* GA4 (NEXT_PUBLIC_GA_ID) loads only after the visitor accepts analytics cookies. */}
-        <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} labels={dict.consent} />
+        <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} labels={{ ...dict.consent, more: dict.cookies.more }} moreHref={`/${lang}/cookies`} />
       </body>
     </html>
   );

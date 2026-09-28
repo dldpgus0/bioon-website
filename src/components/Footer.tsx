@@ -25,6 +25,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <a href={lang === "en" ? "/feed.xml?lang=en" : "/feed.xml"} type="application/rss+xml" className="hover:text-ink">
             {dict.a11y.rss}
           </a>
+          <Link href={`/${lang}/cookies`} className="hover:text-ink">{dict.cookies.title}</Link>
           <CookieSettingsButton label={dict.consent.settings} />
         </nav>
       </div>

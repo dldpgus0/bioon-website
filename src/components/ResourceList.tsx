@@ -19,6 +19,8 @@ export function ResourceList({ dict, lang }: { dict: Dictionary; lang: string })
       {t.items.map((item) => {
         const free = item.type === "free";
         const headingId = `resource-${item.id}`;
+        // Excel downloads straight away; web pages (and the CV page with its Word file) open in a new tab.
+        const isFile = item.format === "xlsx";
         return (
           <article key={item.id} id={item.id} aria-labelledby={headingId} className="flex flex-col rounded-2xl border border-line bg-surface p-6">
             <div className="flex items-center gap-2">
@@ -31,6 +33,7 @@ export function ResourceList({ dict, lang }: { dict: Dictionary; lang: string })
             <h2 id={headingId} className="mt-4 text-lg font-bold text-ink">
               {item.title}
             </h2>
+            <p className="mt-1 text-xs font-medium text-muted">{t.formats[item.format as keyof typeof t.formats]}</p>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{item.body}</p>
 
             {!free ? (
@@ -38,13 +41,12 @@ export function ResourceList({ dict, lang }: { dict: Dictionary; lang: string })
             ) : unlocked ? (
               <a
                 href={`/api/resources/${item.id}?lang=${lang}`}
-                target="_blank"
-                rel="noopener"
+                {...(isFile ? { download: "" } : { target: "_blank", rel: "noopener" })}
                 onClick={() => track("resource_download", { resource: item.id, lang })}
                 className="mt-5 rounded-xl bg-brand py-2.5 text-center text-sm font-semibold text-white hover:opacity-90"
               >
-                {t.download}
-                <span className="sr-only"> ({dict.a11y.newTab})</span>
+                {isFile ? t.downloadFile : t.download}
+                {!isFile && <span className="sr-only"> ({dict.a11y.newTab})</span>}
               </a>
             ) : open === item.id ? (
               <div className="mt-5">

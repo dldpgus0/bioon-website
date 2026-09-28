@@ -197,28 +197,65 @@
     "getFree": "이메일로 받기",
     "items": [
       {
+        "id": "acronyms",
+        "type": "free",
+        "format": "html",
+        "title": "바이오 약어 치트시트 143",
+        "body": "뉴스와 채용공고에 자주 나오는 약어 143개를 개발·허가·CMC·약물감시·시장접근·BD·과학 7개 분야로 정리. 풀네임, 한 줄 뜻, 관련 직무, 분야별 공식 출처 포함."
+      },
+      {
+        "id": "interview-questions",
+        "type": "free",
+        "format": "html",
         "title": "바이오 직무 면접 질문 모음",
-        "body": "BIO:ON 이슈로 만든 면접 질문 34개와 답변 포인트. BD·RA·임상·Market Access 등 9개 직무별 색인 포함.",
-        "type": "free",
-        "id": "interview-questions"
+        "body": "BIO:ON 이슈로 만든 뉴스 기반 질문 34개와 답변 포인트, 직무별(영업·BD·RA·임상·CMC) 역량·상황 질문 25개, STAR(R) 답변 구조. 역량 질문은 기출이 아니라 에디터가 정리한 자주 나오는 유형이에요."
       },
       {
+        "id": "trial-data-guide",
+        "type": "free",
+        "format": "html",
+        "title": "임상·허가 원자료 찾기 가이드",
+        "body": "ClinicalTrials.gov, Drugs@FDA, EMA EPAR, 의약품안전나라에서 임상 결과와 허가 문서를 직접 찾고 읽는 법. 실제 뉴스 한 건을 원자료까지 따라가는 실습 포함."
+      },
+      {
+        "id": "pipeline-tracker",
+        "type": "free",
+        "format": "xlsx",
+        "title": "파이프라인·딜 트래커 (엑셀)",
+        "body": "관심 회사의 파이프라인, 경쟁 약물, 기술이전·M&A 딜, 면접 준비 메모를 한 파일에서 관리하는 엑셀 템플릿. 실제 딜 예시와 계약금 비중 자동 계산 포함."
+      },
+      {
+        "id": "cv-template",
+        "type": "free",
+        "format": "docx",
+        "title": "영문 CV 템플릿 + 링크드인 체크리스트",
+        "body": "ATS를 통과하는 한 단 구성 영문 CV 워드 템플릿과, 형식·내용·링크드인 체크리스트. 대학 커리어센터와 채용 가이드 출처 포함."
+      },
+      {
+        "id": "glossary",
+        "type": "free",
+        "format": "html",
         "title": "바이오 산업 용어집",
-        "body": "뉴스레터 '이번 주의 단어' 17개를 정의와 비유로 정리한 용어집.",
-        "type": "free",
-        "id": "glossary"
+        "body": "뉴스레터 '이번 주의 단어' 17개를 정의와 비유로 정리한 용어집."
       },
       {
-        "title": "직무별 자소서 템플릿",
-        "body": "합격 자소서 구조를 분석한 직무별 템플릿.",
+        "id": "cover-letter",
         "type": "paid",
-        "id": "cover-letter"
+        "format": "html",
+        "title": "직무별 자소서 템플릿",
+        "body": "합격 자소서 구조를 분석한 직무별 템플릿."
       }
     ],
     "unlockTitle": "이메일을 입력하고 바로 받기",
     "consent": "입력하면 BIO:ON Insight 뉴스레터(무료, 매주 화요일)를 구독하게 돼요. 언제든 수신 거부할 수 있어요.",
     "unlocked": "구독자 인증 완료",
     "download": "자료 열기 (PDF 저장 가능)",
+    "formats": {
+      "html": "웹 문서 · PDF 저장",
+      "xlsx": "엑셀 (.xlsx)",
+      "docx": "워드 (.docx) + 체크리스트"
+    },
+    "downloadFile": "엑셀 파일 받기",
     "cancel": "닫기"
   },
   "subscribe": {

@@ -1,0 +1,296 @@
+{
+  "_meta": {
+    "note": "Competency and scenario interview questions by role, for the gated interview question pack. Compiled by the editor as common question types — not a record of real past interview questions. The skills each question tests follow the role profiles in the sources.",
+    "generated": "2026-09-28"
+  },
+  "star": {
+    "ko": {
+      "title": "답변 구조: STAR(R)",
+      "lede": "역량·상황 질문은 '과거에 실제로 어떻게 했는지'를 묻는 질문이에요. STAR는 그 경험을 짧고 분명하게 말하는 구조이고, Prospects는 여기에 성찰(Reflection)을 더한 STARR를 권해요.",
+      "steps": [
+        [
+          "S — Situation (상황)",
+          "언제, 어디서, 어떤 상황이었는지 1~2문장."
+        ],
+        [
+          "T — Task (과제)",
+          "그 상황에서 내가 맡은 역할이나 해결해야 했던 과제."
+        ],
+        [
+          "A — Action (행동)",
+          "내가 한 일과 그렇게 한 이유. 답변의 절반 이상을 여기에 써요. '우리'가 아니라 '나'로 말해요."
+        ],
+        [
+          "R — Result (결과)",
+          "결과가 어땠는지. 가능하면 숫자로."
+        ],
+        [
+          "R — Reflection (성찰)",
+          "배운 점, 다음에 다르게 할 점. 지원 직무와 연결하면 좋아요."
+        ]
+      ],
+      "tip": "경험이 없는 상황 질문('~라면 어떻게 하겠어요?')도 같은 순서로 답할 수 있어요: 상황 파악 → 우선순위 → 행동 → 예상 결과 → 확인할 것."
+    },
+    "en": {
+      "title": "Answer structure: STAR(R)",
+      "lede": "Competency and scenario questions ask how you actually handled something. STAR is a way to tell that story clearly and briefly; Prospects recommends STARR, which adds Reflection.",
+      "steps": [
+        [
+          "S — Situation",
+          "When, where and what was going on, in one or two sentences."
+        ],
+        [
+          "T — Task",
+          "Your role, or the problem you had to solve."
+        ],
+        [
+          "A — Action",
+          "What you did and why. Spend at least half your answer here, and say 'I', not 'we'."
+        ],
+        [
+          "R — Result",
+          "What happened — with a number if you can."
+        ],
+        [
+          "R — Reflection",
+          "What you learned and would do differently, ideally linked to the role."
+        ]
+      ],
+      "tip": "For hypothetical questions ('What would you do if…?'), use the same order: read the situation → set priorities → act → expected result → what you'd check."
+    }
+  },
+  "roles": [
+    {
+      "role": "sales",
+      "label": {
+        "ko": "제약영업 (MR)",
+        "en": "Pharma sales (MR)"
+      },
+      "skills": {
+        "ko": "제품 지식, 영업·고객 응대 역량, 목표 달성, 지역 관리",
+        "en": "Product knowledge, sales and customer service skills, meeting targets, managing a territory"
+      },
+      "source": 0,
+      "questions": [
+        {
+          "kind": "competency",
+          "ko": "목표를 달성하기 어려운 상황에서 끝까지 해낸 경험을 말해 주세요.",
+          "en": "Tell me about a time you hit a difficult target."
+        },
+        {
+          "kind": "competency",
+          "ko": "처음에 거절한 사람을 설득한 경험이 있나요?",
+          "en": "Describe a time you persuaded someone who first said no."
+        },
+        {
+          "kind": "scenario",
+          "ko": "담당 의사가 경쟁 제품이 더 낫다고 말하면 어떻게 대응하겠어요?",
+          "en": "A doctor tells you a competitor's product is better. How do you respond?"
+        },
+        {
+          "kind": "scenario",
+          "ko": "허가 범위 밖(오프라벨) 사용에 대한 질문을 받으면 어떻게 하겠어요?",
+          "en": "A doctor asks you about off-label use. What do you do?"
+        },
+        {
+          "kind": "competency",
+          "ko": "여러 일정을 동시에 관리하며 우선순위를 정한 경험을 말해 주세요.",
+          "en": "Tell me how you prioritised when juggling several commitments at once."
+        }
+      ],
+      "skillsFromSource": true
+    },
+    {
+      "role": "bd",
+      "label": {
+        "ko": "사업개발 (BD)",
+        "en": "Business development (BD)"
+      },
+      "skills": {
+        "ko": "딜 구조 이해, 과학·숫자를 함께 보는 분석력, 협상, 이해관계자 조율",
+        "en": "Understanding deal structures, analysing science and numbers together, negotiation, aligning stakeholders"
+      },
+      "source": 1,
+      "questions": [
+        {
+          "kind": "competency",
+          "ko": "복잡한 정보를 분석해 의사결정에 도움이 되는 결론을 낸 경험을 말해 주세요.",
+          "en": "Tell me about a time you analysed complex information to support a decision."
+        },
+        {
+          "kind": "competency",
+          "ko": "이해관계가 다른 사람들 사이에서 합의를 이끌어 낸 경험이 있나요?",
+          "en": "Describe a time you built agreement between people with different interests."
+        },
+        {
+          "kind": "scenario",
+          "ko": "상대 회사가 계약금을 낮추고 마일스톤을 늘리자고 제안하면 무엇을 따져 보겠어요?",
+          "en": "A partner proposes a lower upfront and bigger milestones. What would you weigh up?"
+        },
+        {
+          "kind": "scenario",
+          "ko": "도입 후보 물질을 검토할 때 가장 먼저 확인할 세 가지는 무엇인가요?",
+          "en": "You're evaluating an asset to license in. What three things do you check first?"
+        },
+        {
+          "kind": "competency",
+          "ko": "빠듯한 마감 안에 정확성을 지키며 일을 끝낸 경험을 말해 주세요.",
+          "en": "Tell me about delivering accurate work to a tight deadline."
+        }
+      ],
+      "skillsFromSource": false
+    },
+    {
+      "role": "ra",
+      "label": {
+        "ko": "허가 (RA)",
+        "en": "Regulatory affairs (RA)"
+      },
+      "skills": {
+        "ko": "명확한 글쓰기, 꼼꼼함, 복잡한 정보 분석, 마감 관리, 협상·설득",
+        "en": "Clear writing, attention to detail, analysing complex information, working to deadlines, negotiation"
+      },
+      "source": 2,
+      "questions": [
+        {
+          "kind": "competency",
+          "ko": "작은 실수를 찾아내 큰 문제를 막은 경험을 말해 주세요.",
+          "en": "Tell me about a time you caught a small error before it became a big problem."
+        },
+        {
+          "kind": "competency",
+          "ko": "전문적인 내용을 비전문가에게 글로 설명해야 했던 경험이 있나요?",
+          "en": "Describe a time you had to explain something technical in writing to a non-expert."
+        },
+        {
+          "kind": "scenario",
+          "ko": "제출 마감 직전에 다른 부서 자료가 늦어지면 어떻게 하겠어요?",
+          "en": "A department's data is late just before a submission deadline. What do you do?"
+        },
+        {
+          "kind": "scenario",
+          "ko": "규제기관이 추가 자료를 요청하며 거절 편지(CRL)를 보내면, 첫 주에 무엇을 하겠어요?",
+          "en": "The regulator issues a complete response letter asking for more data. What do you do in the first week?"
+        },
+        {
+          "kind": "competency",
+          "ko": "여러 부서의 의견을 조율해 하나의 결과물로 만든 경험을 말해 주세요.",
+          "en": "Tell me about coordinating input from several teams into one piece of work."
+        }
+      ],
+      "skillsFromSource": true
+    },
+    {
+      "role": "clinical",
+      "label": {
+        "ko": "임상 (CRA)",
+        "en": "Clinical research (CRA)"
+      },
+      "skills": {
+        "ko": "소통·대인관계, 조직력·시간 관리, 꼼꼼함·분석력, 문제 해결, GCP 이해",
+        "en": "Communication and interpersonal skills, organisation and time management, attention to detail and analysis, problem-solving, knowledge of GCP"
+      },
+      "source": 3,
+      "questions": [
+        {
+          "kind": "competency",
+          "ko": "여러 사람과 일정을 동시에 관리한 경험을 말해 주세요.",
+          "en": "Tell me about managing several people and schedules at the same time."
+        },
+        {
+          "kind": "competency",
+          "ko": "데이터에서 오류나 불일치를 발견해 해결한 경험이 있나요?",
+          "en": "Describe a time you spotted and resolved an error or inconsistency in data."
+        },
+        {
+          "kind": "scenario",
+          "ko": "모니터링 방문에서 동의서(ICF)가 빠진 참여자를 발견하면 어떻게 하겠어요?",
+          "en": "On a monitoring visit you find a participant with no signed consent form. What do you do?"
+        },
+        {
+          "kind": "scenario",
+          "ko": "시험기관 연구진이 반복해서 기한을 놓치면 어떻게 대응하겠어요?",
+          "en": "A site team keeps missing deadlines. How do you handle it?"
+        },
+        {
+          "kind": "competency",
+          "ko": "규칙을 지키는 것과 빠르게 끝내는 것 사이에서 판단해야 했던 경험을 말해 주세요.",
+          "en": "Tell me about a time you had to choose between following the rules and finishing fast."
+        }
+      ],
+      "skillsFromSource": true
+    },
+    {
+      "role": "cmc",
+      "label": {
+        "ko": "제조·품질 (CMC·QA/QC)",
+        "en": "Manufacturing & quality (CMC, QA/QC)"
+      },
+      "skills": {
+        "ko": "품질 시스템 이해, 기록·절차 준수, 원인 분석, 재발 방지",
+        "en": "Understanding quality systems, following records and procedures, root-cause analysis, preventing recurrence"
+      },
+      "source": 4,
+      "questions": [
+        {
+          "kind": "competency",
+          "ko": "문제의 근본 원인을 끝까지 추적한 경험을 말해 주세요.",
+          "en": "Tell me about a time you traced a problem to its root cause."
+        },
+        {
+          "kind": "competency",
+          "ko": "정해진 절차를 개선한 경험이 있나요?",
+          "en": "Describe a time you improved an established procedure."
+        },
+        {
+          "kind": "scenario",
+          "ko": "출하 직전 배치에서 규격 이탈(OOS) 결과가 나오면 어떻게 하겠어요?",
+          "en": "A batch due for release returns an out-of-specification result. What do you do?"
+        },
+        {
+          "kind": "scenario",
+          "ko": "생산팀이 일정 때문에 일탈 기록을 나중에 하자고 하면 어떻게 대응하겠어요?",
+          "en": "Production wants to record a deviation later because of the schedule. How do you respond?"
+        },
+        {
+          "kind": "competency",
+          "ko": "꼼꼼함 덕분에 결과가 달라진 경험을 말해 주세요.",
+          "en": "Tell me about a time your attention to detail changed the outcome."
+        }
+      ],
+      "skillsFromSource": false
+    }
+  ],
+  "sources": [
+    {
+      "label": "Prospects — Medical sales representative",
+      "url": "https://www.prospects.ac.uk/job-profiles/medical-sales-representative/"
+    },
+    {
+      "label": "ABPI — Commercial (sales, marketing, market access, business development)",
+      "url": "https://www.abpi.org.uk/careers/working-in-the-industry/commercial/"
+    },
+    {
+      "label": "Prospects — Regulatory affairs officer",
+      "url": "https://www.prospects.ac.uk/job-profiles/regulatory-affairs-officer/"
+    },
+    {
+      "label": "Prospects — Clinical research associate",
+      "url": "https://www.prospects.ac.uk/job-profiles/clinical-research-associate/"
+    },
+    {
+      "label": "ABPI — Quality assurance / Quality control",
+      "url": "https://www.abpi.org.uk/careers/working-in-the-industry/manufacturing-and-supply/quality/"
+    }
+  ],
+  "starSources": [
+    {
+      "label": "Prospects — Competency-based interviews (STARR)",
+      "url": "https://www.prospects.ac.uk/careers-advice/interview-tips/competency-based-interviews/"
+    },
+    {
+      "label": "jobs.ac.uk — How to use the STAR method in interviews",
+      "url": "https://career-advice.jobs.ac.uk/jobseeking-and-interview-tips/jobseeking-and-interview-resources/how-to-use-the-star-method-in-interviews/"
+    }
+  ]
+}

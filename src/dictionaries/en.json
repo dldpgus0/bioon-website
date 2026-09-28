@@ -197,28 +197,65 @@
     "getFree": "Get it by email",
     "items": [
       {
+        "id": "acronyms",
+        "type": "free",
+        "format": "html",
+        "title": "Biotech acronym cheatsheet (143)",
+        "body": "143 acronyms from news stories and job ads, grouped into seven areas: development, regulatory, CMC, pharmacovigilance, market access, BD and science. Full names, one-line meanings, related roles and official sources for each area."
+      },
+      {
+        "id": "interview-questions",
+        "type": "free",
+        "format": "html",
         "title": "Bio interview question bank",
-        "body": "34 interview questions with answer points, built from BIO:ON issues, indexed across 9 roles including BD, RA, clinical and market access.",
-        "type": "free",
-        "id": "interview-questions"
+        "body": "34 news-based questions with answer points built from BIO:ON issues, 25 competency and scenario questions by role (sales, BD, RA, clinical, CMC), and the STAR(R) answer structure. The competency questions are common question types compiled by the editor, not real past questions."
       },
       {
+        "id": "trial-data-guide",
+        "type": "free",
+        "format": "html",
+        "title": "Finding trial and approval data: a guide",
+        "body": "How to find and read trial results and approval documents yourself on ClinicalTrials.gov, Drugs@FDA, EMA EPARs and Korea's Drug Safety Nara — with an exercise tracing one news story back to its sources."
+      },
+      {
+        "id": "pipeline-tracker",
+        "type": "free",
+        "format": "xlsx",
+        "title": "Pipeline & deal tracker (Excel)",
+        "body": "An Excel template to track a company's pipeline, competing drugs, licensing and M&A deals, and interview prep notes in one file. Includes real deal examples and an automatic upfront-share calculation."
+      },
+      {
+        "id": "cv-template",
+        "type": "free",
+        "format": "docx",
+        "title": "English CV template + LinkedIn checklist",
+        "body": "A single-column Word CV template built to get through applicant tracking systems, plus format, content and LinkedIn checklists — sourced from university careers services and hiring guides."
+      },
+      {
+        "id": "glossary",
+        "type": "free",
+        "format": "html",
         "title": "Biotech glossary",
-        "body": "All 17 Words of the Week from the newsletter, each with a definition and an analogy.",
-        "type": "free",
-        "id": "glossary"
+        "body": "All 17 Words of the Week from the newsletter, each with a definition and an analogy."
       },
       {
-        "title": "Role-specific résumé templates",
-        "body": "Templates built from the structure of successful applications.",
+        "id": "cover-letter",
         "type": "paid",
-        "id": "cover-letter"
+        "format": "html",
+        "title": "Role-specific résumé templates",
+        "body": "Templates built from the structure of successful applications."
       }
     ],
     "unlockTitle": "Enter your email to get it now",
     "consent": "You'll be subscribed to the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
     "unlocked": "Unlocked for subscribers",
     "download": "Open resource (save as PDF)",
+    "formats": {
+      "html": "Web page · save as PDF",
+      "xlsx": "Excel (.xlsx)",
+      "docx": "Word (.docx) + checklist"
+    },
+    "downloadFile": "Download Excel file",
     "cancel": "Cancel"
   },
   "subscribe": {

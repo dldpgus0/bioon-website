@@ -4,7 +4,7 @@ import { icons } from "@/components/Icons";
 import { IssueCard } from "@/components/IssueCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { SocialLinks } from "@/components/SocialLinks";
-import { getIssues } from "@/lib/content";
+import { getIssueSlugs, getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { TrackedLink } from "@/components/TrackedLink";
 
@@ -15,7 +15,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const dict = await getDictionary(lang);
   const t = dict.home;
   const latest = getIssues(lang).slice(0, 3);
-  const issueCount = getIssues("ko").length + getIssues("en").length;
+  // Korean and English editions are the same newsletter, so count issues once.
+  const issueCount = getIssueSlugs().length;
 
   return (
     <>

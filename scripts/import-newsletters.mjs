@@ -1,7 +1,7 @@
 // Imports Stibee email HTML issues into the site.
 //   node scripts/import-newsletters.mjs [sourceDir ...]
 // Default sources: the local newsletter template folder, plus newsletter-src/ in this repo
-// (web-only editions such as the English translations of issues #1–#10).
+// (web-only editions such as the English translations of issues #1–#10, and the welcome letter).
 // - copies each issue's HTML to public/newsletters/<lang>/<slug>.html (web version)
 // - writes src/content/insight.json with metadata parsed from the issue header
 import fs from "node:fs";
@@ -64,6 +64,8 @@ for (const [dir, file] of SOURCES.flatMap((d) => fs.readdirSync(d).map((f) => [d
   const [label, dateRaw, ...rest] = lines[h].split("·").map((s) => s.trim());
   const lang = /EN\s*#/.test(label) ? "en" : "ko";
   const date = parseDate(dateRaw);
+  // The welcome letter shares its date with the first issue, so it gets its own slug.
+  const welcome = /Welcome\.html$/.test(file);
   const tags = rest
     .join("·")
     .split(/[·,]/)
@@ -74,7 +76,7 @@ for (const [dir, file] of SOURCES.flatMap((d) => fs.readdirSync(d).map((f) => [d
     originalNumber: Number(label.match(/#(\d+)/)[1]),
     number: 0,
     date,
-    slug: date,
+    slug: welcome ? "welcome" : date,
     title: lines[h + 1],
     summary: lines[h - 1] || "",
     tags,
@@ -83,8 +85,9 @@ for (const [dir, file] of SOURCES.flatMap((d) => fs.readdirSync(d).map((f) => [d
   issues.push(issues_);
 }
 
-// Slug by date so ko/en editions of the same week pair up.
-issues.sort((a, b) => a.date.localeCompare(b.date) || a.lang.localeCompare(b.lang));
+// Slug by date so ko/en editions of the same week pair up. The welcome letter is always #1.
+const isWelcome = (i) => i.slug === "welcome";
+issues.sort((a, b) => isWelcome(b) - isWelcome(a) || a.date.localeCompare(b.date) || a.lang.localeCompare(b.lang));
 
 // The source files have duplicate/missing numbers, so each language is renumbered by
 // publish date (#1, #2, …). Old numbers used by more than one issue are ambiguous and

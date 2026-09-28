@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { Wordmark } from "./Logo";
+import { CookieSettingsButton } from "./CookieConsent";
 import { SocialLinks } from "./SocialLinks";
 
 export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
@@ -24,12 +25,12 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <a href={lang === "en" ? "/feed.xml?lang=en" : "/feed.xml"} type="application/rss+xml" className="hover:text-ink">
             {dict.a11y.rss}
           </a>
+          <CookieSettingsButton label={dict.consent.settings} />
         </nav>
       </div>
       <div className="border-t border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-5 text-xs text-muted sm:flex-row sm:justify-between sm:px-6">
+        <div className="mx-auto max-w-6xl px-4 py-5 text-xs text-muted sm:px-6">
           <span>© {new Date().getFullYear()} BIO:ON</span>
-          <span>{dict.footer.built}</span>
         </div>
       </div>
     </footer>

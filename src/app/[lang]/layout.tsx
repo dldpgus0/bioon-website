@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { CookieConsent } from "@/components/CookieConsent";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import "../globals.css";
 
@@ -57,9 +57,9 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         </main>
         <Footer lang={lang} dict={dict} />
         </ThemeProvider>
+        {/* GA4 (NEXT_PUBLIC_GA_ID) loads only after the visitor accepts analytics cookies. */}
+        <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} labels={dict.consent} />
       </body>
-      {/* GA4 turns on once NEXT_PUBLIC_GA_ID (e.g. G-XXXXXXX) is set in Vercel; useAnalytics events then flow into it via gtag. */}
-      {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
     </html>
   );
 }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -6,7 +7,10 @@ import { formatDate } from "@/components/IssueCard";
 import { icons } from "@/components/Icons";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { References } from "@/components/References";
-import { getIssue, getIssueReferences, getIssueSlugs } from "@/lib/content";
+import { IssueCard } from "@/components/IssueCard";
+import { StoryList } from "@/components/StoryList";
+import { getIssue, getIssueReferences, getIssueSlugs, getIssueTakeaway, getRelatedIssues } from "@/lib/content";
+import { storiesOf } from "@/lib/wiki";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import { roleLabel, topicLabel } from "@/lib/taxonomy";
 
@@ -46,6 +50,9 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
   const other = lang === "ko" ? "en" : "ko";
   const issue = getIssue(lang, slug);
   const otherIssue = getIssue(other, slug);
+  const takeaway = getIssueTakeaway(lang, slug);
+  const stories = storiesOf(slug, lang);
+  const related = issue ? getRelatedIssues(issue) : [];
 
   // No edition in this language: show a note linking to the one that exists.
   if (!issue) {
@@ -90,6 +97,28 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
         </div>
       </header>
 
+      {takeaway && (
+        <section aria-labelledby="takeaway" className="mt-8 border-l-4 border-brand bg-surface-2 py-5 pl-5 pr-6">
+          <h2 id="takeaway" className="text-xs font-bold uppercase tracking-wider text-brand">
+            {dict.wiki.takeaway}
+          </h2>
+          <p className="mt-2 text-[16px] leading-[1.8] text-ink">{takeaway}</p>
+          <p className="mt-3 flex items-center gap-2 text-xs text-muted">
+            <Image src="/brand/profile.jpg" alt="" width={24} height={24} className="h-6 w-6 rounded-full object-cover" />
+            {dict.about.name} · {dict.wiki.takeawayNote}
+          </p>
+        </section>
+      )}
+
+      {stories.length > 0 && (
+        <section aria-labelledby="stories" className="mt-8">
+          <h2 id="stories" className="mb-3 text-sm font-bold text-ink">
+            {dict.wiki.storiesTitle}
+          </h2>
+          <StoryList stories={stories} lang={lang} dict={dict} />
+        </section>
+      )}
+
       {issue.aiSummary.length > 0 && (
         <section className="mt-8 rounded-2xl border border-teal/30 bg-teal-soft/50 p-6">
           <div className="flex items-center gap-2">
@@ -127,6 +156,27 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
       <div className="mt-8">
         <References items={getIssueReferences(lang, slug)} title={dict.insight.references} newTab={dict.a11y.newTab} />
       </div>
+
+      {related.length > 0 && (
+        <section aria-labelledby="related" className="mt-12">
+          <h2 id="related" className="text-lg font-bold text-ink">
+            {dict.wiki.related}
+          </h2>
+          <p className="mt-1 text-sm text-muted">{dict.wiki.relatedSub}</p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            {related.map((r) => (
+              <div key={r.issue.slug} className="flex flex-col">
+                <IssueCard issue={r.issue} dict={dict} />
+                {r.shared.length > 0 && (
+                  <p className="mt-2 text-xs text-muted">
+                    {dict.wiki.shared}: {r.shared.map((e) => e.name).join(", ")}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <aside className="mt-12 rounded-2xl border border-line bg-surface p-6 sm:p-8">
         <h2 className="text-xl font-bold text-ink">{dict.subscribe.title}</h2>

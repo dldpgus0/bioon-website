@@ -10,7 +10,8 @@
     "about": "소개",
     "subscribe": "구독하기",
     "switchLang": "English",
-    "faq": "자주 묻는 질문"
+    "faq": "자주 묻는 질문",
+    "wiki": "위키"
   },
   "home": {
     "eyebrow": "매주 화요일 아침 · 바이오·제약 뉴스레터",
@@ -458,5 +459,31 @@
     "lede": "공개되면 이메일로 가장 먼저 알려드려요. 등록하면 BIO:ON Insight 뉴스레터(무료, 매주 화요일)도 함께 받아요. 언제든 수신 거부할 수 있어요.",
     "success": "대기자 명단에 등록됐어요! 공개되면 가장 먼저 알려드릴게요.",
     "close": "닫기"
+  },
+  "wiki": {
+    "title": "BIO:ON 위키",
+    "lede": "뉴스레터에서 다룬 뉴스 51건을 분류와 기업·약물 기준으로 다시 엮은 지식 아카이브예요. 한 회사나 약물이 여러 호에 걸쳐 어떻게 움직였는지 이어서 볼 수 있어요.",
+    "categoriesTitle": "분류",
+    "entitiesTitle": "기업·약물·규제기관",
+    "types": {
+      "company": "기업",
+      "drug": "약물",
+      "regulator": "규제기관"
+    },
+    "storyCount": "건",
+    "seeAll": "전체 보기",
+    "issueRef": "#{n}호",
+    "timeline": "다룬 뉴스",
+    "coMentioned": "함께 등장한",
+    "back": "위키로",
+    "storiesTitle": "이 호의 뉴스",
+    "related": "관련 인사이트",
+    "relatedSub": "같은 기업·약물이나 주제를 다룬 다른 호",
+    "shared": "공통",
+    "takeaway": "에디터 Takeaway",
+    "takeawayNote": "이 호 뉴스레터의 '에디터 인사이트'를 그대로 옮겼어요.",
+    "categoryFilter": "분류",
+    "metaTitle": "위키",
+    "entityLede": "BIO:ON Insight에서 {name}을(를) 다룬 뉴스 {n}건이에요."
   }
 }

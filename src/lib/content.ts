@@ -8,6 +8,7 @@ import insightAi from "@/content/insight-ai.json";
 import interviewBank from "@/content/interview-bank.json";
 import type { Locale } from "./i18n";
 import type { RoleId, TopicId } from "./taxonomy";
+import { entity, storiesOf, type CategoryId } from "./wiki";
 
 // ---------- Insight (newsletter archive) ----------
 
@@ -31,6 +32,8 @@ type IssueAnalysis = {
 
 /** An issue plus its AI analysis (src/content/insight-ai.json), localized to the issue's language. */
 export type Issue = RawIssue & {
+  /** Main categories of the issue's stories (src/content/wiki.json). */
+  categories: CategoryId[];
   topics: TopicId[];
   roles: RoleId[];
   aiSummary: string[];
@@ -44,6 +47,7 @@ const issues: Issue[] = (insight as RawIssue[]).map((raw) => {
   const ai = analysis[raw.slug];
   return {
     ...raw,
+    categories: [...new Set(storiesOf(raw.slug, raw.lang).map((s) => s.cat))],
     topics: ai?.topics ?? [],
     roles: ai?.roles ?? [],
     aiSummary: ai?.summary[raw.lang] ?? [],
@@ -109,6 +113,43 @@ export function getIssueReferences(lang: Locale, slug: string): Reference[] {
     if (dash) return { title: dash[1].trim(), source: dash[2].trim(), url };
     return { title: text, source: host, url };
   });
+}
+
+// ---------- Related issues and the editor's takeaway ----------
+
+/**
+ * Other issues that share companies, drugs or regulators with this one (strongest link), then topics.
+ * Returns up to `limit`, each with the entities it shares so the page can say why it's related.
+ */
+export function getRelatedIssues(issue: Issue, limit = 3) {
+  const mine = new Set(storiesOf(issue.slug, issue.lang).flatMap((s) => s.entities));
+  return getIssues(issue.lang)
+    .filter((other) => other.slug !== issue.slug && other.slug !== "welcome")
+    .map((other) => {
+      const shared = [...new Set(storiesOf(other.slug, other.lang).flatMap((s) => s.entities))].filter((e) => mine.has(e));
+      // A regulator (e.g. the FDA) turns up everywhere, so it counts for less than a company or drug.
+      const entityScore = shared.reduce((sum, e) => sum + (entity(e, issue.lang).type === "regulator" ? 1 : 3), 0);
+      const topicScore = other.topics.filter((t) => issue.topics.includes(t)).length;
+      return { issue: other, shared: shared.map((e) => entity(e, issue.lang)), score: entityScore + topicScore };
+    })
+    .filter((r) => r.score > 0)
+    .sort((a, b) => b.score - a.score || b.issue.date.localeCompare(a.issue.date))
+    .slice(0, limit);
+}
+
+/**
+ * The editor's own commentary from the issue ("💡 에디터 인사이트" / "💡 Editor's Insight"),
+ * as plain text. Shown verbatim at the top of the issue page.
+ */
+export function getIssueTakeaway(lang: Locale, slug: string): string | null {
+  const file = path.join(process.cwd(), "public", "newsletters", lang, `${slug}.html`);
+  if (!fs.existsSync(file)) return null;
+  const html = fs.readFileSync(file, "utf8");
+  const label = html.match(/text-transform: uppercase[^>]*>\s*💡[^<]*(?:인사이트|Insight)[^<]*<\/p>/);
+  if (!label || label.index === undefined) return null;
+  const body = html.slice(label.index + label[0].length).split("<!-- =====")[0];
+  const text = decode(body.replace(/<br\s*\/?>/gi, " "));
+  return text || null;
 }
 
 // ---------- Interview question bank ----------

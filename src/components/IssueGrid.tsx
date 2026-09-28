@@ -6,9 +6,12 @@ import type { Issue } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n";
 import { searchIssues } from "@/lib/search";
 import { roleIds, roleLabel, topicIds, topicLabel, type RoleId, type TopicId } from "@/lib/taxonomy";
+import { categoryIds, categoryLabel, type CategoryId } from "@/lib/wiki";
+import type { Locale } from "@/lib/i18n";
 import { IssueCard } from "./IssueCard";
 
 export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dictionary; lang: string }) {
+  const [cat, setCat] = useState<CategoryId | null>(null);
   const [topic, setTopic] = useState<TopicId | null>(null);
   const [role, setRole] = useState<RoleId | null>(null);
   const [query, setQuery] = useState("");
@@ -28,7 +31,9 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
     window.history.replaceState(null, "", url);
   };
 
-  const filtered = issues.filter((i) => (!topic || i.topics.includes(topic)) && (!role || i.roles.includes(role)));
+  const filtered = issues.filter(
+    (i) => (!cat || i.categories.includes(cat)) && (!topic || i.topics.includes(topic)) && (!role || i.roles.includes(role)),
+  );
   const searching = query.trim().length > 0;
   const hits = searching ? searchIssues(filtered, query, lang) : filtered.map((issue) => ({ issue, line: null }));
   const shown = hits.map((h) => h.issue);
@@ -38,6 +43,10 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
   const topics = topicIds.filter((t) => issues.some((i) => i.topics.includes(t)));
   const roles = roleIds.filter((r) => issues.some((i) => i.roles.includes(r)));
 
+  const pickCat = (c: CategoryId | null) => {
+    setCat(c);
+    track("filter_select", { page: "insight", type: "category", value: c ?? "all", label: c ? categoryLabel(c, lang as Locale) : "all", lang });
+  };
   const pickTopic = (t: TopicId | null) => {
     setTopic(t);
     track("filter_select", { page: "insight", type: "topic", value: t ?? "all", label: t ? topicLabel(t, lang) : "all", lang });
@@ -103,6 +112,19 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
       </section>
 
       <aside aria-label={dict.insight.filtersLabel} className="space-y-4">
+        <div role="group" aria-labelledby="filter-cats" className="flex flex-wrap items-center gap-2">
+          <span id="filter-cats" className="mr-1 w-20 text-xs font-semibold uppercase tracking-wider text-ink">
+            {dict.wiki.categoryFilter}
+          </span>
+          <button type="button" onClick={() => pickCat(null)} aria-pressed={cat === null} className={chip(cat === null)}>
+            {dict.insight.all}
+          </button>
+          {categoryIds.map((c) => (
+            <button key={c} type="button" onClick={() => pickCat(c === cat ? null : c)} aria-pressed={c === cat} className={chip(c === cat)}>
+              {categoryLabel(c, lang as Locale)}
+            </button>
+          ))}
+        </div>
         <div role="group" aria-labelledby="filter-topics" className="flex flex-wrap items-center gap-2">
           <span id="filter-topics" className="mr-1 w-20 text-xs font-semibold uppercase tracking-wider text-ink">
             {dict.insight.topicsLabel}
@@ -134,10 +156,11 @@ export function IssueGrid({ issues, dict, lang }: { issues: Issue[]; dict: Dicti
       <p className="mt-6 text-sm text-muted" aria-live="polite">
         {shown.length}
         {searching ? dict.insight.askResults : dict.insight.count}
-        {(topic || role) && (
+        {(cat || topic || role) && (
           <button
             type="button"
             onClick={() => {
+              setCat(null);
               setTopic(null);
               setRole(null);
             }}

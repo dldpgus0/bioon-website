@@ -9,6 +9,7 @@ import { TrackedLink } from "./TrackedLink";
 export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const links = [
     { href: `/${lang}/insight`, label: dict.nav.insight },
+    { href: `/${lang}/wiki`, label: dict.nav.wiki },
     { href: `/${lang}/career`, label: dict.nav.career },
     { href: `/${lang}/resources`, label: dict.nav.resources },
     { href: `/${lang}/about`, label: dict.nav.about },

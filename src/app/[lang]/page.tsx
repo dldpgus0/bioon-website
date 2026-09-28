@@ -54,32 +54,25 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <SocialLinks className="mt-8" />
         </div>
 
-        {/* Round portrait (kept by request) with a plain credentials panel instead of floating badges */}
-        <div className="order-1 flex flex-col items-center md:order-2">
-          <Image
-            src="/brand/profile.jpg"
-            alt={dict.about.name}
-            width={320}
-            height={320}
-            preload
-            className="h-52 w-52 rounded-full object-cover ring-1 ring-line sm:h-64 sm:w-64"
-          />
-          <dl className="mt-8 w-full max-w-sm divide-y divide-line rounded-xl border border-line bg-surface text-sm">
-            {dict.about.education.map((e) => (
-              <div key={e.degree} className="px-5 py-3">
-                <dt className="font-semibold text-ink">{e.degree}</dt>
-                <dd className="mt-0.5 text-xs text-muted">
-                  {e.school} · {e.note}
-                </dd>
-              </div>
-            ))}
-            <div className="flex items-baseline justify-between px-5 py-3">
-              <dt className="text-xs text-muted">{t.badgeIssues}</dt>
-              <dd className="font-semibold text-ink">
-                {issueCount} <span className="text-xs font-medium text-muted">· KO / EN</span>
-              </dd>
+        <div className="order-1 flex justify-center md:order-2">
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-full border border-dashed border-teal/40" aria-hidden />
+            <Image
+              src="/brand/profile.jpg"
+              alt={dict.about.name}
+              width={320}
+              height={320}
+              preload
+              className="relative h-56 w-56 rounded-full object-cover shadow-[0_20px_50px_-20px_rgba(19,42,76,0.45)] sm:h-72 sm:w-72"
+            />
+            <div className="absolute -left-6 bottom-6 rounded-2xl bg-surface px-4 py-2.5 shadow-[0_10px_30px_-10px_rgba(19,42,76,0.3)]">
+              <p className="text-xl font-bold leading-none text-brand">{issueCount}</p>
+              <p className="mt-1 text-xs font-medium text-muted">{t.badgeIssues}</p>
             </div>
-          </dl>
+            <div className="absolute -right-4 top-8 rounded-full bg-surface px-3.5 py-2 text-xs font-semibold text-teal shadow-[0_10px_30px_-10px_rgba(19,42,76,0.3)]">
+              KO · EN
+            </div>
+          </div>
         </div>
       </section>
 

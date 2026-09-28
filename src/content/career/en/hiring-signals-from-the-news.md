@@ -3,12 +3,12 @@ title: Reading biotech hiring demand in the news — four signals from 17 issues
 date: 2026-09-27
 category: industry
 roles: [CMC & QA, Market access, Regulatory affairs, BD]
-summary: We regrouped the news BIO:ON Insight covered from June to September by role. The trends that kept coming up for manufacturing and quality, market access, regulatory and BD roles — and what to prepare.
+summary: I regrouped the news BIO:ON Insight covered from June to September by role. The trends that kept coming up for manufacturing and quality, market access, regulatory and BD roles — and what to prepare.
 ---
 
-Job ads alone rarely tell you why a role is becoming more important. But group the news by role and patterns appear. We re-read the 17 issues and 51 stories BIO:ON Insight covered from June to September 2026 and pulled out **four signals that came up again and again**.
+Job ads alone rarely tell you why a role is becoming more important. But group the news by role and patterns appear. I re-read the 17 issues and 51 stories BIO:ON Insight covered from June to September 2026 and pulled out **four signals that came up again and again**.
 
-This isn't hiring data — it's **the direction the news points in**. Always check each company's careers page for actual openings.
+I'm still a student learning the industry, so this isn't hiring data or an expert forecast — it's **the patterns I noticed while writing up the news**. Always check each company's careers page for actual openings.
 
 ## 1. The battleground moves to where drugs are made — CMC & quality
 
@@ -51,9 +51,9 @@ This isn't hiring data — it's **the direction the news points in**. Always che
 
 ## The one thing all four share
 
-All four signals come down to **the ability to read behind the headline**. If you can take one story and talk through fact → interpretation → your role, you'll stand out in any interview. The method is in our [three-step interview answer guide](/en/career/industry-news-interview).
+All four signals come down to **the ability to read behind the headline**. If you can take one story and talk through fact → interpretation → your role, it should help in an interview for any role. The method is in my [three-step interview answer guide](/en/career/industry-news-interview).
 
-We'll keep flagging new signals in the newsletter every Tuesday.
+I'll keep noting new patterns as I write the newsletter every Tuesday.
 
 ## Sources
 

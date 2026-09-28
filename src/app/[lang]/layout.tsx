@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import "../globals.css";
+
+// Absolute base for canonical and og:* URLs (link previews need full URLs). Vercel provides the
+// production domain at build time; NEXT_PUBLIC_SITE_URL overrides it (e.g. a custom domain).
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -12,6 +19,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   return {
+    metadataBase: new URL(siteUrl),
     title: { default: dict.meta.title, template: "%s · BIO:ON" },
     description: dict.meta.description,
     alternates: {
@@ -26,7 +34,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang}>
+    // suppressHydrationWarning: next-themes sets the theme class on <html> before hydration.
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
@@ -34,6 +43,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         />
       </head>
       <body className="flex min-h-screen flex-col">
+        <ThemeProvider>
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
@@ -45,6 +55,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
           {children}
         </main>
         <Footer lang={lang} dict={dict} />
+        </ThemeProvider>
       </body>
     </html>
   );

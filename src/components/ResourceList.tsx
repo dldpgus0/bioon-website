@@ -8,7 +8,8 @@ import { SubscribeForm } from "./SubscribeForm";
 
 // Resources behind the email gate: free items open after a sign-up (the subscribe API sets
 // the unlock cookie, and /api/resources/[id] checks it); paid items are still "coming soon".
-export function ResourceList({ dict, lang }: { dict: Dictionary; lang: string }) {
+// `ids` limits and orders the list (a reader track); without it every item is shown.
+export function ResourceList({ dict, lang, ids }: { dict: Dictionary; lang: string; ids?: string[] }) {
   const t = dict.resources;
   const { unlocked, unlock } = useLead();
   const { track } = useAnalytics();
@@ -16,7 +17,7 @@ export function ResourceList({ dict, lang }: { dict: Dictionary; lang: string })
 
   return (
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {t.items.map((item) => {
+      {(ids ? ids.map((id) => t.items.find((i) => i.id === id)).filter((i) => !!i) : t.items).map((item) => {
         const free = item.type === "free";
         const headingId = `resource-${item.id}`;
         // Excel downloads straight away; web pages (and the CV page with its Word file) open in a new tab.

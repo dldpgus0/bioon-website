@@ -66,6 +66,51 @@ export function getIssueSlugs() {
   return [...new Set(issues.map((i) => i.slug))];
 }
 
+// ---------- Issue sources (for <References />) ----------
+
+export type Reference = { title: string; source: string; url: string };
+
+const decode = (s: string) =>
+  s
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&rsquo;|&lsquo;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+// Some issues wrap links as google.com/search?q=<url> or google.com/url?q=<url>; link the article itself.
+function unwrap(url: string) {
+  const u = url.replace(/&amp;/g, "&");
+  const m = u.match(/^https?:\/\/(?:www\.)?google\.[a-z.]+\/(?:search|url)\?q=([^&]+)/);
+  return m ? decodeURIComponent(m[1]) : u;
+}
+
+/**
+ * The "🔗 원문 링크 / Sources" list at the end of an issue's email HTML, as structured references.
+ * Link text looks like "① Title (Fierce Biotech, 2026.08.24)" or "① Title — Source Name".
+ */
+export function getIssueReferences(lang: Locale, slug: string): Reference[] {
+  const file = path.join(process.cwd(), "public", "newsletters", lang, `${slug}.html`);
+  if (!fs.existsSync(file)) return [];
+  const html = fs.readFileSync(file, "utf8");
+  // The section label is an uppercase heading paragraph; the links follow until the next section comment.
+  const label = html.search(/text-transform: uppercase[^>]*>\s*🔗/);
+  if (label < 0) return [];
+  const section = html.slice(label).split("<!-- =====")[0];
+  return [...section.matchAll(/<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)].map(([, href, inner]) => {
+    const text = decode(inner).replace(/^[①-⑳]\s*/, "");
+    const url = unwrap(href);
+    const paren = text.match(/^(.*)\(([^()]+)\)\s*$/);
+    const dash = text.match(/^(.*?)\s+—\s+([^—]+)$/);
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    if (paren) return { title: paren[1].trim(), source: paren[2].trim(), url };
+    if (dash) return { title: dash[1].trim(), source: dash[2].trim(), url };
+    return { title: text, source: host, url };
+  });
+}
+
 // ---------- Interview question bank ----------
 
 export type QuestionKind = "concept" | "issue" | "case";

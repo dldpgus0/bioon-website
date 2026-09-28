@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "note": "Three reader tracks for the Career and Resources pages. posts = career post slugs, resources = resource ids from the dictionaries, waitlist = items below that aren't built yet (shown as 'Waitlist open' cards with an email capture). An item can sit in more than one track."
+  },
+  "tracks": [
+    {
+      "id": "students",
+      "posts": ["biotech-career-orientation", "linkedin-headline"],
+      "resources": ["acronyms", "glossary", "trial-data-guide"],
+      "waitlist": ["lab-to-business", "msc-roadmap"]
+    },
+    {
+      "id": "seekers",
+      "posts": ["industry-news-interview", "cover-letter-industry-news", "linkedin-headline"],
+      "resources": ["interview-questions", "cv-template", "acronyms"],
+      "waitlist": ["cover-letter", "ai-feedback", "ai-interview"]
+    },
+    {
+      "id": "pros",
+      "posts": ["hiring-signals-from-the-news", "biotech-career-orientation"],
+      "resources": ["pipeline-tracker", "trial-data-guide", "acronyms"],
+      "waitlist": ["career-pivot", "jd-analyzer", "conference-tracker"]
+    }
+  ],
+  "waitlist": {
+    "lab-to-business": {
+      "kind": "guide",
+      "ko": { "title": "랩실에서 오피스로 (Lab to Business)", "body": "실험실에서 쌓은 경험을 BD·RA·메디컬·마켓 액세스 직무의 언어로 옮기는 법을 정리한 가이드." },
+      "en": { "title": "Lab to Business", "body": "How to translate bench experience into the language of BD, regulatory, medical and market access roles." }
+    },
+    "msc-roadmap": {
+      "kind": "guide",
+      "ko": { "title": "글로벌 제약 석사 진학 로드맵", "body": "바이오테크·제약 경영 석사 과정을 고르는 기준, 지원 일정, 준비 서류를 한 번에 정리한 로드맵." },
+      "en": { "title": "Global Pharma MSc Roadmap", "body": "How to choose a biotech and pharma management master's, with the application timeline and documents in one place." }
+    },
+    "career-pivot": {
+      "kind": "guide",
+      "ko": { "title": "직무 피보팅 가이드 (Career Pivoting)", "body": "R&D에서 BD로, 영업에서 마켓 액세스로처럼 인접 직무로 옮길 때 가져갈 수 있는 역량과 채워야 할 역량." },
+      "en": { "title": "Career Pivoting Guide", "body": "Moving to an adjacent role — R&D to BD, sales to market access: which skills transfer and which gaps to close." }
+    },
+    "jd-analyzer": {
+      "kind": "tool",
+      "ko": { "title": "JD 해독기 (JD Analyzer)", "body": "채용공고를 붙여넣으면 필수·우대 역량, 반복되는 키워드, 면접에서 나올 만한 질문을 정리해 주는 AI 도구." },
+      "en": { "title": "JD Analyzer", "body": "Paste a job description to get the must-have and nice-to-have skills, recurring keywords and likely interview questions." }
+    },
+    "conference-tracker": {
+      "kind": "resource",
+      "ko": { "title": "학회 파이프라인 트래커 (Conference Tracker)", "body": "주요 학회 일정과 발표가 예정된 파이프라인을 한 파일에서 추적하는 엑셀 템플릿." },
+      "en": { "title": "Conference Pipeline Tracker", "body": "An Excel template to track major medical conferences and the pipeline readouts expected at each." }
+    },
+    "cover-letter": {
+      "kind": "resource",
+      "ko": { "title": "직무별 자소서 템플릿", "body": "직무별로 지원동기·역량 문항을 어떻게 구성할지 보여주는 자소서 템플릿." },
+      "en": { "title": "Role-specific Cover Letter Templates", "body": "Cover letter templates showing how to structure motivation and competency sections for each role." }
+    },
+    "ai-feedback": {
+      "kind": "tool",
+      "ko": { "title": "AI 자소서·링크드인 피드백", "body": "지원 직무를 고르고 글을 붙여넣으면 두괄식 구조·직무 키워드·구체성 기준으로 피드백을 드려요." },
+      "en": { "title": "AI feedback on your ATS-Optimized Résumé, Cover Letter & LinkedIn", "body": "Pick a target role and paste your text for feedback on structure, role keywords and specificity." }
+    },
+    "ai-interview": {
+      "kind": "tool",
+      "ko": { "title": "AI 모의면접", "body": "직무와 회사 유형을 고르면 BIO:ON 이슈를 활용한 질문 5개와 STAR 답변 피드백을 드려요." },
+      "en": { "title": "AI mock interview", "body": "Pick a role and company type for five questions built on BIO:ON issues, with feedback on your Behavioral Interview (STAR) answers." }
+    }
+  }
+}

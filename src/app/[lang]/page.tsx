@@ -4,6 +4,7 @@ import { icons } from "@/components/Icons";
 import { IssueCard } from "@/components/IssueCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { SocialLinks } from "@/components/SocialLinks";
+import { SubscribeForm } from "@/components/SubscribeForm";
 import { getIssueSlugs, getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { TrackedLink } from "@/components/TrackedLink";
@@ -53,25 +54,32 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <SocialLinks className="mt-8" />
         </div>
 
-        <div className="order-1 flex justify-center md:order-2">
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-full border border-dashed border-teal/40" aria-hidden />
-            <Image
-              src="/brand/profile.jpg"
-              alt={dict.about.name}
-              width={320}
-              height={320}
-              preload
-              className="relative h-56 w-56 rounded-full object-cover shadow-[0_20px_50px_-20px_rgba(19,42,76,0.45)] sm:h-72 sm:w-72"
-            />
-            <div className="absolute -left-6 bottom-6 rounded-2xl bg-white px-4 py-2.5 shadow-[0_10px_30px_-10px_rgba(19,42,76,0.3)]">
-              <p className="text-xl font-bold leading-none text-brand">{issueCount}</p>
-              <p className="mt-1 text-xs font-medium text-muted">{t.badgeIssues}</p>
+        {/* Round portrait (kept by request) with a plain credentials panel instead of floating badges */}
+        <div className="order-1 flex flex-col items-center md:order-2">
+          <Image
+            src="/brand/profile.jpg"
+            alt={dict.about.name}
+            width={320}
+            height={320}
+            preload
+            className="h-52 w-52 rounded-full object-cover ring-1 ring-line sm:h-64 sm:w-64"
+          />
+          <dl className="mt-8 w-full max-w-sm divide-y divide-line rounded-xl border border-line bg-surface text-sm">
+            {dict.about.education.map((e) => (
+              <div key={e.degree} className="px-5 py-3">
+                <dt className="font-semibold text-ink">{e.degree}</dt>
+                <dd className="mt-0.5 text-xs text-muted">
+                  {e.school} · {e.note}
+                </dd>
+              </div>
+            ))}
+            <div className="flex items-baseline justify-between px-5 py-3">
+              <dt className="text-xs text-muted">{t.badgeIssues}</dt>
+              <dd className="font-semibold text-ink">
+                {issueCount} <span className="text-xs font-medium text-muted">· KO / EN</span>
+              </dd>
             </div>
-            <div className="absolute -right-4 top-8 rounded-full bg-white px-3.5 py-2 text-xs font-semibold text-teal shadow-[0_10px_30px_-10px_rgba(19,42,76,0.3)]">
-              KO · EN
-            </div>
-          </div>
+          </dl>
         </div>
       </section>
 
@@ -84,7 +92,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             className="absolute -top-px left-0 h-16 w-full sm:h-28"
             aria-hidden
           >
-            <path d="M0 0h1440v28c-190 70-420 92-700 40C420 10 190 18 0 58z" fill="#ffffff" />
+            <path d="M0 0h1440v28c-190 70-420 92-700 40C420 10 190 18 0 58z" fill="var(--bg)" />
           </svg>
           <div className="relative mx-auto max-w-6xl px-4 pb-20 pt-28 sm:px-6 sm:pt-40">
             <SectionTitle title={t.latest} subtitle={t.latestSub} onBrand />
@@ -106,6 +114,19 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </section>
       )}
 
+      {/* Inline sign-up straight after the latest issues, on its own tinted band */}
+      <section aria-labelledby="inline-subscribe" className="border-y border-teal/20 bg-teal-soft">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-12 sm:px-6 md:grid-cols-[1fr_1.3fr]">
+          <div>
+            <h2 id="inline-subscribe" className="text-xl font-bold text-ink">
+              {t.inlineTitle}
+            </h2>
+            <p className="mt-2 text-sm text-muted">{t.inlineBody}</p>
+          </div>
+          <SubscribeForm labels={dict.subscribe} lang={lang} compact source="home_inline" />
+        </div>
+      </section>
+
       {/* Pillars */}
       <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
         <SectionTitle title={t.pillarsTitle} subtitle={t.pillarsSub} />
@@ -114,7 +135,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <Link
               key={p.href}
               href={`/${lang}${p.href}`}
-              className="group rounded-2xl border border-line bg-white p-7 text-center transition-all hover:-translate-y-1 hover:border-transparent hover:shadow-[0_16px_40px_-16px_rgba(19,42,76,0.3)]"
+              className="group rounded-2xl border border-line bg-surface p-7 text-center transition-all hover:-translate-y-1 hover:border-transparent hover:shadow-[0_16px_40px_-16px_rgba(19,42,76,0.3)]"
             >
               <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-soft p-3.5 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                 {pillarIcons[i]}
@@ -137,13 +158,13 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               <li key={step.title} className="relative mb-10 pl-12 last:mb-0 md:grid md:grid-cols-2 md:gap-16 md:pl-0">
                 <span
                   className={`absolute left-4 top-6 h-4 w-4 -translate-x-1/2 rounded-full md:left-1/2 ${
-                    step.upcoming ? "border-2 border-dashed border-teal bg-white" : "border-4 border-white bg-brand shadow-[0_0_0_2px_var(--line)]"
+                    step.upcoming ? "border-2 border-dashed border-teal bg-surface" : "border-4 border-bg bg-brand shadow-[0_0_0_2px_var(--line)]"
                   }`}
                   aria-hidden
                 />
                 <div className={right ? "md:col-start-2" : "md:text-right"}>
                   <div
-                    className={`rounded-2xl bg-white p-6 ${
+                    className={`rounded-2xl bg-surface p-6 ${
                       step.upcoming ? "border border-dashed border-teal/50" : "border border-line shadow-[0_10px_30px_-18px_rgba(19,42,76,0.35)]"
                     }`}
                   >

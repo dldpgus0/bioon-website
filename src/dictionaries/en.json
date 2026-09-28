@@ -30,25 +30,25 @@
       },
       {
         "title": "Bio careers",
-        "body": "LinkedIn, résumé and interview guides for aspiring pharma sales, CRA, RA and BD professionals.",
+        "body": "LinkedIn, Cover Letter, ATS-Optimized Résumé and Behavioral Interview (STAR) guides for pharma sales, CRA, RA and BD roles.",
         "href": "/career"
       },
       {
         "title": "AI career tools",
-        "body": "AI feedback on your résumé and LinkedIn, plus role-specific AI mock interviews. Coming soon.",
+        "body": "AI feedback on your ATS-Optimized Résumé, Cover Letter and LinkedIn, plus role-specific AI mock interviews. Waitlist open.",
         "href": "/career/tools"
       },
       {
         "title": "Resources",
-        "body": "Free and paid downloads like interview question banks and résumé templates.",
+        "body": "Free downloads: interview question bank, acronym cheatsheet, pipeline tracker and an ATS-Optimized Résumé template.",
         "href": "/resources"
       }
     ],
     "careerTitle": "Reading the news is job prep",
     "careerBody": "Every BIO:ON story notes which roles it matters for — so when an interviewer asks \"What industry news caught your eye recently?\", you have a sharp answer ready.",
     "careerCta": "Explore career guides",
-    "hello": "Hello! I'm Yaehyun",
-    "heroLede": "I studied Pharmacology (BSc) at UCL in London and am now doing an MSc in Biotechnology & Pharmaceutical Management there, while publishing BIO:ON Insight — last week's three biggest biotech and pharma stories, every Tuesday, read through a Korean lens and a career lens.",
+    "hello": "Yaehyun Lee · Editor, BIO:ON Insight",
+    "heroLede": "Read through a dual lens: navigating global pharma careers, and bridging insights with the APAC/Korean biotech market. Every Tuesday, last week's three biggest biotech and pharma stories — from a UCL Pharmacology graduate now on the MSc in Biotechnology & Pharmaceutical Management.",
     "badgeIssues": "issues published",
     "badgeWeekly": "Every Tuesday",
     "latestSub": "Last week in biotech & pharma",
@@ -98,7 +98,9 @@
         "body": "MSc Biotechnology & Pharmaceutical Management, UCL.",
         "upcoming": true
       }
-    ]
+    ],
+    "inlineTitle": "The week in biotech, in your inbox every Tuesday",
+    "inlineBody": "Three stories with the Korean market angle and the roles they matter for — a five-minute read, free."
   },
   "insight": {
     "title": "BIO:ON Insight archive",
@@ -126,7 +128,8 @@
     "askEmpty": "No matching issues. Try different words.",
     "askClear": "Clear search",
     "filtersLabel": "Issue filters",
-    "resultsLabel": "Issue list"
+    "resultsLabel": "Issue list",
+    "references": "References"
   },
   "career": {
     "title": "Bio careers",
@@ -134,8 +137,8 @@
     "categories": {
       "all": "All",
       "linkedin": "LinkedIn",
-      "resume": "Résumé & cover letter",
-      "interview": "Interviews",
+      "resume": "Cover Letter & Résumé",
+      "interview": "Behavioral Interview (STAR)",
       "industry": "Industry & hiring trends"
     },
     "roles": "Relevant roles",
@@ -144,10 +147,10 @@
     "toolsTitle": "AI career tools",
     "toolsLede": "Prepare your applications and interviews with role-specific AI feedback.",
     "toolsCta": "See the tools",
-    "comingSoon": "Coming soon",
+    "comingSoon": "Waitlist open",
     "tools": [
       {
-        "title": "AI résumé & LinkedIn feedback",
+        "title": "AI feedback on your ATS-Optimized Résumé, Cover Letter & LinkedIn",
         "body": "Pick a target role and paste your text to get section-by-section feedback on structure, role keywords and specificity — with rewrite suggestions. Nothing you paste is stored."
       },
       {
@@ -190,7 +193,7 @@
   },
   "resources": {
     "title": "Resources",
-    "lede": "Free resources unlock as soon as you enter your email. Paid resources are coming soon.",
+    "lede": "Free resources unlock as soon as you enter your email. Items marked Waitlist open are on the way.",
     "free": "Free",
     "paid": "Paid",
     "comingSoon": "Coming soon",
@@ -207,7 +210,7 @@
         "id": "interview-questions",
         "type": "free",
         "format": "html",
-        "title": "Bio interview question bank",
+        "title": "Interview question bank + Behavioral Interview (STAR)",
         "body": "34 news-based questions with answer points built from BIO:ON issues, 25 competency and scenario questions by role (sales, BD, RA, clinical, CMC), and the STAR(R) answer structure. The competency questions are common question types compiled by the editor, not real past questions."
       },
       {
@@ -228,8 +231,8 @@
         "id": "cv-template",
         "type": "free",
         "format": "docx",
-        "title": "English CV template + LinkedIn checklist",
-        "body": "A single-column Word CV template built to get through applicant tracking systems, plus format, content and LinkedIn checklists — sourced from university careers services and hiring guides."
+        "title": "ATS-Optimized Résumé template + LinkedIn checklist",
+        "body": "A single-column Word résumé template built to get through applicant tracking systems (ATS), plus format, content and LinkedIn checklists — sourced from university careers services and hiring guides."
       },
       {
         "id": "glossary",
@@ -237,13 +240,6 @@
         "format": "html",
         "title": "Biotech glossary",
         "body": "All 17 Words of the Week from the newsletter, each with a definition and an analogy."
-      },
-      {
-        "id": "cover-letter",
-        "type": "paid",
-        "format": "html",
-        "title": "Role-specific résumé templates",
-        "body": "Templates built from the structure of successful applications."
       }
     ],
     "unlockTitle": "Enter your email to get it now",
@@ -426,6 +422,41 @@
     "mainNav": "Main",
     "footerNav": "Site links",
     "newTab": "opens in a new tab",
-    "rss": "RSS feed"
+    "rss": "RSS feed",
+    "theme": "Toggle dark mode"
+  },
+  "tracks": {
+    "label": "Reader type",
+    "all": "All",
+    "items": {
+      "students": {
+        "name": "Students & Academia",
+        "lede": "Widening your view from the lab and lecture hall to the industry: how it's structured, its vocabulary, and how to read primary sources."
+      },
+      "seekers": {
+        "name": "Job Seekers",
+        "lede": "Applications and interviews: guides and resources for your Cover Letter, ATS-Optimized Résumé and Behavioral Interview (STAR)."
+      },
+      "pros": {
+        "name": "Professionals & Career Changers",
+        "lede": "Planning your next move from inside the industry: hiring signals, deal and pipeline tracking, and pivoting to a new role."
+      }
+    },
+    "postsHeading": "Guides in this track",
+    "resourcesHeading": "Resources in this track",
+    "waitlistHeading": "Coming next",
+    "kinds": {
+      "guide": "Guide",
+      "tool": "AI tool",
+      "resource": "Resource"
+    }
+  },
+  "waitlist": {
+    "badge": "Waitlist open",
+    "join": "Join the waitlist",
+    "title": "Join the waitlist",
+    "lede": "We'll email you first when it launches. You'll also get the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
+    "success": "You're on the waitlist! We'll let you know first when it launches.",
+    "close": "Close"
   }
 }

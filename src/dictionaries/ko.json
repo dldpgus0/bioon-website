@@ -365,7 +365,7 @@
           },
           {
             "q": "제 개인정보는 어떻게 쓰이나요?",
-            "a": "구독할 때 받는 건 이름과 이메일뿐이에요. 뉴스레터 발송에만 쓰고, 이메일 발송 서비스 스티비(Stibee)에서 관리해요."
+            "a": "구독할 때 받는 건 이름과 이메일뿐이에요. 뉴스레터 발송에만 쓰고, 이메일 발송 서비스 스티비(Stibee)에서 관리해요. 방문 통계용 Google Analytics 쿠키는 화면 아래 배너에서 허용한 경우에만 켜지고, 푸터의 '쿠키 설정'에서 언제든 바꿀 수 있어요."
           }
         ]
       },
@@ -414,8 +414,7 @@
     ]
   },
   "footer": {
-    "tagline": "바이오·제약 뉴스를 커리어 인사이트로.",
-    "built": "Next.js와 Claude Code로 제작"
+    "tagline": "바이오·제약 뉴스를 커리어 인사이트로."
   },
   "a11y": {
     "skip": "본문으로 건너뛰기",
@@ -469,5 +468,57 @@
     "popularTitle": "자주 다룬 기업·약물",
     "recentTitle": "최근 정리한 뉴스",
     "allEntities": "전체 기업·약물 목록 보기"
+  },
+  "consent": {
+    "text": "방문 통계를 보기 위해 Google Analytics 쿠키를 쓰고 싶어요. 어떤 글이 많이 읽히는지만 확인하고, 허용하지 않아도 사이트는 똑같이 쓸 수 있어요.",
+    "accept": "허용",
+    "decline": "거부",
+    "settings": "쿠키 설정"
+  },
+  "cookies": {
+    "title": "쿠키 안내",
+    "lede": "이 사이트가 어떤 쿠키와 브라우저 저장 공간을 왜 쓰는지 정리했어요.",
+    "necessaryTitle": "꼭 필요한 것 (동의 없이 작동)",
+    "necessaryNote": "요청하신 기능을 제공하는 데 필요해서 동의 없이 쓰고, 개인을 식별하는 정보는 담지 않아요.",
+    "analyticsTitle": "방문 통계 (동의한 경우에만)",
+    "analyticsNote": "배너에서 '허용'을 누른 경우에만 켜져요. 거부하면 Google Analytics는 불러오지도 않아요.",
+    "cols": {
+      "name": "이름",
+      "purpose": "용도",
+      "duration": "보관 기간",
+      "type": "종류"
+    },
+    "items": {
+      "lead": {
+        "purpose": "자료실에서 이메일을 입력한 뒤 무료 자료를 열 수 있게 해 줘요. 발급 시각과 서명만 들어 있고 이메일·이름은 담지 않아요.",
+        "duration": "1년",
+        "type": "쿠키 (HttpOnly)"
+      },
+      "consent": {
+        "purpose": "방문 통계 쿠키를 허용했는지 거부했는지 기억해요.",
+        "duration": "직접 지울 때까지",
+        "type": "브라우저 저장 공간"
+      },
+      "theme": {
+        "purpose": "다크 모드·라이트 모드 선택을 기억해요.",
+        "duration": "직접 지울 때까지",
+        "type": "브라우저 저장 공간"
+      },
+      "ga": {
+        "purpose": "방문자를 구분해 방문 수를 셀 수 있게 해요 (Google Analytics).",
+        "duration": "2년",
+        "type": "쿠키 (Google)"
+      },
+      "gaid": {
+        "purpose": "방문 세션 상태를 유지해요 (Google Analytics).",
+        "duration": "2년",
+        "type": "쿠키 (Google)"
+      }
+    },
+    "changeTitle": "선택을 바꾸려면",
+    "changeBody": "페이지 맨 아래의 '쿠키 설정'을 누르면 배너가 다시 나와요. 브라우저 설정에서 쿠키와 사이트 데이터를 지워도 돼요.",
+    "sourcesTitle": "출처",
+    "updated": "최종 확인: 2026년 9월 28일",
+    "more": "자세히"
   }
 }

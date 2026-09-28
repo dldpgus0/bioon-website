@@ -365,7 +365,7 @@
           },
           {
             "q": "How is my personal data used?",
-            "a": "I only collect your name and email when you subscribe. They’re used only to send the newsletter and are managed in Stibee, the email service I use."
+            "a": "I only collect your name and email when you subscribe. They’re used only to send the newsletter and are managed in Stibee, the email service I use. Google Analytics cookies for visit statistics only switch on if you accept them in the banner, and you can change your choice any time under 'Cookie settings' in the footer."
           }
         ]
       },
@@ -414,8 +414,7 @@
     ]
   },
   "footer": {
-    "tagline": "Biotech & pharma news, turned into career insight.",
-    "built": "Built with Next.js and Claude Code"
+    "tagline": "Biotech & pharma news, turned into career insight."
   },
   "a11y": {
     "skip": "Skip to content",
@@ -469,5 +468,57 @@
     "popularTitle": "Most covered",
     "recentTitle": "Latest stories",
     "allEntities": "See all companies, drugs & regulators"
+  },
+  "consent": {
+    "text": "I'd like to use Google Analytics cookies to see which pages get read. It's only for visit statistics, and the site works the same if you decline.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "settings": "Cookie settings"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "lede": "Which cookies and browser storage this site uses, and why.",
+    "necessaryTitle": "Strictly necessary (no consent needed)",
+    "necessaryNote": "Needed to provide features you ask for, so they work without consent. None of them hold anything that identifies you.",
+    "analyticsTitle": "Visit statistics (only with your consent)",
+    "analyticsNote": "Only switched on if you click 'Accept' in the banner. If you decline, Google Analytics isn't even loaded.",
+    "cols": {
+      "name": "Name",
+      "purpose": "Purpose",
+      "duration": "Kept for",
+      "type": "Type"
+    },
+    "items": {
+      "lead": {
+        "purpose": "Lets you open the free resources after entering your email. It holds only an issue time and a signature — no email or name.",
+        "duration": "1 year",
+        "type": "Cookie (HttpOnly)"
+      },
+      "consent": {
+        "purpose": "Remembers whether you accepted or declined analytics cookies.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
+      },
+      "theme": {
+        "purpose": "Remembers your dark or light mode choice.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
+      },
+      "ga": {
+        "purpose": "Distinguishes visitors so visits can be counted (Google Analytics).",
+        "duration": "2 years",
+        "type": "Cookie (Google)"
+      },
+      "gaid": {
+        "purpose": "Keeps the session state (Google Analytics).",
+        "duration": "2 years",
+        "type": "Cookie (Google)"
+      }
+    },
+    "changeTitle": "Changing your choice",
+    "changeBody": "Click 'Cookie settings' at the bottom of any page to see the banner again. You can also clear cookies and site data in your browser settings.",
+    "sourcesTitle": "Sources",
+    "updated": "Last checked: 28 September 2026",
+    "more": "Learn more"
   }
 }

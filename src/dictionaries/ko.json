@@ -426,43 +426,23 @@
     "rss": "RSS 피드",
     "theme": "다크 모드 전환"
   },
-  "tracks": {
-    "label": "독자 유형",
-    "all": "전체",
-    "items": {
-      "students": {
-        "name": "학생·학계",
-        "lede": "연구실과 강의실에서 업계로 시야를 넓히는 단계. 업계 구조와 용어, 원자료 읽는 법부터 시작해요."
-      },
-      "seekers": {
-        "name": "취업 준비",
-        "lede": "서류와 면접을 준비하는 단계. 자소서·영문 CV·면접(STAR) 준비에 바로 쓰는 가이드와 자료예요."
-      },
-      "pros": {
-        "name": "업계 흐름 더 깊이",
-        "lede": "딜·파이프라인·채용 신호처럼 업계 흐름을 한 단계 더 깊이 따라가 보고 싶은 분을 위한 글과 자료예요. 현직자·이직 준비생에게도 참고가 될 수 있게 모았어요."
-      }
-    },
-    "postsHeading": "이 트랙의 글",
-    "resourcesHeading": "이 트랙의 자료",
-    "waitlistHeading": "준비 중인 콘텐츠",
-    "kinds": {
-      "guide": "가이드",
-      "tool": "AI 도구",
-      "resource": "자료"
-    }
-  },
   "waitlist": {
     "badge": "Waitlist 오픈",
     "join": "대기자 명단 등록",
     "title": "대기자 명단에 등록하기",
     "lede": "공개되면 이메일로 가장 먼저 알려드려요. 등록하면 BIO:ON Insight 뉴스레터(무료, 매주 화요일)도 함께 받아요. 언제든 수신 거부할 수 있어요.",
     "success": "대기자 명단에 등록됐어요! 공개되면 가장 먼저 알려드릴게요.",
-    "close": "닫기"
+    "close": "닫기",
+    "heading": "준비 중인 콘텐츠",
+    "kinds": {
+      "guide": "가이드",
+      "tool": "AI 도구",
+      "resource": "자료"
+    }
   },
   "wiki": {
     "title": "BIO:ON 위키",
-    "lede": "뉴스레터에서 다룬 뉴스 51건을 분류와 기업·약물 기준으로 다시 엮은 제 공부 노트예요. 한 회사나 약물이 여러 호에 걸쳐 어떻게 움직였는지 이어서 볼 수 있어요.",
+    "lede": "뉴스레터에서 다룬 뉴스 51건을 분류와 기업·약물별로 정리한 제 공부 노트예요.",
     "categoriesTitle": "분류",
     "entitiesTitle": "기업·약물·규제기관",
     "types": {
@@ -484,6 +464,9 @@
     "takeawayNote": "이 호 뉴스레터에 쓴 '에디터 인사이트'를 그대로 옮겼어요.",
     "categoryFilter": "분류",
     "metaTitle": "위키",
-    "entityLede": "BIO:ON Insight에서 {name}을(를) 다룬 뉴스 {n}건이에요."
+    "entityLede": "BIO:ON Insight에서 {name}을(를) 다룬 뉴스 {n}건이에요.",
+    "popularTitle": "자주 다룬 기업·약물",
+    "recentTitle": "최근 정리한 뉴스",
+    "allEntities": "전체 기업·약물 목록 보기"
   }
 }

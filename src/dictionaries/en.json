@@ -426,43 +426,23 @@
     "rss": "RSS feed",
     "theme": "Toggle dark mode"
   },
-  "tracks": {
-    "label": "Reader type",
-    "all": "All",
-    "items": {
-      "students": {
-        "name": "Students & Academia",
-        "lede": "Widening your view from the lab and lecture hall to the industry: how it's structured, its vocabulary, and how to read primary sources."
-      },
-      "seekers": {
-        "name": "Job Seekers",
-        "lede": "Applications and interviews: guides and resources for your Cover Letter, ATS-Optimized Résumé and Behavioral Interview (STAR)."
-      },
-      "pros": {
-        "name": "Going Deeper",
-        "lede": "For anyone who wants to follow the industry one level deeper — deals, pipelines and hiring signals. Collected so it can be useful to people already working or thinking about a move, too."
-      }
-    },
-    "postsHeading": "Guides in this track",
-    "resourcesHeading": "Resources in this track",
-    "waitlistHeading": "Coming next",
-    "kinds": {
-      "guide": "Guide",
-      "tool": "AI tool",
-      "resource": "Resource"
-    }
-  },
   "waitlist": {
     "badge": "Waitlist open",
     "join": "Join the waitlist",
     "title": "Join the waitlist",
     "lede": "I'll email you first when it launches. You'll also get the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
     "success": "You're on the waitlist! I'll let you know first when it launches.",
-    "close": "Close"
+    "close": "Close",
+    "heading": "Coming next",
+    "kinds": {
+      "guide": "Guide",
+      "tool": "AI tool",
+      "resource": "Resource"
+    }
   },
   "wiki": {
     "title": "BIO:ON Wiki",
-    "lede": "My study notes: the 51 stories covered in the newsletter, re-linked by category and by company, drug and regulator — so you can follow one company or drug across issues.",
+    "lede": "My study notes: the 51 stories from the newsletter, sorted by category and by company or drug.",
     "categoriesTitle": "Categories",
     "entitiesTitle": "Companies, drugs & regulators",
     "types": {
@@ -484,6 +464,9 @@
     "takeawayNote": "Quoted from the Editor's Insight I wrote for this issue.",
     "categoryFilter": "Category",
     "metaTitle": "Wiki",
-    "entityLede": "{n} BIO:ON Insight stories about {name}."
+    "entityLede": "{n} BIO:ON Insight stories about {name}.",
+    "popularTitle": "Most covered",
+    "recentTitle": "Latest stories",
+    "allEntities": "See all companies, drugs & regulators"
   }
 }

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import type { Dictionary } from "@/lib/i18n";
-import type { WaitlistItem } from "@/lib/tracks";
+import type { WaitlistItem } from "@/lib/waitlist";
 import { SubscribeForm } from "./SubscribeForm";
 
 type Props = { item: Pick<WaitlistItem, "id" | "title">; dict: Dictionary; lang: string; className?: string };
@@ -70,7 +70,7 @@ export function WaitlistButton({ item, dict, lang, className }: Props) {
 export function WaitlistCard({ item, dict, lang }: { item: WaitlistItem; dict: Dictionary; lang: string }) {
   return (
     <article className="flex flex-col rounded-2xl border border-dashed border-line bg-surface-2 p-6">
-      <p className="text-xs font-semibold text-muted">{dict.tracks.kinds[item.kind]}</p>
+      <p className="text-xs font-semibold text-muted">{dict.waitlist.kinds[item.kind]}</p>
       <h3 className="mt-2 font-bold text-ink">{item.title}</h3>
       <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{item.body}</p>
       <div className="mt-4">

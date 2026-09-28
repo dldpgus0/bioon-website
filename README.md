@@ -8,11 +8,11 @@ Designed and built by [이예현 (Yaehyun Lee)](https://github.com/dldpgus0) tog
 
 - **Korean / English** routing (`/ko`, `/en`) with automatic language detection
 - **Insight archive** — every issue imported straight from the Stibee email HTML, shown exactly as subscribers received it, with KO/EN editions paired by date
-- **Wiki** (`/wiki`) — every issue's three stories re-indexed by category (FDA Approvals, Clinical Trials, Market Trends, Pipeline Analysis) and by company, drug and regulator, with a page per category and per entity. Data: `src/content/wiki.json` — **add the new issue's three stories there after each import**, or it won't appear in the wiki, the archive's category filter or related insights
+- **Wiki** (`/wiki`) — every issue's three stories re-indexed by category (FDA Approvals, Clinical Trials, Market Trends, Pipeline Analysis) and by company, drug and regulator, with a page per category and per entity. The index shows the four categories, the most-covered names and the latest stories, with the full name list folded away. Data: `src/content/wiki.json` — **add the new issue's three stories there after each import**, or it won't appear in the wiki, the archive's category filter or related insights
 - **Issue pages** open with the editor's takeaway (the issue's own "💡 에디터 인사이트", quoted verbatim), list the issue's stories with category and entity links, and end with sources and up to three related issues (shared companies/drugs first, then topics)
 - **Ask BIO.ON** — question search over the archive, ranked by each issue's AI keywords, summaries and answerable questions (`src/lib/search.ts`, runs in the browser; `?q=` links are shareable)
-- **Career** and **Resources** pages split into three reader tracks — Students & Academia, Job Seekers, Professionals & Career Changers — as tabs. Which posts, resources and upcoming items belong to each track is set in `src/content/tracks.json`
-- **Waitlist** — upcoming guides and AI tools show a "Waitlist open" button that opens an email-capture modal (`src/components/Waitlist.tsx`); sign-ups use the subscribe API with source `waitlist:<id>`
+- **Career** section (LinkedIn, résumé, interviews, industry trends) with category filters
+- **Waitlist** — upcoming guides and AI tools (`src/content/waitlist.json`) show a "Waitlist open" button that opens an email-capture modal (`src/components/Waitlist.tsx`); sign-ups use the subscribe API with source `waitlist:<id>`
 - **References** — each issue page lists the issue's sources (title, publisher, link) parsed from its email HTML (`getIssueReferences` in `src/lib/content.ts`)
 - **Share previews** — issue pages set article Open Graph tags and generate a 1200×630 image with the title in Pretendard (`insight/[slug]/opengraph-image.tsx`). Set `NEXT_PUBLIC_SITE_URL` if the site moves to a custom domain
 - **Dark mode** — header toggle via `next-themes`; colours are CSS tokens redefined under `.dark` in `globals.css`

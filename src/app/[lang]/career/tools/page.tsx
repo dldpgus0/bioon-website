@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { WaitlistButton } from "@/components/Waitlist";
 
-// Waitlist ids (src/content/tracks.json) for dict.career.tools, in order.
+// Waitlist ids (src/content/waitlist.json) for dict.career.tools, in order.
 const toolIds = ["ai-feedback", "ai-interview"];
 import { getDictionary, getLocale } from "@/lib/i18n";
 

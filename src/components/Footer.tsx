@@ -14,6 +14,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
         </div>
         <nav aria-label={dict.a11y.footerNav} className="grid grid-cols-2 gap-x-12 gap-y-2 text-sm text-muted">
           <Link href={`/${lang}/insight`} className="hover:text-ink">{dict.nav.insight}</Link>
+          <Link href={`/${lang}/wiki`} className="hover:text-ink">{dict.nav.wiki}</Link>
           <Link href={`/${lang}/career`} className="hover:text-ink">{dict.nav.career}</Link>
           <Link href={`/${lang}/resources`} className="hover:text-ink">{dict.nav.resources}</Link>
           <Link href={`/${lang}/about`} className="hover:text-ink">{dict.nav.about}</Link>

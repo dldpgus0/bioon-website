@@ -10,7 +10,8 @@
     "about": "About",
     "subscribe": "Subscribe",
     "switchLang": "한국어",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "wiki": "Wiki"
   },
   "home": {
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
@@ -458,5 +459,31 @@
     "lede": "We'll email you first when it launches. You'll also get the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
     "success": "You're on the waitlist! We'll let you know first when it launches.",
     "close": "Close"
+  },
+  "wiki": {
+    "title": "BIO:ON Wiki",
+    "lede": "The 51 stories covered in the newsletter, re-linked by category and by company, drug and regulator — so you can follow one company or drug across issues.",
+    "categoriesTitle": "Categories",
+    "entitiesTitle": "Companies, drugs & regulators",
+    "types": {
+      "company": "Companies",
+      "drug": "Drugs",
+      "regulator": "Regulators"
+    },
+    "storyCount": "stories",
+    "seeAll": "See all",
+    "issueRef": "Issue #{n}",
+    "timeline": "Stories",
+    "coMentioned": "Appears alongside",
+    "back": "Back to wiki",
+    "storiesTitle": "Stories in this issue",
+    "related": "Related insights",
+    "relatedSub": "Other issues covering the same companies, drugs or topics",
+    "shared": "Shared",
+    "takeaway": "Editor's takeaway",
+    "takeawayNote": "Quoted from this issue's Editor's Insight.",
+    "categoryFilter": "Category",
+    "metaTitle": "Wiki",
+    "entityLede": "{n} BIO:ON Insight stories about {name}."
   }
 }

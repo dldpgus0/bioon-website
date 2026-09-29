@@ -6,7 +6,7 @@ import type { Locale } from "./i18n";
 
 export type WaitlistItem = { id: string; kind: "guide" | "tool" | "resource"; title: string; body: string };
 
-type Raw = Record<string, { kind: WaitlistItem["kind"] } & Record<Locale, { title: string; body: string }>>;
+type Raw = Record<string, { kind: WaitlistItem["kind"]; shown?: boolean } & Record<Locale, { title: string; body: string }>>;
 const items = waitlistData.items as Raw;
 
 export function waitlistItem(id: string, lang: Locale): WaitlistItem {
@@ -17,6 +17,7 @@ export function waitlistItem(id: string, lang: Locale): WaitlistItem {
 /** Upcoming items for the resources page (guides and resources) or the tools page (AI tools). */
 export function waitlistByKind(lang: Locale, kinds: WaitlistItem["kind"][]): WaitlistItem[] {
   return Object.keys(items)
+    .filter((id) => items[id].shown)
     .map((id) => waitlistItem(id, lang))
     .filter((w) => kinds.includes(w.kind));
 }

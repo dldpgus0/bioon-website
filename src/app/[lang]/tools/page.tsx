@@ -60,12 +60,6 @@ export default async function ToolsPage({ params }: PageProps<"/[lang]/tools">) 
           </div>
         </section>
 
-        <section aria-labelledby="tools-market">
-          <h2 id="tools-market" className="text-lg font-bold text-ink">
-            {t.marketTitle}
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">{card("/market", t.cards.market)}</div>
-        </section>
       </div>
     </>
   );

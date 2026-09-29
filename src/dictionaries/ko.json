@@ -11,7 +11,8 @@
     "subscribe": "구독하기",
     "switchLang": "English",
     "faq": "자주 묻는 질문",
-    "wiki": "위키"
+    "wiki": "위키",
+    "market": "마켓"
   },
   "home": {
     "eyebrow": "매주 화요일 아침 · 바이오·제약 뉴스레터",
@@ -522,13 +523,25 @@
         "purpose": "방문 세션 상태를 유지해요 (Google Analytics).",
         "duration": "2년",
         "type": "쿠키 (Google)"
+      },
+      "tradingview": {
+        "purpose": "마켓 페이지에서 '시세 불러오기'를 누른 뒤에만 TradingView 위젯이 켜져요. 위젯은 TradingView 서버에서 불러오며, TradingView가 자체 쿠키를 쓸 수 있어요.",
+        "duration": "TradingView 정책에 따름",
+        "type": "외부 서비스 (TradingView)"
+      },
+      "tvconsent": {
+        "purpose": "마켓 페이지에서 시세 불러오기를 선택했는지 기억해요.",
+        "duration": "직접 지울 때까지",
+        "type": "브라우저 저장 공간"
       }
     },
     "changeTitle": "선택을 바꾸려면",
     "changeBody": "페이지 맨 아래의 '쿠키 설정'을 누르면 배너가 다시 나와요. 브라우저 설정에서 쿠키와 사이트 데이터를 지워도 돼요.",
     "sourcesTitle": "출처",
     "updated": "최종 확인: 2026년 9월 28일",
-    "more": "자세히"
+    "more": "자세히",
+    "thirdPartyTitle": "외부 서비스 (직접 불러온 경우에만)",
+    "thirdPartyNote": "마켓 페이지의 시세는 TradingView 위젯으로 보여줘요. '시세 불러오기'를 누르기 전에는 불러오지 않아요."
   },
   "flashcards": {
     "title": "학습 플래시카드",
@@ -553,5 +566,19 @@
     "updated": "업데이트",
     "flip": "카드 뒤집기",
     "back": "자료실로"
+  },
+  "market": {
+    "title": "제약·바이오 마켓",
+    "lede": "전 세계 주요 제약·바이오 기업의 주가와 등락률을 지역·분야별로 한눈에 보세요.",
+    "disclaimer": "시세는 TradingView가 제공하며 거래소에 따라 지연될 수 있어요. 공부와 업계 흐름 파악을 위한 참고용이며 투자 조언이 아니에요.",
+    "consent": "시세는 외부 서비스인 TradingView 위젯으로 불러와요. 불러오면 TradingView가 자체 쿠키를 쓸 수 있어요. 한 번 불러오면 다음 방문부터는 자동으로 보여요.",
+    "load": "시세 불러오기",
+    "quotesTitle": "그룹별 주요 기업",
+    "quotesLede": "탭을 눌러 미국·유럽·일본·한국·중국 제약사와 CDMO, 뉴스레터에서 다룬 바이오텍을 비교해 보세요.",
+    "heatmapTitle": "시장 히트맵",
+    "heatmapLede": "블록 크기는 시가총액, 색은 등락률이에요. 위쪽 메뉴에서 다른 시장으로 바꾸거나 헬스케어 섹터를 확대해 볼 수 있어요.",
+    "moreTitle": "더 자세히 보기 (TradingView)",
+    "moreHeatmap": "전 세계 주식 히트맵",
+    "moreScreener": "주식 스크리너 (시가총액·등락률 정렬)"
   }
 }

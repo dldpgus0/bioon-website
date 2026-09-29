@@ -11,7 +11,8 @@
     "subscribe": "Subscribe",
     "switchLang": "한국어",
     "faq": "FAQ",
-    "wiki": "Wiki"
+    "wiki": "Wiki",
+    "market": "Market"
   },
   "home": {
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
@@ -522,13 +523,25 @@
         "purpose": "Keeps the session state (Google Analytics).",
         "duration": "2 years",
         "type": "Cookie (Google)"
+      },
+      "tradingview": {
+        "purpose": "TradingView widgets only load on the market page after you click 'Load market data'. They come from TradingView's servers, which may set their own cookies.",
+        "duration": "Per TradingView's policy",
+        "type": "Third party (TradingView)"
+      },
+      "tvconsent": {
+        "purpose": "Remembers that you chose to load market data on the market page.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
       }
     },
     "changeTitle": "Changing your choice",
     "changeBody": "Click 'Cookie settings' at the bottom of any page to see the banner again. You can also clear cookies and site data in your browser settings.",
     "sourcesTitle": "Sources",
     "updated": "Last checked: 28 September 2026",
-    "more": "Learn more"
+    "more": "Learn more",
+    "thirdPartyTitle": "Third-party services (only when you load them)",
+    "thirdPartyNote": "The market page shows prices with TradingView widgets. Nothing loads until you click 'Load market data'."
   },
   "flashcards": {
     "title": "Study flashcards",
@@ -553,5 +566,19 @@
     "updated": "Updated",
     "flip": "Flip card",
     "back": "Back to resources"
+  },
+  "market": {
+    "title": "Pharma & biotech market",
+    "lede": "Share prices and daily moves of major pharma and biotech companies worldwide, by region and segment.",
+    "disclaimer": "Prices are provided by TradingView and may be delayed depending on the exchange. For learning and following the industry only; not investment advice.",
+    "consent": "Prices load through TradingView widgets, an external service that may set its own cookies. Once you load them, they'll show automatically on later visits.",
+    "load": "Load market data",
+    "quotesTitle": "Key companies by group",
+    "quotesLede": "Switch tabs to compare US, European, Japanese, Korean and Chinese pharma, CDMOs, and biotechs covered in the newsletter.",
+    "heatmapTitle": "Market heatmap",
+    "heatmapLede": "Block size shows market cap, colour shows the daily move. Use the top bar to switch markets or zoom into healthcare.",
+    "moreTitle": "Explore further (TradingView)",
+    "moreHeatmap": "Global stock heatmap",
+    "moreScreener": "Stock screener (sort by market cap or change)"
   }
 }

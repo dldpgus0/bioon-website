@@ -552,14 +552,16 @@
     "again": "Review again",
     "gotIt": "Got it ✓",
     "flipHint": "Click or press Space to flip",
-    "keys": "Space flip · ←/→ move · K got it · A review again",
+    "keys": "Space flip · ←/→ move · K got it · A review again · F full screen",
     "example": "Example / note",
     "trap": "Exam trap",
     "knownChip": "✓ Known",
     "empty": "No cards match this filter.",
     "updated": "Updated",
     "flip": "Flip card",
-    "back": "Back to tools"
+    "back": "Back to tools",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
   },
   "market": {
     "title": "Pharma & biotech market",
@@ -621,7 +623,7 @@
     "skip": "Skip",
     "sessions": "Focus sessions done",
     "longEvery": "long break every {n}",
-    "keys": "Space to start or pause",
+    "keys": "Space to start or pause · F full screen",
     "settings": "Settings",
     "min": "min",
     "soundTitle": "Focus sound",
@@ -634,6 +636,8 @@
     "volume": "Volume",
     "breakSound": "Keep sound on during breaks",
     "autoNext": "Start the next phase automatically",
-    "soundNote": "Sounds are generated in your browser, so there are no files to download and no music licensing. A short chime plays when a phase ends. Settings are saved in this browser only."
+    "soundNote": "Sounds are generated in your browser, so there are no files to download and no music licensing. A short chime plays when a phase ends. Settings are saved in this browser only.",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
   }
 }

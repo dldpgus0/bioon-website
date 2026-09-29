@@ -552,14 +552,16 @@
     "again": "다시 볼게요",
     "gotIt": "알아요 ✓",
     "flipHint": "클릭하거나 Space를 눌러 뒤집기",
-    "keys": "Space 뒤집기 · ←/→ 이동 · K 알아요 · A 다시 보기",
+    "keys": "Space 뒤집기 · ←/→ 이동 · K 알아요 · A 다시 보기 · F 전체화면",
     "example": "예시 · 메모",
     "trap": "헷갈리기 쉬움",
     "knownChip": "✓ 알아요",
     "empty": "이 조건에 맞는 카드가 없어요.",
     "updated": "업데이트",
     "flip": "카드 뒤집기",
-    "back": "도구로"
+    "back": "도구로",
+    "fullscreen": "전체화면",
+    "exitFullscreen": "전체화면 끄기"
   },
   "market": {
     "title": "제약·바이오 마켓",
@@ -621,7 +623,7 @@
     "skip": "건너뛰기",
     "sessions": "완료한 집중",
     "longEvery": "{n}번마다 긴 휴식",
-    "keys": "Space로 시작·일시정지",
+    "keys": "Space로 시작·일시정지 · F 전체화면",
     "settings": "설정",
     "min": "분",
     "soundTitle": "집중 사운드",
@@ -634,6 +636,8 @@
     "volume": "볼륨",
     "breakSound": "쉬는 시간에도 소리 켜기",
     "autoNext": "다음 단계 자동 시작",
-    "soundNote": "소리는 브라우저에서 직접 만들어 내는 소리라 파일 다운로드나 저작권 걱정이 없어요. 단계가 끝나면 짧은 알림음이 울려요. 설정은 이 브라우저에만 저장돼요."
+    "soundNote": "소리는 브라우저에서 직접 만들어 내는 소리라 파일 다운로드나 저작권 걱정이 없어요. 단계가 끝나면 짧은 알림음이 울려요. 설정은 이 브라우저에만 저장돼요.",
+    "fullscreen": "전체화면",
+    "exitFullscreen": "전체화면 끄기"
   }
 }

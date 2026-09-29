@@ -21,6 +21,9 @@ export function proxy(request: NextRequest) {
   if (hasLocale) return;
 
   request.nextUrl.pathname = `/${preferredLocale(request)}${pathname === "/" ? "" : pathname}`;
+  // The bare domain serves the home page in place rather than redirecting, so search engine
+  // ownership checks (which read the meta tags on "/") see them directly.
+  if (pathname === "/") return NextResponse.rewrite(request.nextUrl);
   return NextResponse.redirect(request.nextUrl);
 }
 

@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "Companies shown on the market page, as TradingView symbols (EXCHANGE:TICKER). Groups become tabs in the TradingView Market Quotes widget. Check a symbol at tradingview.com if a row shows no data."
+    "note": "Companies shown on the market page, as TradingView symbols (EXCHANGE:TICKER). Groups become tabs in the TradingView Market Quotes widget. Check a symbol at tradingview.com if a row shows no data. TradingView does not supply Tokyo (TSE) or Korea (KRX) prices to free widgets, so Japanese companies use their US-listed ADRs."
   },
   "groups": [
     {
@@ -37,14 +37,14 @@
     },
     {
       "id": "japan",
-      "ko": "일본 제약",
-      "en": "Japanese pharma",
+      "ko": "일본 제약 (미국 상장 ADR, 달러)",
+      "en": "Japanese pharma (US-listed ADRs, USD)",
       "symbols": [
-        ["TSE:4502", "Takeda"],
-        ["TSE:4568", "Daiichi Sankyo"],
-        ["TSE:4519", "Chugai"],
-        ["TSE:4503", "Astellas"],
-        ["TSE:4523", "Eisai"]
+        ["NYSE:TAK", "Takeda"],
+        ["OTC:DSNKY", "Daiichi Sankyo"],
+        ["OTC:CHGCY", "Chugai"],
+        ["OTC:ALPMY", "Astellas"],
+        ["OTC:ESALY", "Eisai"]
       ]
     },
     {

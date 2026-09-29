@@ -279,7 +279,7 @@
     "title": "About",
     "name": "Yaehyun Lee",
     "role": "MSc student, Biotechnology & Pharmaceutical Management, UCL · I write BIO:ON",
-    "bio": "BIO:ON is the newsletter I write each week while learning about the biotech and pharma industry. I read the original global coverage and share what I've understood through a Korean lens and a career lens. I'm still learning, so where expert judgement is needed I gather published industry sources and accounts from people in the roles, always with sources.",
+    "bio": "BIO:ON is the newsletter I write each week while learning about the biotech and pharma industry. I read the original global coverage and share what I've understood through a Korean lens and a career lens. I'm still learning, so where expert judgement is needed I draw on published industry sources and public interviews with people in the roles, always cited.",
     "aiTitle": "A media project built with AI",
     "aiLede": "BIO:ON runs on an AI-assisted workflow from research to publishing. This site itself was designed and coded with Claude Code.",
     "aiSteps": [
@@ -315,7 +315,39 @@
         "school": "University College London (UCL)",
         "note": "Graduated"
       }
-    ]
+    ],
+    "recruit": {
+      "title": "For recruiters",
+      "lede": "I'm looking for graduate programmes and internships starting in 2027.",
+      "facts": [
+        [
+          "Target roles",
+          "Pharma supply chain & operations, regulatory affairs, commercial & market access"
+        ],
+        [
+          "Available from",
+          "2027 (after completing my MSc at UCL)"
+        ],
+        [
+          "Location",
+          "United Kingdom · South Korea"
+        ],
+        [
+          "Languages",
+          "Korean · English (native/bilingual)"
+        ]
+      ],
+      "highlightsTitle": "Highlights",
+      "highlights": [
+        "Excellence Award, AI & Big Data Convergence Competition (Army Signal School, Ministry of National Defense): a pharmaceutical demand forecasting and inventory optimisation concept, selected from around 200 finalist teams (team of 4)",
+        "Medic, Republic of Korea Army: revised the unit's SOPs for inspecting and managing medicines and medical supplies, adopted unit-wide",
+        "BIO:ON Insight: writing a weekly Korean/English biotech and pharma newsletter with cited sources since June 2026",
+        "BSc Pharmacology, UCL (2:1); elected Academic Representative for the pharmacology cohort (2021–2023)"
+      ],
+      "linkedin": "LinkedIn profile",
+      "email": "Email me",
+      "cv": "Download CV (PDF)"
+    }
   },
   "faq": {
     "title": "FAQ",

@@ -4,13 +4,8 @@ import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { CookieConsent } from "@/components/CookieConsent";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
+import { siteUrl } from "@/lib/site";
 import "../globals.css";
-
-// Absolute base for canonical and og:* URLs (link previews need full URLs). Vercel provides the
-// production domain at build time; NEXT_PUBLIC_SITE_URL overrides it (e.g. a custom domain).
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));

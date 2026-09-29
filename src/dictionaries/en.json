@@ -202,6 +202,13 @@
     "getFree": "Get it by email",
     "items": [
       {
+        "id": "flashcards",
+        "type": "free",
+        "format": "online",
+        "title": "Clinical trial & statistics flashcards",
+        "body": "Concept cards on trial design, statistics and bias from my MSc studies. Practise them right on the site, no sign-up needed."
+      },
+      {
         "id": "acronyms",
         "type": "free",
         "format": "html",
@@ -251,10 +258,12 @@
     "formats": {
       "html": "Web page · save as PDF",
       "xlsx": "Excel (.xlsx)",
-      "docx": "Word (.docx) + checklist"
+      "docx": "Word (.docx) + checklist",
+      "online": "Online practice · no sign-up"
     },
     "downloadFile": "Download Excel file",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "practice": "Start practising"
   },
   "subscribe": {
     "title": "Subscribe to BIO:ON Insight",
@@ -520,5 +529,29 @@
     "sourcesTitle": "Sources",
     "updated": "Last checked: 28 September 2026",
     "more": "Learn more"
+  },
+  "flashcards": {
+    "title": "Study flashcards",
+    "lede": "Clinical trial and statistics concept cards I wrote while studying for my MSc at UCL. Flip them and practise right here.",
+    "note": "These are my personal study notes from lectures, not official course material. For key definitions, check public standards such as ICH E9(R1) and CONSORT too.",
+    "allModules": "All modules",
+    "allTopics": "All topics",
+    "shuffle": "Shuffle",
+    "reset": "Reset progress",
+    "known": "known",
+    "cards": "cards",
+    "prev": "← Previous",
+    "next": "Next →",
+    "again": "Review again",
+    "gotIt": "Got it ✓",
+    "flipHint": "Click or press Space to flip",
+    "keys": "Space flip · ←/→ move · K got it · A review again",
+    "example": "Example / note",
+    "trap": "Exam trap",
+    "knownChip": "✓ Known",
+    "empty": "No cards match this filter.",
+    "updated": "Updated",
+    "flip": "Flip card",
+    "back": "Back to resources"
   }
 }

@@ -202,6 +202,13 @@
     "getFree": "이메일로 받기",
     "items": [
       {
+        "id": "flashcards",
+        "type": "free",
+        "format": "online",
+        "title": "임상시험·통계 플래시카드",
+        "body": "석사 수업을 들으며 정리한 임상시험 설계, 통계, 바이어스 개념 카드. 로그인 없이 사이트에서 바로 뒤집어 보며 연습할 수 있어요."
+      },
+      {
         "id": "acronyms",
         "type": "free",
         "format": "html",
@@ -251,10 +258,12 @@
     "formats": {
       "html": "웹 문서 · PDF 저장",
       "xlsx": "엑셀 (.xlsx)",
-      "docx": "워드 (.docx) + 체크리스트"
+      "docx": "워드 (.docx) + 체크리스트",
+      "online": "온라인 연습 · 이메일 없이"
     },
     "downloadFile": "엑셀 파일 받기",
-    "cancel": "닫기"
+    "cancel": "닫기",
+    "practice": "바로 연습하기"
   },
   "subscribe": {
     "title": "BIO:ON Insight 구독하기",
@@ -520,5 +529,29 @@
     "sourcesTitle": "출처",
     "updated": "최종 확인: 2026년 9월 28일",
     "more": "자세히"
+  },
+  "flashcards": {
+    "title": "학습 플래시카드",
+    "lede": "UCL 석사 과정에서 공부하며 정리한 임상시험·통계 개념 카드예요. 카드를 뒤집어 보며 바로 연습할 수 있어요.",
+    "note": "수업을 들으며 제가 정리한 개인 학습 노트예요. 공식 강의 자료가 아니니, 중요한 정의는 ICH E9(R1)·CONSORT 같은 공개 기준과 함께 확인해 주세요.",
+    "allModules": "전체 모듈",
+    "allTopics": "전체 주제",
+    "shuffle": "섞기",
+    "reset": "진도 초기화",
+    "known": "알아요",
+    "cards": "장",
+    "prev": "← 이전",
+    "next": "다음 →",
+    "again": "다시 볼게요",
+    "gotIt": "알아요 ✓",
+    "flipHint": "클릭하거나 Space를 눌러 뒤집기",
+    "keys": "Space 뒤집기 · ←/→ 이동 · K 알아요 · A 다시 보기",
+    "example": "예시 · 메모",
+    "trap": "헷갈리기 쉬움",
+    "knownChip": "✓ 알아요",
+    "empty": "이 조건에 맞는 카드가 없어요.",
+    "updated": "업데이트",
+    "flip": "카드 뒤집기",
+    "back": "자료실로"
   }
 }

@@ -30,8 +30,6 @@ export function MarketBoard({ dict, lang }: { dict: Dictionary; lang: string }) 
   }
 
   const quotes = {
-    width: "100%",
-    height: "100%",
     showSymbolLogo: true,
     isTransparent: true,
     symbolsGroups: groups.map((g) => ({
@@ -52,8 +50,6 @@ export function MarketBoard({ dict, lang }: { dict: Dictionary; lang: string }) 
     hasSymbolTooltip: true,
     isMonoSize: false,
     isTransparent: true,
-    width: "100%",
-    height: "100%",
   };
 
   return (
@@ -63,7 +59,7 @@ export function MarketBoard({ dict, lang }: { dict: Dictionary; lang: string }) 
           <TradingViewWidget
             script="embed-widget-market-quotes.js"
             config={quotes}
-            className={full ? "h-full min-h-[70vh]" : "h-[75vh] min-h-[560px] max-h-[900px]"}
+            className={full ? "min-h-[60vh] flex-1" : "h-[75vh] min-h-[560px] max-h-[900px]"}
             lang={lang}
           />
         )}
@@ -74,7 +70,7 @@ export function MarketBoard({ dict, lang }: { dict: Dictionary; lang: string }) 
           <TradingViewWidget
             script="embed-widget-stock-heatmap.js"
             config={heatmap}
-            className={full ? "h-full min-h-[70vh]" : "h-[80vh] min-h-[600px] max-h-[1000px]"}
+            className={full ? "min-h-[60vh] flex-1" : "h-[80vh] min-h-[600px] max-h-[1000px]"}
             lang={lang}
           />
         )}

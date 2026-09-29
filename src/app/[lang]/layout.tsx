@@ -19,7 +19,10 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     title: { default: dict.meta.title, template: "%s · BIO:ON" },
     description: dict.meta.description,
     // Search engine ownership checks (Google Search Console, Naver Search Advisor).
-    verification: { google: "YK5fD8bQNWx7mnodTyNMdoqnRxglrUtk15Gm8Gqx07M" },
+    verification: {
+      google: "YK5fD8bQNWx7mnodTyNMdoqnRxglrUtk15Gm8Gqx07M",
+      other: { "naver-site-verification": "3008120e4548894c6cce3a60a50434ecfe73c5af" },
+    },
     alternates: {
       languages: { ko: "/ko", en: "/en" },
       types: { "application/rss+xml": [{ url: lang === "en" ? "/feed.xml?lang=en" : "/feed.xml", title: "BIO:ON Insight" }] },

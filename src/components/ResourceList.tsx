@@ -41,7 +41,7 @@ export function ResourceList({ dict, lang, ids }: { dict: Dictionary; lang: stri
             {item.format === "online" ? (
               // Online resources (e.g. flashcards) are open to everyone: no email gate.
               <Link
-                href={`/${lang}/resources/${item.id}`}
+                href={`/${lang}/tools/${item.id}`}
                 onClick={() => track("resource_download", { resource: item.id, lang })}
                 className="mt-5 rounded-xl bg-teal py-2.5 text-center text-sm font-semibold text-on-brand hover:opacity-90"
               >

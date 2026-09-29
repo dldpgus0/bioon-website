@@ -12,7 +12,8 @@
     "switchLang": "한국어",
     "faq": "FAQ",
     "wiki": "Wiki",
-    "market": "Market"
+    "market": "Market",
+    "tools": "Tools"
   },
   "home": {
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
@@ -36,9 +37,9 @@
         "href": "/career"
       },
       {
-        "title": "AI career tools",
-        "body": "AI feedback on your ATS-Optimized Résumé, Cover Letter and LinkedIn, plus role-specific AI mock interviews. Waitlist open.",
-        "href": "/career/tools"
+        "title": "Tools",
+        "body": "Study flashcards, a Pomodoro timer, the interview question bank and a pharma market board. AI tools: waitlist open.",
+        "href": "/tools"
       },
       {
         "title": "Resources",
@@ -202,13 +203,6 @@
     "comingSoon": "Coming soon",
     "getFree": "Get it by email",
     "items": [
-      {
-        "id": "flashcards",
-        "type": "free",
-        "format": "online",
-        "title": "Clinical trial & statistics flashcards",
-        "body": "Concept cards on trial design, statistics and bias from my MSc studies. Practise them right on the site, no sign-up needed."
-      },
       {
         "id": "acronyms",
         "type": "free",
@@ -565,7 +559,7 @@
     "empty": "No cards match this filter.",
     "updated": "Updated",
     "flip": "Flip card",
-    "back": "Back to resources"
+    "back": "Back to tools"
   },
   "market": {
     "title": "Pharma & biotech market",
@@ -580,5 +574,66 @@
     "moreTitle": "Explore further (TradingView)",
     "moreHeatmap": "Global stock heatmap",
     "moreScreener": "Stock screener (sort by market cap or change)"
+  },
+  "tools": {
+    "title": "Tools",
+    "lede": "Tools for studying and job preparation. All free, no sign-in needed.",
+    "studyTitle": "Study tools",
+    "careerTitle": "Career tools",
+    "marketTitle": "Market",
+    "open": "Open",
+    "back": "Back to tools",
+    "cards": {
+      "flashcards": {
+        "icon": "🗂️",
+        "title": "Study flashcards",
+        "body": "Flip through clinical trial and statistics concept cards, and review only the ones you don't know yet."
+      },
+      "pomodoro": {
+        "icon": "⏱️",
+        "title": "Pomodoro timer",
+        "body": "25 minutes of focus, 5 minutes of rest, with brown noise, rain or ambient sound while you focus."
+      },
+      "interview": {
+        "icon": "🎙️",
+        "title": "Interview question bank",
+        "body": "Role-specific interview questions and answer points built from newsletter issues, plus a random 5-question drill."
+      },
+      "market": {
+        "icon": "📈",
+        "title": "Pharma & biotech market",
+        "body": "Share prices and daily moves of major pharma and biotech companies worldwide, by region and segment."
+      }
+    }
+  },
+  "pomodoro": {
+    "title": "Pomodoro timer",
+    "lede": "Alternate focus and rest while you study, with optional calm sound during focus.",
+    "phaseLabel": "Phase",
+    "phases": {
+      "focus": "Focus",
+      "short": "Short break",
+      "long": "Long break"
+    },
+    "start": "Start",
+    "pause": "Pause",
+    "reset": "Reset",
+    "skip": "Skip",
+    "sessions": "Focus sessions done",
+    "longEvery": "long break every {n}",
+    "keys": "Space to start or pause",
+    "settings": "Settings",
+    "min": "min",
+    "soundTitle": "Focus sound",
+    "sounds": {
+      "off": "Off",
+      "brown": "Brown noise",
+      "rain": "Rain",
+      "ambient": "Ambient"
+    },
+    "volume": "Volume",
+    "breakSound": "Keep sound on during breaks",
+    "autoNext": "Start the next phase automatically",
+    "soundNote": "Sounds are generated in your browser, so there are no files to download and no music licensing. A short chime plays when a phase ends. Settings are saved in this browser only."
   }
 }

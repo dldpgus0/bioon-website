@@ -40,7 +40,7 @@ export default async function CareerPage({ params }: PageProps<"/[lang]/career">
                 <li key={t.title}>✦ {t.title}</li>
               ))}
             </ul>
-            <Link href={`/${lang}/career/tools`} className="mt-5 inline-block text-sm font-semibold text-teal hover:underline">
+            <Link href={`/${lang}/tools`} className="mt-5 inline-block text-sm font-semibold text-teal hover:underline">
               {dict.career.toolsCta}<span aria-hidden> →</span>
             </Link>
           </div>

@@ -1,6 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Pages that moved into the tools hub keep working at their old addresses.
+  async redirects() {
+    return [
+      { source: "/:lang(ko|en)/career/tools", destination: "/:lang/tools", permanent: true },
+      { source: "/:lang(ko|en)/resources/flashcards", destination: "/:lang/tools/flashcards", permanent: true },
+    ];
+  },
   // The resource route reads markdown and Office files from disk at request time.
   outputFileTracingIncludes: {
     "/api/resources/*": ["src/content/downloads/**/*"],

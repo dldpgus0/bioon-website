@@ -10,7 +10,9 @@ export type AnalyticsEvent =
   | "lead_unlock" // a gated resource or tool was unlocked
   | "resource_download"
   | "waitlist_open" // the waitlist modal for an upcoming tool or guide was opened
-  | "theme_toggle";
+  | "theme_toggle"
+  | "pomodoro_start" // timer started, with phase and sound
+  | "pomodoro_complete"; // a focus session finished
 
 export type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 

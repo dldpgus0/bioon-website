@@ -14,9 +14,9 @@ export function waitlistItem(id: string, lang: Locale): WaitlistItem {
   return { id, kind: w.kind, ...w[lang] };
 }
 
-/** Everything on the resources page: all items except the AI tools, which live on the tools page. */
-export function resourceWaitlist(lang: Locale): WaitlistItem[] {
+/** Upcoming items for the resources page (guides and resources) or the tools page (AI tools). */
+export function waitlistByKind(lang: Locale, kinds: WaitlistItem["kind"][]): WaitlistItem[] {
   return Object.keys(items)
-    .filter((id) => !id.startsWith("ai-"))
-    .map((id) => waitlistItem(id, lang));
+    .map((id) => waitlistItem(id, lang))
+    .filter((w) => kinds.includes(w.kind));
 }

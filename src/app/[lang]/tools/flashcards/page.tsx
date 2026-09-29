@@ -5,13 +5,13 @@ import { PageHeader } from "@/components/PageHeader";
 import deck from "@/content/flashcards.json";
 import { getDictionary, getLocale } from "@/lib/i18n";
 
-export async function generateMetadata({ params }: PageProps<"/[lang]/resources/flashcards">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/[lang]/tools/flashcards">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
   return { title: dict.flashcards.title, description: dict.flashcards.lede };
 }
 
 // Cards come from src/content/flashcards.json (npm run flashcards -- <deck.json> to update).
-export default async function FlashcardsPage({ params }: PageProps<"/[lang]/resources/flashcards">) {
+export default async function FlashcardsPage({ params }: PageProps<"/[lang]/tools/flashcards">) {
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   const t = dict.flashcards;
@@ -25,7 +25,7 @@ export default async function FlashcardsPage({ params }: PageProps<"/[lang]/reso
           {t.note} · {cards.length} {t.cards} · {t.updated} {deck.updated}
         </p>
         <FlashcardDeck cards={cards} dict={dict} />
-        <Link href={`/${lang}/resources`} className="mt-10 inline-block text-sm font-semibold text-teal hover:underline">
+        <Link href={`/${lang}/tools`} className="mt-10 inline-block text-sm font-semibold text-teal hover:underline">
           <span aria-hidden>← </span>
           {t.back}
         </Link>

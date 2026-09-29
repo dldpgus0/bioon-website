@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { ResourceList } from "@/components/ResourceList";
 import { WaitlistCard } from "@/components/Waitlist";
-import { resourceWaitlist } from "@/lib/waitlist";
+import { waitlistByKind } from "@/lib/waitlist";
 import { getDictionary, getLocale } from "@/lib/i18n";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/resources">): Promise<Metadata> {
@@ -22,7 +22,7 @@ export default async function ResourcesPage({ params }: PageProps<"/[lang]/resou
 
         <h2 className="mt-14 text-lg font-bold text-ink">{dict.waitlist.heading}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {resourceWaitlist(lang).map((w) => (
+          {waitlistByKind(lang, ["guide", "resource"]).map((w) => (
             <WaitlistCard key={w.id} item={w} dict={dict} lang={lang} />
           ))}
         </div>

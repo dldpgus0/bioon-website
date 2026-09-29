@@ -12,7 +12,8 @@
     "switchLang": "English",
     "faq": "자주 묻는 질문",
     "wiki": "위키",
-    "market": "마켓"
+    "market": "마켓",
+    "tools": "도구"
   },
   "home": {
     "eyebrow": "매주 화요일 아침 · 바이오·제약 뉴스레터",
@@ -36,9 +37,9 @@
         "href": "/career"
       },
       {
-        "title": "AI 커리어 도구",
-        "body": "자소서·링크드인 AI 피드백과 직무별 AI 모의면접. Waitlist 오픈.",
-        "href": "/career/tools"
+        "title": "도구",
+        "body": "학습 플래시카드, 포모도로 타이머, 면접 질문은행, 제약·바이오 마켓. AI 도구는 Waitlist 오픈.",
+        "href": "/tools"
       },
       {
         "title": "자료실",
@@ -202,13 +203,6 @@
     "comingSoon": "준비 중",
     "getFree": "이메일로 받기",
     "items": [
-      {
-        "id": "flashcards",
-        "type": "free",
-        "format": "online",
-        "title": "임상시험·통계 플래시카드",
-        "body": "석사 수업을 들으며 정리한 임상시험 설계, 통계, 바이어스 개념 카드. 로그인 없이 사이트에서 바로 뒤집어 보며 연습할 수 있어요."
-      },
       {
         "id": "acronyms",
         "type": "free",
@@ -565,7 +559,7 @@
     "empty": "이 조건에 맞는 카드가 없어요.",
     "updated": "업데이트",
     "flip": "카드 뒤집기",
-    "back": "자료실로"
+    "back": "도구로"
   },
   "market": {
     "title": "제약·바이오 마켓",
@@ -580,5 +574,66 @@
     "moreTitle": "더 자세히 보기 (TradingView)",
     "moreHeatmap": "전 세계 주식 히트맵",
     "moreScreener": "주식 스크리너 (시가총액·등락률 정렬)"
+  },
+  "tools": {
+    "title": "도구",
+    "lede": "공부와 취업 준비에 바로 쓰는 도구를 모았어요. 모두 무료이고, 로그인 없이 쓸 수 있어요.",
+    "studyTitle": "공부 도구",
+    "careerTitle": "커리어 도구",
+    "marketTitle": "마켓",
+    "open": "열기",
+    "back": "도구로",
+    "cards": {
+      "flashcards": {
+        "icon": "🗂️",
+        "title": "학습 플래시카드",
+        "body": "임상시험·통계 개념 카드를 뒤집어 보며 연습해요. 모르는 카드만 골라 다시 볼 수 있어요."
+      },
+      "pomodoro": {
+        "icon": "⏱️",
+        "title": "포모도로 타이머",
+        "body": "25분 집중, 5분 휴식. 집중하는 동안 브라운 노이즈·빗소리·앰비언트 사운드를 틀어 줘요."
+      },
+      "interview": {
+        "icon": "🎙️",
+        "title": "면접 질문은행",
+        "body": "뉴스레터 이슈로 만든 직무별 면접 질문과 답변 포인트, 무작위 5문제 연습."
+      },
+      "market": {
+        "icon": "📈",
+        "title": "제약·바이오 마켓",
+        "body": "전 세계 주요 제약·바이오 기업의 주가와 등락률을 지역·분야별로 봐요."
+      }
+    }
+  },
+  "pomodoro": {
+    "title": "포모도로 타이머",
+    "lede": "집중과 휴식을 번갈아 가며 공부해요. 집중하는 동안 잔잔한 소리를 틀어 줄 수 있어요.",
+    "phaseLabel": "단계",
+    "phases": {
+      "focus": "집중",
+      "short": "짧은 휴식",
+      "long": "긴 휴식"
+    },
+    "start": "시작",
+    "pause": "일시정지",
+    "reset": "초기화",
+    "skip": "건너뛰기",
+    "sessions": "완료한 집중",
+    "longEvery": "{n}번마다 긴 휴식",
+    "keys": "Space로 시작·일시정지",
+    "settings": "설정",
+    "min": "분",
+    "soundTitle": "집중 사운드",
+    "sounds": {
+      "off": "끄기",
+      "brown": "브라운 노이즈",
+      "rain": "빗소리",
+      "ambient": "앰비언트"
+    },
+    "volume": "볼륨",
+    "breakSound": "쉬는 시간에도 소리 켜기",
+    "autoNext": "다음 단계 자동 시작",
+    "soundNote": "소리는 브라우저에서 직접 만들어 내는 소리라 파일 다운로드나 저작권 걱정이 없어요. 단계가 끝나면 짧은 알림음이 울려요. 설정은 이 브라우저에만 저장돼요."
   }
 }

@@ -103,7 +103,10 @@
       }
     ],
     "inlineTitle": "The week in biotech, in your inbox every Tuesday",
-    "inlineBody": "Three stories with the Korean market angle and the roles they matter for — a five-minute read, free."
+    "inlineBody": "Three stories with the Korean market angle and the roles they matter for — a five-minute read, free.",
+    "marketTitle": "Today's pharma & biotech market",
+    "marketBody": "See share prices and daily moves for major pharma and biotech companies worldwide, from Eli Lilly and Novo Nordisk to Samsung Biologics, on one screen.",
+    "marketCta": "Open the market board"
   },
   "insight": {
     "title": "BIO:ON Insight archive",
@@ -572,10 +575,12 @@
     "quotesTitle": "Key companies by group",
     "quotesLede": "Switch tabs to compare US, European, Japanese, Korean and Chinese pharma, CDMOs, and biotechs covered in the newsletter.",
     "heatmapTitle": "Market heatmap",
-    "heatmapLede": "Block size shows market cap, colour shows the daily move. Use the top bar to switch markets or zoom into healthcare.",
+    "heatmapLede": "S&P 500 companies grouped by sector. Block size shows market cap, colour shows the daily move. Click the ‘Health Technology’ (pharma and biotech) or ‘Health Services’ sector name to zoom into that sector only.",
     "moreTitle": "Explore further (TradingView)",
     "moreHeatmap": "Global stock heatmap",
-    "moreScreener": "Stock screener (sort by market cap or change)"
+    "moreScreener": "Stock screener (sort by market cap or change)",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
   },
   "tools": {
     "title": "Tools",

@@ -103,7 +103,10 @@
       }
     ],
     "inlineTitle": "매주 화요일, 한 주의 바이오 흐름을 메일함으로",
-    "inlineBody": "뉴스 3개와 국내 시사점, 관련 직무까지 5분이면 읽어요. 무료예요."
+    "inlineBody": "뉴스 3개와 국내 시사점, 관련 직무까지 5분이면 읽어요. 무료예요.",
+    "marketTitle": "오늘의 제약·바이오 시세",
+    "marketBody": "일라이 릴리, 노보 노디스크부터 삼성바이오로직스까지 전 세계 주요 제약·바이오 기업의 주가와 등락률을 한 화면에서 보세요.",
+    "marketCta": "마켓 보기"
   },
   "insight": {
     "title": "BIO:ON Insight 아카이브",
@@ -572,10 +575,12 @@
     "quotesTitle": "그룹별 주요 기업",
     "quotesLede": "탭을 눌러 미국·유럽·일본·한국·중국 제약사와 CDMO, 뉴스레터에서 다룬 바이오텍을 비교해 보세요.",
     "heatmapTitle": "시장 히트맵",
-    "heatmapLede": "블록 크기는 시가총액, 색은 등락률이에요. 위쪽 메뉴에서 다른 시장으로 바꾸거나 헬스케어 섹터를 확대해 볼 수 있어요.",
+    "heatmapLede": "S&P 500 기업을 섹터별로 묶은 지도예요. 블록 크기는 시가총액, 색은 등락률이에요. 제약·바이오가 속한 헬스 테크놀로지(Health Technology) 섹터 이름을 누르면 그 섹터만 크게 확대돼요.",
     "moreTitle": "더 자세히 보기 (TradingView)",
     "moreHeatmap": "전 세계 주식 히트맵",
-    "moreScreener": "주식 스크리너 (시가총액·등락률 정렬)"
+    "moreScreener": "주식 스크리너 (시가총액·등락률 정렬)",
+    "fullscreen": "전체화면",
+    "exitFullscreen": "전체화면 끄기"
   },
   "tools": {
     "title": "도구",

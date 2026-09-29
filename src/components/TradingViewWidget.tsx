@@ -36,12 +36,13 @@ export function useTradingViewAllowed() {
 export function TradingViewWidget({
   script,
   config,
-  height,
+  className,
   lang,
 }: {
   script: string;
   config: Record<string, unknown>;
-  height: number;
+  /** Sizes the widget box (the widget fills it), e.g. "h-[70vh] min-h-[560px]". */
+  className: string;
   lang: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -65,8 +66,8 @@ export function TradingViewWidget({
   }, [script, json]);
 
   return (
-    <div>
-      <div ref={ref} className="tradingview-widget-container" style={{ height }} />
+    <div className="flex min-h-0 flex-1 flex-col">
+      <div ref={ref} className={`tradingview-widget-container w-full ${className}`} />
       <p className="mt-1 text-right text-xs text-muted">
         <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank" className="hover:text-teal">
           Market data by TradingView

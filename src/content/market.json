@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "Companies shown on the market page, as TradingView symbols (EXCHANGE:TICKER). Groups become tabs in the TradingView Market Quotes widget. Check a symbol at tradingview.com if a row shows no data. TradingView does not supply Tokyo (TSE) or Korea (KRX) prices to free widgets, so Japanese companies use their US-listed ADRs."
+    "note": "Companies shown on the market page, as TradingView symbols (EXCHANGE:TICKER). Groups become tabs in the TradingView Market Quotes widget. Check a symbol at tradingview.com if a row shows no data. TradingView does not supply Tokyo (TSE) or Korea (KRX) prices to free widgets, so Japanese companies use their US-listed ADRs. Korean companies (\"korea\": [code, Korean name, English name]) come from the FSC stock price API on data.go.kr instead; see src/lib/krx.ts."
   },
   "groups": [
     {
@@ -48,19 +48,6 @@
       ]
     },
     {
-      "id": "korea",
-      "ko": "한국 바이오",
-      "en": "Korean biotech & pharma",
-      "symbols": [
-        ["KRX:207940", "Samsung Biologics"],
-        ["KRX:068270", "Celltrion"],
-        ["KRX:128940", "Hanmi Pharmaceutical"],
-        ["KRX:000100", "Yuhan"],
-        ["KRX:196170", "Alteogen"],
-        ["KRX:326030", "SK Biopharmaceuticals"]
-      ]
-    },
-    {
       "id": "china",
       "ko": "중국·홍콩 바이오텍",
       "en": "China & Hong Kong biotech",
@@ -98,5 +85,13 @@
         ["NASDAQ:BIIB", "Biogen"]
       ]
     }
+  ],
+  "korea": [
+    ["207940", "삼성바이오로직스", "Samsung Biologics"],
+    ["068270", "셀트리온", "Celltrion"],
+    ["128940", "한미약품", "Hanmi Pharmaceutical"],
+    ["000100", "유한양행", "Yuhan"],
+    ["196170", "알테오젠", "Alteogen"],
+    ["326030", "SK바이오팜", "SK Biopharmaceuticals"]
   ]
 }

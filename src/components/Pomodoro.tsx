@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useAnalytics } from "@/hooks/useAnalytics";
+import { fullscreenClasses, useFullscreen } from "@/hooks/useFullscreen";
 import { FocusSound, type SoundId } from "@/lib/focusSound";
 import type { Dictionary } from "@/lib/i18n";
 
@@ -41,6 +42,8 @@ export function Pomodoro({ dict }: { dict: Dictionary }) {
   const [done, setDone] = useState(0);
 
   const sound = useRef<FocusSound | null>(null);
+  const timerBox = useRef<HTMLElement>(null);
+  const { full, toggle: toggleFull } = useFullscreen(timerBox);
   const endAt = useRef(0);
   // Latest state for the interval callback (updated after each render, not during it).
   const state = useRef({ settings, phase, done, running });
@@ -155,17 +158,20 @@ export function Pomodoro({ dict }: { dict: Dictionary }) {
     if (running && ("sound" in patch || "breakSound" in patch)) soundFor(next, phase);
   };
 
-  // Space starts or pauses (except while typing in a field or pressing a focused button).
+  // Space starts or pauses, F toggles full screen (not while typing in a field;
+  // Space on a focused button presses that button instead).
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       const tag = (e.target as HTMLElement).tagName;
-      if (e.key !== " " || tag === "INPUT" || tag === "SELECT" || tag === "BUTTON") return;
-      e.preventDefault();
-      toggle();
+      if (tag === "INPUT" || tag === "SELECT") return;
+      if (e.key === " " && tag !== "BUTTON") {
+        e.preventDefault();
+        toggle();
+      } else if (e.key.toLowerCase() === "f") toggleFull();
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [toggle]);
+  }, [toggle, toggleFull]);
 
   const total = minutes(settings, phase) * 60_000;
   const progress = total ? 1 - remaining / total : 0;
@@ -174,7 +180,10 @@ export function Pomodoro({ dict }: { dict: Dictionary }) {
 
   return (
     <div className="space-y-8">
-      <section className="rounded-2xl border border-line bg-surface p-6 text-center sm:p-10">
+      <section
+        ref={timerBox}
+        className={full ? `${fullscreenClasses} items-center text-center` : "rounded-2xl border border-line bg-surface p-6 text-center sm:p-10"}
+      >
         <div role="tablist" aria-label={t.phaseLabel} className="inline-flex rounded-full border border-line p-1">
           {(["focus", "short", "long"] as Phase[]).map((p) => (
             <button
@@ -192,10 +201,13 @@ export function Pomodoro({ dict }: { dict: Dictionary }) {
           ))}
         </div>
 
-        <p className="mt-8 font-mono text-7xl font-bold tabular-nums tracking-tight text-ink sm:text-8xl" aria-live="off">
+        <p
+          className={`mt-8 font-mono font-bold tabular-nums tracking-tight text-ink ${full ? "text-[22vw] leading-none sm:text-[18vw]" : "text-7xl sm:text-8xl"}`}
+          aria-live="off"
+        >
           {fmt(remaining)}
         </p>
-        <div className="mx-auto mt-6 h-1.5 max-w-md overflow-hidden rounded-full bg-line" aria-hidden>
+        <div className={`mx-auto mt-6 h-1.5 w-full overflow-hidden rounded-full bg-line ${full ? "max-w-3xl" : "max-w-md"}`} aria-hidden>
           <div className={`h-full transition-all ${phase === "focus" ? "bg-brand" : "bg-teal"}`} style={{ width: `${progress * 100}%` }} />
         </div>
         <p className="mt-3 text-sm text-muted">
@@ -215,6 +227,9 @@ export function Pomodoro({ dict }: { dict: Dictionary }) {
           </button>
           <button type="button" className={btn} onClick={() => finish(true)}>
             {t.skip}
+          </button>
+          <button type="button" className={btn} onClick={toggleFull} aria-pressed={full}>
+            {full ? t.exitFullscreen : t.fullscreen}
           </button>
         </div>
         <p className="mt-4 hidden text-xs text-muted sm:block">{t.keys}</p>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { fullscreenClasses, useFullscreen } from "@/hooks/useFullscreen";
 import type { Dictionary } from "@/lib/i18n";
 
 export type Flashcard = {
@@ -49,6 +50,8 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
   const [i, setI] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [known, setKnown] = useState<Set<string>>(new Set());
+  const root = useRef<HTMLDivElement>(null);
+  const { full, toggle: toggleFull } = useFullscreen(root);
 
   // localStorage is only readable in the browser, so progress loads after mount.
   useEffect(() => {
@@ -109,10 +112,11 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
       else if (e.key === "ArrowLeft") move(-1);
       else if (e.key.toLowerCase() === "k") mark(true);
       else if (e.key.toLowerCase() === "a") mark(false);
+      else if (e.key.toLowerCase() === "f") toggleFull();
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [move, mark]);
+  }, [move, mark, toggleFull]);
 
   const select =
     "rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink focus:border-teal focus:outline-none";
@@ -127,7 +131,8 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
   );
 
   return (
-    <div>
+    <div ref={root} className={full ? fullscreenClasses : ""}>
+      <div className={full ? "mx-auto w-full max-w-4xl" : ""}>
       <div className="flex flex-wrap items-center gap-2">
         <select
           aria-label={t.allModules}
@@ -175,6 +180,9 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
         >
           {t.reset}
         </button>
+        <button type="button" className={btn} onClick={toggleFull} aria-pressed={full}>
+          {full ? t.exitFullscreen : t.fullscreen}
+        </button>
       </div>
 
       <div className="mt-4 flex items-center gap-3 text-sm text-muted" aria-live="polite">
@@ -198,14 +206,14 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
             aria-pressed={flipped}
             onClick={() => setFlipped((f) => !f)}
             onKeyDown={(e) => e.key === "Enter" && setFlipped((f) => !f)}
-            className={`relative min-h-[340px] cursor-pointer transition-transform duration-500 [transform-style:preserve-3d] ${
+            className={`relative ${full ? "min-h-[60vh]" : "min-h-[340px]"} cursor-pointer transition-transform duration-500 [transform-style:preserve-3d] ${
               flipped ? "[transform:rotateY(180deg)]" : ""
             }`}
           >
             {/* Front */}
             <div className="absolute inset-0 flex flex-col rounded-2xl border border-line bg-surface p-7 shadow-sm [backface-visibility:hidden]">
               {chips}
-              <p className="flex flex-1 items-center justify-center py-4 text-center text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+              <p className={`flex flex-1 items-center justify-center py-4 text-center font-bold tracking-tight text-ink ${full ? "text-3xl sm:text-5xl" : "text-2xl sm:text-3xl"}`}>
                 {card.term}
               </p>
               <p className="text-center text-xs text-muted">{t.flipHint}</p>
@@ -217,7 +225,7 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
                 <span className="rounded-full border border-line px-2 py-0.5 text-xs text-muted">{card.source}</span>
               </div>
               <h3 className="mt-4 text-sm font-semibold text-muted">{card.term}</h3>
-              <p className="mt-2 text-[17px] leading-relaxed text-ink">{card.definition}</p>
+              <p className={`mt-2 leading-relaxed text-ink ${full ? "text-xl sm:text-2xl" : "text-[17px]"}`}>{card.definition}</p>
               {card.example && (
                 <div className="mt-4 rounded-lg border-l-4 border-teal bg-surface-2 px-4 py-3 text-sm text-text">
                   <p className="text-xs font-bold uppercase tracking-wider text-teal">{t.example}</p>
@@ -244,6 +252,7 @@ export function FlashcardDeck({ cards, dict }: { cards: Flashcard[]; dict: Dicti
         </button>
       </div>
       <p className="mt-3 hidden text-center text-xs text-muted sm:block">{t.keys}</p>
+      </div>
     </div>
   );
 }

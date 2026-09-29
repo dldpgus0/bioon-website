@@ -13,6 +13,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
     { href: `/${lang}/career`, label: dict.nav.career },
     { href: `/${lang}/resources`, label: dict.nav.resources },
     { href: `/${lang}/tools`, label: dict.nav.tools },
+    { href: `/${lang}/market`, label: dict.nav.market },
     { href: `/${lang}/about`, label: dict.nav.about },
   ];
 
@@ -23,7 +24,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <Wordmark />
         </Link>
 
-        <nav aria-label={dict.a11y.mainNav} className="hidden items-center gap-10 text-[13px] font-medium uppercase tracking-[0.18em] text-ink/80 lg:flex">
+        <nav aria-label={dict.a11y.mainNav} className="hidden items-center gap-7 text-[13px] font-medium uppercase tracking-[0.18em] text-ink/80 lg:flex xl:gap-10">
           {links.map((l) => (
             <Link key={l.href} href={l.href} className="transition-colors hover:text-teal">
               {l.label}

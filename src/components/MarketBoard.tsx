@@ -1,6 +1,8 @@
 "use client";
 
+import { useRef, type ReactNode } from "react";
 import market from "@/content/market.json";
+import { fullscreenClasses, useFullscreen } from "@/hooks/useFullscreen";
 import type { Dictionary } from "@/lib/i18n";
 import { allowTradingView, TradingViewWidget, useTradingViewAllowed } from "./TradingViewWidget";
 
@@ -55,26 +57,68 @@ export function MarketBoard({ dict, lang }: { dict: Dictionary; lang: string }) 
   };
 
   return (
-    <div className="space-y-12">
-      <section aria-labelledby="market-quotes">
-        <h2 id="market-quotes" className="text-lg font-bold text-ink">
-          {t.quotesTitle}
-        </h2>
-        <p className="mb-4 mt-1 text-sm text-muted">{t.quotesLede}</p>
-        <div className="rounded-2xl border border-line bg-surface p-2">
-          <TradingViewWidget script="embed-widget-market-quotes.js" config={quotes} height={620} lang={lang} />
-        </div>
-      </section>
+    <div className="space-y-14">
+      <WidgetPanel id="market-quotes" title={t.quotesTitle} lede={t.quotesLede} t={t}>
+        {(full) => (
+          <TradingViewWidget
+            script="embed-widget-market-quotes.js"
+            config={quotes}
+            className={full ? "h-full min-h-[70vh]" : "h-[75vh] min-h-[560px] max-h-[900px]"}
+            lang={lang}
+          />
+        )}
+      </WidgetPanel>
 
-      <section aria-labelledby="market-heatmap">
-        <h2 id="market-heatmap" className="text-lg font-bold text-ink">
-          {t.heatmapTitle}
-        </h2>
-        <p className="mb-4 mt-1 text-sm text-muted">{t.heatmapLede}</p>
-        <div className="rounded-2xl border border-line bg-surface p-2">
-          <TradingViewWidget script="embed-widget-stock-heatmap.js" config={heatmap} height={560} lang={lang} />
-        </div>
-      </section>
+      <WidgetPanel id="market-heatmap" title={t.heatmapTitle} lede={t.heatmapLede} t={t}>
+        {(full) => (
+          <TradingViewWidget
+            script="embed-widget-stock-heatmap.js"
+            config={heatmap}
+            className={full ? "h-full min-h-[70vh]" : "h-[80vh] min-h-[600px] max-h-[1000px]"}
+            lang={lang}
+          />
+        )}
+      </WidgetPanel>
     </div>
+  );
+}
+
+/** A titled widget box with a full-screen button; the widget grows to fill the screen. */
+function WidgetPanel({
+  id,
+  title,
+  lede,
+  t,
+  children,
+}: {
+  id: string;
+  title: string;
+  lede: string;
+  t: Dictionary["market"];
+  children: (full: boolean) => ReactNode;
+}) {
+  const box = useRef<HTMLElement>(null);
+  const { full, toggle } = useFullscreen(box);
+
+  return (
+    <section ref={box} aria-labelledby={id} className={full ? fullscreenClasses.replace("justify-center", "justify-start") : ""}>
+      <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 id={id} className="text-lg font-bold text-ink sm:text-xl">
+            {title}
+          </h2>
+          {!full && <p className="mt-1 text-sm text-muted">{lede}</p>}
+        </div>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-pressed={full}
+          className="rounded-xl border border-line bg-surface px-4 py-2 text-sm font-medium text-ink hover:border-teal hover:text-teal"
+        >
+          {full ? t.exitFullscreen : t.fullscreen}
+        </button>
+      </div>
+      <div className={`flex flex-col rounded-2xl border border-line bg-surface p-2 ${full ? "min-h-0 flex-1" : ""}`}>{children(full)}</div>
+    </section>
   );
 }

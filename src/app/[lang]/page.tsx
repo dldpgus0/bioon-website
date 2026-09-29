@@ -120,8 +120,26 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
+      {/* Market board teaser */}
+      <section className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+        <Link
+          href={`/${lang}/market`}
+          className="group flex flex-col gap-4 rounded-3xl border border-line bg-surface px-6 py-7 transition-colors hover:border-teal sm:flex-row sm:items-center sm:justify-between sm:px-10"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-teal">BIO:ON Market</p>
+            <h2 className="mt-2 text-xl font-bold text-ink sm:text-2xl">{t.marketTitle}</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{t.marketBody}</p>
+          </div>
+          <span className="inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-on-brand sm:self-center">
+            {t.marketCta}
+            <span className="h-4 w-4 transition-transform group-hover:translate-x-0.5">{icons.arrow}</span>
+          </span>
+        </Link>
+      </section>
+
       {/* Pillars */}
-      <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+      <section className="mx-auto max-w-6xl px-4 pt-20 sm:px-6">
         <SectionTitle title={t.pillarsTitle} subtitle={t.pillarsSub} />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {t.pillars.map((p, i) => (

@@ -18,6 +18,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     metadataBase: new URL(siteUrl),
     title: { default: dict.meta.title, template: "%s · BIO:ON" },
     description: dict.meta.description,
+    // Search engine ownership checks (Google Search Console, Naver Search Advisor).
+    verification: { google: "YK5fD8bQNWx7mnodTyNMdoqnRxglrUtk15Gm8Gqx07M" },
     alternates: {
       languages: { ko: "/ko", en: "/en" },
       types: { "application/rss+xml": [{ url: lang === "en" ? "/feed.xml?lang=en" : "/feed.xml", title: "BIO:ON Insight" }] },

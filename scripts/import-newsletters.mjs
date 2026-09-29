@@ -1,13 +1,13 @@
 // Imports Stibee email HTML issues into the site.
-//   node scripts/import-newsletters.mjs [sourceDir]
+//   node scripts/import-newsletters.mjs [newsletterDir]
+// Reads "<newsletterDir>/Newsletter - KOR" and "<newsletterDir>/Newsletter - ENG".
 // - copies each issue's HTML to public/newsletters/<lang>/<slug>.html (web version)
 // - writes src/content/insight.json with metadata parsed from the issue header
 import fs from "node:fs";
 import path from "node:path";
 
-const SOURCE =
-  process.argv[2] ||
-  "C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter/template";
+const NEWSLETTER_DIR = process.argv[2] || "C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter";
+const SOURCES = ["Newsletter - KOR", "Newsletter - ENG"].map((d) => path.join(NEWSLETTER_DIR, d));
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_HTML = path.join(ROOT, "public", "newsletters");
 const OUT_JSON = path.join(ROOT, "src", "content", "insight.json");
@@ -41,9 +41,15 @@ function parseDate(raw) {
 }
 
 const issues = [];
-for (const file of fs.readdirSync(SOURCE)) {
-  if (!/^BIO\.ON Insight .*\.html$/.test(file)) continue;
-  const html = fs.readFileSync(path.join(SOURCE, file), "utf8");
+const files = SOURCES.flatMap((dir) =>
+  fs
+    .readdirSync(dir)
+    .filter((f) => /^BIO\.ON Insight .*\.html$/.test(f))
+    .map((f) => path.join(dir, f)),
+);
+for (const sourcePath of files) {
+  const file = path.basename(sourcePath);
+  const html = fs.readFileSync(sourcePath, "utf8");
   const lines = toLines(html);
   const h = lines.findIndex((l) => /Insight\s*(EN\s*)?#\d+\s*·/.test(l));
   if (h < 0) {
@@ -68,6 +74,7 @@ for (const file of fs.readdirSync(SOURCE)) {
     summary: lines[h - 1] || "",
     tags,
     sourceFile: file,
+    sourcePath,
   };
   issues.push(issues_);
 }
@@ -105,10 +112,12 @@ function rewriteNumbers(html, it) {
 fs.rmSync(OUT_HTML, { recursive: true, force: true });
 for (const lang of ["ko", "en"]) fs.mkdirSync(path.join(OUT_HTML, lang), { recursive: true });
 for (const it of issues) {
-  const html = fs.readFileSync(path.join(SOURCE, it.sourceFile), "utf8");
+  const html = fs.readFileSync(it.sourcePath, "utf8");
   fs.writeFileSync(path.join(OUT_HTML, it.lang, `${it.slug}.html`), rewriteNumbers(html, it));
   if (it.number !== it.originalNumber) console.log(`${it.lang} ${it.date}: #${it.originalNumber} → #${it.number}`);
 }
 
-fs.writeFileSync(OUT_JSON, JSON.stringify(issues, null, 2) + "\n");
+// sourcePath is a local machine path; keep it out of the committed JSON.
+const publicIssues = issues.map(({ sourcePath, ...it }) => it);
+fs.writeFileSync(OUT_JSON, JSON.stringify(publicIssues, null, 2) + "\n");
 console.log(`imported ${issues.length} issues → ${path.relative(ROOT, OUT_JSON)}`);

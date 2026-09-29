@@ -1,7 +1,22 @@
 [
   {
+    "lang": "en",
+    "originalNumber": 1,
+    "number": 1,
+    "date": "2026-06-07",
+    "slug": "2026-06-07",
+    "title": "Three \"impossible\" problems, one week. What did they have in common?",
+    "summary": "An AI-designed vaccine clears its first human trial, a KRAS drug doubles pancreatic cancer survival, and CRISPR Therapeutics pushes gene editing into heart disease. Three 'impossible' problems, one week.",
+    "tags": [
+      "AI Vaccine Design",
+      "KRAS",
+      "Gene Editing"
+    ],
+    "sourceFile": "BIO.ON Insight EN #1.html"
+  },
+  {
     "lang": "ko",
-    "originalNumber": 3,
+    "originalNumber": 1,
     "number": 1,
     "date": "2026-06-07",
     "slug": "2026-06-07",
@@ -10,33 +25,78 @@
     "tags": [
       "바이오 혁신의 세 물결"
     ],
-    "sourceFile": "BIO.ON Insight #3.html"
+    "sourceFile": "BIO.ON Insight #1.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 2,
+    "number": 2,
+    "date": "2026-06-09",
+    "slug": "2026-06-09",
+    "title": "Two companies showed data. One changed its name. Guess which stock jumped 60%.",
+    "summary": "Zenas files obexelimab with the FDA after a 56% cut in relapse risk, BPGbio brings a mitochondria-targeting glioblastoma drug to ASCO, and a biotech rebrands as an AI and space company. Where does a biotech's value really come from?",
+    "tags": [
+      "FDA Filing",
+      "Glioblastoma",
+      "Biotech Rebrand"
+    ],
+    "sourceFile": "BIO.ON Insight EN #2.html"
   },
   {
     "lang": "ko",
-    "originalNumber": 3,
+    "originalNumber": 2,
     "number": 2,
     "date": "2026-06-09",
     "slug": "2026-06-09",
     "title": "데이터로 증명하는 바이오의 진짜 가치",
     "summary": "데이터로 증명하는 바이오의 진짜 가치 — Zenas FDA 허가신청, BPGbio ASCO, 그리고 AI·우주로 변신한 바이오 기업",
     "tags": [],
-    "sourceFile": "BIO.ON Insight #1.html"
+    "sourceFile": "BIO.ON Insight #2.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 3,
+    "number": 3,
+    "date": "2026-06-15",
+    "slug": "2026-06-15",
+    "title": "One company bought it. Some proved it. Two rivals built it together.",
+    "summary": "GSK pays $10.6B for Nuvalent's lung cancer pipeline, Korean biotechs bring muscle- and heart-sparing obesity data to ADA, and Gilead and Merck's once-weekly HIV pill wins two Phase 3 trials. Buy, prove or partner?",
+    "tags": [
+      "Big Pharma M&A",
+      "Obesity Data",
+      "Weekly HIV Pill"
+    ],
+    "sourceFile": "BIO.ON Insight EN #3.html"
   },
   {
     "lang": "ko",
-    "originalNumber": 4,
+    "originalNumber": 3,
     "number": 3,
     "date": "2026-06-15",
     "slug": "2026-06-15",
     "title": "14조로 사고, 학회서 증명하고, 두 거인이 함께 만들었다",
-    "summary": "GSK 106억 달러 폐암 파이프라인 인수, K-바이오가 ADA에서 노보·릴리 넘어섰다, 길리어드×머크 주 1회 경구 HIV 치료제 3상 성공",
+    "summary": "GSK 106억 달러 폐암 파이프라인 인수, K-바이오가 ADA에서 노보·릴리 양강 구도에 균열, 길리어드×머크 주 1회 경구 HIV 치료제 3상 성공",
     "tags": [
       "인수",
       "증명",
       "협업"
     ],
-    "sourceFile": "BIO.ON Insight #4.html"
+    "sourceFile": "BIO.ON Insight #3.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 4,
+    "number": 4,
+    "date": "2026-06-16",
+    "slug": "2026-06-16",
+    "title": "Copy, combine, or go where no drug has gone: three ways to make a new medicine",
+    "summary": "The first golimumab biosimilar wins FDA approval, BioNTech and BMS show early lung cancer data for a PD-L1×VEGF bispecific, and Orion reports first-in-human results for an oral pan-TEAD inhibitor. Copy, combine or create?",
+    "tags": [
+      "Biosimilar",
+      "Bispecific Antibody",
+      "New Target"
+    ],
+    "sourceFile": "BIO.ON Insight EN #4.html"
   },
   {
     "lang": "ko",
@@ -49,12 +109,57 @@
     "tags": [
       "신약 모달리티 특집"
     ],
-    "sourceFile": "BIO.ON Insight #2.html"
+    "sourceFile": "BIO.ON Insight #4.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 5,
+    "number": 5,
+    "date": "2026-06-22",
+    "slug": "2026-06-22",
+    "title": "An algorithm designs the drug, two hormones shake the market, and five months of secret talks end in $10 billion",
+    "summary": "Insilico and SK Biopharm sign a $2.5B AI drug discovery deal, Novo's CagriSema improves blood sugar and weight together in Phase 3, and Pfizer lands a $10B cancer deal with Innovent after five months of secret talks.",
+    "tags": [
+      "AI Drug Design",
+      "Dual Mechanism",
+      "Secret Mega-Deal"
+    ],
+    "sourceFile": "BIO.ON Insight EN #5.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 5,
+    "number": 5,
+    "date": "2026-06-22",
+    "slug": "2026-06-22",
+    "title": "알고리즘이 신약을 설계하고, 두 호르몬이 시장을 흔들고, 5개월 비밀 협상이 14조를 만들었다",
+    "summary": "Insilico Medicine 3.5조 AI 신약 딜, Novo Nordisk CagriSema 3상으로 비만·당뇨 시장 재편, Pfizer 14조 항암 비밀 협상 전격 공개",
+    "tags": [
+      "AI 설계",
+      "이중 기전",
+      "빅딜"
+    ],
+    "sourceFile": "BIO.ON Insight #5.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 6,
+    "number": 6,
+    "date": "2026-06-30",
+    "slug": "2026-06-30",
+    "title": "A wall around solid tumours falls, immunity gets a reset, and a pill takes aim at the injection",
+    "summary": "China approves the world's first CAR-T for a solid tumour, Moderna unveils an in vivo CAR-T for lupus, and Corxel's oral GLP-1 shows competitive weight loss in Phase 2. How long does \"impossible\" last in medicine?",
+    "tags": [
+      "Solid-Tumour CAR-T",
+      "In Vivo CAR-T",
+      "Oral GLP-1"
+    ],
+    "sourceFile": "BIO.ON Insight EN #6.html"
   },
   {
     "lang": "ko",
     "originalNumber": 6,
-    "number": 5,
+    "number": 6,
     "date": "2026-06-30",
     "slug": "2026-06-30",
     "title": "고형암의 벽이 무너지고, 면역이 리셋되고, 알약이 주사를 위협한다",
@@ -67,13 +172,28 @@
     "sourceFile": "BIO.ON Insight #6.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 7,
+    "number": 7,
+    "date": "2026-07-06",
+    "slug": "2026-07-06",
+    "title": "Fill the pipeline with AI, fend off generics, buy your way out: surviving the patent cliff",
+    "summary": "Takeda signs a $600M AI deal with Insilico, generic makers challenge Lilly's tirzepatide patents, and AbbVie buys Apogee for $10.9B. Three ways Big Pharma tries to survive the patent cliff.",
+    "tags": [
+      "AI Partnership",
+      "Generic Challenge",
+      "Big Pharma M&A"
+    ],
+    "sourceFile": "BIO.ON Insight EN #7.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 7,
-    "number": 6,
+    "number": 7,
     "date": "2026-07-06",
     "slug": "2026-07-06",
     "title": "AI로 채우고, 제네릭에 쫓기고, M&A로 막는다",
-    "summary": "Takeda×Insilico AI 신약 $600M 딜, 젭바운드 제네릭 도전장, AbbVie 10조 원 인수 — 특허절벽 앞 빅파마의 생존 전략 3가지",
+    "summary": "Takeda×Insilico AI 신약 $600M 딜, 젭바운드 제네릭 도전장, AbbVie 15조 원 인수 — 특허절벽 앞 빅파마의 생존 전략 3가지",
     "tags": [
       "AI",
       "제네릭",
@@ -82,9 +202,24 @@
     "sourceFile": "BIO.ON Insight #7.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 8,
+    "number": 8,
+    "date": "2026-07-12",
+    "slug": "2026-07-12",
+    "title": "The drug works. Now comes the fight over insurance, channels and trust",
+    "summary": "Lilly's oral obesity pill Foundayo starts slowly because of insurance coverage gaps, GSK and Hansoh's B7-H3 ADC extends survival in small-cell lung cancer, and AI startup Xaira goes looking for Big Pharma partners. Does a good drug always reach patients?",
+    "tags": [
+      "Oral Obesity Drug",
+      "ADC",
+      "AI Drug Discovery"
+    ],
+    "sourceFile": "BIO.ON Insight EN #8.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 8,
-    "number": 7,
+    "number": 8,
     "date": "2026-07-12",
     "slug": "2026-07-12",
     "title": "약은 완성됐다 — 이제 보험·채널·신뢰의 전쟁이다",
@@ -97,9 +232,24 @@
     "sourceFile": "BIO.ON Insight #8.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 9,
+    "number": 9,
+    "date": "2026-07-19",
+    "slug": "2026-07-19",
+    "title": "The trial \"worked\" — so why did nothing change?",
+    "summary": "Biogen takes its tau drug into Phase 3 despite missing the primary endpoint, the FDA resumes publishing drug rejection letters, and IQVIA data confirms Foundayo's slow start. Why do clinical success and market success keep diverging?",
+    "tags": [
+      "Alzheimer's",
+      "FDA Transparency",
+      "Obesity Drug Channels"
+    ],
+    "sourceFile": "BIO.ON Insight EN #9.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 9,
-    "number": 8,
+    "number": 9,
     "date": "2026-07-19",
     "slug": "2026-07-19",
     "title": "임상은 성공이다 — 그런데 왜 아무것도 달라지지 않는가",
@@ -112,9 +262,24 @@
     "sourceFile": "BIO.ON Insight #9.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 10,
+    "number": 10,
+    "date": "2026-07-28",
+    "slug": "2026-07-28",
+    "title": "Drugs keep getting more complex. So why is treatment getting easier?",
+    "summary": "Lilly's triple agonist retatrutide cuts weight by up to 22.6%, J&J's two-bispecific combo lowers myeloma progression risk by 89%, and Merck builds supply for a monthly HIV prevention pill before approval. Drugs keep getting more complex, so why is treatment getting easier?",
+    "tags": [
+      "Triple Agonist",
+      "Bispecific Combo",
+      "Monthly Oral PrEP"
+    ],
+    "sourceFile": "BIO.ON Insight EN #10.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 10,
-    "number": 9,
+    "number": 10,
     "date": "2026-07-28",
     "slug": "2026-07-28",
     "title": "약은 점점 복잡해지는데, 왜 환자는 점점 편해질까?",
@@ -127,9 +292,24 @@
     "sourceFile": "BIO.ON Insight #10.html"
   },
   {
+    "lang": "en",
+    "originalNumber": 11,
+    "number": 11,
+    "date": "2026-08-04",
+    "slug": "2026-08-04",
+    "title": "Rejected three times, fighting for ten years — so why did all three win this week?",
+    "summary": "J&J offers $5.5B to settle 76,000 talc lawsuits, GSK pays $110M for AI biotech Relation's biological data, and twice-rejected cancer virus RP1 wins an FDA advisory vote. Can you put a price on failure?",
+    "tags": [
+      "Talc Settlement",
+      "AI Data Deal",
+      "FDA Advisory Committee"
+    ],
+    "sourceFile": "BIO.ON Insight EN #11.html"
+  },
+  {
     "lang": "ko",
     "originalNumber": 11,
-    "number": 10,
+    "number": 11,
     "date": "2026-08-04",
     "slug": "2026-08-04",
     "title": "3번 거절당하고, 10년을 싸웠는데, 왜 이번 주엔 셋 다 이겼을까?",
@@ -143,23 +323,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 1,
-    "number": 1,
+    "originalNumber": 12,
+    "number": 12,
     "date": "2026-08-18",
     "slug": "2026-08-18",
     "title": "The week a drug learned to erase proteins, a recall came down to a shard of glass",
-    "summary": "BMS wins the world's first molecular glue approval, ex-Pfizer chemists raise $95M to turn injections into pills, a biosimilar gets recalled over glass particles — the week a drug learned to erase proteins, the recall came down to a shard of glass.",
+    "summary": "BMS wins the world's first molecular glue approval, ex-Pfizer chemists raise $95M to turn injections into pills, and a biosimilar batch is recalled over glass particles. The week a drug learned to erase proteins, a recall came down to a shard of glass.",
     "tags": [
       "Molecular Glue",
       "Oral Switch",
       "Quality Recall"
     ],
-    "sourceFile": "BIO.ON Insight EN #1.html"
+    "sourceFile": "BIO.ON Insight EN #12.html"
   },
   {
     "lang": "ko",
     "originalNumber": 12,
-    "number": 11,
+    "number": 12,
     "date": "2026-08-18",
     "slug": "2026-08-18",
     "title": "세포 속까지 파고드는 신약이 나온 주에, 왜 리콜은 유리조각 때문이었을까?",
@@ -173,23 +353,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 2,
-    "number": 2,
+    "originalNumber": 13,
+    "number": 13,
     "date": "2026-08-25",
     "slug": "2026-08-25",
     "title": "Stand beside a giant, and you win. Stand against one, and you lose. Why?",
-    "summary": "Merck & Moderna's mRNA melanoma vaccine + Keytruda combo significantly extends recurrence-free survival, AstraZeneca halts a bispecific NSCLC trial, Amylyx's GLP-1 antagonist cuts severe hypoglycemia 55% — stand beside a giant and you win, stand against one and you lose. Why?",
+    "summary": "Merck and Moderna's mRNA melanoma vaccine plus Keytruda extends recurrence-free survival, AstraZeneca halts a bispecific lung cancer trial, and Amylyx's GLP-1 antagonist cuts severe hypoglycaemia by 55%. Stand beside a giant and you win; stand against one and you lose. Why?",
     "tags": [
-      "mRNA Vaccine",
+      "mRNA Cancer Vaccine",
       "Trial Halt",
       "GLP-1 Antagonist"
     ],
-    "sourceFile": "BIO.ON Insight EN #2.html"
+    "sourceFile": "BIO.ON Insight EN #13.html"
   },
   {
     "lang": "ko",
     "originalNumber": 13,
-    "number": 12,
+    "number": 13,
     "date": "2026-08-25",
     "slug": "2026-08-25",
     "title": "거인 옆에 서면 이기고, 거인과 맞서면 지는 이유는?",
@@ -203,23 +383,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 3,
-    "number": 3,
+    "originalNumber": 14,
+    "number": 14,
     "date": "2026-09-01",
     "slug": "2026-09-01",
     "title": "Nobody was supposed to clear that wall. Someone did, this week.",
-    "summary": "Roche bets $2.5B on Hanmi's muscle-sparing obesity drug, Regenxbio's gene therapy refiling hits an FDA hold, Akeso's bispecific beats Keytruda head-to-head — nobody was supposed to be able to clear that wall. Someone did, this week.",
+    "summary": "Roche bets up to $2.5B on Hanmi's muscle-sparing obesity drug, Regenxbio's gene therapy refiling hits an FDA hold, and Akeso's bispecific beats Keytruda head-to-head. Nobody was supposed to clear that wall. Someone did.",
     "tags": [
       "Obesity Licensing",
       "Gene Therapy Hold",
       "Bispecific Showdown"
     ],
-    "sourceFile": "BIO.ON Insight EN #3.html"
+    "sourceFile": "BIO.ON Insight EN #14.html"
   },
   {
     "lang": "ko",
     "originalNumber": 14,
-    "number": 13,
+    "number": 14,
     "date": "2026-09-01",
     "slug": "2026-09-01",
     "title": "아무도 못 넘는다던 벽을, 이번 주 누군가 넘었어요",
@@ -233,23 +413,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 4,
-    "number": 4,
+    "originalNumber": 15,
+    "number": 15,
     "date": "2026-09-08",
     "slug": "2026-09-08",
     "title": "A whole company on one platform — so what proves the platform?",
-    "summary": "Ionis wins FDA approval for an RNA drug in Alexander disease — solo, no Big Pharma. Autoimmune CAR-T trials halt after 3 patient deaths. Lilly buys an antibody-degradation platform for $2.9B. Same word, \"platform\" — three very different companies.",
+    "summary": "Ionis wins FDA approval for an RNA drug in Alexander disease with no Big Pharma partner, autoimmune CAR-T trials stop after three patient deaths, and Lilly buys an antibody-degradation platform for up to $2.9B. Same word, \"platform\": three very different companies.",
     "tags": [
       "RNA Drug Approval",
       "CAR-T Trial Halt",
       "Platform M&A"
     ],
-    "sourceFile": "BIO.ON Insight EN #4.html"
+    "sourceFile": "BIO.ON Insight EN #15.html"
   },
   {
     "lang": "ko",
     "originalNumber": 15,
-    "number": 14,
+    "number": 15,
     "date": "2026-09-08",
     "slug": "2026-09-08",
     "title": "플랫폼 하나로 회사가 서는 시대, 그 플랫폼은 무엇으로 증명되나요",
@@ -263,23 +443,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 5,
-    "number": 5,
+    "originalNumber": 16,
+    "number": 16,
     "date": "2026-09-15",
     "slug": "2026-09-15",
     "title": "Same word, \"success\" — not the same grade of evidence",
-    "summary": "Summit and Akeso's ivonescimab beats Keytruda on final overall survival at WCLC in Seoul. AstraZeneca's oral SERD wins FDA approval despite a negative AdComm vote. Novo Nordisk's oral Wegovy resolves obesity in 40% of teens. Same word, \"success\" — three very different grades of evidence.",
+    "summary": "Summit and Akeso's ivonescimab beats Keytruda on final overall survival at WCLC in Seoul, AstraZeneca's oral SERD wins FDA approval despite a negative advisory vote, and oral Wegovy resolves obesity in 40% of teens. Same word, \"success\": three very different grades of evidence.",
     "tags": [
       "Final OS Data",
-      "Surprise SERD Nod",
-      "Pediatric Expansion"
+      "Surprise SERD Approval",
+      "Paediatric Expansion"
     ],
-    "sourceFile": "BIO.ON Insight EN #5.html"
+    "sourceFile": "BIO.ON Insight EN #16.html"
   },
   {
     "lang": "ko",
     "originalNumber": 16,
-    "number": 15,
+    "number": 16,
     "date": "2026-09-15",
     "slug": "2026-09-15",
     "title": "같은 '성공'이라도, 증거의 급은 다 달라요",
@@ -293,23 +473,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 6,
-    "number": 6,
+    "originalNumber": 17,
+    "number": 17,
     "date": "2026-09-22",
     "slug": "2026-09-22",
     "title": "The edge in drugs is moving — from what you discover to how you make it",
-    "summary": "Novartis pours $1.2B into radiopharma manufacturing. Ultragenyx wins FDA approval for a Sanfilippo gene therapy after a manufacturing rejection — priced at $3.95M. Roche bets up to $1B on screening 300,000 bispecifics. This week, the edge is in how drugs get made, moved, and found.",
+    "summary": "Novartis puts $1.2B into radiopharma manufacturing, Ultragenyx wins FDA approval for a Sanfilippo gene therapy once rejected over manufacturing, priced at $3.95M, and Roche bets up to $1B on screening 300,000 bispecifics. This week, the edge is in how drugs get made, moved and found.",
     "tags": [
       "Radiopharma Supply",
       "Gene Therapy Approval",
       "Antibody Screening"
     ],
-    "sourceFile": "BIO.ON Insight EN #6.html"
+    "sourceFile": "BIO.ON Insight EN #17.html"
   },
   {
     "lang": "ko",
     "originalNumber": 17,
-    "number": 16,
+    "number": 17,
     "date": "2026-09-22",
     "slug": "2026-09-22",
     "title": "약의 승부처가, '만드는 곳'으로 옮겨가고 있어요",
@@ -323,23 +503,23 @@
   },
   {
     "lang": "en",
-    "originalNumber": 7,
-    "number": 7,
+    "originalNumber": 18,
+    "number": 18,
     "date": "2026-09-29",
     "slug": "2026-09-29",
     "title": "One company, three battlegrounds — same week, same headline name",
-    "summary": "Lilly commits up to $3.35B to China's InnoCare for five undisclosed targets. UK regulators rule Lilly's \"transform obesity care\" release promoted an unlicensed drug. Lilly's Foundayo takes one in three new oral GLP-1 starts on cash-pay price cuts. This week, one company fights on three different fronts at once.",
+    "summary": "Lilly commits up to $3.35B to China's InnoCare for five undisclosed targets, UK regulators rule Lilly's \"transform obesity care\" release promoted an unlicensed drug, and Foundayo takes one in three new oral GLP-1 starts after cash-price cuts. One company, three fronts, one week.",
     "tags": [
       "China BD Deal",
       "Regulatory Compliance",
       "Pricing War"
     ],
-    "sourceFile": "BIO.ON Insight EN #7.html"
+    "sourceFile": "BIO.ON Insight EN #18.html"
   },
   {
     "lang": "ko",
     "originalNumber": 18,
-    "number": 17,
+    "number": 18,
     "date": "2026-09-29",
     "slug": "2026-09-29",
     "title": "릴리 원맨쇼 — 한 회사, 세 개의 전장",

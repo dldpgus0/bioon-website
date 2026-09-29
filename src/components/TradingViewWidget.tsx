@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useRef, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 // Embeds a free TradingView widget (https://www.tradingview.com/widget/). TradingView supplies
 // and refreshes the market data, which lets the site show global prices without a data licence;
@@ -48,11 +48,25 @@ export function TradingViewWidget({
   const ref = useRef<HTMLDivElement>(null);
   const { resolvedTheme } = useTheme();
   const theme = resolvedTheme === "dark" ? "dark" : "light";
-  const json = JSON.stringify({ ...config, colorTheme: theme, locale: lang === "ko" ? "kr" : "en" });
+  // TradingView ignores a percentage height (the iframe falls back to ~150px), so measure the
+  // box and pass its height in pixels. Resizing (e.g. full screen) re-renders the widget.
+  const [height, setHeight] = useState(0);
+  const json = JSON.stringify({ ...config, width: "100%", height, colorTheme: theme, locale: lang === "ko" ? "kr" : "en" });
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    const ro = new ResizeObserver(([entry]) => {
+      const h = Math.round(entry.contentRect.height);
+      setHeight((prev) => (Math.abs(prev - h) > 8 ? h : prev));
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !height) return;
     el.innerHTML = '<div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>';
     const s = document.createElement("script");
     s.src = `https://s3.tradingview.com/external-embedding/${script}`;
@@ -63,7 +77,7 @@ export function TradingViewWidget({
     return () => {
       el.innerHTML = "";
     };
-  }, [script, json]);
+  }, [script, json, height]);
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">

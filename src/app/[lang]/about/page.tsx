@@ -1,9 +1,20 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
 import Image from "next/image";
+import { EmailButton } from "@/components/EmailButton";
 import { VerticalLogo } from "@/components/Logo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
+import { socials } from "@/lib/site";
+
+// CV PDFs for the recruiter section's download button (Korean page gets the Korean CV).
+// The button only shows when the file exists in public/cv.
+const cvPath = (lang: string) => (lang === "ko" ? "/cv/Yaehyun-Lee-CV-ko.pdf" : "/cv/Yaehyun-Lee-CV.pdf");
+const hasCv = (p: string) => fs.existsSync(path.join(process.cwd(), "public", p));
+const linkedin = socials.find((s) => s.id === "linkedin")!.href;
+const email = socials.find((s) => s.id === "email")!.href.replace("mailto:", "");
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/about">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
@@ -14,6 +25,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   const t = dict.about;
+  const cv = cvPath(lang);
   const issueCount = getIssues("ko").length + getIssues("en").length;
 
   return (
@@ -32,6 +44,48 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           <p className="mt-1 font-medium text-muted">{t.role}</p>
           <p className="mt-4 leading-relaxed text-text">{t.bio}</p>
           <SocialLinks className="mt-5" />
+        </div>
+      </section>
+
+      <section aria-labelledby="recruit" className="mt-16 rounded-3xl border border-teal/30 bg-teal-soft/40 p-6 sm:p-10">
+        <h2 id="recruit" className="text-sm font-semibold uppercase tracking-[0.25em] text-teal">
+          {t.recruit.title}
+        </h2>
+        <p className="mt-3 text-lg font-bold text-ink sm:text-xl">{t.recruit.lede}</p>
+        <dl className="mt-6 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+          {t.recruit.facts.map(([k, v]) => (
+            <div key={k}>
+              <dt className="text-xs font-semibold text-muted">{k}</dt>
+              <dd className="mt-0.5 text-sm font-medium text-ink">{v}</dd>
+            </div>
+          ))}
+        </dl>
+        <h3 className="mt-8 text-xs font-semibold text-muted">{t.recruit.highlightsTitle}</h3>
+        <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-text">
+          {t.recruit.highlights.map((h) => (
+            <li key={h}>{h}</li>
+          ))}
+        </ul>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-on-brand hover:opacity-90"
+          >
+            {t.recruit.linkedin}
+          </a>
+          <EmailButton
+            email={email}
+            label={`${t.recruit.email} · ${email}`}
+            copiedLabel={t.recruit.emailCopied}
+            className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand"
+          />
+          {hasCv(cv) && (
+            <a href={cv} download className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand">
+              {t.recruit.cv}
+            </a>
+          )}
         </div>
       </section>
 

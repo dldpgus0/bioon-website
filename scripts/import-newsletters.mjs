@@ -1,14 +1,26 @@
 // Imports Stibee email HTML issues into the site.
 //   node scripts/import-newsletters.mjs [newsletterDir]
-// Reads "<newsletterDir>/Newsletter - KOR" and "<newsletterDir>/Newsletter - ENG".
+// Reads "<newsletterDir>/Newsletter - KOR" and "<newsletterDir>/Newsletter - ENG", plus
+// newsletter-src/ in this repo (web-only editions: the KO/EN welcome letter).
 // - copies each issue's HTML to public/newsletters/<lang>/<slug>.html (web version)
 // - writes src/content/insight.json with metadata parsed from the issue header
 import fs from "node:fs";
 import path from "node:path";
 
-const NEWSLETTER_DIR = process.argv[2] || "C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter";
-const SOURCES = ["Newsletter - KOR", "Newsletter - ENG"].map((d) => path.join(NEWSLETTER_DIR, d));
 const ROOT = path.resolve(import.meta.dirname, "..");
+const NEWSLETTER_DIR = process.argv[2] || "C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter";
+const SOURCES = [
+  path.join(NEWSLETTER_DIR, "Newsletter - KOR"),
+  path.join(NEWSLETTER_DIR, "Newsletter - ENG"),
+  path.join(ROOT, "newsletter-src"),
+];
+// The output folder is wiped below, so a missing source would silently drop its issues.
+for (const dir of SOURCES) {
+  if (!fs.existsSync(dir)) {
+    console.error(`source folder not found: ${dir}`);
+    process.exit(1);
+  }
+}
 const OUT_HTML = path.join(ROOT, "public", "newsletters");
 const OUT_JSON = path.join(ROOT, "src", "content", "insight.json");
 
@@ -59,35 +71,37 @@ for (const sourcePath of files) {
   const [label, dateRaw, ...rest] = lines[h].split("·").map((s) => s.trim());
   const lang = /EN\s*#/.test(label) ? "en" : "ko";
   const date = parseDate(dateRaw);
+  // The welcome letter shares its date with the first issue, so it gets its own slug.
+  const welcome = /Welcome\.html$/.test(file);
   const tags = rest
     .join("·")
     .split(/[·,]/)
     .map((t) => t.trim())
     .filter((t) => t && !/^\d+\/\d+~/.test(t));
-  const issues_ = {
+  issues.push({
     lang,
     originalNumber: Number(label.match(/#(\d+)/)[1]),
     number: 0,
     date,
-    slug: date,
+    slug: welcome ? "welcome" : date,
     title: lines[h + 1],
     summary: lines[h - 1] || "",
     tags,
     sourceFile: file,
     sourcePath,
-  };
-  issues.push(issues_);
+  });
 }
 
-// Slug by date so ko/en editions of the same week pair up.
-issues.sort((a, b) => a.date.localeCompare(b.date) || a.lang.localeCompare(b.lang));
+// Slug by date so ko/en editions of the same week pair up. The welcome letter always comes first.
+const isWelcome = (i) => i.slug === "welcome";
+issues.sort((a, b) => isWelcome(b) - isWelcome(a) || a.date.localeCompare(b.date) || a.lang.localeCompare(b.lang));
 
-// The source files have duplicate/missing numbers, so each language is renumbered by
-// publish date (#1, #2, …). Old numbers used by more than one issue are ambiguous and
-// left out of the old→new map used for cross-references.
+// Weekly issues are numbered by publish date (#1, #2, …) per language, matching the source
+// files. The welcome letter is unnumbered (number 0). Old numbers used by more than one
+// issue are ambiguous and left out of the old→new map used for cross-references.
 const renumber = {};
 for (const lang of ["ko", "en"]) {
-  const list = issues.filter((i) => i.lang === lang);
+  const list = issues.filter((i) => i.lang === lang && !isWelcome(i));
   const counts = {};
   for (const it of list) counts[it.originalNumber] = (counts[it.originalNumber] ?? 0) + 1;
   renumber[lang] = {};
@@ -100,6 +114,7 @@ for (const lang of ["ko", "en"]) {
 // Rewrites the header ("Insight #N") and in-body references ("#14에서 다룬", "#14·#15")
 // in the web copy. Source files are never modified.
 function rewriteNumbers(html, it) {
+  if (isWelcome(it)) return html;
   return html
     .replace(/(Insight\s*(?:EN\s*)?#)\d+/g, `$1${it.number}`)
     .replace(/(?<![&\w])#(\d{1,2})(?=·|에)/g, (match, n) => {
@@ -114,10 +129,11 @@ for (const lang of ["ko", "en"]) fs.mkdirSync(path.join(OUT_HTML, lang), { recur
 for (const it of issues) {
   const html = fs.readFileSync(it.sourcePath, "utf8");
   fs.writeFileSync(path.join(OUT_HTML, it.lang, `${it.slug}.html`), rewriteNumbers(html, it));
-  if (it.number !== it.originalNumber) console.log(`${it.lang} ${it.date}: #${it.originalNumber} → #${it.number}`);
+  if (it.number !== it.originalNumber && !isWelcome(it)) console.log(`${it.lang} ${it.date}: #${it.originalNumber} → #${it.number}`);
 }
 
 // sourcePath is a local machine path; keep it out of the committed JSON.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const publicIssues = issues.map(({ sourcePath, ...it }) => it);
 fs.writeFileSync(OUT_JSON, JSON.stringify(publicIssues, null, 2) + "\n");
 console.log(`imported ${issues.length} issues → ${path.relative(ROOT, OUT_JSON)}`);

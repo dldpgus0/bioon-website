@@ -1,0 +1,937 @@
+{
+  "updated": "2026-09-29",
+  "cards": [
+    {
+      "id": "clinical-trial-who",
+      "term": "Clinical trial (WHO definition)",
+      "definition": "Any research study that prospectively assigns human participants or groups of humans to one or more health-related interventions to evaluate the effects on health outcomes.",
+      "example": "Key words: research (not clinical practice), prospective (not retrospective/epidemiological), humans (not animal/pre-clinical), interventions, health outcomes.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "definitions",
+        "trial-basics"
+      ]
+    },
+    {
+      "id": "efficacy",
+      "term": "Efficacy",
+      "definition": "The ability of an intervention to produce the desired result. Its exact definition depends on the trial phase.",
+      "example": "Phase III cancer trial: does it extend survival? CV trial: does an antihypertensive reduce blood pressure?",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "definitions",
+        "trial-basics"
+      ]
+    },
+    {
+      "id": "safety",
+      "term": "Safety",
+      "definition": "Scientific evaluation showing that the probable health benefits of an intervention outweigh its risks, with no unreasonable danger or adverse reactions.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "definitions",
+        "trial-basics"
+      ]
+    },
+    {
+      "id": "population-vs-sample",
+      "term": "Population vs sample",
+      "definition": "Population = the larger group you want to understand (e.g. all patients with a disease). Sample = the subset actually enrolled. Results from the sample are extrapolated to the population, so the sample must be as representative as possible.",
+      "example": "500 diabetic patients from one city representing the wider diabetic population.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "definitions"
+      ]
+    },
+    {
+      "id": "type-1-error",
+      "term": "Type 1 error (α)",
+      "definition": "Concluding that a treatment works when in reality it does not: a false positive. Its probability is α, the significance level.",
+      "example": "Approving an ineffective drug.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "errors"
+      ]
+    },
+    {
+      "id": "type-2-error",
+      "term": "Type 2 error (β)",
+      "definition": "Concluding that a treatment does not work when in reality it does: a false negative. Its probability is β, and power = 1 − β.",
+      "example": "Missing a truly beneficial treatment.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "errors"
+      ]
+    },
+    {
+      "id": "power",
+      "term": "Statistical power",
+      "definition": "The probability that a study detects a true effect if one exists (power = 1 − β).",
+      "example": "Conventionally 80–90%.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "sample-size"
+      ]
+    },
+    {
+      "id": "significance-level",
+      "term": "Significance level (α)",
+      "definition": "The pre-set threshold for deciding whether an observed effect is likely due to chance. It equals the Type 1 error rate.",
+      "example": "Typically α = 0.05; p < 0.05 is called statistically significant.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "descriptive-statistics",
+      "term": "Descriptive statistics",
+      "definition": "Statistics that summarise the main features of a sample (e.g. mean age, proportion male) without drawing conclusions beyond the sample.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "inferential-statistics",
+      "term": "Inferential statistics",
+      "definition": "Statistics that use sample data to generalise to, or test hypotheses about, a larger population, e.g. whether the treatment vs control difference is statistically significant or due to chance.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "continuous-data",
+      "term": "Continuous data",
+      "definition": "Numerical values that can take any value within a range. Summarised with mean/median and SD; compared with t-tests or ANOVA.",
+      "example": "Blood pressure, cholesterol, viral load.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "outcome-types"
+      ]
+    },
+    {
+      "id": "binary-data",
+      "term": "Binary data",
+      "definition": "Outcomes with only two possible values. Summarised as proportions, risk differences or odds ratios; tested with chi-square or logistic regression.",
+      "example": "Alive/dead, success/failure.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "outcome-types"
+      ]
+    },
+    {
+      "id": "time-to-event-data",
+      "term": "Time-to-event (survival) data",
+      "definition": "The time until a specific event occurs, accounting for both whether and when it happens. Analysed with Kaplan–Meier curves and Cox proportional hazards models.",
+      "example": "Time to disease progression, time to death.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "outcome-types"
+      ]
+    },
+    {
+      "id": "mean",
+      "term": "Mean",
+      "definition": "The arithmetic average: the sum of all values divided by the number of observations. Best for symmetric data without extreme outliers, and influenced by extreme values.",
+      "example": "Changing one value from 10 to 20 moved the mean from 3.8 to 4.9 while the median stayed at 3.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "central-tendency"
+      ]
+    },
+    {
+      "id": "median",
+      "term": "Median",
+      "definition": "The middle value when data are ranked; it splits the data 50/50. Preferred when data are skewed or contain outliers.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "central-tendency"
+      ]
+    },
+    {
+      "id": "mode",
+      "term": "Mode",
+      "definition": "The most frequently occurring value in a dataset.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "central-tendency"
+      ]
+    },
+    {
+      "id": "range",
+      "term": "Range",
+      "definition": "Maximum minus minimum. A measure of dispersion that depends only on the two extreme values.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "dispersion"
+      ]
+    },
+    {
+      "id": "variance",
+      "term": "Variance",
+      "definition": "The average of the squared deviations of each value from the mean: calculate the mean, square each (value − mean), sum them, divide by n. (The sample variance divides by n − 1.)",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "dispersion"
+      ]
+    },
+    {
+      "id": "standard-deviation",
+      "term": "Standard deviation (SD)",
+      "definition": "The square root of the variance; the typical spread of values around the mean.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "dispersion"
+      ]
+    },
+    {
+      "id": "normal-distribution",
+      "term": "Normal distribution",
+      "definition": "A symmetric bell-shaped distribution: about 68% of values lie within ±1 SD of the mean (μ) and about 95% within ±2 SD. It underpins many statistical tests.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "confidence-interval",
+      "term": "Confidence interval (CI)",
+      "definition": "A range expressing the uncertainty around a sample estimate (mean, proportion or treatment effect). Usually 95%. A larger sample gives a narrower CI and a more precise estimate.",
+      "example": "Estimating the mean height of all UCL students from a sample of 100.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "interpretation"
+      ]
+    },
+    {
+      "id": "line-of-null-effect",
+      "term": "Line of null effect",
+      "definition": "The value meaning 'no treatment effect': 0 for a difference (e.g. a difference in proportions or means) and 1 for a ratio (OR, RR, HR).",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "interpretation"
+      ]
+    },
+    {
+      "id": "superiority",
+      "term": "Superiority (CI interpretation)",
+      "definition": "Superiority is demonstrated when the CI for the treatment effect lies entirely on the favourable side of the null. If the CI crosses the null, superiority is NOT demonstrated (not the same as proving no effect). If it lies entirely on the unfavourable side, the intervention is inferior.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.2",
+      "tags": [
+        "statistics",
+        "interpretation",
+        "exam-trap"
+      ]
+    },
+    {
+      "id": "consort-diagram",
+      "term": "CONSORT flow diagram",
+      "definition": "A standard figure in RCT papers mapping patient flow through four stages: Enrolment (assessed, excluded, randomised) → Allocation (received / did not receive intervention) → Follow-up (lost to follow-up, discontinued) → Analysis (analysed, excluded from analysis).",
+      "example": "Use it to spot attrition and exclusions that could cause bias.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 0.3",
+      "tags": [
+        "papers",
+        "reporting"
+      ]
+    },
+    {
+      "id": "interventional-study",
+      "term": "Interventional study",
+      "definition": "A study where the researcher intervenes and decides what treatment a participant receives (drug, dose, duration, surgery, lifestyle, device). A well-conducted RCT is arguably the only way to claim causality.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design"
+      ]
+    },
+    {
+      "id": "observational-study",
+      "term": "Observational study",
+      "definition": "A study where the researcher only observes; treatment is chosen by the patient and clinician. It can show association but not causality, and can adjust for known but not unknown confounding factors. Used when an RCT is infeasible or unethical.",
+      "example": "Pregnancy, children, harmful exposures (you can't randomise people to smoke).",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design"
+      ]
+    },
+    {
+      "id": "prognostic-factor",
+      "term": "Prognostic factor",
+      "definition": "A patient characteristic that influences the outcome. Randomisation balances both known (age, sex, disease stage) and unknown (e.g. tumour genetics, lifestyle) prognostic factors between arms.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "randomisation",
+        "bias"
+      ]
+    },
+    {
+      "id": "preclinical",
+      "term": "Pre-clinical stage",
+      "definition": "Lab and animal-model work to establish whether a treatment is safe enough for humans. Only suitable compounds progress. Funnel: 10,000 compounds → <250 preclinical → <5 reach clinical trials → 1 approved (PhRMA 2010).",
+      "example": "Total cost > €1 billion; ~10–12+ years.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases",
+        "drug-development"
+      ]
+    },
+    {
+      "id": "phase-1",
+      "term": "Phase I trial",
+      "definition": "'First-in-human' trial in healthy volunteers, or patients who have failed existing treatments. Aims: tolerability, PK/PD, side effects and toxicity, preliminary activity, and estimating the maximum tolerated dose (MTD).",
+      "example": "~20 participants; 20–100 in the PhRMA figure.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "phase-2",
+      "term": "Phase II trial",
+      "definition": "Patients with the target condition and narrow eligibility (those most likely to benefit). Examines safety and efficacy in more detail, and is the go/no-go decision point for an expensive Phase III.",
+      "example": "100–500 patients.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "phase-3",
+      "term": "Phase III trial",
+      "definition": "Large trial giving a definitive assessment of efficacy against the best currently available treatment (if one exists), plus safety, quality of life and health economics. The basis for marketing approval.",
+      "example": "Hundreds to thousands of patients (1,000–10,000 in the PhRMA figure).",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "phase-4",
+      "term": "Phase IV trial",
+      "definition": "Post-licensing studies, usually by the drug company, of long-term safety and effects in the real-world population, including rare or long-term side effects.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "early-vs-late-phase",
+      "term": "Early phase vs late phase",
+      "definition": "An alternative to the Phase I–IV labels, since designs can blur boundaries (Phase I/II, seamless II→III) and non-drug interventions don't fit the phases. Early phase = safety and initial efficacy; late phase = definitive efficacy.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases"
+      ]
+    },
+    {
+      "id": "mtd",
+      "term": "Maximum tolerated dose (MTD)",
+      "definition": "The largest dose that can be given before unacceptable toxicity appears. Estimated in Phase I and usually carried forward, on the assumption that more drug means more benefit.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases",
+        "dose"
+      ]
+    },
+    {
+      "id": "pk-pd",
+      "term": "Pharmacokinetics (PK) vs pharmacodynamics (PD)",
+      "definition": "PK = what the body does to the drug (absorption, distribution, metabolism, excretion). PD = what the drug does to the body.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "phases",
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "parallel-trial",
+      "term": "Parallel-arm trial",
+      "definition": "Each patient is randomised to one arm only (A vs B, possibly more), and all arms are followed up identically. The most basic and common RCT design.",
+      "example": "TEMSO: teriflunomide 7 mg vs 14 mg vs placebo in relapsing MS, outcome at 12 months.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "rct-designs"
+      ]
+    },
+    {
+      "id": "crossover-trial",
+      "term": "Crossover trial",
+      "definition": "Each patient receives both treatments, and the order (A→B or B→A) is randomised. It allows within-patient comparison, so fewer patients are needed. Only suitable for chronic, stable conditions, where patients are in a similar state at the start of each period.",
+      "example": "Láinez et al. 2007: almotriptan vs ergotamine + caffeine for acute migraine.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "rct-designs"
+      ]
+    },
+    {
+      "id": "factorial-trial",
+      "term": "Factorial trial",
+      "definition": "Two or more simultaneous randomisations (e.g. A vs control-A and B vs control-B, giving 4 groups), answering multiple questions in one trial. You must consider interaction between the treatments.",
+      "example": "REALITY (2×2×2, advanced HIV); FLARE (2×2, favipiravir ± lopinavir/ritonavir in COVID-19).",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "rct-designs"
+      ]
+    },
+    {
+      "id": "cluster-trial",
+      "term": "Cluster randomised trial",
+      "definition": "Groups (town, GP practice, family, school) rather than individuals are randomised, and everyone in a cluster gets the same intervention. Used for public-health interventions, and where people within a cluster are similar or could contaminate each other.",
+      "example": "Brinkman et al. 2016 (Lancet): infant simulator programme to prevent teenage pregnancy; unit of randomisation = school.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "rct-designs"
+      ]
+    },
+    {
+      "id": "meta-analysis",
+      "term": "Meta-analysis",
+      "definition": "Statistically combining the results of multiple trials to estimate an average treatment effect with greater precision, summarising the current evidence.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "evidence-synthesis"
+      ]
+    },
+    {
+      "id": "cohort-study",
+      "term": "Cohort study",
+      "definition": "An observational study that defines a group, measures exposure at recruitment, and follows them (prospectively, or retrospectively through records) to outcome events, looking for exposure–outcome associations.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "observational"
+      ]
+    },
+    {
+      "id": "case-control-study",
+      "term": "Case-control study",
+      "definition": "An observational study comparing cases (with the disease) with controls (without it), often matched on age or socioeconomic status, then looking back at their past exposures to identify risk factors.",
+      "example": "Lung cancer cases vs matched controls without lung cancer.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "observational"
+      ]
+    },
+    {
+      "id": "cross-sectional-study",
+      "term": "Cross-sectional study",
+      "definition": "An observational 'snapshot' measuring exposure and outcome at the same single time point (e.g. a survey). Quick and cheap, but causality is hard to determine because the order of events is unknown.",
+      "example": "Exercise vs weight: do people not exercise because they're overweight, or the reverse?",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.1",
+      "tags": [
+        "study-design",
+        "observational"
+      ]
+    },
+    {
+      "id": "finer",
+      "term": "FINER criteria",
+      "definition": "Criteria for a good research question: Feasible, Interesting, Novel, Ethical, Relevant.",
+      "example": "Standard definition (Hulley et al.)",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.2",
+      "tags": [
+        "research-question"
+      ]
+    },
+    {
+      "id": "picot",
+      "term": "PICO(T)",
+      "definition": "A framework for structuring a research question: Population, Intervention, Comparator, Outcome (+ Time).",
+      "example": "FLARE: early COVID-19 patients / favipiravir ± LPV/r / placebo / upper-respiratory viral load / day 5.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.2, 1.5",
+      "tags": [
+        "research-question"
+      ]
+    },
+    {
+      "id": "estimand",
+      "term": "Estimand",
+      "definition": "A precise description of the treatment effect a trial aims to estimate (ICH E9(R1)). The primary outcome (endpoint) is one of its defining attributes.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.2",
+      "tags": [
+        "research-question",
+        "outcomes"
+      ]
+    },
+    {
+      "id": "primary-outcome",
+      "term": "Primary outcome",
+      "definition": "The main outcome of a trial, defined a priori. It drives the sample-size calculation (and so recruitment targets) and prevents cherry-picking of results.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.2",
+      "tags": [
+        "outcomes"
+      ]
+    },
+    {
+      "id": "surrogate-outcome",
+      "term": "Surrogate outcome",
+      "definition": "An earlier, quicker marker measured before the true clinical outcome and expected to predict it. Common in early-phase trials.",
+      "example": "Viral load in FLARE (instead of hospitalisation or death).",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.2, 1.5",
+      "tags": [
+        "outcomes"
+      ]
+    },
+    {
+      "id": "composite-outcome",
+      "term": "Composite outcome",
+      "definition": "An outcome that combines several events into one endpoint. It avoids choosing between important outcomes and captures more aspects of health.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.2",
+      "tags": [
+        "outcomes"
+      ]
+    },
+    {
+      "id": "placebo",
+      "term": "Placebo",
+      "definition": "An intervention with no therapeutic benefit, identical in look, smell and taste to the active treatment. It enables blinding. Pure placebos: sugar pill, saline, sham surgery. Impure placebos: active substances given for an unrelated condition (e.g. antibiotics in a viral trial).",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups"
+      ]
+    },
+    {
+      "id": "placebo-effect",
+      "term": "Placebo effect",
+      "definition": "Improvement caused by patients' expectations from receiving treatment or being in a trial. It occurs in both arms, and is larger with more invasive or elaborate interventions. True treatment effect = active-arm improvement − placebo-arm improvement.",
+      "example": "Knee surgery vs sham surgery: pain improved in both arms; no significant difference at 2 years.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups"
+      ]
+    },
+    {
+      "id": "no-treatment-control",
+      "term": "No-treatment concurrent control",
+      "definition": "The control arm is recruited at the same time but gets no study treatment, with the same assessment schedule. Used when there's no established treatment and a placebo is unethical or impractical. It doesn't control for the placebo effect, and dropout is higher.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups"
+      ]
+    },
+    {
+      "id": "active-control",
+      "term": "Active control",
+      "definition": "The comparator is a proven active treatment (standard of care). Used when withholding treatment would be unethical. Tests whether the new drug is non-inferior, equivalent or superior. Requires assay sensitivity and usually a larger sample size.",
+      "example": "A typical Phase III oncology RCT.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups"
+      ]
+    },
+    {
+      "id": "dose-comparison-control",
+      "term": "Dose-comparison control",
+      "definition": "Randomising patients to different doses or regimens of the same drug when the optimal dose is unknown. Everyone gets active treatment. Useful for PK and dose-finding, but it may not identify a single optimal dose.",
+      "example": "COVID-19 dexamethasone 6 mg (control) vs 12 mg: no significant difference.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups",
+        "dose"
+      ]
+    },
+    {
+      "id": "external-control",
+      "term": "External (non-concurrent) control",
+      "definition": "Control data come from outside the trial: historical (previous trials), real-world (registries, EHRs) or synthetic. Non-randomised, so everyone gets the new treatment (useful in rare diseases), but bias can't be controlled and efficacy tends to be overestimated.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups"
+      ]
+    },
+    {
+      "id": "synthetic-control",
+      "term": "Synthetic control",
+      "definition": "An external control built from registries, medical records or previous trials, weighted by factors such as age, disease severity and biomarkers to match the trial population and mimic the baseline balance of randomisation.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups"
+      ]
+    },
+    {
+      "id": "add-on-design",
+      "term": "Add-on design",
+      "definition": "All patients receive standard of care, randomised to SoC + new drug vs SoC + placebo. It tests additional benefit beyond current practice. It can't show monotherapy efficacy, and is less useful if the mechanisms of action are similar.",
+      "example": "Common in cancer and heart failure.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups",
+        "study-design"
+      ]
+    },
+    {
+      "id": "early-escape-design",
+      "term": "Early escape design",
+      "definition": "Patients may be randomised to placebo even when SoC exists, but only for a short period. They switch to SoC on a pre-specified event or disease progression. Used only when a short delay won't harm patients.",
+      "example": "Lupus trials: a flare means non-responder, who switches to active treatment.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups",
+        "study-design"
+      ]
+    },
+    {
+      "id": "assay-sensitivity",
+      "term": "Assay sensitivity",
+      "definition": "A trial's ability to distinguish an effective treatment from an ineffective one. Critical in non-inferiority and equivalence trials: it's usually assumed but can't be verified within the trial. Addressed by mirroring previous trials, or by adding a placebo arm (three-arm design).",
+      "example": "Amineptine vs imipramine: no difference between the actives, but placebo matched both in 5 of 6 studies.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups",
+        "non-inferiority",
+        "exam-trap"
+      ]
+    },
+    {
+      "id": "non-inferiority-trial",
+      "term": "Non-inferiority trial",
+      "definition": "A trial testing whether a new treatment is not unacceptably worse than an established active comparator, judged against a pre-set non-inferiority margin. Placebo can't be the comparator. Generally needs larger samples.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "non-inferiority",
+        "study-design"
+      ]
+    },
+    {
+      "id": "three-arm-design",
+      "term": "Three-arm design",
+      "definition": "New treatment + active control + placebo. The placebo arm benchmarks whether the trial can detect a known effective drug, demonstrating assay sensitivity.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3",
+      "tags": [
+        "control-groups",
+        "non-inferiority"
+      ]
+    },
+    {
+      "id": "bias",
+      "term": "Bias",
+      "definition": "Anything that makes a trial's estimate deviate systematically from the true treatment effect, threatening validity and reliability.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "bias"
+      ]
+    },
+    {
+      "id": "randomisation",
+      "term": "Randomisation",
+      "definition": "Allocating participants to arms by chance. It eliminates investigator selection bias, balances known and unknown prognostic factors and group sizes (for power), so groups differ only in the treatment received.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "randomisation"
+      ]
+    },
+    {
+      "id": "allocation-concealment",
+      "term": "Allocation concealment",
+      "definition": "Keeping the upcoming allocation hidden from participants and recruiters until they're enrolled, to prevent selection bias. Done with centralised or online randomisation systems. NOT the same as blinding, and possible even in open-label trials.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "randomisation",
+        "bias",
+        "exam-trap"
+      ]
+    },
+    {
+      "id": "selection-bias",
+      "term": "Selection bias",
+      "definition": "Systematic differences between arms at baseline because recruiters (even subconsciously) choose who gets which treatment. Prevented by randomisation plus allocation concealment.",
+      "example": "Doctors putting healthier patients on the new drug.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "bias"
+      ]
+    },
+    {
+      "id": "performance-bias",
+      "term": "Performance bias",
+      "definition": "Differences in care given by investigators, or in participant behaviour, caused by knowing the allocation. Prevented by blinding.",
+      "example": "Extra tests or monitoring in the new-drug arm.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "bias",
+        "blinding"
+      ]
+    },
+    {
+      "id": "assessment-bias",
+      "term": "Assessment (detection) bias",
+      "definition": "Outcome assessment influenced by knowing the allocation. Subjective outcomes like pain are especially vulnerable. Prevented by blinding outcome assessors.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "bias",
+        "blinding"
+      ]
+    },
+    {
+      "id": "attrition-bias",
+      "term": "Attrition bias",
+      "definition": "Differential withdrawal or loss to follow-up between arms, e.g. patients who know they're on placebo or no treatment drop out.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "bias",
+        "blinding"
+      ]
+    },
+    {
+      "id": "reporting-bias",
+      "term": "Reporting bias",
+      "definition": "Selective reporting of outcomes, symptoms or adverse events because participants know their treatment.",
+      "example": "An MS patient not on the new drug under-reports improvement.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "bias",
+        "blinding"
+      ]
+    },
+    {
+      "id": "blinding",
+      "term": "Blinding (masking)",
+      "definition": "Keeping treatment assignments hidden after allocation, 'until all opportunities for bias have passed' (ICH), so groups are treated and assessed the same way. 'Masking' is the term used in ophthalmology.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding"
+      ]
+    },
+    {
+      "id": "blinding-levels",
+      "term": "Single-blind / double-blind / open-label",
+      "definition": "Single-blind: participant only. Double-blind: participant + investigators (incl. research team and CTU staff). Triple/quadruple: plus others such as outcome assessors. Open-label: nobody blinded. The terms are used inconsistently, so papers should state exactly who was blinded.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding"
+      ]
+    },
+    {
+      "id": "over-encapsulation",
+      "term": "Over-encapsulation",
+      "definition": "Placing different active treatments (or doses) inside identical opaque capsules so patients and clinicians can't tell them apart.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding"
+      ]
+    },
+    {
+      "id": "double-dummy",
+      "term": "Double-dummy design",
+      "definition": "Blinding two treatments with different forms (e.g. tablet vs injection) using a placebo for each: tablet arm = active tablet + placebo injection; injection arm = active injection + placebo tablet.",
+      "example": "FLARE used matching placebos for both favipiravir and LPV/r.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding"
+      ]
+    },
+    {
+      "id": "kit-codes",
+      "term": "Kit codes",
+      "definition": "Unique codes on each drug pack (instead of 'A'/'B' labels), with the decoding list stored securely to keep blinding. Dynamic randomisation methods like minimisation need more sophisticated kit-allocation systems.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding"
+      ]
+    },
+    {
+      "id": "unblinding",
+      "term": "Unblinding (general vs emergency)",
+      "definition": "General: at the end of the trial, after the primary analysis. Emergency: for medical need (overdose, suspected adverse reaction), often by a separate unblinded team; many situations can be managed by assuming the patient got the active drug. Also for regulatory or safety reporting and IDMC review.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding",
+        "safety"
+      ]
+    },
+    {
+      "id": "idmc",
+      "term": "Independent Data Monitoring Committee (IDMC)",
+      "definition": "An independent committee that reviews accumulating trial data, including unblinded safety information, to protect participants.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "safety",
+        "trial-conduct"
+      ]
+    },
+    {
+      "id": "sham-surgery",
+      "term": "Sham surgery",
+      "definition": "A placebo surgical procedure used to blind surgical trials. It raises practical and ethical concerns, and patient and public involvement (PPI) groups are often consulted.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.3, 1.4",
+      "tags": [
+        "blinding",
+        "control-groups",
+        "ethics"
+      ]
+    },
+    {
+      "id": "minimisation",
+      "term": "Minimisation",
+      "definition": "A dynamic randomisation method that allocates each new patient to minimise imbalance in chosen prognostic factors between arms.",
+      "example": "Needs sophisticated kit-code systems (Week 1 · 1.4).",
+      "module": "ICTM0007",
+      "source": "Intro video; Week 1 · 1.4",
+      "tags": [
+        "randomisation"
+      ]
+    },
+    {
+      "id": "permuted-blocks",
+      "term": "Random permuted blocks",
+      "definition": "A randomisation method that allocates patients in blocks (e.g. of 4 or 6) with a random order inside each block, keeping arm sizes balanced throughout recruitment.",
+      "example": "",
+      "module": "ICTM0007",
+      "source": "Intro video",
+      "tags": [
+        "randomisation"
+      ]
+    },
+    {
+      "id": "open-label-bias-mitigation",
+      "term": "Reducing bias when blinding isn't possible",
+      "definition": "(1) Keep allocation concealment; (2) use objective or standardised outcomes (mortality, stroke, viral load, biomarkers); (3) use central outcome review by blinded assessors.",
+      "example": "Surgery, psychotherapy, chemo vs radiotherapy, drugs with obvious side effects, pragmatic trials.",
+      "module": "ICTM0007",
+      "source": "Week 1 · 1.4",
+      "tags": [
+        "blinding",
+        "bias"
+      ]
+    }
+  ]
+}

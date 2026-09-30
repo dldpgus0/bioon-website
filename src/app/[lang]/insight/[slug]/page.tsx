@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -5,7 +6,12 @@ import { EmailFrame } from "@/components/EmailFrame";
 import { formatDate } from "@/components/IssueCard";
 import { icons } from "@/components/Icons";
 import { SubscribeForm } from "@/components/SubscribeForm";
-import { getIssue, getIssueSlugs } from "@/lib/content";
+import { References } from "@/components/References";
+import { IssueCard } from "@/components/IssueCard";
+import { StoryList } from "@/components/StoryList";
+import { getIssue, getIssueReferences, getIssueSlugs, getIssueTakeaway, getRelatedIssues } from "@/lib/content";
+import { issueTag } from "@/lib/issue-tag";
+import { storiesOf } from "@/lib/wiki";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import { roleLabel, topicLabel } from "@/lib/taxonomy";
 
@@ -17,7 +23,25 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/insight/[s
   const lang = await getLocale(params);
   const issue = getIssue(lang, (await params).slug);
   if (!issue) return {};
-  return { title: issue.title, description: issue.summary };
+  // Article metadata for link previews (LinkedIn reads og:*); the image comes from opengraph-image.tsx.
+  const title = `${issueTag(issue)} ${issue.title}`;
+  return {
+    title: issue.title,
+    description: issue.summary,
+    alternates: { canonical: `/${lang}/insight/${issue.slug}` },
+    openGraph: {
+      type: "article",
+      title,
+      description: issue.summary,
+      url: `/${lang}/insight/${issue.slug}`,
+      siteName: "BIO:ON Insight",
+      locale: lang === "ko" ? "ko_KR" : "en_GB",
+      publishedTime: issue.date,
+      authors: [lang === "ko" ? "이예현" : "Yaehyun Lee"],
+      tags: issue.tags,
+    },
+    twitter: { card: "summary_large_image", title, description: issue.summary },
+  };
 }
 
 export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[slug]">) {
@@ -27,6 +51,9 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
   const other = lang === "ko" ? "en" : "ko";
   const issue = getIssue(lang, slug);
   const otherIssue = getIssue(other, slug);
+  const takeaway = getIssueTakeaway(lang, slug);
+  const stories = storiesOf(slug, lang);
+  const related = issue ? getRelatedIssues(issue) : [];
 
   // No edition in this language: show a note linking to the one that exists.
   if (!issue) {
@@ -35,7 +62,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
       <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
         <p className="text-lg text-muted">{dict.insight.noOtherLang}</p>
         <Link href={`/${other}/insight/${slug}`} className="mt-6 inline-block font-semibold text-teal hover:underline">
-          {otherIssue.title} →
+          {otherIssue.title}<span aria-hidden> →</span>
         </Link>
       </div>
     );
@@ -44,12 +71,12 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
   return (
     <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <Link href={`/${lang}/insight`} className="text-sm font-medium text-muted hover:text-ink">
-        ← {dict.insight.back}
+        <span aria-hidden>← </span>{dict.insight.back}
       </Link>
 
       <header className="mt-6">
         <p className="text-sm font-semibold text-teal">
-          BIO:ON Insight #{issue.number} · {formatDate(issue.date, lang)}
+          BIO:ON Insight {issueTag(issue)} · {formatDate(issue.date, lang)}
         </p>
         <h1 className="mt-2 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">{issue.title}</h1>
         <p className="mt-4 leading-relaxed text-muted">{issue.summary}</p>
@@ -62,7 +89,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
           <span className="ml-auto text-sm">
             {otherIssue ? (
               <Link href={`/${other}/insight/${slug}`} hrefLang={other} className="font-semibold text-brand hover:underline">
-                {dict.insight.otherLang} →
+                {dict.insight.otherLang}<span aria-hidden> →</span>
               </Link>
             ) : (
               lang === "ko" && <span className="text-muted">{dict.insight.noOtherLang}</span>
@@ -70,6 +97,28 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
           </span>
         </div>
       </header>
+
+      {takeaway && (
+        <section aria-labelledby="takeaway" className="mt-8 border-l-4 border-brand bg-surface-2 py-5 pl-5 pr-6">
+          <h2 id="takeaway" className="text-xs font-bold uppercase tracking-wider text-brand">
+            {dict.wiki.takeaway}
+          </h2>
+          <p className="mt-2 text-[16px] leading-[1.8] text-ink">{takeaway}</p>
+          <p className="mt-3 flex items-center gap-2 text-xs text-muted">
+            <Image src="/brand/profile.jpg" alt="" width={24} height={24} className="h-6 w-6 rounded-full object-cover" />
+            {dict.about.name} · {dict.wiki.takeawayNote}
+          </p>
+        </section>
+      )}
+
+      {stories.length > 0 && (
+        <section aria-labelledby="stories" className="mt-8">
+          <h2 id="stories" className="mb-3 text-sm font-bold text-ink">
+            {dict.wiki.storiesTitle}
+          </h2>
+          <StoryList stories={stories} lang={lang} dict={dict} />
+        </section>
+      )}
 
       {issue.aiSummary.length > 0 && (
         <section className="mt-8 rounded-2xl border border-teal/30 bg-teal-soft/50 p-6">
@@ -91,7 +140,7 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
             <p className="mt-4 flex flex-wrap items-center gap-1.5 text-sm text-muted">
               <span className="mr-1 font-semibold text-ink">{dict.insight.rolesLabel}</span>
               {issue.roles.map((r) => (
-                <span key={r} className="rounded-md bg-white px-2 py-0.5 text-xs font-medium text-brand">
+                <span key={r} className="rounded-md bg-surface px-2 py-0.5 text-xs font-medium text-brand">
                   {roleLabel(r, lang)}
                 </span>
               ))}
@@ -104,6 +153,31 @@ export default async function IssuePage({ params }: PageProps<"/[lang]/insight/[
       <div className="mt-8">
         <EmailFrame src={`/newsletters/${lang}/${slug}.html`} title={issue.title} />
       </div>
+
+      <div className="mt-8">
+        <References items={getIssueReferences(lang, slug)} title={dict.insight.references} newTab={dict.a11y.newTab} />
+      </div>
+
+      {related.length > 0 && (
+        <section aria-labelledby="related" className="mt-12">
+          <h2 id="related" className="text-lg font-bold text-ink">
+            {dict.wiki.related}
+          </h2>
+          <p className="mt-1 text-sm text-muted">{dict.wiki.relatedSub}</p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            {related.map((r) => (
+              <div key={r.issue.slug} className="flex flex-col">
+                <IssueCard issue={r.issue} dict={dict} />
+                {r.shared.length > 0 && (
+                  <p className="mt-2 text-xs text-muted">
+                    {dict.wiki.shared}: {r.shared.map((e) => e.name).join(", ")}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <aside className="mt-12 rounded-2xl border border-line bg-surface p-6 sm:p-8">
         <h2 className="text-xl font-bold text-ink">{dict.subscribe.title}</h2>

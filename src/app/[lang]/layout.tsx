@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { CookieConsent } from "@/components/CookieConsent";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
+import { siteUrl } from "@/lib/site";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -12,9 +15,18 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   return {
+    metadataBase: new URL(siteUrl),
     title: { default: dict.meta.title, template: "%s · BIO:ON" },
     description: dict.meta.description,
-    alternates: { languages: { ko: "/ko", en: "/en" } },
+    // Search engine ownership checks (Google Search Console, Naver Search Advisor).
+    verification: {
+      google: "YK5fD8bQNWx7mnodTyNMdoqnRxglrUtk15Gm8Gqx07M",
+      other: { "naver-site-verification": "3008120e4548894c6cce3a60a50434ecfe73c5af" },
+    },
+    alternates: {
+      languages: { ko: "/ko", en: "/en" },
+      types: { "application/rss+xml": [{ url: lang === "en" ? "/feed.xml?lang=en" : "/feed.xml", title: "BIO:ON Insight" }] },
+    },
   };
 }
 
@@ -23,7 +35,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang}>
+    // suppressHydrationWarning: next-themes sets the theme class on <html> before hydration.
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
@@ -31,9 +44,21 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         />
       </head>
       <body className="flex min-h-screen flex-col">
+        <ThemeProvider>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+        >
+          {dict.a11y.skip}
+        </a>
         <Header lang={lang} dict={dict} />
-        <main className="flex-1">{children}</main>
+        <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">
+          {children}
+        </main>
         <Footer lang={lang} dict={dict} />
+        </ThemeProvider>
+        {/* GA4 (NEXT_PUBLIC_GA_ID) loads only after the visitor accepts analytics cookies. */}
+        <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} labels={{ ...dict.consent, more: dict.cookies.more }} moreHref={`/${lang}/cookies`} />
       </body>
     </html>
   );

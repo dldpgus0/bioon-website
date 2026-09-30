@@ -27,15 +27,12 @@ export default async function CareerPostPage({ params }: PageProps<"/[lang]/care
   return (
     <article className="mx-auto max-w-2xl px-4 py-10 sm:px-6">
       <Link href={`/${lang}/career`} className="text-sm font-medium text-muted hover:text-ink">
-        ← {dict.career.back}
+        <span aria-hidden>← </span>{dict.career.back}
       </Link>
       <header className="mt-6 border-b border-line pb-8">
         <div className="flex flex-wrap items-center gap-2 text-sm font-semibold">
           <span className="text-teal">{dict.career.categories[post.category]}</span>
           <span className="text-muted">· {formatDate(post.date, lang)}</span>
-          {post.sample && (
-            <span className="rounded-full border border-line px-2 py-0.5 text-xs text-muted">{dict.career.sample}</span>
-          )}
         </div>
         <h1 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">{post.title}</h1>
         <p className="mt-4 text-lg leading-relaxed text-muted">{post.summary}</p>

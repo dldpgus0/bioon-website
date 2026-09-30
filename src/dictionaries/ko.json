@@ -9,13 +9,16 @@
     "resources": "자료실",
     "about": "소개",
     "subscribe": "구독하기",
-    "switchLang": "English"
+    "switchLang": "English",
+    "faq": "자주 묻는 질문",
+    "wiki": "위키",
+    "tools": "도구"
   },
   "home": {
     "eyebrow": "매주 화요일 아침 · 바이오·제약 뉴스레터",
     "title1": "바이오·제약 뉴스를",
     "title2": "커리어 인사이트로",
-    "lede": "지난주 꼭 알아야 할 뉴스 3개를 골라, 쉬운 설명과 국내 시사점, 그리고 어떤 직무에 중요한지까지 인사이트로 정리해 드려요.",
+    "lede": "지난주 꼭 알아야 할 뉴스 3개를 골라, 제가 공부하며 이해한 대로 쉽게 풀고 국내 시사점과 관련 직무까지 정리해요.",
     "ctaSubscribe": "무료로 구독하기",
     "ctaArchive": "지난 호 보기",
     "latest": "최신 인사이트",
@@ -33,9 +36,9 @@
         "href": "/career"
       },
       {
-        "title": "AI 커리어 도구",
-        "body": "자소서·링크드인 AI 피드백과 직무별 AI 모의면접. 곧 공개돼요.",
-        "href": "/career/tools"
+        "title": "도구",
+        "body": "학습 플래시카드, 포모도로 타이머, 면접 질문은행. AI 도구는 Waitlist 오픈.",
+        "href": "/tools"
       },
       {
         "title": "자료실",
@@ -92,12 +95,14 @@
         "upcoming": false
       },
       {
-        "date": "2027.10",
+        "date": "2027.09",
         "title": "MSc 졸업 예정",
         "body": "UCL MSc Biotechnology & Pharmaceutical Management 졸업 예정.",
         "upcoming": true
       }
-    ]
+    ],
+    "inlineTitle": "매주 화요일, 한 주의 바이오 흐름을 메일함으로",
+    "inlineBody": "뉴스 3개와 국내 시사점, 관련 직무까지 5분이면 읽어요. 무료예요."
   },
   "insight": {
     "title": "BIO:ON Insight 아카이브",
@@ -116,26 +121,36 @@
     "questionsLabel": "이 호에서 답할 수 있는 질문",
     "keywordsLabel": "원문 태그",
     "clear": "필터 초기화",
-    "count": "편"
+    "count": "편",
+    "askTitle": "Ask BIO.ON",
+    "askLede": "궁금한 걸 물어보세요. AI가 분석한 요약·키워드로 답이 있는 호를 찾아드려요.",
+    "askPlaceholder": "예: 비만치료제 경쟁 구도는?",
+    "askTry": "이런 질문은 어때요?",
+    "askResults": "개 호에서 찾았어요",
+    "askEmpty": "관련된 호를 찾지 못했어요. 다른 단어로 물어보세요.",
+    "askClear": "검색 지우기",
+    "filtersLabel": "호 필터",
+    "resultsLabel": "호 목록",
+    "references": "참고 자료"
   },
   "career": {
     "title": "바이오 커리어",
-    "lede": "바이오·제약 업계 취업을 준비하는 분들을 위한 실전 가이드. 뉴스레터에서 다룬 업계 이슈를 면접과 자소서에 연결해 드려요.",
+    "lede": "바이오·제약 취업을 준비하며 제가 찾아보고 정리한 것들이에요. 전문적인 판단이 필요한 부분은 공개된 업계 자료와 현직자 사례를 출처와 함께 모았어요.",
     "categories": {
       "all": "전체",
       "linkedin": "링크드인",
-      "resume": "자소서·이력서",
-      "interview": "면접",
-      "industry": "업계·채용 동향"
+      "resume": "자소서·영문 CV",
+      "interview": "면접 (STAR)",
+      "industry": "업계·채용 동향",
+      "ai": "AI·리서치 도구"
     },
     "roles": "관련 직무",
-    "sample": "샘플 글",
     "back": "커리어로",
     "empty": "아직 글이 없어요.",
     "toolsTitle": "AI 커리어 도구",
     "toolsLede": "직무에 맞춘 AI 피드백으로 서류와 면접을 준비하세요.",
     "toolsCta": "도구 둘러보기",
-    "comingSoon": "곧 공개",
+    "comingSoon": "Waitlist 오픈",
     "tools": [
       {
         "title": "AI 자소서·링크드인 피드백",
@@ -146,32 +161,103 @@
         "body": "직무와 회사 유형(국내 제약사·외국계·바이오텍)을 고르면 질문 5개가 나와요. 최근 BIO:ON 이슈를 활용한 산업 이해도 질문도 포함돼요."
       }
     ],
-    "toolsNotify": "공개되면 뉴스레터로 가장 먼저 알려드려요."
+    "toolsNotify": "공개되면 뉴스레터로 가장 먼저 알려드려요.",
+    "interview": {
+      "title": "바이오 면접 질문은행",
+      "lede": "BIO:ON이 다룬 실제 업계 뉴스로 만든 면접 질문이에요. 직무를 고르고, 먼저 스스로 답해 본 뒤 답변 포인트와 비교해 보세요.",
+      "cardTitle": "면접 질문은행",
+      "cardBody": "뉴스레터 이슈로 만든 직무별 면접 질문과 답변 포인트.",
+      "cta": "질문 풀어보기",
+      "allRoles": "전체 직무",
+      "rolesLabel": "직무",
+      "kinds": {
+        "concept": "개념 설명",
+        "issue": "업계 이슈",
+        "case": "실무 상황"
+      },
+      "count": "개 질문",
+      "practice": "🎲 무작위 5문제",
+      "practiceAll": "전체 질문 보기",
+      "practiceOn": "연습 모드: 무작위로 고른 5문제예요. 답을 먼저 소리 내어 말해 본 뒤 포인트를 열어 보세요.",
+      "show": "답변 포인트 보기",
+      "why": "면접관이 보는 것",
+      "points": "답변 포인트",
+      "source": "이 질문의 근거",
+      "issue": "호",
+      "note": "질문과 답변 포인트는 AI가 뉴스레터 본문을 바탕으로 만들고 제가 검토했어요. 모범답안이 아니라 답변의 뼈대로 활용하세요.",
+      "lockedTitle": "🔒 나머지 답변 포인트는 구독자 전용이에요",
+      "lockedBody": "이메일을 입력하면 모든 질문의 답변 포인트가 바로 열려요.",
+      "lockedShow": "🔒 답변 포인트 열기",
+      "freeNote": "처음 3개 질문의 답변 포인트는 누구나 볼 수 있어요.",
+      "filtersLabel": "질문 필터",
+      "download": "질문 모음 PDF로 받기"
+    },
+    "filtersLabel": "글 분류"
   },
   "resources": {
     "title": "자료실",
-    "lede": "무료 자료는 이메일만 입력하면 받아볼 수 있어요. 유료 자료는 준비 중이에요.",
+    "lede": "무료 자료는 이메일만 입력하면 바로 받을 수 있어요. 'Waitlist 오픈' 표시가 있는 자료는 준비 중이에요.",
     "free": "무료",
     "paid": "유료",
     "comingSoon": "준비 중",
     "getFree": "이메일로 받기",
     "items": [
       {
-        "title": "바이오 직무 면접 질문 모음",
-        "body": "제약영업·CRA·RA·BD 직무별 빈출 질문과 답변 구조.",
-        "type": "free"
+        "id": "acronyms",
+        "type": "free",
+        "format": "html",
+        "title": "바이오 약어 치트시트 143",
+        "body": "뉴스와 채용공고에 자주 나오는 약어 143개를 개발·허가·CMC·약물감시·시장접근·BD·과학 7개 분야로 정리. 풀네임, 한 줄 뜻, 관련 직무, 분야별 공식 출처 포함."
       },
       {
+        "id": "interview-questions",
+        "type": "free",
+        "format": "html",
+        "title": "바이오 직무 면접 질문 모음 + STAR",
+        "body": "BIO:ON 이슈로 만든 뉴스 기반 질문 34개와 답변 포인트, 직무별(영업·BD·RA·임상·CMC) 역량·상황 질문 25개, STAR(R) 답변 구조. 역량 질문은 기출이 아니라 제가 정리한 자주 나오는 유형이에요."
+      },
+      {
+        "id": "trial-data-guide",
+        "type": "free",
+        "format": "html",
+        "title": "임상·허가 원자료 찾기 가이드",
+        "body": "ClinicalTrials.gov, Drugs@FDA, EMA EPAR, 의약품안전나라에서 임상 결과와 허가 문서를 직접 찾고 읽는 법. 실제 뉴스 한 건을 원자료까지 따라가는 실습 포함."
+      },
+      {
+        "id": "pipeline-tracker",
+        "type": "free",
+        "format": "xlsx",
+        "title": "파이프라인·딜 트래커 (엑셀)",
+        "body": "관심 회사의 파이프라인, 경쟁 약물, 기술이전·M&A 딜, 면접 준비 메모를 한 파일에서 관리하는 엑셀 템플릿. 실제 딜 예시와 계약금 비중 자동 계산 포함."
+      },
+      {
+        "id": "cv-template",
+        "type": "free",
+        "format": "docx",
+        "title": "영문 CV 템플릿 + 링크드인 체크리스트",
+        "body": "ATS를 통과하는 한 단 구성 영문 CV 워드 템플릿과, 형식·내용·링크드인 체크리스트. 대학 커리어센터와 채용 가이드 출처 포함."
+      },
+      {
+        "id": "glossary",
+        "type": "free",
+        "format": "html",
         "title": "바이오 산업 용어집",
-        "body": "뉴스레터 '이번 주의 단어'를 모은 용어집.",
-        "type": "free"
-      },
-      {
-        "title": "직무별 자소서 템플릿",
-        "body": "합격 자소서 구조를 분석한 직무별 템플릿.",
-        "type": "paid"
+        "body": "뉴스레터 '이번 주의 단어' 17개를 정의와 비유로 정리한 용어집."
       }
-    ]
+    ],
+    "unlockTitle": "이메일을 입력하고 바로 받기",
+    "consent": "입력하면 BIO:ON Insight 뉴스레터(무료, 매주 화요일)를 구독하게 돼요. 언제든 수신 거부할 수 있어요.",
+    "unlocked": "구독자 인증 완료",
+    "download": "자료 열기 (PDF 저장 가능)",
+    "formats": {
+      "html": "웹 문서 · PDF 저장",
+      "xlsx": "엑셀 (.xlsx)",
+      "docx": "워드 (.docx) + 체크리스트",
+      "online": "온라인 연습 · 이메일 없이"
+    },
+    "downloadFile": "엑셀 파일 받기",
+    "cancel": "닫기",
+    "practice": "바로 연습하기"
   },
   "subscribe": {
     "title": "BIO:ON Insight 구독하기",
@@ -192,8 +278,8 @@
   "about": {
     "title": "소개",
     "name": "이예현",
-    "role": "BIO:ON 에디터 · UCL MSc Biotechnology & Pharmaceutical Management",
-    "bio": "BIO:ON은 바이오·제약 뉴스를 한국 관점과 커리어 관점으로 풀어내는 뉴스레터예요. 매주 해외 원문 뉴스를 직접 읽고, 업계를 준비하는 사람에게 진짜 필요한 맥락을 더합니다.",
+    "role": "UCL MSc Biotechnology & Pharmaceutical Management 재학 · BIO:ON을 쓰고 있어요",
+    "bio": "BIO:ON은 제가 바이오·제약 업계를 공부하며 매주 쓰는 뉴스레터예요. 해외 원문 뉴스를 직접 읽고, 이해한 내용을 한국 관점과 커리어 관점으로 정리해 나눠요. 저도 배우는 중이라, 전문적인 판단이 필요한 부분은 공개된 업계 자료와 현직자 인터뷰를 출처와 함께 모아요.",
     "aiTitle": "AI와 함께 만드는 미디어",
     "aiLede": "BIO:ON은 기획부터 발행까지 AI를 워크플로우에 녹여 운영해요. 이 사이트 역시 Claude Code와 함께 직접 설계하고 코딩했어요.",
     "aiSteps": [
@@ -218,7 +304,7 @@
     "educationTitle": "학력",
     "education": [
       {
-        "date": "2026.09 – 2027.10",
+        "date": "2026.09 – 2027.09",
         "degree": "MSc Biotechnology & Pharmaceutical Management",
         "school": "University College London (UCL)",
         "note": "졸업 예정"
@@ -229,10 +315,329 @@
         "school": "University College London (UCL)",
         "note": "졸업"
       }
+    ],
+    "recruit": {
+      "title": "채용 담당자분들께",
+      "lede": "2027년에 시작하는 졸업생 프로그램과 인턴십을 찾고 있어요.",
+      "facts": [
+        [
+          "관심 직무",
+          "제약 공급망·오퍼레이션, 인허가(RA), 커머셜·마켓 액세스"
+        ],
+        [
+          "시작 가능",
+          "2027년 (UCL 석사 수료 후)"
+        ],
+        [
+          "지역",
+          "영국 · 한국"
+        ],
+        [
+          "언어",
+          "한국어 · 영어 (원어민 수준)"
+        ]
+      ],
+      "highlightsTitle": "주요 경험",
+      "highlights": [
+        "국방부 육군정보통신학교 주관 AI·빅데이터 융합 경진대회 우수상: 의약품 수요 예측·재고 최적화 방안 (약 200개 결선 팀 중, 4인 팀)",
+        "육군 의무병 복무: 의약품·의무물자 점검·재고관리 표준운영절차(SOP)를 개정해 부대 전체에 채택",
+        "BIO:ON Insight: 2026년 6월부터 한·영 주간 바이오·제약 뉴스레터를 출처와 함께 발행 중",
+        "UCL 약리학 학사 (2:1), 약리학과 학생 대표 (2021–2023)"
+      ],
+      "linkedin": "링크드인 프로필",
+      "email": "이메일",
+      "cv": "CV 다운로드 (PDF)",
+      "emailCopied": "이메일 주소를 복사했어요"
+    }
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "lede": "BIO:ON Insight 뉴스레터와 사이트에 대해 자주 받는 질문을 모았어요.",
+    "more": "더 궁금한 게 있으면 이메일로 물어봐 주세요.",
+    "sections": [
+      {
+        "title": "뉴스레터",
+        "items": [
+          {
+            "q": "BIO:ON Insight는 어떤 뉴스레터인가요?",
+            "a": "매주 화요일 아침, 지난주 글로벌 바이오·제약 핵심 뉴스 3개를 골라 쉬운 설명, 국내 시사점, 관련 직무까지 정리해 보내드려요. 이번 주의 단어, 딥다이브, 주가가 움직인 종목, 다음 주 일정도 함께 담겨요."
+          },
+          {
+            "q": "구독료가 있나요?",
+            "a": "없어요. 뉴스레터는 무료예요. 자료실의 일부 유료 자료는 준비 중이에요."
+          },
+          {
+            "q": "누가 만드나요?",
+            "a": "UCL에서 약리학(BSc Pharmacology)을 전공하고 MSc Biotechnology & Pharmaceutical Management 과정을 밟고 있는 이예현이 공부하며 직접 해외 원문을 읽고 써요.",
+            "link": {
+              "href": "/about",
+              "label": "소개 보기"
+            }
+          },
+          {
+            "q": "영문판도 있나요?",
+            "a": "네. 2026년 8월부터 영문판 이메일을 따로 발행하고 있어요. 웹 아카이브에서는 1호부터 모든 호를 영어로 읽을 수 있어요(초기 호는 웹 전용 번역본이에요). 영문판을 받으려면 영어 사이트에서 구독하세요.",
+            "link": {
+              "href": "/insight",
+              "label": "아카이브 보기"
+            }
+          }
+        ]
+      },
+      {
+        "title": "구독 관리",
+        "items": [
+          {
+            "q": "한국어판과 영문판을 둘 다 받을 수 있나요?",
+            "a": "네. 한국어 사이트와 영어 사이트에서 같은 이메일로 한 번씩 구독하면 두 판을 모두 받아요."
+          },
+          {
+            "q": "메일이 오지 않아요.",
+            "a": "스팸함이나 프로모션 탭을 먼저 확인해 주세요. 발신 주소를 주소록에 추가하면 다음 호부터 받은편지함으로 와요. 그래도 없다면 이메일로 알려 주세요."
+          },
+          {
+            "q": "구독은 어떻게 취소하나요?",
+            "a": "매주 받는 메일 맨 아래의 수신 거부 링크를 누르면 바로 취소돼요."
+          },
+          {
+            "q": "제 개인정보는 어떻게 쓰이나요?",
+            "a": "구독할 때 받는 건 이름과 이메일뿐이에요. 뉴스레터 발송에만 쓰고, 이메일 발송 서비스 스티비(Stibee)에서 관리해요. 방문 통계용 Google Analytics 쿠키는 화면 아래 배너에서 허용한 경우에만 켜지고, 푸터의 '쿠키 설정'에서 언제든 바꿀 수 있어요."
+          }
+        ]
+      },
+      {
+        "title": "콘텐츠와 AI",
+        "items": [
+          {
+            "q": "AI를 어떻게 쓰나요?",
+            "a": "해외 기사 수집과 1차 번역, 호별 요약·주제 분류, 면접 질문 초안 등에 AI를 써요. 모든 내용은 제가 원문과 대조해 검수하고, 사이트에서 AI가 만든 요약·분류에는 따로 표시해요."
+          },
+          {
+            "q": "주가 섹션은 투자 조언인가요?",
+            "a": "아니에요. 뉴스와 함께 주가가 어느 방향으로 움직였는지 보여주는 단순 도식이에요. 정확한 시세는 증권사 차트에서 확인하고, 투자 판단은 스스로 해 주세요."
+          },
+          {
+            "q": "지난 호는 어디서 볼 수 있나요?",
+            "a": "인사이트 아카이브에 모든 호가 있어요. 주제·직무로 고르거나, Ask BIO.ON 검색창에 궁금한 걸 물어보면 관련된 호를 찾아드려요.",
+            "link": {
+              "href": "/insight",
+              "label": "Ask BIO.ON 써보기"
+            }
+          }
+        ]
+      },
+      {
+        "title": "커리어",
+        "items": [
+          {
+            "q": "커리어 콘텐츠는 누구를 위한 건가요?",
+            "a": "바이오·제약 업계 취업을 준비하는 학생과 주니어를 위한 거예요. 뉴스레터에서 다룬 이슈를 면접·자소서·링크드인에 연결하는 방법을 다뤄요."
+          },
+          {
+            "q": "면접 준비에 쓸 수 있는 게 있나요?",
+            "a": "면접 질문은행에 뉴스레터 이슈로 만든 직무별 면접 질문과 답변 포인트가 있어요. 무작위 5문제로 연습할 수도 있어요. AI 모의면접과 AI 자소서 피드백은 준비 중이에요.",
+            "link": {
+              "href": "/career/interview",
+              "label": "질문은행 보기"
+            }
+          },
+          {
+            "q": "협업이나 문의는 어떻게 하나요?",
+            "a": "이메일(yaehyun.lee59@gmail.com)이나 링크드인으로 연락 주세요."
+          }
+        ]
+      }
     ]
   },
   "footer": {
-    "tagline": "바이오·제약 뉴스를 커리어 인사이트로.",
-    "built": "Next.js와 Claude Code로 제작"
+    "tagline": "바이오·제약 뉴스를 커리어 인사이트로."
+  },
+  "a11y": {
+    "skip": "본문으로 건너뛰기",
+    "home": "BIO:ON 홈",
+    "menu": "메뉴",
+    "mainNav": "주 메뉴",
+    "footerNav": "사이트 링크",
+    "newTab": "새 창에서 열림",
+    "rss": "RSS 피드",
+    "theme": "다크 모드 전환"
+  },
+  "waitlist": {
+    "badge": "Waitlist 오픈",
+    "join": "대기자 명단 등록",
+    "title": "대기자 명단에 등록하기",
+    "lede": "공개되면 이메일로 가장 먼저 알려드려요. 등록하면 BIO:ON Insight 뉴스레터(무료, 매주 화요일)도 함께 받아요. 언제든 수신 거부할 수 있어요.",
+    "success": "대기자 명단에 등록됐어요! 공개되면 가장 먼저 알려드릴게요.",
+    "close": "닫기",
+    "heading": "준비 중인 콘텐츠",
+    "kinds": {
+      "guide": "가이드",
+      "tool": "AI 도구",
+      "resource": "자료"
+    }
+  },
+  "wiki": {
+    "title": "BIO:ON 위키",
+    "lede": "뉴스레터에서 다룬 뉴스 51건을 분류와 기업·약물별로 정리한 제 공부 노트예요.",
+    "categoriesTitle": "분류",
+    "entitiesTitle": "기업·약물·규제기관",
+    "types": {
+      "company": "기업",
+      "drug": "약물",
+      "regulator": "규제기관"
+    },
+    "storyCount": "건",
+    "seeAll": "전체 보기",
+    "issueRef": "#{n}호",
+    "timeline": "다룬 뉴스",
+    "coMentioned": "함께 등장한",
+    "back": "위키로",
+    "storiesTitle": "이 호의 뉴스",
+    "related": "관련 인사이트",
+    "relatedSub": "같은 기업·약물이나 주제를 다룬 다른 호",
+    "shared": "공통",
+    "takeaway": "이번 주 제가 배운 것",
+    "takeawayNote": "이 호 뉴스레터에 쓴 '에디터 인사이트'를 그대로 옮겼어요.",
+    "categoryFilter": "분류",
+    "metaTitle": "위키",
+    "entityLede": "BIO:ON Insight에서 {name}을(를) 다룬 뉴스 {n}건이에요.",
+    "popularTitle": "자주 다룬 기업·약물",
+    "recentTitle": "최근 정리한 뉴스",
+    "allEntities": "전체 기업·약물 목록 보기"
+  },
+  "consent": {
+    "text": "방문 통계를 보기 위해 Google Analytics 쿠키를 쓰고 싶어요. 어떤 글이 많이 읽히는지만 확인하고, 허용하지 않아도 사이트는 똑같이 쓸 수 있어요.",
+    "accept": "허용",
+    "decline": "거부",
+    "settings": "쿠키 설정"
+  },
+  "cookies": {
+    "title": "쿠키 안내",
+    "lede": "이 사이트가 어떤 쿠키와 브라우저 저장 공간을 왜 쓰는지 정리했어요.",
+    "necessaryTitle": "꼭 필요한 것 (동의 없이 작동)",
+    "necessaryNote": "요청하신 기능을 제공하는 데 필요해서 동의 없이 쓰고, 개인을 식별하는 정보는 담지 않아요.",
+    "analyticsTitle": "방문 통계 (동의한 경우에만)",
+    "analyticsNote": "배너에서 '허용'을 누른 경우에만 켜져요. 거부하면 Google Analytics는 불러오지도 않아요.",
+    "cols": {
+      "name": "이름",
+      "purpose": "용도",
+      "duration": "보관 기간",
+      "type": "종류"
+    },
+    "items": {
+      "lead": {
+        "purpose": "자료실에서 이메일을 입력한 뒤 무료 자료를 열 수 있게 해 줘요. 발급 시각과 서명만 들어 있고 이메일·이름은 담지 않아요.",
+        "duration": "1년",
+        "type": "쿠키 (HttpOnly)"
+      },
+      "consent": {
+        "purpose": "방문 통계 쿠키를 허용했는지 거부했는지 기억해요.",
+        "duration": "직접 지울 때까지",
+        "type": "브라우저 저장 공간"
+      },
+      "theme": {
+        "purpose": "다크 모드·라이트 모드 선택을 기억해요.",
+        "duration": "직접 지울 때까지",
+        "type": "브라우저 저장 공간"
+      },
+      "ga": {
+        "purpose": "방문자를 구분해 방문 수를 셀 수 있게 해요 (Google Analytics).",
+        "duration": "2년",
+        "type": "쿠키 (Google)"
+      },
+      "gaid": {
+        "purpose": "방문 세션 상태를 유지해요 (Google Analytics).",
+        "duration": "2년",
+        "type": "쿠키 (Google)"
+      }
+    },
+    "changeTitle": "선택을 바꾸려면",
+    "changeBody": "페이지 맨 아래의 '쿠키 설정'을 누르면 배너가 다시 나와요. 브라우저 설정에서 쿠키와 사이트 데이터를 지워도 돼요.",
+    "sourcesTitle": "출처",
+    "updated": "최종 확인: 2026년 9월 29일",
+    "more": "자세히"
+  },
+  "flashcards": {
+    "title": "학습 플래시카드",
+    "lede": "UCL 석사 과정에서 공부하며 정리한 임상시험·통계 개념 카드예요. 카드를 뒤집어 보며 바로 연습할 수 있어요.",
+    "note": "수업을 들으며 제가 정리한 개인 학습 노트예요. 공식 강의 자료가 아니니, 중요한 정의는 ICH E9(R1)·CONSORT 같은 공개 기준과 함께 확인해 주세요.",
+    "allModules": "전체 모듈",
+    "allTopics": "전체 주제",
+    "shuffle": "섞기",
+    "reset": "진도 초기화",
+    "known": "알아요",
+    "cards": "장",
+    "prev": "← 이전",
+    "next": "다음 →",
+    "again": "다시 볼게요",
+    "gotIt": "알아요 ✓",
+    "flipHint": "클릭하거나 Space를 눌러 뒤집기",
+    "keys": "Space 뒤집기 · ←/→ 이동 · K 알아요 · A 다시 보기 · F 전체화면",
+    "example": "예시 · 메모",
+    "trap": "헷갈리기 쉬움",
+    "knownChip": "✓ 알아요",
+    "empty": "이 조건에 맞는 카드가 없어요.",
+    "updated": "업데이트",
+    "flip": "카드 뒤집기",
+    "back": "도구로",
+    "fullscreen": "전체화면",
+    "exitFullscreen": "전체화면 끄기"
+  },
+  "tools": {
+    "title": "도구",
+    "lede": "공부와 취업 준비에 바로 쓰는 도구를 모았어요. 모두 무료이고, 로그인 없이 쓸 수 있어요.",
+    "studyTitle": "공부 도구",
+    "careerTitle": "커리어 도구",
+    "open": "열기",
+    "back": "도구로",
+    "cards": {
+      "flashcards": {
+        "icon": "🗂️",
+        "title": "학습 플래시카드",
+        "body": "임상시험·통계 개념 카드를 뒤집어 보며 연습해요. 모르는 카드만 골라 다시 볼 수 있어요."
+      },
+      "pomodoro": {
+        "icon": "⏱️",
+        "title": "포모도로 타이머",
+        "body": "25분 집중, 5분 휴식. 집중하는 동안 브라운 노이즈·빗소리·앰비언트 사운드를 틀어 줘요."
+      },
+      "interview": {
+        "icon": "🎙️",
+        "title": "면접 질문은행",
+        "body": "뉴스레터 이슈로 만든 직무별 면접 질문과 답변 포인트, 무작위 5문제 연습."
+      }
+    }
+  },
+  "pomodoro": {
+    "title": "포모도로 타이머",
+    "lede": "집중과 휴식을 번갈아 가며 공부해요. 집중하는 동안 잔잔한 소리를 틀어 줄 수 있어요.",
+    "phaseLabel": "단계",
+    "phases": {
+      "focus": "집중",
+      "short": "짧은 휴식",
+      "long": "긴 휴식"
+    },
+    "start": "시작",
+    "pause": "일시정지",
+    "reset": "초기화",
+    "skip": "건너뛰기",
+    "sessions": "완료한 집중",
+    "longEvery": "{n}번마다 긴 휴식",
+    "keys": "Space로 시작·일시정지 · F 전체화면",
+    "settings": "설정",
+    "min": "분",
+    "soundTitle": "집중 사운드",
+    "sounds": {
+      "off": "끄기",
+      "brown": "브라운 노이즈",
+      "rain": "빗소리",
+      "ambient": "앰비언트"
+    },
+    "volume": "볼륨",
+    "breakSound": "쉬는 시간에도 소리 켜기",
+    "autoNext": "다음 단계 자동 시작",
+    "soundNote": "소리는 브라우저에서 직접 만들어 내는 소리라 파일 다운로드나 저작권 걱정이 없어요. 단계가 끝나면 짧은 알림음이 울려요. 설정은 이 브라우저에만 저장돼요.",
+    "fullscreen": "전체화면",
+    "exitFullscreen": "전체화면 끄기"
   }
 }

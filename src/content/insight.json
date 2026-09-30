@@ -2,6 +2,34 @@
   {
     "lang": "en",
     "originalNumber": 1,
+    "number": 0,
+    "date": "2026-06-07",
+    "slug": "welcome",
+    "title": "Hello — this is BIO:ON Insight 👋",
+    "summary": "Thanks for subscribing to BIO:ON Insight. Here's what will land in your inbox every Tuesday morning.",
+    "tags": [
+      "Welcome letter",
+      "What to expect"
+    ],
+    "sourceFile": "BIO.ON Insight EN Welcome.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 1,
+    "number": 0,
+    "date": "2026-06-07",
+    "slug": "welcome",
+    "title": "반가워요, BIO:ON Insight입니다 👋",
+    "summary": "BIO:ON Insight를 구독해 주셔서 감사해요. 앞으로 매주 화요일 아침 받게 될 뉴스레터를 소개할게요.",
+    "tags": [
+      "웰컴 레터",
+      "구독 안내"
+    ],
+    "sourceFile": "BIO.ON Insight Welcome.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 1,
     "number": 1,
     "date": "2026-06-07",
     "slug": "2026-06-07",

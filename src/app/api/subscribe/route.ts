@@ -3,6 +3,11 @@
 // English editions can be sent to separate groups.
 // Env: STIBEE_API_KEY, STIBEE_LIST_ID, and optionally STIBEE_GROUP_KO / STIBEE_GROUP_EN
 // (group IDs from Stibee → 주소록 → 그룹). Without a group ID the group step is skipped.
+// A successful sign-up also sets the lead-magnet unlock cookie (see src/lib/lead.ts), so
+// subscribing from a gated download or tool opens it straight away.
+import { cookies } from "next/headers";
+import { LEAD_COOKIE, leadCookieOptions, leadCookieValue } from "@/lib/lead";
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const STIBEE = "https://api.stibee.com/v2";
 
@@ -11,6 +16,8 @@ export async function POST(request: Request) {
   const email = typeof body?.email === "string" ? body.email.trim() : "";
   const name = typeof body?.name === "string" ? body.name.trim().slice(0, 50) : "";
   const lang = body?.lang === "en" ? "en" : "ko";
+  // Where the sign-up came from (e.g. "resource:glossary"), for the logs.
+  const source = typeof body?.source === "string" && /^[a-z0-9:_-]{1,40}$/.test(body.source) ? body.source : "subscribe";
   if (!EMAIL_RE.test(email) || email.length > 64) {
     return Response.json({ error: "invalid_email" }, { status: 400 });
   }
@@ -23,7 +30,8 @@ export async function POST(request: Request) {
   if (!apiKey || !listId) {
     // Lets the form be exercised locally before Stibee is wired up.
     if (process.env.NODE_ENV !== "production") {
-      console.log(`[subscribe] (mock, Stibee not configured) ${lang} ${email}`);
+      console.log(`[subscribe] (mock, Stibee not configured) ${lang} ${source} ${email}`);
+      await unlock();
       return Response.json({ ok: true, mock: true });
     }
     return Response.json({ error: "not_configured" }, { status: 503 });
@@ -59,5 +67,11 @@ export async function POST(request: Request) {
     }
   }
 
+  console.log(`[subscribe] ok ${lang} ${source}`);
+  await unlock();
   return Response.json({ ok: true });
+}
+
+async function unlock() {
+  (await cookies()).set(LEAD_COOKIE, leadCookieValue(), leadCookieOptions());
 }

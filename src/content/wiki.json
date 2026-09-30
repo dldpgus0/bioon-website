@@ -1,0 +1,877 @@
+{
+  "_meta": {
+    "note": "Story-level index of BIO:ON Insight issues for the wiki: each issue's three news stories with a main category and the companies, drugs and regulators they involve. Written from each issue's Top 3 stories and source list; entity names follow the newsletter's spelling."
+  },
+  "categories": {
+    "fda": {
+      "ko": "FDA·허가",
+      "en": "FDA Approvals",
+      "desc": {
+        "ko": "허가, 거절(CRL), 자문위원회, 임상 보류, 규제 판정",
+        "en": "Approvals, complete response letters, advisory committees, clinical holds and regulatory rulings"
+      }
+    },
+    "clinical": {
+      "ko": "임상 결과",
+      "en": "Clinical Trials",
+      "desc": {
+        "ko": "임상 데이터 발표, 성공과 실패, 임상 중단",
+        "en": "Trial readouts, successes and failures, and halted trials"
+      }
+    },
+    "market": {
+      "ko": "시장 동향",
+      "en": "Market Trends",
+      "desc": {
+        "ko": "처방·약가·보험 등재, 특허·소송, 공급망과 리콜",
+        "en": "Prescriptions, pricing and coverage, patents and litigation, supply and recalls"
+      }
+    },
+    "pipeline": {
+      "ko": "파이프라인·딜",
+      "en": "Pipeline Analysis",
+      "desc": {
+        "ko": "기술이전·M&A, 파트너십, 투자 유치, 플랫폼과 파이프라인",
+        "en": "Licensing and M&A, partnerships, financing, platforms and pipelines"
+      }
+    }
+  },
+  "entities": {
+    "lilly": {
+      "type": "company",
+      "ko": "일라이 릴리",
+      "en": "Eli Lilly"
+    },
+    "gsk": {
+      "type": "company",
+      "ko": "GSK",
+      "en": "GSK"
+    },
+    "merck": {
+      "type": "company",
+      "ko": "머크(MSD)",
+      "en": "Merck & Co."
+    },
+    "bms": {
+      "type": "company",
+      "ko": "BMS",
+      "en": "Bristol Myers Squibb"
+    },
+    "moderna": {
+      "type": "company",
+      "ko": "모더나",
+      "en": "Moderna"
+    },
+    "jnj": {
+      "type": "company",
+      "ko": "존슨앤드존슨(J&J)",
+      "en": "Johnson & Johnson"
+    },
+    "roche": {
+      "type": "company",
+      "ko": "로슈",
+      "en": "Roche"
+    },
+    "novartis": {
+      "type": "company",
+      "ko": "노바티스",
+      "en": "Novartis"
+    },
+    "astrazeneca": {
+      "type": "company",
+      "ko": "아스트라제네카",
+      "en": "AstraZeneca"
+    },
+    "akeso": {
+      "type": "company",
+      "ko": "아케소",
+      "en": "Akeso"
+    },
+    "summit": {
+      "type": "company",
+      "ko": "서밋 테라퓨틱스",
+      "en": "Summit Therapeutics"
+    },
+    "gilead": {
+      "type": "company",
+      "ko": "길리어드",
+      "en": "Gilead"
+    },
+    "novo": {
+      "type": "company",
+      "ko": "노보 노디스크",
+      "en": "Novo Nordisk"
+    },
+    "hanmi": {
+      "type": "company",
+      "ko": "한미약품",
+      "en": "Hanmi Pharmaceutical"
+    },
+    "takeda": {
+      "type": "company",
+      "ko": "Takeda",
+      "en": "Takeda"
+    },
+    "insilico": {
+      "type": "company",
+      "ko": "Insilico Medicine",
+      "en": "Insilico Medicine"
+    },
+    "abbvie": {
+      "type": "company",
+      "ko": "AbbVie",
+      "en": "AbbVie"
+    },
+    "apogee": {
+      "type": "company",
+      "ko": "Apogee Therapeutics",
+      "en": "Apogee Therapeutics"
+    },
+    "nuvalent": {
+      "type": "company",
+      "ko": "Nuvalent",
+      "en": "Nuvalent"
+    },
+    "revmed": {
+      "type": "company",
+      "ko": "Revolution Medicines",
+      "en": "Revolution Medicines"
+    },
+    "crispr": {
+      "type": "company",
+      "ko": "CRISPR Therapeutics",
+      "en": "CRISPR Therapeutics"
+    },
+    "zenas": {
+      "type": "company",
+      "ko": "Zenas BioPharma",
+      "en": "Zenas BioPharma"
+    },
+    "bpgbio": {
+      "type": "company",
+      "ko": "BPGbio",
+      "en": "BPGbio"
+    },
+    "rocketone": {
+      "type": "company",
+      "ko": "Rocket One",
+      "en": "Rocket One"
+    },
+    "biothera": {
+      "type": "company",
+      "ko": "Bio-Thera",
+      "en": "Bio-Thera"
+    },
+    "biontech": {
+      "type": "company",
+      "ko": "BioNTech",
+      "en": "BioNTech"
+    },
+    "orion": {
+      "type": "company",
+      "ko": "Orion Pharma",
+      "en": "Orion Pharma"
+    },
+    "carsgen": {
+      "type": "company",
+      "ko": "CARsgen",
+      "en": "CARsgen"
+    },
+    "corxel": {
+      "type": "company",
+      "ko": "Corxel",
+      "en": "Corxel"
+    },
+    "hansoh": {
+      "type": "company",
+      "ko": "한소제약",
+      "en": "Hansoh"
+    },
+    "xaira": {
+      "type": "company",
+      "ko": "Xaira Therapeutics",
+      "en": "Xaira Therapeutics"
+    },
+    "biogen": {
+      "type": "company",
+      "ko": "Biogen",
+      "en": "Biogen"
+    },
+    "relation": {
+      "type": "company",
+      "ko": "Relation Therapeutics",
+      "en": "Relation Therapeutics"
+    },
+    "replimune": {
+      "type": "company",
+      "ko": "Replimune",
+      "en": "Replimune"
+    },
+    "khartis": {
+      "type": "company",
+      "ko": "Khartis Therapeutics",
+      "en": "Khartis Therapeutics"
+    },
+    "fresenius": {
+      "type": "company",
+      "ko": "Fresenius Kabi",
+      "en": "Fresenius Kabi"
+    },
+    "amylyx": {
+      "type": "company",
+      "ko": "에이미릭스",
+      "en": "Amylyx"
+    },
+    "regenxbio": {
+      "type": "company",
+      "ko": "리젠엑스바이오",
+      "en": "Regenxbio"
+    },
+    "ionis": {
+      "type": "company",
+      "ko": "아이오니스",
+      "en": "Ionis"
+    },
+    "merida": {
+      "type": "company",
+      "ko": "메리다 바이오사이언스",
+      "en": "Merida Biosciences"
+    },
+    "ultragenyx": {
+      "type": "company",
+      "ko": "울트라제닉스",
+      "en": "Ultragenyx"
+    },
+    "dualitas": {
+      "type": "company",
+      "ko": "Dualitas",
+      "en": "Dualitas"
+    },
+    "innocare": {
+      "type": "company",
+      "ko": "이노케어",
+      "en": "InnoCare"
+    },
+    "fda": {
+      "type": "regulator",
+      "ko": "미국 FDA",
+      "en": "US FDA"
+    },
+    "nmpa": {
+      "type": "regulator",
+      "ko": "중국 NMPA",
+      "en": "China NMPA"
+    },
+    "uk-reg": {
+      "type": "regulator",
+      "ko": "영국 규제당국",
+      "en": "UK regulator"
+    },
+    "keytruda": {
+      "type": "drug",
+      "ko": "키트루다",
+      "en": "Keytruda"
+    },
+    "ivonescimab": {
+      "type": "drug",
+      "ko": "이보네시맙",
+      "en": "ivonescimab"
+    },
+    "foundayo": {
+      "type": "drug",
+      "ko": "Foundayo",
+      "en": "Foundayo"
+    },
+    "daraxonrasib": {
+      "type": "drug",
+      "ko": "daraxonrasib",
+      "en": "daraxonrasib"
+    },
+    "tirzepatide": {
+      "type": "drug",
+      "ko": "티르제파타이드",
+      "en": "tirzepatide"
+    },
+    "retatrutide": {
+      "type": "drug",
+      "ko": "레타트루타이드",
+      "en": "retatrutide"
+    },
+    "camizestrant": {
+      "type": "drug",
+      "ko": "카미제스트란트",
+      "en": "camizestrant"
+    },
+    "wegovy": {
+      "type": "drug",
+      "ko": "위고비",
+      "en": "Wegovy"
+    },
+    "pluvicto": {
+      "type": "drug",
+      "ko": "플루빅토",
+      "en": "Pluvicto"
+    },
+    "volrustomig": {
+      "type": "drug",
+      "ko": "볼루스토믹",
+      "en": "volrustomig"
+    },
+    "avexitide": {
+      "type": "drug",
+      "ko": "아벡시티드",
+      "en": "avexitide"
+    },
+    "obexelimab": {
+      "type": "drug",
+      "ko": "obexelimab",
+      "en": "obexelimab"
+    },
+    "tecvayli": {
+      "type": "drug",
+      "ko": "Tecvayli·Talvey",
+      "en": "Tecvayli & Talvey"
+    },
+    "alimatravir": {
+      "type": "drug",
+      "ko": "알리마트라비르",
+      "en": "alimatravir"
+    },
+    "zenbexus": {
+      "type": "drug",
+      "ko": "Zenbexus",
+      "en": "Zenbexus"
+    },
+    "fayuvi": {
+      "type": "drug",
+      "ko": "Fayuvi",
+      "en": "Fayuvi"
+    },
+    "rgx121": {
+      "type": "drug",
+      "ko": "RGX-121",
+      "en": "RGX-121"
+    },
+    "rp1": {
+      "type": "drug",
+      "ko": "RP1",
+      "en": "RP1"
+    },
+    "pumitamig": {
+      "type": "drug",
+      "ko": "pumitamig",
+      "en": "pumitamig"
+    },
+    "satricel": {
+      "type": "drug",
+      "ko": "사트리카브타젠",
+      "en": "satricabtagene autoleucel"
+    },
+    "diranersen": {
+      "type": "drug",
+      "ko": "diranersen",
+      "en": "diranersen"
+    },
+    "risvutatug": {
+      "type": "drug",
+      "ko": "risvutatug rezetecan",
+      "en": "risvutatug rezetecan"
+    },
+    "tyenne": {
+      "type": "drug",
+      "ko": "Tyenne",
+      "en": "Tyenne"
+    }
+  },
+  "stories": {
+    "2026-06-07": [
+      {
+        "cat": "clinical",
+        "ko": "케임브리지 AI 설계 백신, 인체 임상 통과",
+        "en": "Cambridge's AI-designed vaccine clears a human trial",
+        "entities": []
+      },
+      {
+        "cat": "clinical",
+        "ko": "daraxonrasib, 췌장암 3상에서 생존기간 개선",
+        "en": "Daraxonrasib improves survival in a pancreatic cancer Phase 3",
+        "entities": [
+          "revmed",
+          "daraxonrasib"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "CRISPR Therapeutics 유전자편집 파이프라인",
+        "en": "CRISPR Therapeutics' gene-editing pipeline",
+        "entities": [
+          "crispr"
+        ]
+      }
+    ],
+    "2026-06-09": [
+      {
+        "cat": "fda",
+        "ko": "Zenas, obexelimab IgG4 연관 질환 BLA 제출",
+        "en": "Zenas files a BLA for obexelimab in IgG4-related disease",
+        "entities": [
+          "zenas",
+          "obexelimab"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "BPGbio BPM31510, 교모세포종 2상 ASCO 발표",
+        "en": "BPGbio's BPM31510 glioblastoma Phase 2 at ASCO",
+        "entities": [
+          "bpgbio"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "바이오에서 AI·우주로, Rocket One 리브랜딩 주가 급등",
+        "en": "Rocket One's biotech-to-AI rebrand sends its stock soaring",
+        "entities": [
+          "rocketone"
+        ]
+      }
+    ],
+    "2026-06-15": [
+      {
+        "cat": "pipeline",
+        "ko": "GSK, Nuvalent 106억 달러 인수",
+        "en": "GSK acquires Nuvalent for $10.6B",
+        "entities": [
+          "gsk",
+          "nuvalent"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "길리어드·머크, 주 1회 경구 HIV 병용요법 3상 긍정 결과",
+        "en": "Gilead and Merck report positive Phase 3 for a once-weekly oral HIV regimen",
+        "entities": [
+          "gilead",
+          "merck"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "ADA 2026 학회, K-바이오 데이터 발표",
+        "en": "ADA 2026: Korean biotechs present data",
+        "entities": []
+      }
+    ],
+    "2026-06-16": [
+      {
+        "cat": "fda",
+        "ko": "Bio-Thera, 골리무맙 바이오시밀러 FDA 허가",
+        "en": "Bio-Thera wins FDA approval for golimumab biosimilars",
+        "entities": [
+          "biothera",
+          "fda"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "BioNTech·BMS pumitamig, ROSETTA Lung-02 중간 2상 데이터",
+        "en": "BioNTech and BMS: pumitamig ROSETTA Lung-02 interim Phase 2 data",
+        "entities": [
+          "biontech",
+          "bms",
+          "pumitamig"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "Orion Pharma ODM-212, 경구 pan-TEAD 억제제 첫 1상 결과",
+        "en": "Orion Pharma's oral pan-TEAD inhibitor ODM-212: first Phase 1 results",
+        "entities": [
+          "orion"
+        ]
+      }
+    ],
+    "2026-06-30": [
+      {
+        "cat": "fda",
+        "ko": "세계 최초 고형암 CAR-T, CARsgen 사트리카브타젠 중국 허가",
+        "en": "World's first solid-tumour CAR-T: CARsgen's satri-cel approved in China",
+        "entities": [
+          "carsgen",
+          "satricel",
+          "nmpa"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "모더나 mRNA-6007, 인비보 CAR-T 자가면역 프로그램 공개",
+        "en": "Moderna unveils mRNA-6007, an in vivo CAR-T programme for autoimmunity",
+        "entities": [
+          "moderna"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "Corxel 경구 GLP-1 후보물질 2상 성공",
+        "en": "Corxel's oral GLP-1 candidate succeeds in Phase 2",
+        "entities": [
+          "corxel"
+        ]
+      }
+    ],
+    "2026-07-06": [
+      {
+        "cat": "pipeline",
+        "ko": "Takeda×Insilico, 6억 달러 AI 신약 파트너십",
+        "en": "Takeda × Insilico: $600M AI drug discovery partnership",
+        "entities": [
+          "takeda",
+          "insilico"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "제네릭사들, 릴리 티르제파타이드 특허 무효 도전",
+        "en": "Generic makers challenge Lilly's tirzepatide patents",
+        "entities": [
+          "lilly",
+          "tirzepatide"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "AbbVie, Apogee Therapeutics 109억 달러 인수",
+        "en": "AbbVie to acquire Apogee Therapeutics for $10.9B",
+        "entities": [
+          "abbvie",
+          "apogee"
+        ]
+      }
+    ],
+    "2026-07-12": [
+      {
+        "cat": "market",
+        "ko": "릴리 경구 비만약 Foundayo 처방 부진, PBM 등재 공백",
+        "en": "Lilly's oral obesity pill Foundayo starts slowly amid PBM coverage gaps",
+        "entities": [
+          "lilly",
+          "foundayo"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "GSK×한소 ADC, 소세포폐암 3상 생존 엔드포인트 달성",
+        "en": "GSK × Hansoh ADC meets its survival endpoint in small cell lung cancer Phase 3",
+        "entities": [
+          "gsk",
+          "hansoh",
+          "risvutatug"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "Xaira Therapeutics, 빅파마 공동개발 파트너십 모색",
+        "en": "Xaira Therapeutics explores Big Pharma co-development deals",
+        "entities": [
+          "xaira"
+        ]
+      }
+    ],
+    "2026-07-19": [
+      {
+        "cat": "clinical",
+        "ko": "Biogen diranersen, 타우 표적 2상 데이터 (AAIC)",
+        "en": "Biogen's tau-targeting diranersen: Phase 2 data at AAIC",
+        "entities": [
+          "biogen",
+          "diranersen"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "FDA, 신약 거절 편지(CRL) 공개 재개",
+        "en": "FDA resumes publishing complete response letters",
+        "entities": [
+          "fda"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "Foundayo 처방 추적, PBM 등재 지연이 부진 원인",
+        "en": "Foundayo prescriptions: delayed PBM listings behind the slow start",
+        "entities": [
+          "lilly",
+          "foundayo"
+        ]
+      }
+    ],
+    "2026-07-28": [
+      {
+        "cat": "clinical",
+        "ko": "릴리 레타트루타이드 3상, 체중 22.6% 감소",
+        "en": "Lilly's retatrutide Phase 3: 22.6% weight loss",
+        "entities": [
+          "lilly",
+          "retatrutide"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "J&J Tecvayli·Talvey 병용, 다발골수종 진행 위험 89% 감소",
+        "en": "J&J's Tecvayli–Talvey combo cuts multiple myeloma progression risk by 89%",
+        "entities": [
+          "jnj",
+          "tecvayli"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "머크 알리마트라비르, 월 1회 경구 HIV 예방약 조기 공급 전략",
+        "en": "Merck's once-monthly oral HIV prevention alimatravir: early supply strategy",
+        "entities": [
+          "merck",
+          "alimatravir"
+        ]
+      }
+    ],
+    "2026-08-04": [
+      {
+        "cat": "market",
+        "ko": "J&J 탈크 소송 7.6만 건, 55억 달러 합의 제시",
+        "en": "J&J offers $5.5B to settle 76,000 talc lawsuits",
+        "entities": [
+          "jnj"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "GSK×Relation, 1.1억 달러 AI 표적 발굴 파트너십",
+        "en": "GSK × Relation: $110M AI target discovery partnership",
+        "entities": [
+          "gsk",
+          "relation"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "Replimune RP1, 두 번의 CRL 뒤 FDA 자문위 통과",
+        "en": "Replimune's RP1 wins an FDA advisory vote after two CRLs",
+        "entities": [
+          "replimune",
+          "rp1",
+          "fda"
+        ]
+      }
+    ],
+    "2026-08-18": [
+      {
+        "cat": "fda",
+        "ko": "BMS Zenbexus, 세계 최초 CELMoD 표적단백질분해제 FDA 승인",
+        "en": "BMS's Zenbexus: first CELMoD protein degrader approved by the FDA",
+        "entities": [
+          "bms",
+          "zenbexus",
+          "fda"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "Khartis Therapeutics, 9,500만 달러 시리즈 A",
+        "en": "Khartis Therapeutics raises a $95M Series A",
+        "entities": [
+          "khartis"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "Fresenius Kabi Tyenne, 유리 이물질로 리콜",
+        "en": "Fresenius Kabi recalls Tyenne over glass particles",
+        "entities": [
+          "fresenius",
+          "tyenne"
+        ]
+      }
+    ],
+    "2026-08-25": [
+      {
+        "cat": "clinical",
+        "ko": "머크·모더나 mRNA 흑색종 백신 + 키트루다 병용",
+        "en": "Merck and Moderna's mRNA melanoma vaccine with Keytruda",
+        "entities": [
+          "merck",
+          "moderna",
+          "keytruda"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "아스트라제네카, 볼루스토믹 1차 폐암 임상 중단",
+        "en": "AstraZeneca halts volrustomig's first-line lung cancer trial",
+        "entities": [
+          "astrazeneca",
+          "volrustomig"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "에이미릭스 아벡시티드 3상 LUCIDITY 성공",
+        "en": "Amylyx's avexitide succeeds in the Phase 3 LUCIDITY trial",
+        "entities": [
+          "amylyx",
+          "avexitide"
+        ]
+      }
+    ],
+    "2026-09-01": [
+      {
+        "cat": "pipeline",
+        "ko": "로슈, 한미약품 비만치료제 후보에 최대 25억 달러",
+        "en": "Roche bets up to $2.5B on Hanmi's obesity candidate",
+        "entities": [
+          "roche",
+          "hanmi"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "리젠엑스바이오 RGX-121, FDA 임상 보류",
+        "en": "FDA places Regenxbio's RGX-121 on clinical hold",
+        "entities": [
+          "regenxbio",
+          "rgx121",
+          "fda"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "아케소 이보네시맙, 폐암 3상에서 키트루다 대비 생존 우위",
+        "en": "Akeso's ivonescimab beats Keytruda on survival in a lung cancer Phase 3",
+        "entities": [
+          "akeso",
+          "ivonescimab",
+          "keytruda"
+        ]
+      }
+    ],
+    "2026-09-08": [
+      {
+        "cat": "fda",
+        "ko": "아이오니스, 알렉산더병 첫 질환조절 RNA 치료제 FDA 허가",
+        "en": "Ionis wins FDA approval for the first disease-modifying RNA therapy in Alexander disease",
+        "entities": [
+          "ionis",
+          "fda"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "자가면역 CAR-T 환자 사망, 노바티스·BMS 임상 중단",
+        "en": "Patient deaths in autoimmune CAR-T trials; Novartis and BMS pause",
+        "entities": [
+          "novartis",
+          "bms"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "릴리, 메리다 바이오사이언스 최대 29억 달러 인수",
+        "en": "Lilly to acquire Merida Biosciences for up to $2.9B",
+        "entities": [
+          "lilly",
+          "merida"
+        ]
+      }
+    ],
+    "2026-09-15": [
+      {
+        "cat": "clinical",
+        "ko": "서밋·아케소 이보네시맙, 최종 생존 데이터로 키트루다 추월",
+        "en": "Summit and Akeso's ivonescimab tops Keytruda on final overall survival",
+        "entities": [
+          "summit",
+          "akeso",
+          "ivonescimab",
+          "keytruda"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "자문위 반대에도 FDA 승인, 아스트라제네카 카미제스트란트",
+        "en": "FDA approves AstraZeneca's camizestrant despite a negative advisory vote",
+        "entities": [
+          "astrazeneca",
+          "camizestrant",
+          "fda"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "노보 노디스크 경구 위고비, 청소년 비만 3상",
+        "en": "Novo Nordisk's oral Wegovy in an adolescent obesity Phase 3",
+        "entities": [
+          "novo",
+          "wegovy"
+        ]
+      }
+    ],
+    "2026-09-22": [
+      {
+        "cat": "market",
+        "ko": "노바티스, 플루빅토 공급망에 12억 달러 제조 계약",
+        "en": "Novartis signs a $1.2B manufacturing deal for Pluvicto supply",
+        "entities": [
+          "novartis",
+          "pluvicto"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "울트라제닉스, 산필리포증후군 유전자치료제 Fayuvi FDA 허가",
+        "en": "Ultragenyx wins FDA approval for Fayuvi, a Sanfilippo syndrome gene therapy",
+        "entities": [
+          "ultragenyx",
+          "fayuvi",
+          "fda"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "로슈×Dualitas, 이중항체 스크리닝에 최대 10억 달러",
+        "en": "Roche × Dualitas: up to $1B for bispecific antibody screening",
+        "entities": [
+          "roche",
+          "dualitas"
+        ]
+      }
+    ],
+    "2026-09-29": [
+      {
+        "cat": "pipeline",
+        "ko": "릴리, 이노케어와 최대 33.5억 달러 5개 타깃 계약",
+        "en": "Lilly commits up to $3.35B to InnoCare for five targets",
+        "entities": [
+          "lilly",
+          "innocare"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "영국 규제당국, 릴리 보도자료의 미승인 약 홍보 판정",
+        "en": "UK regulator rules a Lilly press release promoted an unlicensed drug",
+        "entities": [
+          "lilly",
+          "uk-reg"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "경구 GLP-1 가격 경쟁, Foundayo가 신규 처방 3건 중 1건",
+        "en": "Oral GLP-1 price war: Foundayo takes one in three new prescriptions",
+        "entities": [
+          "lilly",
+          "foundayo"
+        ]
+      }
+    ]
+  }
+}

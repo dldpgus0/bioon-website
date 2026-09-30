@@ -9,13 +9,16 @@
     "resources": "Resources",
     "about": "About",
     "subscribe": "Subscribe",
-    "switchLang": "한국어"
+    "switchLang": "한국어",
+    "faq": "FAQ",
+    "wiki": "Wiki",
+    "tools": "Tools"
   },
   "home": {
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
     "title1": "Biotech & pharma news,",
     "title2": "turned into career insight",
-    "lede": "Last week's three stories that matter — explained plainly, with the Korean market angle and which roles they matter for.",
+    "lede": "Last week's three stories that matter — explained the way I worked them out while studying, with the Korean market angle and the roles they matter for.",
     "ctaSubscribe": "Subscribe for free",
     "ctaArchive": "Browse past issues",
     "latest": "Latest insight",
@@ -29,17 +32,17 @@
       },
       {
         "title": "Bio careers",
-        "body": "LinkedIn, résumé and interview guides for aspiring pharma sales, CRA, RA and BD professionals.",
+        "body": "LinkedIn, Cover Letter, ATS-Optimized Résumé and Behavioral Interview (STAR) guides for pharma sales, CRA, RA and BD roles.",
         "href": "/career"
       },
       {
-        "title": "AI career tools",
-        "body": "AI feedback on your résumé and LinkedIn, plus role-specific AI mock interviews. Coming soon.",
-        "href": "/career/tools"
+        "title": "Tools",
+        "body": "Study flashcards, a Pomodoro timer and the interview question bank. AI tools: waitlist open.",
+        "href": "/tools"
       },
       {
         "title": "Resources",
-        "body": "Free and paid downloads like interview question banks and résumé templates.",
+        "body": "Free downloads: interview question bank, acronym cheatsheet, pipeline tracker and an ATS-Optimized Résumé template.",
         "href": "/resources"
       }
     ],
@@ -92,16 +95,18 @@
         "upcoming": false
       },
       {
-        "date": "Oct 2027",
+        "date": "Sep 2027",
         "title": "MSc graduation (expected)",
         "body": "MSc Biotechnology & Pharmaceutical Management, UCL.",
         "upcoming": true
       }
-    ]
+    ],
+    "inlineTitle": "The week in biotech, in your inbox every Tuesday",
+    "inlineBody": "Three stories with the Korean market angle and the roles they matter for — a five-minute read, free."
   },
   "insight": {
     "title": "BIO:ON Insight archive",
-    "lede": "Every issue we have published. Filter by AI-classified topic or by the roles each issue matters for.",
+    "lede": "Every issue I've published. Filter by AI-classified topic or by the roles each issue matters for.",
     "all": "All",
     "issue": "Issue",
     "read": "Read",
@@ -116,29 +121,39 @@
     "questionsLabel": "Questions this issue answers",
     "keywordsLabel": "Original tags",
     "clear": "Clear filters",
-    "count": " issues"
+    "count": " issues",
+    "askTitle": "Ask BIO.ON",
+    "askLede": "Ask a question and I'll point you to the issues that answer it, using each issue's AI summary and keywords.",
+    "askPlaceholder": "e.g. Who is winning the obesity drug race?",
+    "askTry": "Try asking",
+    "askResults": " matching issues",
+    "askEmpty": "No matching issues. Try different words.",
+    "askClear": "Clear search",
+    "filtersLabel": "Issue filters",
+    "resultsLabel": "Issue list",
+    "references": "References"
   },
   "career": {
     "title": "Bio careers",
-    "lede": "Practical guides for breaking into biotech and pharma — connecting the industry stories we cover to your interviews and applications.",
+    "lede": "Things I've looked up and written down while preparing for a biotech or pharma career. Where expert judgement is needed, I've gathered published industry sources and accounts from people in the roles — with sources.",
     "categories": {
       "all": "All",
       "linkedin": "LinkedIn",
-      "resume": "Résumé & cover letter",
-      "interview": "Interviews",
-      "industry": "Industry & hiring trends"
+      "resume": "Cover Letter & Résumé",
+      "interview": "Behavioral Interview (STAR)",
+      "industry": "Industry & hiring trends",
+      "ai": "AI & research tools"
     },
     "roles": "Relevant roles",
-    "sample": "Sample post",
     "back": "Back to career",
     "empty": "No posts yet.",
     "toolsTitle": "AI career tools",
     "toolsLede": "Prepare your applications and interviews with role-specific AI feedback.",
     "toolsCta": "See the tools",
-    "comingSoon": "Coming soon",
+    "comingSoon": "Waitlist open",
     "tools": [
       {
-        "title": "AI résumé & LinkedIn feedback",
+        "title": "AI feedback on your ATS-Optimized Résumé, Cover Letter & LinkedIn",
         "body": "Pick a target role and paste your text to get section-by-section feedback on structure, role keywords and specificity — with rewrite suggestions. Nothing you paste is stored."
       },
       {
@@ -146,32 +161,103 @@
         "body": "Choose a role and company type (Korean pharma, multinational, biotech) and answer five questions — including industry questions drawn from recent BIO:ON issues."
       }
     ],
-    "toolsNotify": "Subscribers hear first when they launch."
+    "toolsNotify": "Subscribers hear first when they launch.",
+    "interview": {
+      "title": "Biotech interview question bank",
+      "lede": "Interview questions built from the real industry news BIO:ON has covered. Pick a role, answer out loud first, then compare with the answer points.",
+      "cardTitle": "Interview question bank",
+      "cardBody": "Role-by-role interview questions and answer points, built from newsletter issues.",
+      "cta": "Practise now",
+      "allRoles": "All roles",
+      "rolesLabel": "Role",
+      "kinds": {
+        "concept": "Explain a concept",
+        "issue": "Industry issue",
+        "case": "On-the-job scenario"
+      },
+      "count": " questions",
+      "practice": "🎲 5 random questions",
+      "practiceAll": "Show all questions",
+      "practiceOn": "Practice mode: five questions picked at random. Say your answer out loud first, then open the points.",
+      "show": "Show answer points",
+      "why": "What the interviewer is looking for",
+      "points": "Answer points",
+      "source": "Based on",
+      "issue": "Issue",
+      "note": "Questions and answer points were drafted by AI from the newsletter text and reviewed by me. Use them as a skeleton for your answer, not a script.",
+      "lockedTitle": "🔒 The remaining answer points are for subscribers",
+      "lockedBody": "Enter your email to unlock the answer points for every question.",
+      "lockedShow": "🔒 Unlock answer points",
+      "freeNote": "Answer points for the first three questions are open to everyone.",
+      "filtersLabel": "Question filters",
+      "download": "Get the question pack as a PDF"
+    },
+    "filtersLabel": "Post categories"
   },
   "resources": {
     "title": "Resources",
-    "lede": "Free resources are yours for an email address. Paid resources are on the way.",
+    "lede": "Free resources unlock as soon as you enter your email. Items marked Waitlist open are on the way.",
     "free": "Free",
     "paid": "Paid",
     "comingSoon": "Coming soon",
     "getFree": "Get it by email",
     "items": [
       {
-        "title": "Bio interview question bank",
-        "body": "Frequent questions and answer structures for pharma sales, CRA, RA and BD roles.",
-        "type": "free"
+        "id": "acronyms",
+        "type": "free",
+        "format": "html",
+        "title": "Biotech acronym cheatsheet (143)",
+        "body": "143 acronyms from news stories and job ads, grouped into seven areas: development, regulatory, CMC, pharmacovigilance, market access, BD and science. Full names, one-line meanings, related roles and official sources for each area."
       },
       {
+        "id": "interview-questions",
+        "type": "free",
+        "format": "html",
+        "title": "Interview question bank + Behavioral Interview (STAR)",
+        "body": "34 news-based questions with answer points built from BIO:ON issues, 25 competency and scenario questions by role (sales, BD, RA, clinical, CMC), and the STAR(R) answer structure. The competency questions are common question types I compiled, not real past questions."
+      },
+      {
+        "id": "trial-data-guide",
+        "type": "free",
+        "format": "html",
+        "title": "Finding trial and approval data: a guide",
+        "body": "How to find and read trial results and approval documents yourself on ClinicalTrials.gov, Drugs@FDA, EMA EPARs and Korea's Drug Safety Nara — with an exercise tracing one news story back to its sources."
+      },
+      {
+        "id": "pipeline-tracker",
+        "type": "free",
+        "format": "xlsx",
+        "title": "Pipeline & deal tracker (Excel)",
+        "body": "An Excel template to track a company's pipeline, competing drugs, licensing and M&A deals, and interview prep notes in one file. Includes real deal examples and an automatic upfront-share calculation."
+      },
+      {
+        "id": "cv-template",
+        "type": "free",
+        "format": "docx",
+        "title": "ATS-Optimized Résumé template + LinkedIn checklist",
+        "body": "A single-column Word résumé template built to get through applicant tracking systems (ATS), plus format, content and LinkedIn checklists — sourced from university careers services and hiring guides."
+      },
+      {
+        "id": "glossary",
+        "type": "free",
+        "format": "html",
         "title": "Biotech glossary",
-        "body": "Every 'Word of the Week' from the newsletter, in one place.",
-        "type": "free"
-      },
-      {
-        "title": "Role-specific résumé templates",
-        "body": "Templates built from the structure of successful applications.",
-        "type": "paid"
+        "body": "All 17 Words of the Week from the newsletter, each with a definition and an analogy."
       }
-    ]
+    ],
+    "unlockTitle": "Enter your email to get it now",
+    "consent": "You'll be subscribed to the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
+    "unlocked": "Unlocked for subscribers",
+    "download": "Open resource (save as PDF)",
+    "formats": {
+      "html": "Web page · save as PDF",
+      "xlsx": "Excel (.xlsx)",
+      "docx": "Word (.docx) + checklist",
+      "online": "Online practice · no sign-up"
+    },
+    "downloadFile": "Download Excel file",
+    "cancel": "Cancel",
+    "practice": "Start practising"
   },
   "subscribe": {
     "title": "Subscribe to BIO:ON Insight",
@@ -192,8 +278,8 @@
   "about": {
     "title": "About",
     "name": "Yaehyun Lee",
-    "role": "Editor, BIO:ON · MSc Biotechnology & Pharmaceutical Management, UCL",
-    "bio": "BIO:ON is a newsletter that reads biotech and pharma news through a Korean lens and a career lens. Each week I read the original global coverage and add the context people preparing for the industry actually need.",
+    "role": "MSc student, Biotechnology & Pharmaceutical Management, UCL · I write BIO:ON",
+    "bio": "BIO:ON is the newsletter I write each week while learning about the biotech and pharma industry. I read the original global coverage and share what I've understood through a Korean lens and a career lens. I'm still learning, so where expert judgement is needed I draw on published industry sources and public interviews with people in the roles, always cited.",
     "aiTitle": "A media project built with AI",
     "aiLede": "BIO:ON runs on an AI-assisted workflow from research to publishing. This site itself was designed and coded with Claude Code.",
     "aiSteps": [
@@ -218,7 +304,7 @@
     "educationTitle": "Education",
     "education": [
       {
-        "date": "Sep 2026 – Oct 2027",
+        "date": "Sep 2026 – Sep 2027",
         "degree": "MSc Biotechnology & Pharmaceutical Management",
         "school": "University College London (UCL)",
         "note": "Expected"
@@ -229,10 +315,329 @@
         "school": "University College London (UCL)",
         "note": "Graduated"
       }
+    ],
+    "recruit": {
+      "title": "For recruiters",
+      "lede": "I'm looking for graduate programmes and internships starting in 2027.",
+      "facts": [
+        [
+          "Target roles",
+          "Pharma supply chain & operations, regulatory affairs, commercial & market access"
+        ],
+        [
+          "Available from",
+          "2027 (after completing my MSc at UCL)"
+        ],
+        [
+          "Location",
+          "United Kingdom · South Korea"
+        ],
+        [
+          "Languages",
+          "Korean · English (native/bilingual)"
+        ]
+      ],
+      "highlightsTitle": "Highlights",
+      "highlights": [
+        "Excellence Award, AI & Big Data Convergence Competition (Army Signal School, Ministry of National Defense): a pharmaceutical demand forecasting and inventory optimisation concept, selected from around 200 finalist teams (team of 4)",
+        "Medic, Republic of Korea Army: revised the unit's SOPs for inspecting and managing medicines and medical supplies, adopted unit-wide",
+        "BIO:ON Insight: writing a weekly Korean/English biotech and pharma newsletter with cited sources since June 2026",
+        "BSc Pharmacology, UCL (2:1); elected Academic Representative for the pharmacology cohort (2021–2023)"
+      ],
+      "linkedin": "LinkedIn profile",
+      "email": "Email",
+      "cv": "Download CV (PDF)",
+      "emailCopied": "Email address copied"
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "lede": "Common questions about the BIO:ON Insight newsletter and this site.",
+    "more": "Anything else? Just email me.",
+    "sections": [
+      {
+        "title": "The newsletter",
+        "items": [
+          {
+            "q": "What is BIO:ON Insight?",
+            "a": "Every Tuesday morning, I pick last week’s three biggest global biotech and pharma stories and explain them simply, with the Korean market angle and the roles they matter for. Each issue also has a Word of the Week, a deep dive, the stocks that moved and the dates to watch next week."
+          },
+          {
+            "q": "Does it cost anything?",
+            "a": "No. The newsletter is free. Some paid resources are in the works."
+          },
+          {
+            "q": "Who writes it?",
+            "a": "Yaehyun Lee, who studied Pharmacology at UCL (BSc) and is now on the MSc Biotechnology & Pharmaceutical Management at UCL, reads the original sources and writes every issue while studying.",
+            "link": {
+              "href": "/about",
+              "label": "About me"
+            }
+          },
+          {
+            "q": "Is there an English edition?",
+            "a": "Yes. A separate English email edition has gone out since August 2026. On the web archive, every issue from #1 is available in English (the early issues are web-only translations). Subscribe on the English site to get the English edition.",
+            "link": {
+              "href": "/insight",
+              "label": "Browse the archive"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Managing your subscription",
+        "items": [
+          {
+            "q": "Can I get both the Korean and English editions?",
+            "a": "Yes. Subscribe once on the Korean site and once on the English site with the same email, and you’ll get both."
+          },
+          {
+            "q": "I’m not getting the emails.",
+            "a": "Check your spam or promotions folder first. Adding the sender to your contacts moves future issues to your inbox. If they’re still missing, email me."
+          },
+          {
+            "q": "How do I unsubscribe?",
+            "a": "Click the unsubscribe link at the bottom of any issue and you’re out straight away."
+          },
+          {
+            "q": "How is my personal data used?",
+            "a": "I only collect your name and email when you subscribe. They’re used only to send the newsletter and are managed in Stibee, the email service I use. Google Analytics cookies for visit statistics only switch on if you accept them in the banner, and you can change your choice any time under 'Cookie settings' in the footer."
+          }
+        ]
+      },
+      {
+        "title": "Content and AI",
+        "items": [
+          {
+            "q": "How do you use AI?",
+            "a": "I use AI to gather and do a first translation of international news, to summarise and tag each issue, and to draft interview questions. I check everything against the original sources, and AI-generated summaries and tags are labelled on the site."
+          },
+          {
+            "q": "Is the stocks section investment advice?",
+            "a": "No. It’s a simple sketch of which way a stock moved alongside the news. Check a real brokerage chart for exact prices, and make your own investment decisions."
+          },
+          {
+            "q": "Where can I find past issues?",
+            "a": "Every issue is in the Insight archive. Filter by topic or role, or ask a question in the Ask BIO.ON search box to find the issues that answer it.",
+            "link": {
+              "href": "/insight",
+              "label": "Try Ask BIO.ON"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Careers",
+        "items": [
+          {
+            "q": "Who is the career content for?",
+            "a": "Students and early-career people preparing for jobs in biotech and pharma. It shows how to turn the issues in the newsletter into material for interviews, applications and LinkedIn."
+          },
+          {
+            "q": "Is there anything to help with interviews?",
+            "a": "The interview question bank has role-by-role questions and answer points built from newsletter issues, plus a five-random-questions practice mode. An AI mock interview and AI résumé feedback are in the works.",
+            "link": {
+              "href": "/career/interview",
+              "label": "Open the question bank"
+            }
+          },
+          {
+            "q": "How can I get in touch or collaborate?",
+            "a": "Email yaehyun.lee59@gmail.com or reach out on LinkedIn."
+          }
+        ]
+      }
     ]
   },
   "footer": {
-    "tagline": "Biotech & pharma news, turned into career insight.",
-    "built": "Built with Next.js and Claude Code"
+    "tagline": "Biotech & pharma news, turned into career insight."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "BIO:ON home",
+    "menu": "Menu",
+    "mainNav": "Main",
+    "footerNav": "Site links",
+    "newTab": "opens in a new tab",
+    "rss": "RSS feed",
+    "theme": "Toggle dark mode"
+  },
+  "waitlist": {
+    "badge": "Waitlist open",
+    "join": "Join the waitlist",
+    "title": "Join the waitlist",
+    "lede": "I'll email you first when it launches. You'll also get the free BIO:ON Insight newsletter (every Tuesday). Unsubscribe any time.",
+    "success": "You're on the waitlist! I'll let you know first when it launches.",
+    "close": "Close",
+    "heading": "Coming next",
+    "kinds": {
+      "guide": "Guide",
+      "tool": "AI tool",
+      "resource": "Resource"
+    }
+  },
+  "wiki": {
+    "title": "BIO:ON Wiki",
+    "lede": "My study notes: the 51 stories from the newsletter, sorted by category and by company or drug.",
+    "categoriesTitle": "Categories",
+    "entitiesTitle": "Companies, drugs & regulators",
+    "types": {
+      "company": "Companies",
+      "drug": "Drugs",
+      "regulator": "Regulators"
+    },
+    "storyCount": "stories",
+    "seeAll": "See all",
+    "issueRef": "Issue #{n}",
+    "timeline": "Stories",
+    "coMentioned": "Appears alongside",
+    "back": "Back to wiki",
+    "storiesTitle": "Stories in this issue",
+    "related": "Related insights",
+    "relatedSub": "Other issues covering the same companies, drugs or topics",
+    "shared": "Shared",
+    "takeaway": "What I learned this week",
+    "takeawayNote": "Quoted from the Editor's Insight I wrote for this issue.",
+    "categoryFilter": "Category",
+    "metaTitle": "Wiki",
+    "entityLede": "{n} BIO:ON Insight stories about {name}.",
+    "popularTitle": "Most covered",
+    "recentTitle": "Latest stories",
+    "allEntities": "See all companies, drugs & regulators"
+  },
+  "consent": {
+    "text": "I'd like to use Google Analytics cookies to see which pages get read. It's only for visit statistics, and the site works the same if you decline.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "settings": "Cookie settings"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "lede": "Which cookies and browser storage this site uses, and why.",
+    "necessaryTitle": "Strictly necessary (no consent needed)",
+    "necessaryNote": "Needed to provide features you ask for, so they work without consent. None of them hold anything that identifies you.",
+    "analyticsTitle": "Visit statistics (only with your consent)",
+    "analyticsNote": "Only switched on if you click 'Accept' in the banner. If you decline, Google Analytics isn't even loaded.",
+    "cols": {
+      "name": "Name",
+      "purpose": "Purpose",
+      "duration": "Kept for",
+      "type": "Type"
+    },
+    "items": {
+      "lead": {
+        "purpose": "Lets you open the free resources after entering your email. It holds only an issue time and a signature — no email or name.",
+        "duration": "1 year",
+        "type": "Cookie (HttpOnly)"
+      },
+      "consent": {
+        "purpose": "Remembers whether you accepted or declined analytics cookies.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
+      },
+      "theme": {
+        "purpose": "Remembers your dark or light mode choice.",
+        "duration": "Until you clear it",
+        "type": "Browser storage"
+      },
+      "ga": {
+        "purpose": "Distinguishes visitors so visits can be counted (Google Analytics).",
+        "duration": "2 years",
+        "type": "Cookie (Google)"
+      },
+      "gaid": {
+        "purpose": "Keeps the session state (Google Analytics).",
+        "duration": "2 years",
+        "type": "Cookie (Google)"
+      }
+    },
+    "changeTitle": "Changing your choice",
+    "changeBody": "Click 'Cookie settings' at the bottom of any page to see the banner again. You can also clear cookies and site data in your browser settings.",
+    "sourcesTitle": "Sources",
+    "updated": "Last checked: 29 September 2026",
+    "more": "Learn more"
+  },
+  "flashcards": {
+    "title": "Study flashcards",
+    "lede": "Clinical trial and statistics concept cards I wrote while studying for my MSc at UCL. Flip them and practise right here.",
+    "note": "These are my personal study notes from lectures, not official course material. For key definitions, check public standards such as ICH E9(R1) and CONSORT too.",
+    "allModules": "All modules",
+    "allTopics": "All topics",
+    "shuffle": "Shuffle",
+    "reset": "Reset progress",
+    "known": "known",
+    "cards": "cards",
+    "prev": "← Previous",
+    "next": "Next →",
+    "again": "Review again",
+    "gotIt": "Got it ✓",
+    "flipHint": "Click or press Space to flip",
+    "keys": "Space flip · ←/→ move · K got it · A review again · F full screen",
+    "example": "Example / note",
+    "trap": "Exam trap",
+    "knownChip": "✓ Known",
+    "empty": "No cards match this filter.",
+    "updated": "Updated",
+    "flip": "Flip card",
+    "back": "Back to tools",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
+  },
+  "tools": {
+    "title": "Tools",
+    "lede": "Tools for studying and job preparation. All free, no sign-in needed.",
+    "studyTitle": "Study tools",
+    "careerTitle": "Career tools",
+    "open": "Open",
+    "back": "Back to tools",
+    "cards": {
+      "flashcards": {
+        "icon": "🗂️",
+        "title": "Study flashcards",
+        "body": "Flip through clinical trial and statistics concept cards, and review only the ones you don't know yet."
+      },
+      "pomodoro": {
+        "icon": "⏱️",
+        "title": "Pomodoro timer",
+        "body": "25 minutes of focus, 5 minutes of rest, with brown noise, rain or ambient sound while you focus."
+      },
+      "interview": {
+        "icon": "🎙️",
+        "title": "Interview question bank",
+        "body": "Role-specific interview questions and answer points built from newsletter issues, plus a random 5-question drill."
+      }
+    }
+  },
+  "pomodoro": {
+    "title": "Pomodoro timer",
+    "lede": "Alternate focus and rest while you study, with optional calm sound during focus.",
+    "phaseLabel": "Phase",
+    "phases": {
+      "focus": "Focus",
+      "short": "Short break",
+      "long": "Long break"
+    },
+    "start": "Start",
+    "pause": "Pause",
+    "reset": "Reset",
+    "skip": "Skip",
+    "sessions": "Focus sessions done",
+    "longEvery": "long break every {n}",
+    "keys": "Space to start or pause · F full screen",
+    "settings": "Settings",
+    "min": "min",
+    "soundTitle": "Focus sound",
+    "sounds": {
+      "off": "Off",
+      "brown": "Brown noise",
+      "rain": "Rain",
+      "ambient": "Ambient"
+    },
+    "volume": "Volume",
+    "breakSound": "Keep sound on during breaks",
+    "autoNext": "Start the next phase automatically",
+    "soundNote": "Sounds are generated in your browser, so there are no files to download and no music licensing. A short chime plays when a phase ends. Settings are saved in this browser only.",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen"
   }
 }

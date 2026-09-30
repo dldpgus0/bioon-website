@@ -95,7 +95,7 @@
         "upcoming": false
       },
       {
-        "date": "2027.10",
+        "date": "2027.09",
         "title": "MSc 졸업 예정",
         "body": "UCL MSc Biotechnology & Pharmaceutical Management 졸업 예정.",
         "upcoming": true
@@ -304,7 +304,7 @@
     "educationTitle": "학력",
     "education": [
       {
-        "date": "2026.09 – 2027.10",
+        "date": "2026.09 – 2027.09",
         "degree": "MSc Biotechnology & Pharmaceutical Management",
         "school": "University College London (UCL)",
         "note": "졸업 예정"

@@ -345,8 +345,9 @@
         "BSc Pharmacology, UCL (2:1); elected Academic Representative for the pharmacology cohort (2021–2023)"
       ],
       "linkedin": "LinkedIn profile",
-      "email": "Email me",
-      "cv": "Download CV (PDF)"
+      "email": "Email",
+      "cv": "Download CV (PDF)",
+      "emailCopied": "Email address copied"
     }
   },
   "faq": {

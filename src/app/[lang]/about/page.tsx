@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
 import Image from "next/image";
+import { EmailButton } from "@/components/EmailButton";
 import { VerticalLogo } from "@/components/Logo";
 import { SocialLinks } from "@/components/SocialLinks";
 import { getIssues } from "@/lib/content";
@@ -13,7 +14,7 @@ import { socials } from "@/lib/site";
 const cvPath = (lang: string) => (lang === "ko" ? "/cv/Yaehyun-Lee-CV-ko.pdf" : "/cv/Yaehyun-Lee-CV.pdf");
 const hasCv = (p: string) => fs.existsSync(path.join(process.cwd(), "public", p));
 const linkedin = socials.find((s) => s.id === "linkedin")!.href;
-const email = socials.find((s) => s.id === "email")!.href;
+const email = socials.find((s) => s.id === "email")!.href.replace("mailto:", "");
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/about">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
@@ -74,9 +75,12 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           >
             {t.recruit.linkedin}
           </a>
-          <a href={email} className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand">
-            {t.recruit.email}
-          </a>
+          <EmailButton
+            email={email}
+            label={`${t.recruit.email} · ${email}`}
+            copiedLabel={t.recruit.emailCopied}
+            className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand"
+          />
           {hasCv(cv) && (
             <a href={cv} download className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand">
               {t.recruit.cv}

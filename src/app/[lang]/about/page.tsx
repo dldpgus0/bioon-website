@@ -8,9 +8,10 @@ import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { socials } from "@/lib/site";
 
-// Drop a PDF here to show the "Download CV" button in the recruiter section.
-const CV_PATH = "/cv/Yaehyun-Lee-CV.pdf";
-const hasCv = fs.existsSync(path.join(process.cwd(), "public", CV_PATH));
+// CV PDFs for the recruiter section's download button (Korean page gets the Korean CV).
+// The button only shows when the file exists in public/cv.
+const cvPath = (lang: string) => (lang === "ko" ? "/cv/Yaehyun-Lee-CV-ko.pdf" : "/cv/Yaehyun-Lee-CV.pdf");
+const hasCv = (p: string) => fs.existsSync(path.join(process.cwd(), "public", p));
 const linkedin = socials.find((s) => s.id === "linkedin")!.href;
 const email = socials.find((s) => s.id === "email")!.href;
 
@@ -23,6 +24,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   const t = dict.about;
+  const cv = cvPath(lang);
   const issueCount = getIssues("ko").length + getIssues("en").length;
 
   return (
@@ -75,8 +77,8 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           <a href={email} className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand">
             {t.recruit.email}
           </a>
-          {hasCv && (
-            <a href={CV_PATH} download className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand">
+          {hasCv(cv) && (
+            <a href={cv} download className="rounded-full border border-brand px-5 py-2.5 text-sm font-semibold text-brand hover:bg-brand hover:text-on-brand">
               {t.recruit.cv}
             </a>
           )}

@@ -243,6 +243,13 @@
         "format": "html",
         "title": "Biotech glossary",
         "body": "All 17 Words of the Week from the newsletter, each with a definition and an analogy."
+      },
+      {
+        "id": "ai-answer-checklist",
+        "type": "free",
+        "format": "html",
+        "title": "Checking AI Answers: A Checklist",
+        "body": "Check the citations (DOI, PubMed), trial claims (ClinicalTrials.gov), gene names (HGNC) and numbers an AI gives you against the originals. Includes research on fabricated citations and a practice exercise."
       }
     ],
     "unlockTitle": "Enter your email to get it now",

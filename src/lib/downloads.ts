@@ -21,6 +21,7 @@ export const downloadIds = [
   "cv-template",
   "cv-template-file",
   "glossary",
+  "ai-answer-checklist",
 ] as const;
 export type DownloadId = (typeof downloadIds)[number];
 export const isDownloadId = (id: string): id is DownloadId => (downloadIds as readonly string[]).includes(id);
@@ -79,6 +80,10 @@ const copy = {
       title: "영문 CV 템플릿 & 링크드인 체크리스트",
       lede: "외국계·글로벌 바이오 지원용 ATS 친화 영문 CV 템플릿(.docx)과 제출 전·링크드인 체크리스트예요.",
     },
+    "ai-answer-checklist": {
+      title: "AI 답변 검증 체크리스트",
+      lede: "AI가 알려준 논문 인용, 임상시험 결과, 유전자 이름, 숫자를 원문과 공식 데이터베이스로 확인하는 방법이에요.",
+    },
     toc: "목차",
     fullForm: "풀네임",
     categorySources: "이 분야의 출처",
@@ -121,6 +126,10 @@ const copy = {
     "cv-template": {
       title: "English CV Template & LinkedIn Checklist",
       lede: "An ATS-friendly English CV template (.docx) for multinational and global biotech roles, with pre-submission and LinkedIn checklists.",
+    },
+    "ai-answer-checklist": {
+      title: "Checking AI Answers: A Checklist",
+      lede: "How to check the paper citations, trial results, gene names and numbers an AI gives you against the original sources and official databases.",
     },
     toc: "Contents",
     fullForm: "Full form",
@@ -288,7 +297,7 @@ function acronymsDoc(lang: Locale, siteUrl: string) {
   return page(lang, a.title, a.lede, `<h2>${esc(t.toc)}</h2><ul class="toc">${toc}</ul><p class="note">${esc(t.definitionsNote)}</p>\n${sections}`, siteUrl);
 }
 
-function markdownDoc(id: "trial-data-guide" | "cv-template", lang: Locale, siteUrl: string) {
+function markdownDoc(id: "trial-data-guide" | "cv-template" | "ai-answer-checklist", lang: Locale, siteUrl: string) {
   const t = copy[lang];
   const d = t[id];
   const intro =
@@ -326,6 +335,7 @@ export function renderDownload(id: DownloadId, lang: Locale, siteUrl: string) {
       return acronymsDoc(lang, siteUrl);
     case "trial-data-guide":
     case "cv-template":
+    case "ai-answer-checklist":
       return markdownDoc(id, lang, siteUrl);
     default:
       return interviewDoc(lang, siteUrl);

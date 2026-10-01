@@ -243,6 +243,13 @@
         "format": "html",
         "title": "바이오 산업 용어집",
         "body": "뉴스레터 '이번 주의 단어' 17개를 정의와 비유로 정리한 용어집."
+      },
+      {
+        "id": "ai-answer-checklist",
+        "type": "free",
+        "format": "html",
+        "title": "AI 답변 검증 체크리스트",
+        "body": "AI가 알려준 논문 인용(DOI·PubMed), 임상시험(ClinicalTrials.gov), 유전자 이름(HGNC), 숫자를 원문으로 확인하는 체크리스트. 가짜 인용 비율 연구와 실습 포함."
       }
     ],
     "unlockTitle": "이메일을 입력하고 바로 받기",

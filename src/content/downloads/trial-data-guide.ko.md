@@ -49,11 +49,11 @@
 
 ### Novel Drug Approvals (신약 허가 목록)
 
-FDA 의약품평가연구센터(CDER)는 해마다 새로 허가한 **신약(novel drug) 목록**을 공개해요 [5]. 올해 어떤 신약이 나왔는지 한눈에 볼 수 있어요. 단, 백신·혈액제제·**세포·유전자치료제** 등 생물의약품평가연구센터(CBER) 소관 제품은 이 목록에 없어요 [5].
+FDA 의약품평가연구센터(CDER)는 해마다 새로 허가한 **신약(novel drug) 목록<strong>을 공개해요 [5]. 올해 어떤 신약이 나왔는지 한눈에 볼 수 있어요. 단, 백신·혈액제제·</strong>세포·유전자치료제** 등 생물의약품평가연구센터(CBER) 소관 제품은 이 목록에 없어요 [5].
 
 ### Drugs@FDA에서 심사 문서 찾기
 
-1. Drugs@FDA에서 **상품명(브랜드명)**으로 검색해요. 검색이 까다로워서 이름 뒤에 공백 하나만 있어도 결과가 안 나올 수 있어요 [6].
+1. Drugs@FDA에서 <strong>상품명(브랜드명)</strong>으로 검색해요. 검색이 까다로워서 이름 뒤에 공백 하나만 있어도 결과가 안 나올 수 있어요 [6].
 2. 제품 페이지에서 **"Approval Date(s) and History, Letters, Labels, Reviews for NDA/BLA…"** 항목을 펼쳐요 [6].
 3. 표 오른쪽의 **Letters, Labels, Review** 열에서 문서를 골라요 [6].
    - **Label** — 허가된 처방 정보(적응증, 용법, 경고)
@@ -64,11 +64,11 @@ FDA 의약품평가연구센터(CDER)는 해마다 새로 허가한 **신약(nov
 
 ### 빠른 허가 제도 표시 읽기
 
-허가 발표에 붙는 Fast Track, Breakthrough Therapy, Accelerated Approval, Priority Review는 FDA의 신속 프로그램이에요 [7]. 특히 **가속 승인(Accelerated Approval)**은 대리지표로 먼저 허가하고 확증 임상을 요구하는 제도라서, 허가 후에도 추가 데이터가 나와야 해요 [7].
+허가 발표에 붙는 Fast Track, Breakthrough Therapy, Accelerated Approval, Priority Review는 FDA의 신속 프로그램이에요 [7]. 특히 <strong>가속 승인(Accelerated Approval)</strong>은 대리지표로 먼저 허가하고 확증 임상을 요구하는 제도라서, 허가 후에도 추가 데이터가 나와야 해요 [7].
 
 ## 3. EMA EPAR — 유럽 공개 평가 보고서
 
-EMA는 중앙 허가를 받은 모든 의약품에 대해 **EPAR(European Public Assessment Report)**를 공개해요 [8]. EPAR에는 보통 다음이 들어가요 [8].
+EMA는 중앙 허가를 받은 모든 의약품에 대해 <strong>EPAR(European Public Assessment Report)</strong>를 공개해요 [8]. EPAR에는 보통 다음이 들어가요 [8].
 
 - 일반인용 요약(질문·답변 형식)과 환자용 설명서
 - 효능·안전성·약동학 데이터와 작용기전

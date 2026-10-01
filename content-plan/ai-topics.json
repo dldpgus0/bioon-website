@@ -8,7 +8,9 @@
   "topics": [
     {
       "id": "ai-hallucination-checklist",
-      "status": "todo",
+      "status": "done",
+      "slug": "checking-ai-answers",
+      "date": "2026-10-01",
       "format": "resource + short post",
       "ko": "AI 답변 검증 체크리스트 — 가짜 논문 인용, 없는 임상 결과, 틀린 유전자 이름 걸러내기",
       "en": "Checking AI answers — catching fake citations, non-existent trial results and wrong gene names",

@@ -381,6 +381,31 @@
       "type": "drug",
       "ko": "Tyenne",
       "en": "Tyenne"
+    },
+    "abogen": {
+      "type": "company",
+      "ko": "아보젠",
+      "en": "Abogen Biosciences"
+    },
+    "cms": {
+      "type": "regulator",
+      "ko": "미국 CMS",
+      "en": "US CMS"
+    },
+    "teva": {
+      "type": "company",
+      "ko": "테바",
+      "en": "Teva"
+    },
+    "samsung-bioepis": {
+      "type": "company",
+      "ko": "삼성바이오에피스",
+      "en": "Samsung Bioepis"
+    },
+    "abo2203": {
+      "type": "drug",
+      "ko": "ABO2203",
+      "en": "ABO2203"
     }
   },
   "stories": {
@@ -870,6 +895,35 @@
         "entities": [
           "lilly",
           "foundayo"
+        ]
+      }
+    ],
+    "2026-10-06": [
+      {
+        "cat": "pipeline",
+        "ko": "노바티스, 아보젠 mRNA 체내 T세포 인게이저에 최대 78억 달러",
+        "en": "Novartis bets up to $7.8B on Abogen's mRNA in-body T-cell engager",
+        "entities": [
+          "novartis",
+          "abogen",
+          "abo2203"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "미국 CMS, 해외 약가 연동 'GLOBE' 모델 확정",
+        "en": "CMS finalises GLOBE, tying Medicare Part B benchmarks to foreign prices",
+        "entities": [
+          "cms"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "테바×삼성바이오에피스, 바이오시밀러 6종으로 동맹 확대",
+        "en": "Teva and Samsung Bioepis expand their alliance to six biosimilars",
+        "entities": [
+          "teva",
+          "samsung-bioepis"
         ]
       }
     ]

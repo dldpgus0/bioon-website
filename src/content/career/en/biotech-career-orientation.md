@@ -46,7 +46,7 @@ Most roles attach to part of this flow. Read the role map below in this order an
 
 - **What it does:** manages regulatory timelines, coordinates input from R&D, clinical, quality and manufacturing, and writes and reviews product information such as labelling and patient leaflets [7].
 - **What it usually takes:** a life or medical science degree; clear writing; attention to detail; analysing complex information; working to deadlines; and the negotiation skills to explain decisions and influence stakeholders [7].
-- **In BIO:ON:** the FDA starting to publish rejection letters ([Issue #9](/en/insight/2026-07-19)); an approval despite a negative advisory vote ([Issue #16](/en/insight/2026-09-15)).
+- **In BIO:ON:** the FDA starting to publish rejection letters ([Issue #10](/en/insight/2026-07-19)); an approval despite a negative advisory vote ([Issue #17](/en/insight/2026-09-15)).
 
 ### Pharmacovigilance / drug safety (clinical to post-market)
 
@@ -58,7 +58,7 @@ Most roles attach to part of this flow. Read the role map below in this order an
 
 - **What it does:** Quality control is **product-oriented**, testing everything from raw materials to the finished product to make sure there are no defects. Quality assurance is **process-oriented**, building repeatable quality into the process rather than relying only on testing at the end [9]. The legal responsibility for certifying each batch before release lies with the Qualified Person (QP), supported by QA and QC teams [10].
 - **What people in the role say:** a clinical QA advisor profiled by the ABPI named a keen eye for detail and a good understanding of GCP and local regulations as the most important skills, adding that being disciplined, organised and open-minded helps [18].
-- **In BIO:ON:** a recall over glass particles in vials ([Issue #12](/en/insight/2026-08-18)); a gene therapy rejected over manufacturing, then approved ([Issue #17](/en/insight/2026-09-22)).
+- **In BIO:ON:** a recall over glass particles in vials ([Issue #13](/en/insight/2026-08-18)); a gene therapy rejected over manufacturing, then approved ([Issue #18](/en/insight/2026-09-22)).
 
 ### Medical affairs / MSL (around launch)
 
@@ -69,7 +69,7 @@ Most roles attach to part of this flow. Read the role map below in this order an
 
 - **What it does:** creates an environment where the right patients can access medicines at the right time and in the right place, working as a partner with the health system [12].
 - **What it usually takes:** there's no single path. The ABPI's example Head of Market Access has a chemistry BSc, a medical biochemistry MSc and an MBA, and worked as a hospital scientist before moving through sales, marketing and market access in pharma [12].
-- **In BIO:ON:** an effective oral obesity drug with slow early prescriptions ([Issue #8](/en/insight/2026-07-12)).
+- **In BIO:ON:** an effective oral obesity drug with slow early prescriptions ([Issue #9](/en/insight/2026-07-12)).
 
 ### Sales and marketing (on the market)
 
@@ -81,7 +81,7 @@ Most roles attach to part of this flow. Read the role map below in this order an
 
 - **What it does:** alongside sales, marketing and market access, business development is part of a pharma company's commercial function [14]. It grows the pipeline and business through licensing in and out, partnerships, and mergers and acquisitions.
 - **What I've learned:** writing up deal news taught me to check the guaranteed upfront payment before the headline total. The Lilly × InnoCare deal below is a good example.
-- **In BIO:ON:** the Lilly × InnoCare deal, worth up to $3.35B but with about $100M guaranteed [15] ([Issue #18](/en/insight/2026-09-29)).
+- **In BIO:ON:** the Lilly × InnoCare deal, worth up to $3.35B but with about $100M guaranteed [15] ([Issue #19](/en/insight/2026-09-29)).
 
 ## 4. Finding your direction — four questions (my own list)
 

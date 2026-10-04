@@ -26,7 +26,7 @@ The detailed steps, research sources and a practice exercise are in the free **[
 
 ## What I've learned
 
-I don't think the answer is to stop using AI. Keeping to the order **"AI drafts, I verify"** lets me work quickly and still produce something I can stand behind. I also looked at how to weigh the strength of evidence in [BIO:ON Insight Issue #16](/en/insight/2026-09-15).
+I don't think the answer is to stop using AI. Keeping to the order **"AI drafts, I verify"** lets me work quickly and still produce something I can stand behind. I also looked at how to weigh the strength of evidence in [BIO:ON Insight Issue #17](/en/insight/2026-09-15).
 
 If an interviewer asks "How do you use AI tools?", explaining **how you verify** will probably be far more convincing than listing which tools you use.
 

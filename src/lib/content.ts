@@ -57,7 +57,7 @@ const issues: Issue[] = (insight as RawIssue[]).map((raw) => {
 });
 
 export function getIssues(lang: Locale) {
-  // Newest first; the welcome letter shares its date with issue #1, so number breaks the tie.
+  // Newest first; the welcome letter (#1) shares its date with issue #2, so number breaks the tie.
   return issues.filter((i) => i.lang === lang).sort((a, b) => b.date.localeCompare(a.date) || b.number - a.number);
 }
 

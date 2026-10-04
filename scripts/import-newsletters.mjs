@@ -96,9 +96,10 @@ for (const sourcePath of files) {
 const isWelcome = (i) => i.slug === "welcome";
 issues.sort((a, b) => isWelcome(b) - isWelcome(a) || a.date.localeCompare(b.date) || a.lang.localeCompare(b.lang));
 
-// Weekly issues are numbered by publish date (#1, #2, …) per language, matching the source
-// files. The welcome letter is unnumbered (number 0). Old numbers used by more than one
-// issue are ambiguous and left out of the old→new map used for cross-references.
+// The welcome letter is #1; weekly issues follow by publish date (#2, #3, …) per language.
+// Source files should use the same numbering. Old numbers used by more than one weekly issue
+// are ambiguous and left out of the old→new map used for cross-references.
+for (const it of issues) if (isWelcome(it)) it.number = 1;
 const renumber = {};
 for (const lang of ["ko", "en"]) {
   const list = issues.filter((i) => i.lang === lang && !isWelcome(i));
@@ -106,29 +107,60 @@ for (const lang of ["ko", "en"]) {
   for (const it of list) counts[it.originalNumber] = (counts[it.originalNumber] ?? 0) + 1;
   renumber[lang] = {};
   list.forEach((it, idx) => {
-    it.number = idx + 1;
+    it.number = idx + 2;
     if (counts[it.originalNumber] === 1) renumber[lang][it.originalNumber] = it.number;
   });
 }
 
-// Rewrites the header ("Insight #N") and in-body references ("#14에서 다룬", "#14·#15")
-// in the web copy. Source files are never modified.
+// Rewrites the header ("Insight #N") and in-body references ("#14에서 다룬", "covered in #14")
+// in the web copy. Only text between tags is touched, so colours like "#197f83" are safe.
+// Source files are never modified.
+const HEADER = /(Insight\s*(?:EN\s*)?#)\d+/g;
+const REFERENCE = /(?<![&\w#])#(\d{1,2})(?![\w])/g;
 function rewriteNumbers(html, it) {
   if (isWelcome(it)) return html;
   return html
-    .replace(/(Insight\s*(?:EN\s*)?#)\d+/g, `$1${it.number}`)
-    .replace(/(?<![&\w])#(\d{1,2})(?=·|에)/g, (match, n) => {
-      const mapped = renumber[it.lang][n];
-      if (mapped === undefined) console.warn(`unmapped reference ${match} in ${it.sourceFile}`);
-      return mapped === undefined ? match : `#${mapped}`;
-    });
+    .split(/(<[^>]*>)/)
+    .map((part) => {
+      if (part.startsWith("<")) return part;
+      // Mark headers first so the reference pass leaves them alone.
+      const marked = part.replace(HEADER, (m, prefix) => `${prefix}\u0000`);
+      return marked
+        .replace(REFERENCE, (match, n) => {
+          const mapped = renumber[it.lang][n];
+          if (mapped === undefined) console.warn(`unmapped reference ${match} in ${it.sourceFile}`);
+          return mapped === undefined ? match : `#${mapped}`;
+        })
+        .replace(/\u0000/g, String(it.number));
+    })
+    .join("");
+}
+
+// Every web copy ends with a link back to the site's archive, just above the © line. Issues
+// whose source already has it (from #20 on) are left as they are.
+const WEB_LINK = {
+  ko: "🌐 웹에서 보기 · 지난 호 아카이브 →",
+  en: "🌐 Read on the web · past issues archive →",
+};
+const FONT = "font-family: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif";
+function addWebLink(html, lang) {
+  if (html.includes("bioon-website.vercel.app\"") || html.includes(WEB_LINK[lang])) return html;
+  const line =
+    `<p style="font-size: 11px; color: #7FD2D5 !important; line-height: 1.65; margin: 0 0 10px 0;; ${FONT}">${WEB_LINK[lang]} ` +
+    `<a href="https://bioon-website.vercel.app/${lang}" style="color: #BFE3E4 !important; font-weight: 700; text-decoration: underline;; ${FONT}">bioon-website.vercel.app</a></p>`;
+  const copyright = /<p\b[^>]*>\s*©\s*\d{4} BIO:ON Insight/;
+  if (!copyright.test(html)) {
+    console.warn(`no © line to place the web link above (${lang})`);
+    return html;
+  }
+  return html.replace(copyright, (m) => line + m);
 }
 
 fs.rmSync(OUT_HTML, { recursive: true, force: true });
 for (const lang of ["ko", "en"]) fs.mkdirSync(path.join(OUT_HTML, lang), { recursive: true });
 for (const it of issues) {
   const html = fs.readFileSync(it.sourcePath, "utf8");
-  fs.writeFileSync(path.join(OUT_HTML, it.lang, `${it.slug}.html`), rewriteNumbers(html, it));
+  fs.writeFileSync(path.join(OUT_HTML, it.lang, `${it.slug}.html`), addWebLink(rewriteNumbers(html, it), it.lang));
   if (it.number !== it.originalNumber && !isWelcome(it)) console.log(`${it.lang} ${it.date}: #${it.originalNumber} → #${it.number}`);
 }
 

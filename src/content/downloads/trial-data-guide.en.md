@@ -89,7 +89,7 @@ If you're preparing for RA or clinical roles in Korea, check **which trials of a
 
 ## 5. Practice — follow one news story back to its sources
 
-Try it with **camizestrant**, covered in BIO:ON Insight Issue #16. The FDA granted accelerated approval on 4 September 2026 even though its advisory committee had voted 6–3 against [10].
+Try it with **camizestrant**, covered in BIO:ON Insight Issue #17. The FDA granted accelerated approval on 4 September 2026 even though its advisory committee had voted 6–3 against [10].
 
 1. Search ClinicalTrials.gov for the pivotal trial, **SERENA-6**, and note its primary outcome and comparator.
 2. From the FDA announcement, note the scope of approval — which patients, in which combination [10].

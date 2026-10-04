@@ -31,7 +31,7 @@ The news in each example is a real case covered in BIO:ON Insight. The experienc
 
 **After:** "Ultragenyx's gene therapy Fayuvi was rejected once over manufacturing, then approved by the FDA after the process was fixed — a clear sign that a drug's fate is decided as much where it's made as in the lab. Even a drug with proven efficacy can't reach patients without proof it can be made to the same quality every time, and building that proof is the job of CMC and quality teams. Drawing on my undergraduate GMP practical, where I traced the root causes of logged deviations, I want to become someone who can explain quality issues with process data."
 
-Source: [Issue #17](/en/insight/2026-09-22)
+Source: [Issue #18](/en/insight/2026-09-22)
 
 ### Market access
 
@@ -39,7 +39,7 @@ Source: [Issue #17](/en/insight/2026-09-22)
 
 **After:** "What struck me about Lilly's oral obesity drug is that, despite strong efficacy data, early prescriptions lagged its competitor — and coverage from the biggest US pharmacy benefit managers only began about two months after launch. It means that for a good drug to reach patients, value evidence and pricing strategy matter as much as clinical data. Reimbursement plays the same gatekeeping role in most health systems, and I want to contribute to translating clinical data into the language payers use. Calculating an ICER myself in a health economics assignment is where that started."
 
-Source: [Issue #9](/en/insight/2026-07-19)
+Source: [Issue #10](/en/insight/2026-07-19)
 
 ### Business development
 
@@ -47,7 +47,7 @@ Source: [Issue #9](/en/insight/2026-07-19)
 
 **After:** "Roche paying $190M upfront, with up to $2.3B more in milestones, for Hanmi's 'muscle-sparing' obesity candidate HM17321 showed me that a smaller company's edge comes from data on a new axis, such as body composition, rather than from matching incumbents on efficacy. It also taught me that a deal's value lies in its upfront and milestone structure, not the headline total. I want to be a BD professional who presents differentiated data the way global partners need to see it, and reads deal terms closely. Analysing industry deals every week for a newsletter has given me the foundation to do that."
 
-Source: [Issue #14](/en/insight/2026-09-01)
+Source: [Issue #15](/en/insight/2026-09-01)
 
 ## Things to watch
 

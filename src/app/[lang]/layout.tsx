@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const dict = await getDictionary(lang);
   return {
     metadataBase: new URL(siteUrl),
-    title: { default: dict.meta.title, template: "%s · BIO:ON" },
+    title: { default: dict.meta.title, template: "%s · BIO:ON Insight" },
     description: dict.meta.description,
     // Search engine ownership checks (Google Search Console, Naver Search Advisor).
     verification: {

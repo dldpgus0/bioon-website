@@ -6,7 +6,8 @@ import { getDictionary, getLocale } from "@/lib/i18n";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/subscribe">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
-  return { title: dict.subscribe.title };
+  // The title already names BIO:ON Insight, so skip the layout's "· BIO:ON Insight" suffix.
+  return { title: { absolute: dict.subscribe.title } };
 }
 
 export default async function SubscribePage({ params }: PageProps<"/[lang]/subscribe">) {

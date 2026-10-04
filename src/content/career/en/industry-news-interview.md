@@ -28,7 +28,7 @@ Every example below comes from real news covered in BIO:ON Insight. Don't memori
 >
 > **Your role:** In BD, I'd judge any out-licensing deal by the upfront share and the milestone conditions first, not the total.
 
-Source: [Issue #19](/en/insight/2026-09-29)
+Source: [Issue #18](/en/insight/2026-09-29)
 
 ### Regulatory affairs — an FDA approval despite a negative advisory vote
 
@@ -38,7 +38,7 @@ Source: [Issue #19](/en/insight/2026-09-29)
 >
 > **Your role:** In RA, I'd want to agree early with regulators on which endpoints, and what level of evidence, a filing will rest on.
 
-Source: [Issue #17](/en/insight/2026-09-15)
+Source: [Issue #16](/en/insight/2026-09-15)
 
 ### Market access — an effective obesity pill that wasn't being prescribed
 
@@ -48,7 +48,7 @@ Source: [Issue #17](/en/insight/2026-09-15)
 >
 > **Your role:** Reimbursement plays the same role in Korea and elsewhere, so market access teams need value evidence and a pricing strategy ready well before approval.
 
-Source: [Issue #9](/en/insight/2026-07-12)
+Source: [Issue #8](/en/insight/2026-07-12)
 
 ### CMC & quality — a recall over glass particles
 
@@ -58,7 +58,7 @@ Source: [Issue #9](/en/insight/2026-07-12)
 >
 > **Your role:** In quality, root-cause investigation (CAPA) and supplier control are what prevent this, and that's the work I want to contribute to.
 
-Source: [Issue #13](/en/insight/2026-08-18)
+Source: [Issue #12](/en/insight/2026-08-18)
 
 ## Common mistakes
 

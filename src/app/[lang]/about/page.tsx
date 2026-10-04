@@ -26,7 +26,8 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
   const dict = await getDictionary(lang);
   const t = dict.about;
   const cv = cvPath(lang);
-  const issueCount = getIssues("ko").length + getIssues("en").length;
+  // Weekly issues, counted once for both languages; the welcome letter is not counted.
+  const issueCount = getIssues("ko").filter((i) => i.slug !== "welcome").length;
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
@@ -125,7 +126,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           ))}
         </ol>
         <p className="mt-6 text-sm text-muted">
-          {lang === "ko" ? `발행한 뉴스레터 ${issueCount}편 (한/영)` : `${issueCount} issues published (KO/EN)`}
+          {lang === "ko" ? `발행한 뉴스레터 ${issueCount}호 (한/영)` : `${issueCount} issues published (KO/EN)`}
         </p>
       </section>
     </div>

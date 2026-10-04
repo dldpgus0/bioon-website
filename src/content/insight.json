@@ -558,5 +558,35 @@
       "가격전쟁"
     ],
     "sourceFile": "BIO.ON Insight KO #18.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 19,
+    "number": 19,
+    "date": "2026-10-06",
+    "slug": "2026-10-06",
+    "title": "Discovery in China, manufacturing in Korea, price benchmarks set by the US",
+    "summary": "Novartis bets up to $7.8B on China's Abogen for an in-body T-cell engager, CMS finalises GLOBE to tie Medicare Part B benchmarks to foreign prices, and Teva and Samsung Bioepis add six more biosimilars. Discovery in China, manufacturing in Korea, price benchmarks set in the US.",
+    "tags": [
+      "China Sourcing",
+      "US Pricing Model",
+      "Korean Biosimilars"
+    ],
+    "sourceFile": "BIO.ON Insight EN #19.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 19,
+    "number": 19,
+    "date": "2026-10-06",
+    "slug": "2026-10-06",
+    "title": "발굴은 중국, 제조는 한국, 가격 기준은 미국이 잡아요",
+    "summary": "노바티스, 중국 아보젠에 최대 $7.8B 베팅. 미국 CMS, 해외 약가를 기준 삼는 'GLOBE' 모델 확정. 테바×삼성바이오에피스, 바이오시밀러 6종으로 동맹 확대 — 발굴은 중국, 제조는 한국, 가격 기준은 미국이 쥐는 그림이 선명해졌어요",
+    "tags": [
+      "중국도입",
+      "미국약가",
+      "한국바이오시밀러"
+    ],
+    "sourceFile": "BIO.ON Insight KO #19.html"
   }
 ]

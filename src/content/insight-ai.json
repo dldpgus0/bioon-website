@@ -1003,5 +1003,70 @@
       "가격",
       "pricing"
     ]
+  },
+  "2026-10-06": {
+    "topics": [
+      "bd",
+      "modality",
+      "access",
+      "cmc"
+    ],
+    "roles": [
+      "bd",
+      "access",
+      "cmc",
+      "ra"
+    ],
+    "summary": {
+      "ko": [
+        "노바티스가 중국 아보젠의 mRNA 체내 T세포 인게이저 ABO2203에 계약금 5.75억 달러, 최대 78억 달러를 걸었어요.",
+        "미국 CMS가 메디케어 Part B 약값 기준을 해외 약가에 연동하는 'GLOBE' 모델을 확정했어요(2027년 1월 시행).",
+        "테바와 삼성바이오에피스가 바이오시밀러 6종을 함께 개발·판매하기로 하며 올해 세 번째 딜을 맺었어요."
+      ],
+      "en": [
+        "Novartis is paying China's Abogen $575M upfront, up to $7.8B in total, for ABO2203, an mRNA in-body T-cell engager.",
+        "CMS finalised GLOBE, which ties Medicare Part B cost benchmarks to prices in comparable countries from January 2027.",
+        "Teva and Samsung Bioepis will co-develop and sell up to six biosimilars, their third deal in 2026."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "체내에서 만들어지는 T세포 인게이저는 CAR-T와 무엇이 다른가요?",
+        "해외 약가 연동이 출시 순서 전략을 어떻게 바꾸나요?",
+        "바이오시밀러 파트너십에서 개발사와 판매사는 각각 무엇을 맡나요?"
+      ],
+      "en": [
+        "How does an in-body T-cell engager differ from CAR-T?",
+        "How does foreign reference pricing change launch sequencing?",
+        "Who does what in a biosimilar partnership between a developer and a seller?"
+      ]
+    },
+    "keywords": [
+      "노바티스",
+      "Novartis",
+      "아보젠",
+      "Abogen",
+      "ABO2203",
+      "mRNA",
+      "T세포 인게이저",
+      "T-cell engager",
+      "CAR-T",
+      "중국",
+      "China",
+      "CMS",
+      "GLOBE",
+      "메디케어",
+      "Medicare",
+      "최혜국",
+      "MFN",
+      "약가",
+      "pricing",
+      "테바",
+      "Teva",
+      "삼성바이오에피스",
+      "Samsung Bioepis",
+      "바이오시밀러",
+      "biosimilar"
+    ]
   }
 }

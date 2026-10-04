@@ -16,8 +16,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const dict = await getDictionary(lang);
   const t = dict.home;
   const latest = getIssues(lang).slice(0, 3);
-  // Korean and English editions are the same newsletter, so count issues once.
-  const issueCount = getIssueSlugs().length;
+  // Korean and English editions are the same newsletter, so count issues once; the welcome
+  // letter isn't a weekly issue and isn't counted.
+  const issueCount = getIssueSlugs().filter((slug) => slug !== "welcome").length;
 
   return (
     <>

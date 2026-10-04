@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Issue } from "@/lib/content";
+import { issueTag } from "@/lib/issue-tag";
 import type { Dictionary } from "@/lib/i18n";
 import { topicLabel } from "@/lib/taxonomy";
 
@@ -21,7 +22,11 @@ export function IssueCard({ issue, dict, match }: { issue: Issue; dict: Dictiona
       >
         <div className="flex items-center justify-between text-xs font-semibold">
           <span className="text-teal">
-            {issue.lang === "ko" ? `#${issue.number}${dict.insight.issue}` : `${dict.insight.issue} #${issue.number}`}
+            {issue.slug === "welcome"
+              ? issueTag(issue)
+              : issue.lang === "ko"
+                ? `#${issue.number}${dict.insight.issue}`
+                : `${dict.insight.issue} #${issue.number}`}
           </span>
           <time className="text-muted" dateTime={issue.date}>{formatDate(issue.date, issue.lang)}</time>
         </div>

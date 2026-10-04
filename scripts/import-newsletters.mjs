@@ -96,10 +96,9 @@ for (const sourcePath of files) {
 const isWelcome = (i) => i.slug === "welcome";
 issues.sort((a, b) => isWelcome(b) - isWelcome(a) || a.date.localeCompare(b.date) || a.lang.localeCompare(b.lang));
 
-// The welcome letter is #1; weekly issues follow by publish date (#2, #3, …) per language.
-// Source files should use the same numbering. Old numbers used by more than one weekly issue
-// are ambiguous and left out of the old→new map used for cross-references.
-for (const it of issues) if (isWelcome(it)) it.number = 1;
+// Weekly issues are numbered by publish date (#1, #2, …) per language, matching the source
+// files. The welcome letter is unnumbered (number 0). Old numbers used by more than one
+// issue are ambiguous and left out of the old→new map used for cross-references.
 const renumber = {};
 for (const lang of ["ko", "en"]) {
   const list = issues.filter((i) => i.lang === lang && !isWelcome(i));
@@ -107,7 +106,7 @@ for (const lang of ["ko", "en"]) {
   for (const it of list) counts[it.originalNumber] = (counts[it.originalNumber] ?? 0) + 1;
   renumber[lang] = {};
   list.forEach((it, idx) => {
-    it.number = idx + 2;
+    it.number = idx + 1;
     if (counts[it.originalNumber] === 1) renumber[lang][it.originalNumber] = it.number;
   });
 }
@@ -137,7 +136,7 @@ function rewriteNumbers(html, it) {
 }
 
 // Every web copy ends with a link back to the site's archive, just above the © line. Issues
-// whose source already has it (from #20 on) are left as they are.
+// whose source already has it (from #19 on) are left as they are.
 const WEB_LINK = {
   ko: "🌐 웹에서 보기 · 지난 호 아카이브 →",
   en: "🌐 Read on the web · past issues archive →",

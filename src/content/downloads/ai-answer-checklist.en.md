@@ -48,7 +48,7 @@ These are the habits I use when asking AI. They don't remove errors, but they ma
 
 ## Practice: check one news story
 
-1. Ask an AI for the pivotal trial behind camizestrant, covered in BIO:ON Insight Issue #17 (SERENA-6).
+1. Ask an AI for the pivotal trial behind camizestrant, covered in BIO:ON Insight Issue #16 (SERENA-6).
 2. Write down the NCT number, primary outcome and comparator it gives you.
 3. Find the same trial on ClinicalTrials.gov and compare each item.
 4. If anything was wrong, note which checklist item caught it.

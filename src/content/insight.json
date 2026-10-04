@@ -2,7 +2,7 @@
   {
     "lang": "en",
     "originalNumber": 1,
-    "number": 1,
+    "number": 0,
     "date": "2026-06-07",
     "slug": "welcome",
     "title": "Hello — this is BIO:ON Insight 👋",
@@ -16,7 +16,7 @@
   {
     "lang": "ko",
     "originalNumber": 1,
-    "number": 1,
+    "number": 0,
     "date": "2026-06-07",
     "slug": "welcome",
     "title": "반가워요, BIO:ON Insight입니다 👋",
@@ -30,7 +30,7 @@
   {
     "lang": "en",
     "originalNumber": 2,
-    "number": 2,
+    "number": 1,
     "date": "2026-06-07",
     "slug": "2026-06-07",
     "title": "Three \"impossible\" problems, one week. What did they have in common?",
@@ -45,7 +45,7 @@
   {
     "lang": "ko",
     "originalNumber": 2,
-    "number": 2,
+    "number": 1,
     "date": "2026-06-07",
     "slug": "2026-06-07",
     "title": "AI가 설계하고, 유전자가 편집되고, 불가능 표적이 뚫리다",
@@ -58,7 +58,7 @@
   {
     "lang": "en",
     "originalNumber": 3,
-    "number": 3,
+    "number": 2,
     "date": "2026-06-09",
     "slug": "2026-06-09",
     "title": "Two companies showed data. One changed its name. Guess which stock jumped 60%.",
@@ -73,7 +73,7 @@
   {
     "lang": "ko",
     "originalNumber": 3,
-    "number": 3,
+    "number": 2,
     "date": "2026-06-09",
     "slug": "2026-06-09",
     "title": "데이터로 증명하는 바이오의 진짜 가치",
@@ -84,7 +84,7 @@
   {
     "lang": "en",
     "originalNumber": 4,
-    "number": 4,
+    "number": 3,
     "date": "2026-06-15",
     "slug": "2026-06-15",
     "title": "One company bought it. Some proved it. Two rivals built it together.",
@@ -99,7 +99,7 @@
   {
     "lang": "ko",
     "originalNumber": 4,
-    "number": 4,
+    "number": 3,
     "date": "2026-06-15",
     "slug": "2026-06-15",
     "title": "14조로 사고, 학회서 증명하고, 두 거인이 함께 만들었다",
@@ -114,7 +114,7 @@
   {
     "lang": "en",
     "originalNumber": 5,
-    "number": 5,
+    "number": 4,
     "date": "2026-06-16",
     "slug": "2026-06-16",
     "title": "Copy, combine, or go where no drug has gone: three ways to make a new medicine",
@@ -129,7 +129,7 @@
   {
     "lang": "ko",
     "originalNumber": 5,
-    "number": 5,
+    "number": 4,
     "date": "2026-06-16",
     "slug": "2026-06-16",
     "title": "카피·결합·신표적, 신약 혁신의 세 갈래 길",
@@ -142,7 +142,7 @@
   {
     "lang": "en",
     "originalNumber": 6,
-    "number": 6,
+    "number": 5,
     "date": "2026-06-22",
     "slug": "2026-06-22",
     "title": "An algorithm designs the drug, two hormones shake the market, and five months of secret talks end in $10 billion",
@@ -157,7 +157,7 @@
   {
     "lang": "ko",
     "originalNumber": 6,
-    "number": 6,
+    "number": 5,
     "date": "2026-06-22",
     "slug": "2026-06-22",
     "title": "알고리즘이 신약을 설계하고, 두 호르몬이 시장을 흔들고, 5개월 비밀 협상이 14조를 만들었다",
@@ -172,7 +172,7 @@
   {
     "lang": "en",
     "originalNumber": 7,
-    "number": 7,
+    "number": 6,
     "date": "2026-06-30",
     "slug": "2026-06-30",
     "title": "A wall around solid tumours falls, immunity gets a reset, and a pill takes aim at the injection",
@@ -187,7 +187,7 @@
   {
     "lang": "ko",
     "originalNumber": 7,
-    "number": 7,
+    "number": 6,
     "date": "2026-06-30",
     "slug": "2026-06-30",
     "title": "고형암의 벽이 무너지고, 면역이 리셋되고, 알약이 주사를 위협한다",
@@ -202,7 +202,7 @@
   {
     "lang": "en",
     "originalNumber": 8,
-    "number": 8,
+    "number": 7,
     "date": "2026-07-06",
     "slug": "2026-07-06",
     "title": "Fill the pipeline with AI, fend off generics, buy your way out: surviving the patent cliff",
@@ -217,7 +217,7 @@
   {
     "lang": "ko",
     "originalNumber": 8,
-    "number": 8,
+    "number": 7,
     "date": "2026-07-06",
     "slug": "2026-07-06",
     "title": "AI로 채우고, 제네릭에 쫓기고, M&A로 막는다",
@@ -232,7 +232,7 @@
   {
     "lang": "en",
     "originalNumber": 9,
-    "number": 9,
+    "number": 8,
     "date": "2026-07-12",
     "slug": "2026-07-12",
     "title": "The drug works. Now comes the fight over insurance, channels and trust",
@@ -247,7 +247,7 @@
   {
     "lang": "ko",
     "originalNumber": 9,
-    "number": 9,
+    "number": 8,
     "date": "2026-07-12",
     "slug": "2026-07-12",
     "title": "약은 완성됐다 — 이제 보험·채널·신뢰의 전쟁이다",
@@ -262,7 +262,7 @@
   {
     "lang": "en",
     "originalNumber": 10,
-    "number": 10,
+    "number": 9,
     "date": "2026-07-19",
     "slug": "2026-07-19",
     "title": "The trial \"worked\" — so why did nothing change?",
@@ -277,7 +277,7 @@
   {
     "lang": "ko",
     "originalNumber": 10,
-    "number": 10,
+    "number": 9,
     "date": "2026-07-19",
     "slug": "2026-07-19",
     "title": "임상은 성공이다 — 그런데 왜 아무것도 달라지지 않는가",
@@ -292,7 +292,7 @@
   {
     "lang": "en",
     "originalNumber": 11,
-    "number": 11,
+    "number": 10,
     "date": "2026-07-28",
     "slug": "2026-07-28",
     "title": "Drugs keep getting more complex. So why is treatment getting easier?",
@@ -307,7 +307,7 @@
   {
     "lang": "ko",
     "originalNumber": 11,
-    "number": 11,
+    "number": 10,
     "date": "2026-07-28",
     "slug": "2026-07-28",
     "title": "약은 점점 복잡해지는데, 왜 환자는 점점 편해질까?",
@@ -322,7 +322,7 @@
   {
     "lang": "en",
     "originalNumber": 12,
-    "number": 12,
+    "number": 11,
     "date": "2026-08-04",
     "slug": "2026-08-04",
     "title": "Rejected three times, fighting for ten years — so why did all three win this week?",
@@ -337,7 +337,7 @@
   {
     "lang": "ko",
     "originalNumber": 12,
-    "number": 12,
+    "number": 11,
     "date": "2026-08-04",
     "slug": "2026-08-04",
     "title": "3번 거절당하고, 10년을 싸웠는데, 왜 이번 주엔 셋 다 이겼을까?",
@@ -352,7 +352,7 @@
   {
     "lang": "en",
     "originalNumber": 13,
-    "number": 13,
+    "number": 12,
     "date": "2026-08-18",
     "slug": "2026-08-18",
     "title": "The week a drug learned to erase proteins, a recall came down to a shard of glass",
@@ -367,7 +367,7 @@
   {
     "lang": "ko",
     "originalNumber": 13,
-    "number": 13,
+    "number": 12,
     "date": "2026-08-18",
     "slug": "2026-08-18",
     "title": "세포 속까지 파고드는 신약이 나온 주에, 왜 리콜은 유리조각 때문이었을까?",
@@ -382,7 +382,7 @@
   {
     "lang": "en",
     "originalNumber": 14,
-    "number": 14,
+    "number": 13,
     "date": "2026-08-25",
     "slug": "2026-08-25",
     "title": "Stand beside a giant, and you win. Stand against one, and you lose. Why?",
@@ -397,7 +397,7 @@
   {
     "lang": "ko",
     "originalNumber": 14,
-    "number": 14,
+    "number": 13,
     "date": "2026-08-25",
     "slug": "2026-08-25",
     "title": "거인 옆에 서면 이기고, 거인과 맞서면 지는 이유는?",
@@ -412,7 +412,7 @@
   {
     "lang": "en",
     "originalNumber": 15,
-    "number": 15,
+    "number": 14,
     "date": "2026-09-01",
     "slug": "2026-09-01",
     "title": "Nobody was supposed to clear that wall. Someone did, this week.",
@@ -427,7 +427,7 @@
   {
     "lang": "ko",
     "originalNumber": 15,
-    "number": 15,
+    "number": 14,
     "date": "2026-09-01",
     "slug": "2026-09-01",
     "title": "아무도 못 넘는다던 벽을, 이번 주 누군가 넘었어요",
@@ -442,7 +442,7 @@
   {
     "lang": "en",
     "originalNumber": 16,
-    "number": 16,
+    "number": 15,
     "date": "2026-09-08",
     "slug": "2026-09-08",
     "title": "A whole company on one platform — so what proves the platform?",
@@ -457,7 +457,7 @@
   {
     "lang": "ko",
     "originalNumber": 16,
-    "number": 16,
+    "number": 15,
     "date": "2026-09-08",
     "slug": "2026-09-08",
     "title": "플랫폼 하나로 회사가 서는 시대, 그 플랫폼은 무엇으로 증명되나요",
@@ -472,7 +472,7 @@
   {
     "lang": "en",
     "originalNumber": 17,
-    "number": 17,
+    "number": 16,
     "date": "2026-09-15",
     "slug": "2026-09-15",
     "title": "Same word, \"success\" — not the same grade of evidence",
@@ -487,7 +487,7 @@
   {
     "lang": "ko",
     "originalNumber": 17,
-    "number": 17,
+    "number": 16,
     "date": "2026-09-15",
     "slug": "2026-09-15",
     "title": "같은 '성공'이라도, 증거의 급은 다 달라요",
@@ -502,7 +502,7 @@
   {
     "lang": "en",
     "originalNumber": 18,
-    "number": 18,
+    "number": 17,
     "date": "2026-09-22",
     "slug": "2026-09-22",
     "title": "The edge in drugs is moving — from what you discover to how you make it",
@@ -517,7 +517,7 @@
   {
     "lang": "ko",
     "originalNumber": 18,
-    "number": 18,
+    "number": 17,
     "date": "2026-09-22",
     "slug": "2026-09-22",
     "title": "약의 승부처가, '만드는 곳'으로 옮겨가고 있어요",
@@ -532,7 +532,7 @@
   {
     "lang": "en",
     "originalNumber": 19,
-    "number": 19,
+    "number": 18,
     "date": "2026-09-29",
     "slug": "2026-09-29",
     "title": "One company, three battlegrounds — same week, same headline name",
@@ -547,7 +547,7 @@
   {
     "lang": "ko",
     "originalNumber": 19,
-    "number": 19,
+    "number": 18,
     "date": "2026-09-29",
     "slug": "2026-09-29",
     "title": "릴리 원맨쇼 — 한 회사, 세 개의 전장",
@@ -562,7 +562,7 @@
   {
     "lang": "en",
     "originalNumber": 20,
-    "number": 20,
+    "number": 19,
     "date": "2026-10-06",
     "slug": "2026-10-06",
     "title": "Discovery in China, manufacturing in Korea, price benchmarks set by the US",
@@ -577,7 +577,7 @@
   {
     "lang": "ko",
     "originalNumber": 20,
-    "number": 20,
+    "number": 19,
     "date": "2026-10-06",
     "slug": "2026-10-06",
     "title": "발굴은 중국, 제조는 한국, 가격 기준은 미국이 잡아요",

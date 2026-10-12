@@ -588,5 +588,35 @@
       "한국바이오시밀러"
     ],
     "sourceFile": "BIO.ON Insight KO #19.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 21,
+    "number": 20,
+    "date": "2026-10-13",
+    "slug": "2026-10-13",
+    "title": "Who pays first changes everything",
+    "summary": "Ono pays $80M upfront for Biohaven's IgG degraders with Japan, Korea and ASEAN rights, a Cochrane review links pharma perks to costlier prescribing, and hospitals sue to stop 340B rebates. This week's question: who pays first, and who gets paid later?",
+    "tags": [
+      "Asia Licensing",
+      "Promotional Compliance",
+      "340B Litigation"
+    ],
+    "sourceFile": "BIO.ON Insight EN #20.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 21,
+    "number": 20,
+    "date": "2026-10-13",
+    "slug": "2026-10-13",
+    "title": "누가 먼저 돈을 내느냐가 약의 운명을 바꿔요",
+    "summary": "오노제약, 바이오헤이븐 IgG 분해제의 일본·한국·ASEAN 권리에 선급금 $80M. 코크란 리뷰 \"공짜 점심이 처방을 바꾼다\". 340B 환급 시범사업을 막으려는 병원들의 소송까지 — 누가 먼저 돈을 내느냐가 이번 주 키워드예요",
+    "tags": [
+      "아시아 라이선싱",
+      "영업 컴플라이언스",
+      "340B 소송"
+    ],
+    "sourceFile": "BIO.ON Insight KO #20.html"
   }
 ]

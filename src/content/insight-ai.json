@@ -1068,5 +1068,70 @@
       "바이오시밀러",
       "biosimilar"
     ]
+  },
+  "2026-10-13": {
+    "topics": [
+      "bd",
+      "specialty",
+      "access"
+    ],
+    "roles": [
+      "bd",
+      "sales",
+      "access"
+    ],
+    "summary": {
+      "ko": [
+        "오노제약이 바이오헤이븐의 IgG 분해제 3종(그레이브스병 3상 BHV-1300 등)의 일본·한국·대만·아세안 권리에 선급금 8,000만 달러를 냈어요.",
+        "코크란이 93개 연구를 종합해 제약사의 금품·접대가 부적절한 처방과 비용을 늘릴 가능성이 크다고 결론 내렸어요.",
+        "미국 병원들이 21개 약에 선할인 대신 환급을 적용하는 340B 환급 시범사업(1월 시행 예정)을 막으려 소송을 냈어요."
+      ],
+      "en": [
+        "Ono is paying Biohaven $80M upfront for Japan, Korea, Taiwan and ASEAN rights to three IgG degraders, led by Phase 3 Graves' candidate BHV-1300.",
+        "A Cochrane review of 93 studies concluded that pharma payments and gifts increase inappropriate prescribing and probably raise costs.",
+        "US hospitals sued to block the 340B rebate pilot, which would swap upfront discounts for rebates on 21 drugs from January 1."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "지역 권리만 사 오는 라이선싱은 선급금·마일스톤·이익 배분을 어떻게 나누나요?",
+        "한국의 리베이트 쌍벌제와 지출보고서 제도는 미국 Open Payments와 무엇이 다른가요?",
+        "선할인과 환급 방식의 차이가 제약사의 gross-to-net에 어떤 영향을 주나요?"
+      ],
+      "en": [
+        "How are upfront, milestone and profit-share terms split in a regional licensing deal?",
+        "How do Korea's rebate rules and spending reports compare with US Open Payments?",
+        "How does an upfront discount versus a rebate change a manufacturer's gross-to-net?"
+      ]
+    },
+    "keywords": [
+      "오노제약",
+      "Ono Pharmaceutical",
+      "바이오헤이븐",
+      "Biohaven",
+      "BHV-1300",
+      "IgG 분해제",
+      "IgG degrader",
+      "그레이브스병",
+      "Graves' disease",
+      "라이선싱",
+      "licensing",
+      "아세안",
+      "ASEAN",
+      "코크란",
+      "Cochrane",
+      "리베이트",
+      "rebate",
+      "컴플라이언스",
+      "compliance",
+      "Open Payments",
+      "쌍벌제",
+      "340B",
+      "HRSA",
+      "AHA",
+      "환급",
+      "gross-to-net",
+      "순약가"
+    ]
   }
 }

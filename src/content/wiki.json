@@ -406,6 +406,26 @@
       "type": "drug",
       "ko": "ABO2203",
       "en": "ABO2203"
+    },
+    "ono": {
+      "type": "company",
+      "ko": "오노제약",
+      "en": "Ono Pharmaceutical"
+    },
+    "biohaven": {
+      "type": "company",
+      "ko": "바이오헤이븐",
+      "en": "Biohaven"
+    },
+    "hrsa": {
+      "type": "regulator",
+      "ko": "미국 HHS·HRSA",
+      "en": "US HHS / HRSA"
+    },
+    "bhv1300": {
+      "type": "drug",
+      "ko": "BHV-1300",
+      "en": "BHV-1300"
     }
   },
   "stories": {
@@ -924,6 +944,32 @@
         "entities": [
           "teva",
           "samsung-bioepis"
+        ]
+      }
+    ],
+    "2026-10-13": [
+      {
+        "cat": "pipeline",
+        "ko": "오노, 바이오헤이븐 IgG 분해제 일본·한국·아세안 권리에 선급금 8,000만 달러",
+        "en": "Ono pays $80M upfront for Japan, Korea and ASEAN rights to Biohaven's IgG degraders",
+        "entities": [
+          "ono",
+          "biohaven",
+          "bhv1300"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "코크란 리뷰: 제약사 접대·금품이 더 비싸고 덜 적절한 처방으로",
+        "en": "Cochrane review links pharma perks to costlier, less appropriate prescribing",
+        "entities": []
+      },
+      {
+        "cat": "market",
+        "ko": "미국 병원들, 340B 환급 시범사업 막으려 다시 소송",
+        "en": "US hospitals sue to halt the 340B rebate pilot before its January start",
+        "entities": [
+          "hrsa"
         ]
       }
     ]

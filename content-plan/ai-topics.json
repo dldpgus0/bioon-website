@@ -18,7 +18,9 @@
     },
     {
       "id": "fda-docs-10k-pipeline",
-      "status": "todo",
+      "status": "done",
+      "slug": "reading-briefing-docs-and-10k",
+      "date": "2026-10-15",
       "format": "post",
       "ko": "FDA 자문위 브리핑 문서와 10-K에서 임상 결과·1차 평가변수만 골라 읽기",
       "en": "Reading FDA briefing documents and 10-Ks for trial results and primary endpoints",

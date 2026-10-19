@@ -22,13 +22,13 @@ Work on the session's designated branch, restarted from the latest `origin/main`
    - `summary.ko` / `summary.en`: one line per story (3), with the key number.
    - `questions.ko` / `questions.en`: 3 questions a reader might ask.
    - `keywords`: KO and EN company, drug and concept names.
-3. **`src/content/wiki.json`**:
+3. **`src/content/wiki.json`** (story index behind the story list, category filter and related issues on insight pages; the public wiki pages were removed on 2026-10-19):
    - Add `stories[<slug>]`: the issue's three stories, each with `cat` (`fda` / `clinical` / `market` / `pipeline`), a short `ko` and `en` headline, and `entities`.
    - Add any new companies, drugs or regulators to `entities` (`type`, `ko`, `en`). Reuse existing ids. Only tag entities a story is actually about.
 4. **Facts come only from the issue itself.** Don't add numbers or claims that aren't in the newsletter.
 5. **Check, then ship.**
    - `npm run lint` and `npm run build` pass.
-   - Under `next start`, these return 200: `/ko|en/insight/<slug>`, `/newsletters/ko/<slug>.html`, every new `/ko|en/wiki/<entity>`, and the home page shows the new issue.
+   - Under `next start`, these return 200: `/ko|en/insight/<slug>` and `/newsletters/ko/<slug>.html`, and the home page shows the new issue.
    - Commit, push, open a PR to `main` and merge it (the owner has approved merging these), then sync the branch.
 
 ## B. Give the owner, in this order

@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 import { getIssues, getPosts } from "@/lib/content";
 import { locales } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
-import { categoryIds, entityIds } from "@/lib/wiki";
+import { getCardnews } from "@/lib/cardnews";
 
-// Every public page in both languages, so Google and Naver can find the archive, wiki and
+// Every public page in both languages, so Google and Naver can find the archive, card news and
 // career posts. Each entry links its other-language version.
 
 type Entry = { path: string; lastModified?: string; changeFrequency?: "weekly" | "monthly"; priority?: number };
@@ -12,7 +12,7 @@ type Entry = { path: string; lastModified?: string; changeFrequency?: "weekly" |
 const pages: Entry[] = [
   { path: "", changeFrequency: "weekly", priority: 1 },
   { path: "/insight", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/wiki", changeFrequency: "weekly", priority: 0.7 },
+  { path: "/cardnews", changeFrequency: "weekly", priority: 0.7 },
   { path: "/career", changeFrequency: "weekly", priority: 0.8 },
   { path: "/career/interview", changeFrequency: "weekly", priority: 0.6 },
   { path: "/resources", changeFrequency: "monthly", priority: 0.7 },
@@ -38,8 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const lang of locales) {
     for (const p of pages) add(lang, p, [...locales]);
-    for (const c of categoryIds) add(lang, { path: `/wiki/category/${c}`, changeFrequency: "weekly", priority: 0.5 }, [...locales]);
-    for (const id of entityIds) add(lang, { path: `/wiki/${id}`, changeFrequency: "weekly", priority: 0.4 }, [...locales]);
+    for (const c of getCardnews()) add(lang, { path: `/cardnews/${c.slug}`, lastModified: c.date, changeFrequency: "monthly", priority: 0.5 }, [...locales]);
   }
 
   // Issues and career posts exist per language; link the other edition only where it exists.

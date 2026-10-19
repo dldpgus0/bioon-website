@@ -11,7 +11,7 @@ const text = {
     links: [
       ["", "홈으로"],
       ["/insight", "뉴스레터 보기"],
-      ["/wiki", "위키"],
+      ["/cardnews", "카드뉴스"],
       ["/career", "커리어"],
     ],
   },
@@ -21,7 +21,7 @@ const text = {
     links: [
       ["", "Home"],
       ["/insight", "Read the newsletter"],
-      ["/wiki", "Wiki"],
+      ["/cardnews", "Card news"],
       ["/career", "Career"],
     ],
   },

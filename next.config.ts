@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       { source: "/:lang(ko|en)/resources/flashcards", destination: "/:lang/tools/flashcards", permanent: true },
       // The market page was removed; send old links to the tools hub.
       { source: "/:lang(ko|en)/market", destination: "/:lang/tools", permanent: false },
+      // The wiki was replaced by the card news archive.
+      { source: "/:lang(ko|en)/wiki", destination: "/:lang/cardnews", permanent: false },
+      { source: "/:lang(ko|en)/wiki/:path*", destination: "/:lang/cardnews", permanent: false },
     ];
   },
   // The resource route reads markdown and Office files from disk at request time.

@@ -11,18 +11,13 @@ const catStyle: Record<Story["cat"], string> = {
   pipeline: "bg-surface-2 text-muted",
 };
 
-/** Category chip that links to the category's wiki page. */
 export function CategoryChip({ cat, lang }: { cat: Story["cat"]; lang: Locale }) {
-  return (
-    <Link href={`/${lang}/wiki/category/${cat}`} className={`rounded-md px-2 py-0.5 text-xs font-semibold hover:underline ${catStyle[cat]}`}>
-      {categoryLabel(cat, lang)}
-    </Link>
-  );
+  return <span className={`rounded-md px-2 py-0.5 text-xs font-semibold ${catStyle[cat]}`}>{categoryLabel(cat, lang)}</span>;
 }
 
 /**
- * Stories as wiki rows: category, title, the companies/drugs involved (each linking to its wiki
- * page), and — when `issues` is given — which issue it came from.
+ * Story rows: category, title, the companies/drugs involved, and — when `issues` is given —
+ * which issue it came from.
  */
 export function StoryList({
   stories,
@@ -65,13 +60,9 @@ export function StoryList({
                 {s.entities
                   .filter((e) => e !== hideEntity)
                   .map((e) => (
-                    <Link
-                      key={e}
-                      href={`/${lang}/wiki/${e}`}
-                      className="rounded-full border border-line px-2 py-0.5 text-xs text-muted transition-colors hover:border-teal hover:text-teal"
-                    >
+                    <span key={e} className="rounded-full border border-line px-2 py-0.5 text-xs text-muted">
                       {entity(e, lang).name}
-                    </Link>
+                    </span>
                   ))}
               </p>
             )}

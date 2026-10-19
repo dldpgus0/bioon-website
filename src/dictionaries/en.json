@@ -11,7 +11,7 @@
     "subscribe": "Subscribe",
     "switchLang": "한국어",
     "faq": "FAQ",
-    "wiki": "Wiki",
+    "cardnews": "Card news",
     "tools": "Tools"
   },
   "home": {
@@ -646,5 +646,21 @@
     "soundNote": "Sounds are generated in your browser, so there are no files to download and no music licensing. A short chime plays when a phase ends. Settings are saved in this browser only.",
     "fullscreen": "Full screen",
     "exitFullscreen": "Exit full screen"
+  },
+  "cardnews": {
+    "title": "Card news",
+    "metaTitle": "Card news",
+    "lede": "The card news I post on Instagram (@bio.on_insight), collected in one place. Swipe through biotech and pharma stories one card at a time.",
+    "empty": "The first card news is on its way. It'll appear here soon.",
+    "cards": "cards",
+    "koOnly": "Cards are in Korean.",
+    "back": "All card news",
+    "prev": "Previous card",
+    "next": "Next card",
+    "goTo": "Go to card {n}",
+    "instagram": "View on Instagram",
+    "follow": "Follow on Instagram",
+    "issue": "Read the related newsletter",
+    "transcript": "Show card text"
   }
 }

@@ -1,6 +1,6 @@
 // Imports Stibee email HTML issues into the site.
 //   node scripts/import-newsletters.mjs [newsletterDir]
-// Reads "<newsletterDir>/Newsletter - KOR" and "<newsletterDir>/Newsletter - ENG", plus
+// Reads "<newsletterDir>/Newsletter" (KO and EN issues side by side), plus
 // newsletter-src/ in this repo (web-only editions: the KO/EN welcome letter).
 // - copies each issue's HTML to public/newsletters/<lang>/<slug>.html (web version)
 // - writes src/content/insight.json with metadata parsed from the issue header
@@ -10,8 +10,7 @@ import path from "node:path";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const NEWSLETTER_DIR = process.argv[2] || "C:/Users/yaehy/OneDrive/Desktop/BIO.ON/newsletter";
 const SOURCES = [
-  path.join(NEWSLETTER_DIR, "Newsletter - KOR"),
-  path.join(NEWSLETTER_DIR, "Newsletter - ENG"),
+  path.join(NEWSLETTER_DIR, "Newsletter"),
   path.join(ROOT, "newsletter-src"),
 ];
 // The output folder is wiped below, so a missing source would silently drop its issues.

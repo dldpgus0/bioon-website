@@ -11,8 +11,7 @@
     "subscribe": "Subscribe",
     "switchLang": "한국어",
     "faq": "FAQ",
-    "cardnews": "Card news",
-    "tools": "Tools"
+    "cardnews": "Card news"
   },
   "home": {
     "eyebrow": "Every Tuesday morning · Biotech & pharma newsletter",
@@ -34,11 +33,6 @@
         "title": "Bio careers",
         "body": "LinkedIn, Cover Letter, ATS-Optimized Résumé and Behavioral Interview (STAR) guides for pharma sales, CRA, RA and BD roles.",
         "href": "/career"
-      },
-      {
-        "title": "Tools",
-        "body": "Study flashcards, a Pomodoro timer and the interview question bank. AI tools: waitlist open.",
-        "href": "/tools"
       },
       {
         "title": "Resources",
@@ -147,21 +141,6 @@
     "roles": "Relevant roles",
     "back": "Back to career",
     "empty": "No posts yet.",
-    "toolsTitle": "AI career tools",
-    "toolsLede": "Prepare your applications and interviews with role-specific AI feedback.",
-    "toolsCta": "See the tools",
-    "comingSoon": "Waitlist open",
-    "tools": [
-      {
-        "title": "AI feedback on your ATS-Optimized Résumé, Cover Letter & LinkedIn",
-        "body": "Pick a target role and paste your text to get section-by-section feedback on structure, role keywords and specificity — with rewrite suggestions. Nothing you paste is stored."
-      },
-      {
-        "title": "AI mock interview",
-        "body": "Choose a role and company type (Korean pharma, multinational, biotech) and answer five questions — including industry questions drawn from recent BIO:ON issues."
-      }
-    ],
-    "toolsNotify": "Subscribers hear first when they launch.",
     "interview": {
       "title": "Biotech interview question bank",
       "lede": "Interview questions built from the real industry news BIO:ON has covered. Pick a role, answer out loud first, then compare with the answer points.",
@@ -563,89 +542,6 @@
     "sourcesTitle": "Sources",
     "updated": "Last checked: 29 September 2026",
     "more": "Learn more"
-  },
-  "flashcards": {
-    "title": "Study flashcards",
-    "lede": "Clinical trial and statistics concept cards I wrote while studying for my MSc at UCL. Flip them and practise right here.",
-    "note": "These are my personal study notes from lectures, not official course material. For key definitions, check public standards such as ICH E9(R1) and CONSORT too.",
-    "allModules": "All modules",
-    "allTopics": "All topics",
-    "shuffle": "Shuffle",
-    "reset": "Reset progress",
-    "known": "known",
-    "cards": "cards",
-    "prev": "← Previous",
-    "next": "Next →",
-    "again": "Review again",
-    "gotIt": "Got it ✓",
-    "flipHint": "Click or press Space to flip",
-    "keys": "Space flip · ←/→ move · K got it · A review again · F full screen",
-    "example": "Example / note",
-    "trap": "Exam trap",
-    "knownChip": "✓ Known",
-    "empty": "No cards match this filter.",
-    "updated": "Updated",
-    "flip": "Flip card",
-    "back": "Back to tools",
-    "fullscreen": "Full screen",
-    "exitFullscreen": "Exit full screen"
-  },
-  "tools": {
-    "title": "Tools",
-    "lede": "Tools for studying and job preparation. All free, no sign-in needed.",
-    "studyTitle": "Study tools",
-    "careerTitle": "Career tools",
-    "open": "Open",
-    "back": "Back to tools",
-    "cards": {
-      "flashcards": {
-        "icon": "🗂️",
-        "title": "Study flashcards",
-        "body": "Flip through clinical trial and statistics concept cards, and review only the ones you don't know yet."
-      },
-      "pomodoro": {
-        "icon": "⏱️",
-        "title": "Pomodoro timer",
-        "body": "25 minutes of focus, 5 minutes of rest, with brown noise, rain or ambient sound while you focus."
-      },
-      "interview": {
-        "icon": "🎙️",
-        "title": "Interview question bank",
-        "body": "Role-specific interview questions and answer points built from newsletter issues, plus a random 5-question drill."
-      }
-    }
-  },
-  "pomodoro": {
-    "title": "Pomodoro timer",
-    "lede": "Alternate focus and rest while you study, with optional calm sound during focus.",
-    "phaseLabel": "Phase",
-    "phases": {
-      "focus": "Focus",
-      "short": "Short break",
-      "long": "Long break"
-    },
-    "start": "Start",
-    "pause": "Pause",
-    "reset": "Reset",
-    "skip": "Skip",
-    "sessions": "Focus sessions done",
-    "longEvery": "long break every {n}",
-    "keys": "Space to start or pause · F full screen",
-    "settings": "Settings",
-    "min": "min",
-    "soundTitle": "Focus sound",
-    "sounds": {
-      "off": "Off",
-      "brown": "Brown noise",
-      "rain": "Rain",
-      "ambient": "Ambient"
-    },
-    "volume": "Volume",
-    "breakSound": "Keep sound on during breaks",
-    "autoNext": "Start the next phase automatically",
-    "soundNote": "Sounds are generated in your browser, so there are no files to download and no music licensing. A short chime plays when a phase ends. Settings are saved in this browser only.",
-    "fullscreen": "Full screen",
-    "exitFullscreen": "Exit full screen"
   },
   "cardnews": {
     "title": "Card news",

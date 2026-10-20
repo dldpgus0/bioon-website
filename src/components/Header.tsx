@@ -12,7 +12,6 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
     { href: `/${lang}/cardnews`, label: dict.nav.cardnews },
     { href: `/${lang}/career`, label: dict.nav.career },
     { href: `/${lang}/resources`, label: dict.nav.resources },
-    { href: `/${lang}/tools`, label: dict.nav.tools },
     { href: `/${lang}/about`, label: dict.nav.about },
   ];
 

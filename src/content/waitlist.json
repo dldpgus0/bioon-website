@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "note": "Items not built yet. Only items with \"shown\": true appear, as 'Waitlist open' cards with an email capture; keep it to the few actually planned. Tools appear on the tools page; guides and resources at the bottom of the resources page."
+    "note": "Items not built yet. Only items with \"shown\": true appear, as 'Waitlist open' cards with an email capture; keep it to the few actually planned. Guides and resources appear at the bottom of the resources page (the tools page was removed on 2026-10-20)."
   },
   "items": {
     "lab-to-business": {

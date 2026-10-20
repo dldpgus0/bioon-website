@@ -1,13 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Pages that moved into the tools hub keep working at their old addresses.
+  // Removed pages (tools hub, market) send old links to the home page.
   async redirects() {
     return [
-      { source: "/:lang(ko|en)/career/tools", destination: "/:lang/tools", permanent: true },
-      { source: "/:lang(ko|en)/resources/flashcards", destination: "/:lang/tools/flashcards", permanent: true },
-      // The market page was removed; send old links to the tools hub.
-      { source: "/:lang(ko|en)/market", destination: "/:lang/tools", permanent: false },
+      { source: "/:lang(ko|en)/tools", destination: "/:lang", permanent: false },
+      { source: "/:lang(ko|en)/tools/:path*", destination: "/:lang", permanent: false },
+      { source: "/:lang(ko|en)/career/tools", destination: "/:lang", permanent: false },
+      { source: "/:lang(ko|en)/resources/flashcards", destination: "/:lang", permanent: false },
+      { source: "/:lang(ko|en)/market", destination: "/:lang", permanent: false },
       // The wiki was replaced by the card news archive.
       { source: "/:lang(ko|en)/wiki", destination: "/:lang/cardnews", permanent: false },
       { source: "/:lang(ko|en)/wiki/:path*", destination: "/:lang/cardnews", permanent: false },

@@ -9,7 +9,7 @@ import { getIssueSlugs, getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { TrackedLink } from "@/components/TrackedLink";
 
-const pillarIcons = [icons.newsletter, icons.career, icons.ai, icons.resources];
+const pillarIcons = [icons.newsletter, icons.career, icons.resources];
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const lang = await getLocale(params);
@@ -124,7 +124,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       {/* Pillars */}
       <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
         <SectionTitle title={t.pillarsTitle} subtitle={t.pillarsSub} />
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-5 sm:grid-cols-3">
           {t.pillars.map((p, i) => (
             <Link
               key={p.href}

@@ -618,5 +618,35 @@
       "340B 소송"
     ],
     "sourceFile": "BIO.ON Insight KO #20.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 22,
+    "number": 21,
+    "date": "2026-10-20",
+    "slug": "2026-10-20",
+    "title": "Europe opens the door, China half-closes its own",
+    "summary": "Lilly's Foundayo weight-loss pill clears Europe's key hurdle, Beijing floats a ban on foreign takeovers of its biotech platforms, and AbbVie and BMS join the 340B court fight. When the rules change, so does the way you win.",
+    "tags": [
+      "European Weight-Loss Pill",
+      "China Deal Rules",
+      "340B Litigation"
+    ],
+    "sourceFile": "BIO.ON Insight EN #21.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 22,
+    "number": 21,
+    "date": "2026-10-20",
+    "slug": "2026-10-20",
+    "title": "유럽은 문을 열고, 중국은 문을 반쯤 닫았어요",
+    "summary": "릴리의 비만 알약 파운데이요(Foundayo), 유럽 승인 권고. 중국 정부는 해외 인수 금지안을 꺼냈고, 340B 소송엔 애브비·BMS가 참전했어요 — 규칙이 바뀌면 이기는 방식도 바뀐 한 주였어요",
+    "tags": [
+      "유럽 비만 알약",
+      "중국 딜 규제",
+      "340B 소송"
+    ],
+    "sourceFile": "BIO.ON Insight KO #21.html"
   }
 ]

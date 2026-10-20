@@ -426,6 +426,16 @@
       "type": "drug",
       "ko": "BHV-1300",
       "en": "BHV-1300"
+    },
+    "mofcom": {
+      "type": "regulator",
+      "ko": "중국 상무부(MOFCOM)",
+      "en": "China's MOFCOM"
+    },
+    "boehringer": {
+      "type": "company",
+      "ko": "베링거인겔하임",
+      "en": "Boehringer Ingelheim"
     }
   },
   "stories": {
@@ -969,6 +979,39 @@
         "ko": "미국 병원들, 340B 환급 시범사업 막으려 다시 소송",
         "en": "US hospitals sue to halt the 340B rebate pilot before its January start",
         "entities": [
+          "hrsa"
+        ]
+      }
+    ],
+    "2026-10-20": [
+      {
+        "cat": "fda",
+        "ko": "릴리 비만 알약 Foundayo, 유럽 CHMP 승인 권고",
+        "en": "Lilly's Foundayo weight-loss pill wins a CHMP positive opinion in Europe",
+        "entities": [
+          "lilly",
+          "foundayo",
+          "novo",
+          "wegovy"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "중국 상무부, 핵심 바이오 플랫폼의 해외 인수 금지안 공개",
+        "en": "China's MOFCOM proposes banning foreign takeovers of key biotech platforms",
+        "entities": [
+          "mofcom",
+          "astrazeneca"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "애브비·BMS·베링거·PhRMA, 340B 환급 시범사업 소송 참가",
+        "en": "AbbVie, BMS, Boehringer and PhRMA move to join the 340B rebate pilot lawsuit",
+        "entities": [
+          "abbvie",
+          "bms",
+          "boehringer",
           "hrsa"
         ]
       }

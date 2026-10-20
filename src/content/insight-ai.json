@@ -1133,5 +1133,79 @@
       "gross-to-net",
       "순약가"
     ]
+  },
+  "2026-10-20": {
+    "topics": [
+      "obesity",
+      "regulatory",
+      "bd",
+      "access"
+    ],
+    "roles": [
+      "access",
+      "bd",
+      "ra",
+      "sales"
+    ],
+    "summary": {
+      "ko": [
+        "EMA CHMP가 릴리의 하루 한 알 GLP-1 비만약 Foundayo(오르포글리프론) 승인을 권고했어요(72주 체중 5~11% 감소, EC 최종 승인 대기).",
+        "중국 상무부가 세포·유전자치료, siRNA 등 핵심 플랫폼의 해외 인수를 막는 수출통제 개정안을 냈어요(라이선스·위탁은 허용, 11월 15일까지 의견 수렴).",
+        "애브비·BMS·베링거인겔하임과 PhRMA가 21개 약 대상 340B 환급 시범사업을 둘러싼 병원들의 소송에 참가를 신청했어요."
+      ],
+      "en": [
+        "The EMA's CHMP recommended approving Lilly's once-daily GLP-1 pill Foundayo (orforglipron), with 5–11% weight loss over 72 weeks; EC sign-off is pending.",
+        "China's MOFCOM proposed export-control changes that would ban foreign takeovers of cell and gene therapy and siRNA platforms, while still allowing licensing (comments until 15 Nov).",
+        "AbbVie, BMS, Boehringer Ingelheim and PhRMA moved to join the hospitals' lawsuit over the 340B rebate pilot covering 21 drugs."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "CHMP 긍정 의견과 EC 최종 승인은 어떻게 다른가요?",
+        "중국 자산을 들여올 때 인수와 라이선스는 무엇이 다른가요?",
+        "340B 환급 방식이 바뀌면 제약사의 gross-to-net 모델은 어떻게 달라지나요?"
+      ],
+      "en": [
+        "How does a CHMP positive opinion differ from EC approval?",
+        "What changes between acquiring and licensing a Chinese asset?",
+        "How would a 340B rebate model change a manufacturer's gross-to-net forecast?"
+      ]
+    },
+    "keywords": [
+      "릴리",
+      "Eli Lilly",
+      "Foundayo",
+      "오르포글리프론",
+      "orforglipron",
+      "GLP-1",
+      "비만",
+      "obesity",
+      "노보 노디스크",
+      "Novo Nordisk",
+      "위고비",
+      "Wegovy",
+      "CHMP",
+      "EMA",
+      "EC",
+      "중국 상무부",
+      "MOFCOM",
+      "수출통제",
+      "export control",
+      "라이선스",
+      "licensing",
+      "인수",
+      "acquisition",
+      "340B",
+      "HRSA",
+      "애브비",
+      "AbbVie",
+      "BMS",
+      "베링거인겔하임",
+      "Boehringer Ingelheim",
+      "PhRMA",
+      "환급",
+      "rebate",
+      "gross-to-net"
+    ]
   }
 }

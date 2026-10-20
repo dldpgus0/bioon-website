@@ -10,8 +10,9 @@ export const alt = "BIO:ON Insight";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Pretendard (OFL) from the npm package, so Korean titles render instead of empty boxes.
-const fontDir = join(process.cwd(), "node_modules/pretendard/dist/public/static");
+// Pretendard (OFL), copied into src/fonts so Korean titles render instead of empty boxes. Only these
+// two files are bundled; tracing the whole npm package added ~40 MB to every insight function.
+const fontDir = join(process.cwd(), "src/fonts");
 
 export default async function Image({ params }: { params: Promise<{ lang: string; slug: string }> }) {
   const { lang, slug } = await params;

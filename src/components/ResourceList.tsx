@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { useLead } from "@/hooks/useLead";
@@ -38,16 +37,7 @@ export function ResourceList({ dict, lang, ids }: { dict: Dictionary; lang: stri
             <p className="mt-1 text-xs font-medium text-muted">{t.formats[item.format as keyof typeof t.formats]}</p>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{item.body}</p>
 
-            {item.format === "online" ? (
-              // Online resources (e.g. flashcards) are open to everyone: no email gate.
-              <Link
-                href={`/${lang}/tools/${item.id}`}
-                onClick={() => track("resource_download", { resource: item.id, lang })}
-                className="mt-5 rounded-xl bg-teal py-2.5 text-center text-sm font-semibold text-on-brand hover:opacity-90"
-              >
-                {t.practice}
-              </Link>
-            ) : !free ? (
+            {!free ? (
               <p className="mt-5 rounded-xl border border-line py-2.5 text-center text-sm font-semibold text-muted">{t.comingSoon}</p>
             ) : unlocked ? (
               <a

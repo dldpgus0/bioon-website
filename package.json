@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "eslint",
     "import": "node scripts/import-newsletters.mjs",
-    "flashcards": "node scripts/import-flashcards.mjs",
     "cardnews": "node scripts/import-cardnews.mjs"
   },
   "dependencies": {

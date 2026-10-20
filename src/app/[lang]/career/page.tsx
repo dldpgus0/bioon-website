@@ -31,19 +31,6 @@ export default async function CareerPage({ params }: PageProps<"/[lang]/career">
             <p className="mt-2 text-sm leading-relaxed text-white/80">{dict.career.interview.cardBody}</p>
             <span className="mt-4 inline-block text-sm font-semibold">{dict.career.interview.cta}<span aria-hidden> →</span></span>
           </Link>
-          <div className="rounded-2xl border border-teal/40 bg-teal-soft p-6">
-            <p className="text-xs font-bold tracking-wide text-teal">AI TOOLS · {dict.career.comingSoon}</p>
-            <h2 className="mt-2 text-lg font-bold text-ink">{dict.career.toolsTitle}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-muted">{dict.career.toolsLede}</p>
-            <ul className="mt-4 space-y-2 text-sm font-medium text-ink">
-              {dict.career.tools.map((t) => (
-                <li key={t.title}>✦ {t.title}</li>
-              ))}
-            </ul>
-            <Link href={`/${lang}/tools`} className="mt-5 inline-block text-sm font-semibold text-teal hover:underline">
-              {dict.career.toolsCta}<span aria-hidden> →</span>
-            </Link>
-          </div>
         </aside>
       </div>
     </>

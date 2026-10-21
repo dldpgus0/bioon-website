@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const lang of locales) {
     for (const p of pages) add(lang, p, [...locales]);
-    for (const c of getCardnews()) add(lang, { path: `/cardnews/${c.slug}`, lastModified: c.date, changeFrequency: "monthly", priority: 0.5 }, [...locales]);
+    for (const c of getCardnews(lang)) add(lang, { path: `/cardnews/${c.slug}`, lastModified: c.date, changeFrequency: "monthly", priority: 0.5 }, [...locales]);
   }
 
   // Issues and career posts exist per language; link the other edition only where it exists.

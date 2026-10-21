@@ -15,6 +15,9 @@ import { storiesOf } from "@/lib/wiki";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import { roleLabel, topicLabel } from "@/lib/taxonomy";
 
+// Every page is built ahead of time; unknown slugs 404 without running a server render.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return locales.flatMap((lang) => getIssueSlugs().map((slug) => ({ lang, slug })));
 }

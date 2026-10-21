@@ -9,29 +9,37 @@ The owner makes Instagram card news (4:5, 1080×1350 cards, one HTML file per ca
 
 ## 1. Get the files into one folder
 
-- Put the upload in a new scratch folder, e.g. `<scratchpad>/cardnews/<YYMMDD_주제>/`, keeping the folder layout the cards expect.
-- Cards usually link shared files by relative path (e.g. `../../../assets/style.css`, `bg-*.jpg`, the logo). Check every `<link>`, `<img>` and `url()` path first. If a file wasn't uploaded, the cards render without styling: ask the owner to send it (or the whole episode folder as a zip) before importing. Don't recreate their CSS.
+- Unzip each upload into its own new scratch folder. The owner's zips so far look like this:
+  - `ko/cards/*.html` + `ko/verify/*.png`: the Korean episode
+  - `en/cards/*.html` + `en/verify/*.png`: the English version of the same episode
+  - `terms/cards/*.html` + `terms/verify/*.png` (no cover): a bilingual "용어 · TERM No. NN" mini-series, published as its own episode
+- `verify/<card>.png` are the owner's own renders. The script uses them as-is, so the shared CSS and background images (`../../../../assets/…`) don't need to be uploaded.
+- Only if there are no `verify/` PNGs does the script screenshot the HTML. Then every `<link>`, `<img>` and `url()` path must resolve; if files are missing, ask the owner for them (or the whole folder) instead of recreating their CSS.
 
 ## 2. Import
 
 ```
-node scripts/import-cardnews.mjs <episode-folder> --slug <YYYY-MM-DD-short-english-topic> --date <YYYY-MM-DD> \
+# Korean (main entry)
+node scripts/import-cardnews.mjs <folder>/ko --slug <YYYY-MM-DD-short-english-topic> --date <YYYY-MM-DD> \
   --title "<Korean title>" --summary "<one Korean sentence>" --tags "태그1,태그2" [--issue <insight slug>] [--instagram <post URL>]
+# English cards, if there are any (adds to the same entry)
+node scripts/import-cardnews.mjs <folder>/en --slug <same slug> --lang en --title "…" --summary "…" --tags "…"
+# Bilingual terms episode
+node scripts/import-cardnews.mjs <folder>/terms --slug <YYYY-MM-DD-term-…> --date … --bilingual true --title "용어 No.NN …" …
 ```
 
 - What the script does:
-  - Reads `cards/` (or the folder itself) and orders the files cover → body1…N → cta.
-  - Screenshots each card at 1080×1350 to `public/cardnews/<slug>/NN.jpg` and uses each card's text as alt text.
-  - Writes the entry to `src/content/cardnews.json`. Re-running with the same slug replaces the episode.
-- At the end it lists any files it couldn't load. If it does, stop and get those files; don't ship broken cards.
-- Take the title and summary from the cards themselves (the cover headline and the main point). Don't add facts that aren't on the cards.
-- `--issue`: if the episode is based on a newsletter issue, pass that issue's slug (its date) so the page links to it.
-- `--instagram`: the post URL, if the owner gives it.
+  - Orders the cards cover → body1…N → cta.
+  - Saves each card as WebP (~55 KB instead of ~600 KB PNG) to `public/cardnews/<slug>/NN.webp` (`en-NN.webp` for English), plus `og.jpg` / `en-og.jpg` of the first card for link previews.
+  - Uses each card's text as alt text, and writes the entry to `src/content/cardnews.json`. Re-running with the same slug and language replaces those cards.
+- For a bilingual terms episode, add an English title/summary/tags by hand as `"en": { "title", "summary", "tags" }` (no `cards`): the English page then reuses the bilingual cards.
+- Take titles and summaries from the cards themselves (cover headline, main point). Don't add facts that aren't on the cards.
+- `--issue`: the newsletter issue the episode is based on (its date slug), so the page links to it.
 
 ## 3. Check, then ship
 
 - Open 2–3 of the generated JPGs and confirm fonts, background images and text all look right, with nothing cut off.
-- `npm run lint` and `npm run build` pass. Under `next start`, `/ko/cardnews`, `/en/cardnews` and `/ko|en/cardnews/<slug>` return 200.
+- `npm run lint` and `npm run build` pass. Under `next start`, `/ko/cardnews`, `/en/cardnews` and `/ko|en/cardnews/<slug>` return 200, and the English page shows English cards when they exist.
 - Commit, push, open a PR to `main` and merge it (the owner has approved merging these), then sync the branch.
 
 ## 4. Report (short, in Korean)

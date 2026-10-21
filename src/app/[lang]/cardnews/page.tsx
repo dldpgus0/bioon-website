@@ -18,14 +18,13 @@ export default async function CardnewsPage({ params }: PageProps<"/[lang]/cardne
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   const t = dict.cardnews;
-  const items = getCardnews();
+  const items = getCardnews(lang);
 
   return (
     <>
       <PageHeader eyebrow="BIO:ON Card News" title={t.title} lede={t.lede} />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="mb-8 flex flex-wrap items-center justify-center gap-3 text-sm">
-          {t.koOnly && <span className="text-muted">{t.koOnly}</span>}
           <a href={instagram} target="_blank" rel="noopener noreferrer" className="font-semibold text-teal hover:underline">
             {t.follow} @bio.on_insight<span aria-hidden> ↗</span>
           </a>

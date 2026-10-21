@@ -7,13 +7,16 @@ import { getCardnews, getCardnewsBySlug } from "@/lib/cardnews";
 import { getIssue } from "@/lib/content";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 
+// Every page is built ahead of time; unknown slugs 404 without running a server render.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return locales.flatMap((lang) => getCardnews().map((c) => ({ lang, slug: c.slug })));
+  return locales.flatMap((lang) => getCardnews(lang).map((c) => ({ lang, slug: c.slug })));
 }
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/cardnews/[slug]">): Promise<Metadata> {
   const lang = await getLocale(params);
-  const c = getCardnewsBySlug((await params).slug);
+  const c = getCardnewsBySlug((await params).slug, lang);
   if (!c) return {};
   return {
     title: c.title,
@@ -26,7 +29,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/cardnews/[
       url: `/${lang}/cardnews/${c.slug}`,
       siteName: "BIO:ON Insight",
       publishedTime: c.date,
-      images: [{ url: c.cards[0].src, width: 1080, height: 1350 }],
+      images: [{ url: c.og, width: 1080, height: 1350 }],
     },
   };
 }
@@ -35,7 +38,7 @@ export default async function CardnewsDetail({ params }: PageProps<"/[lang]/card
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);
   const t = dict.cardnews;
-  const c = getCardnewsBySlug((await params).slug);
+  const c = getCardnewsBySlug((await params).slug, lang);
   if (!c) notFound();
   const issue = c.issue ? getIssue(lang, c.issue) : undefined;
 
@@ -51,7 +54,7 @@ export default async function CardnewsDetail({ params }: PageProps<"/[lang]/card
       </p>
       <h1 className="mt-1 text-2xl font-extrabold leading-snug tracking-tight text-ink sm:text-3xl">{c.title}</h1>
       {c.summary && <p className="mt-3 leading-relaxed text-muted">{c.summary}</p>}
-      {t.koOnly && <p className="mt-2 text-sm text-muted">{t.koOnly}</p>}
+      {c.koreanCards && <p className="mt-2 text-sm text-muted">{t.koOnly}</p>}
 
       <div className="mt-8">
         <CardCarousel cards={c.cards} labels={{ prev: t.prev, next: t.next, goTo: t.goTo }} />

@@ -6,6 +6,9 @@ import { SubscribeForm } from "@/components/SubscribeForm";
 import { getPost, getPosts } from "@/lib/content";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 
+// Every post is built ahead of time; unknown slugs 404 without running a server render.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return locales.flatMap((lang) => getPosts(lang).map((p) => ({ lang, slug: p.slug })));
 }

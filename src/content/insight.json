@@ -648,5 +648,35 @@
       "340B 소송"
     ],
     "sourceFile": "BIO.ON Insight KO #21.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 22,
+    "number": 22,
+    "date": "2026-10-27",
+    "slug": "2026-10-27",
+    "title": "Buy it, extend it or build it? Three companies, three growth plans",
+    "summary": "Celltrion licenses Kaigene's KG013 for up to $580.5M, the FDA grants Ultomiris accelerated approval in IgA nephropathy, and AbbVie's lutikizumab wins phase 3 but misses expectations. Buy, extend or build: three companies, three answers.",
+    "tags": [
+      "Celltrion's Drug Hunt",
+      "Ultomiris Label Expansion",
+      "AbbVie's Phase 3 Reality Check"
+    ],
+    "sourceFile": "BIO.ON Insight EN #22.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 22,
+    "number": 22,
+    "date": "2026-10-27",
+    "slug": "2026-10-27",
+    "title": "성장 엔진, 사 올까? 늘릴까? 키울까? 세 회사의 답이 달랐어요",
+    "summary": "셀트리온이 카이진 항체에 최대 $580.5M, AZ 울토미리스는 IgA 신병증 가속 승인, AbbVie 루티키주맙은 3상 성공에도 기대엔 못 미쳤어요. 성장 엔진을 사 올지, 기존 약을 늘릴지, 직접 키울지 세 회사의 답이 달랐어요",
+    "tags": [
+      "셀트리온 신약 사냥",
+      "울토미리스 적응증",
+      "AbbVie 3상"
+    ],
+    "sourceFile": "BIO.ON Insight KO #22.html"
   }
 ]

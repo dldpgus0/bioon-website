@@ -1207,5 +1207,81 @@
       "rebate",
       "gross-to-net"
     ]
+  },
+  "2026-10-27": {
+    "topics": [
+      "bd",
+      "regulatory",
+      "specialty"
+    ],
+    "roles": [
+      "bd",
+      "ra",
+      "clinical",
+      "ir"
+    ],
+    "summary": {
+      "ko": [
+        "셀트리온이 카이진의 전임상 자가면역 항체 KG013(APRIL 표적, 첫 적응증 IgA 신병증)을 최대 $580.5M에 도입했어요(계약금 비공개).",
+        "AZ(알렉시온)의 울토미리스가 IgA 신병증에서 FDA 가속 승인을 받아 미국 다섯 번째 적응증을 얻었어요(34주 단백뇨 위약 대비 43.4% 감소).",
+        "애브비 루티키주맙이 화농성 한선염 3상에서 1차 평가변수를 충족했지만(HiSCR75 31.4% vs 23.4%) 시장 기대에 못 미쳐 경쟁사 아발로 주가가 35% 떨어졌어요."
+      ],
+      "en": [
+        "Celltrion licensed Kaigene's preclinical autoimmune antibody KG013 (APRIL-targeting, first indication IgA nephropathy) for up to $580.5M, with the upfront undisclosed.",
+        "AstraZeneca's (Alexion) Ultomiris won FDA accelerated approval in IgA nephropathy, its fifth US indication, cutting proteinuria 43.4% versus placebo at 34 weeks.",
+        "AbbVie's lutikizumab met its phase 3 primary endpoint in hidradenitis suppurativa (HiSCR75 31.4% vs 23.4%) but fell short of expectations, and rival Avalo's shares fell 35%."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "전임상 자산을 마일스톤 중심 계약으로 도입하면 어떤 위험과 이점이 있나요?",
+        "단백뇨로 받은 가속 승인은 정식 승인과 어떻게 다른가요?",
+        "3상에서 1차 평가변수를 충족했는데 왜 시장은 실망했나요?"
+      ],
+      "en": [
+        "What are the risks and benefits of in-licensing a preclinical asset through a milestone-heavy deal?",
+        "How does an accelerated approval based on proteinuria differ from full approval?",
+        "Why was the market disappointed when the phase 3 trial met its primary endpoint?"
+      ]
+    },
+    "keywords": [
+      "셀트리온",
+      "Celltrion",
+      "카이진",
+      "Kaigene",
+      "KG013",
+      "APRIL",
+      "라이선스 인",
+      "in-licensing",
+      "마일스톤",
+      "milestone",
+      "IgA 신병증",
+      "IgA nephropathy",
+      "IgAN",
+      "울토미리스",
+      "Ultomiris",
+      "라불리주맙",
+      "ravulizumab",
+      "알렉시온",
+      "Alexion",
+      "아스트라제네카",
+      "AstraZeneca",
+      "가속 승인",
+      "accelerated approval",
+      "단백뇨",
+      "proteinuria",
+      "라이프사이클 관리",
+      "lifecycle management",
+      "애브비",
+      "AbbVie",
+      "루티키주맙",
+      "lutikizumab",
+      "화농성 한선염",
+      "hidradenitis suppurativa",
+      "HiSCR75",
+      "아발로",
+      "Avalo",
+      "IL-1"
+    ]
   }
 }

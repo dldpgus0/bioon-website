@@ -436,6 +436,41 @@
       "type": "company",
       "ko": "베링거인겔하임",
       "en": "Boehringer Ingelheim"
+    },
+    "celltrion": {
+      "type": "company",
+      "ko": "셀트리온",
+      "en": "Celltrion"
+    },
+    "kaigene": {
+      "type": "company",
+      "ko": "카이진",
+      "en": "Kaigene"
+    },
+    "kg013": {
+      "type": "drug",
+      "ko": "KG013",
+      "en": "KG013"
+    },
+    "ultomiris": {
+      "type": "drug",
+      "ko": "울토미리스",
+      "en": "Ultomiris"
+    },
+    "alexion": {
+      "type": "company",
+      "ko": "알렉시온",
+      "en": "Alexion"
+    },
+    "lutikizumab": {
+      "type": "drug",
+      "ko": "루티키주맙",
+      "en": "lutikizumab"
+    },
+    "avalo": {
+      "type": "company",
+      "ko": "아발로",
+      "en": "Avalo"
     }
   },
   "stories": {
@@ -1013,6 +1048,39 @@
           "bms",
           "boehringer",
           "hrsa"
+        ]
+      }
+    ],
+    "2026-10-27": [
+      {
+        "cat": "pipeline",
+        "ko": "셀트리온, 카이진 자가면역 항체 KG013 최대 $580.5M에 도입",
+        "en": "Celltrion licenses Kaigene's autoimmune antibody KG013 for up to $580.5M",
+        "entities": [
+          "celltrion",
+          "kaigene",
+          "kg013"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "AZ 울토미리스, IgA 신병증 FDA 가속 승인으로 다섯 번째 적응증",
+        "en": "AstraZeneca's Ultomiris wins accelerated FDA approval in IgA nephropathy, its fifth indication",
+        "entities": [
+          "astrazeneca",
+          "alexion",
+          "ultomiris",
+          "fda"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "애브비 루티키주맙, HS 3상 성공에도 기대 미달… 아발로 35% 급락",
+        "en": "AbbVie's lutikizumab hits its phase 3 HS endpoint but misses expectations; Avalo falls 35%",
+        "entities": [
+          "abbvie",
+          "lutikizumab",
+          "avalo"
         ]
       }
     ]

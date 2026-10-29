@@ -1,8 +1,9 @@
 """Builds the file-based lead-magnet downloads in src/content/downloads/:
   - pipeline-deal-tracker.xlsx  (Pipeline & Deal Tracker)
   - cv-template.docx            (English CV template, ATS-friendly)
+  - literature-summary-table.xlsx (prior-research summary table)
 
-  python3 scripts/build-downloads.py
+  python3 scripts/build-downloads.py [xlsx|docx|lit ...]   (no argument builds all)
 
 Example rows use only publicly reported facts, each with its source URL in the row.
 Requires openpyxl and python-docx.
@@ -316,7 +317,154 @@ def build_docx():
     return out
 
 
+LIT_CHECKED = "2026-10-29"
+
+
+def build_lit_xlsx():
+    wb = Workbook()
+
+    # ---------- How to use ----------
+    ws = wb.active
+    ws.title = "How to use"
+    title(ws, "BIO:ON Literature Summary Table", "선행 연구를 서론 흐름·방법·대조군·결과로 한 줄씩 정리하는 템플릿 / One row per paper: intro logic, methods, control and result")
+    rows = [
+        ("", ""),
+        ("범례 Legend", ""),
+        ("노란 칸 Yellow cells", "직접 입력하는 칸이에요. / Cells you fill in."),
+        ("파란 칸 Blue rows", "실제 논문 초록으로 채운 예시 행이에요. 형식을 참고한 뒤 지우세요. / Example rows filled from real abstracts. Use them as a format guide, then delete."),
+        ("", ""),
+        ("쓰는 순서 Steps", ""),
+        ("1", "질문을 한 문장으로 적어요 (Question 칸). 예: 'APRIL을 막으면 IgA 신병증 단백뇨가 줄어드나?' / Write your question in one sentence (Question cell)."),
+        ("2", "Consensus나 Perplexity로 후보 논문을 찾고, 찾은 도구를 Found via 칸에 적어요. / Find candidate papers with Consensus or Perplexity and note which tool found each one."),
+        ("3", "논문마다 한 줄: 서론 흐름(배경 → 빈틈 → 가설), 연구 설계, 대상, 개입, 대조군, 1차 평가변수, 핵심 결과(숫자 하나)를 적어요. / One row per paper: intro logic (background → gap → hypothesis), design, population, intervention, control, primary endpoint, key result with one number."),
+        ("4", "AI 요약을 그대로 옮기지 말고, 논문 원문(최소한 초록과 방법)을 열어 확인한 뒤 'Checked in paper' 칸을 채워요. / Don't copy an AI summary as is: open the paper (at least the abstract and methods), then fill 'Checked in paper'."),
+        ("5", "Synthesis 시트에서 논문들이 같은 말을 하는지, 어디서 갈리는지, 아직 아무도 답하지 않은 질문은 무엇인지 정리해요. / In Synthesis, note where papers agree, where they differ, and what is still unanswered."),
+        ("", ""),
+        ("출처 규칙 Source rule", "인용할 때는 AI 화면이 아니라 논문 자체(DOI·PMID)를 인용해요. 'Checked in paper'가 'No'인 행은 인용하지 마세요. / Cite the paper itself (DOI/PMID), never the AI tool's answer. Don't cite rows where 'Checked in paper' is 'No'."),
+        ("", ""),
+        ("어디서 찾나 Where to look", ""),
+        ("PubMed", "https://pubmed.ncbi.nlm.nih.gov/"),
+        ("Consensus", "https://consensus.app/"),
+        ("Perplexity", "https://www.perplexity.ai/"),
+        ("DOI 확인 / Resolve a DOI", "https://doi.org/"),
+        ("", ""),
+        ("만든 곳 Made by", "BIO:ON Insight · bioon-website.vercel.app — 예시 행 확인일 / Example rows checked: " + LIT_CHECKED),
+    ]
+    for i, (a, b) in enumerate(rows, start=3):
+        ws.cell(row=i, column=1, value=a).font = font(bold=bool(a) and not a.isdigit(), size=10)
+        cb = ws.cell(row=i, column=2, value=b)
+        cb.font = font(size=10)
+        cb.alignment = Alignment(wrap_text=True, vertical="top")
+    ws["A5"].fill = INPUT_FILL
+    ws["A6"].fill = EXAMPLE_FILL
+    ws.column_dimensions["A"].width = 26
+    ws.column_dimensions["B"].width = 110
+
+    # ---------- Lists (for dropdowns) ----------
+    lists = wb.create_sheet("Lists")
+    designs = ["RCT", "Non-randomised trial", "Cohort", "Case-control", "Cross-sectional", "Case report / series", "Systematic review / meta-analysis", "Narrative review", "Animal study", "In vitro", "Other"]
+    found = ["Consensus", "Perplexity", "PubMed", "Google Scholar", "Reference list", "Other"]
+    checked = ["Yes - full text", "Yes - abstract only", "No"]
+    for col, (name, values) in enumerate([("Design", designs), ("Found via", found), ("Checked", checked)], start=1):
+        lists.cell(row=1, column=col, value=name).font = font(bold=True)
+        for r, v in enumerate(values, start=2):
+            lists.cell(row=r, column=col, value=v).font = font()
+        lists.column_dimensions[get_column_letter(col)].width = 34
+    lists.sheet_state = "hidden"
+
+    # ---------- Papers ----------
+    ws = wb.create_sheet("Papers")
+    title(ws, "Papers 논문 요약표", "노란 칸에 입력하세요. 파란 행은 예시예요. / Fill the yellow cells; blue rows are examples.")
+    ws["A3"] = "질문 Question:"
+    ws["A3"].font = font(bold=True, size=10)
+    ws.merge_cells("B3:F3")
+    body_cell(ws["B3"], INPUT_FILL)
+    headers = [
+        "#", "논문 Citation (저자, 연도, 저널)", "DOI / PMID / NCT", "연구 설계 Design",
+        "서론 흐름 Intro logic (배경 → 빈틈 → 가설)", "대상 Population (n)", "개입 Intervention",
+        "대조군 Control", "1차 평가변수 Primary endpoint", "핵심 결과 Key result (숫자)",
+        "한계 Limitations", "찾은 도구 Found via", "원문 확인 Checked in paper", "확인일 Date checked",
+    ]
+    widths = [5, 30, 20, 16, 40, 24, 24, 16, 30, 36, 30, 14, 18, 12]
+    header_row(ws, 5, headers, widths)
+    examples = [
+        [1, "Perkovic V, et al. NEJM 2025 (VISIONARY, interim)", "NCT05248646", "RCT",
+         "APRIL drives IgA nephropathy → no APRIL-targeted therapy approved → does selective APRIL blockade cut proteinuria?",
+         "Adults with biopsy-confirmed IgAN; 510 randomised, 320 in interim analysis",
+         "Sibeprenlimab 400 mg s.c. every 4 weeks", "Placebo",
+         "24-h urine protein-to-creatinine ratio at 9 months vs baseline",
+         "-50.2% vs +2.1%; 51.2% lower than placebo (96.5% CI 42.9-58.2)",
+         "Interim; eGFR slope (key secondary) reported only at completion",
+         "Consensus", "Yes - abstract only", LIT_CHECKED],
+        [2, "Lafayette R, et al. NEJM 2025 (ORIGIN 3, interim)", "NCT04716231", "RCT",
+         "BAFF and APRIL both drive IgAN → test dual BAFF/APRIL blockade",
+         "Patients with IgAN; 203 in prespecified interim analysis",
+         "Atacicept 150 mg s.c. once weekly", "Placebo",
+         "% change in 24-h UPCR at week 36",
+         "-45.7% vs -6.8%; between-group difference 41.8 points (95% CI 28.9-52.3)",
+         "Interim; adverse events 59.3% vs 50.0%",
+         "Consensus", "Yes - abstract only", LIT_CHECKED],
+        [3, "Lv J-C, et al. NEJM 2026 (TELIGAN, interim)", "NCT05799287", "RCT",
+         "BAFF and APRIL mediate IgAN → test telitacicept in high-risk patients despite supportive care",
+         "Adults with biopsy-proven IgAN, proteinuria >= 1.0 g/day; 318 randomised",
+         "Telitacicept 240 mg s.c. once weekly", "Placebo",
+         "Geometric mean ratio of 24-h UPCR at week 39 vs baseline",
+         "-58.9% vs -8.8%; relative difference -55.0% (95% CI -61.3 to -47.6)",
+         "Interim; adverse events 89.3% vs 78.6%",
+         "Consensus", "Yes - abstract only", LIT_CHECKED],
+    ]
+    r = 6
+    for ex in examples:
+        for c, v in enumerate(ex, start=1):
+            body_cell(ws.cell(row=r, column=c, value=v), EXAMPLE_FILL)
+        ws.row_dimensions[r].height = 75
+        r += 1
+    last = r + 14
+    for rr in range(r, last + 1):
+        ws.cell(row=rr, column=1, value=rr - 5)
+        body_cell(ws.cell(row=rr, column=1))
+        for c in range(2, len(headers) + 1):
+            body_cell(ws.cell(row=rr, column=c), INPUT_FILL)
+    for col, letter in ((4, "A"), (12, "B"), (13, "C")):
+        n = {"A": 12, "B": 7, "C": 4}[letter]
+        dv = DataValidation(type="list", formula1=f"=Lists!${letter}$2:${letter}${n}", allow_blank=True)
+        ws.add_data_validation(dv)
+        dv.add(f"{get_column_letter(col)}6:{get_column_letter(col)}{last}")
+    ws.cell(row=6, column=13).comment = Comment("Example rows were filled from the published abstracts only. Open the full paper before you cite a number.", "BIO:ON")
+    ws.freeze_panes = "C6"
+
+    # ---------- Synthesis ----------
+    ws = wb.create_sheet("Synthesis")
+    title(ws, "Synthesis 종합", "논문들을 나란히 놓고 읽은 결과를 적어요. / What the papers say together.")
+    headers = ["항목 Item", "내 정리 My summary", "근거 논문 # Papers (#)"]
+    header_row(ws, 4, headers, [34, 80, 18])
+    items = [
+        ("공통 결론 Where they agree", "APRIL 또는 BAFF/APRIL을 막은 세 3상 모두 중간 분석에서 위약보다 단백뇨를 크게 줄였어요. / All three phase 3 interim analyses cut proteinuria versus placebo.", "1, 2, 3"),
+        ("차이점 Where they differ", "표적(APRIL 단독 vs BAFF+APRIL), 투여 간격(4주 vs 매주), 평가 시점(36·39주 vs 9개월)이 달라 숫자를 바로 비교하기 어려워요. / Target, dosing interval and timepoint differ, so the numbers aren't directly comparable.", "1, 2, 3"),
+        ("아직 모르는 것 Open questions", "단백뇨 감소가 장기 신기능(eGFR) 보존으로 이어지는지는 최종 결과를 봐야 해요. / Whether lower proteinuria means preserved kidney function long term awaits final results.", "1, 2, 3"),
+        ("내 질문에 대한 답 Answer to my question", "", ""),
+        ("다음에 읽을 것 What to read next", "", ""),
+    ]
+    for i, (a, b, c) in enumerate(items, start=5):
+        body_cell(ws.cell(row=i, column=1, value=a))
+        ws.cell(row=i, column=1).font = font(bold=True, size=10)
+        fill = EXAMPLE_FILL if b else INPUT_FILL
+        body_cell(ws.cell(row=i, column=2, value=b or None), fill)
+        body_cell(ws.cell(row=i, column=3, value=c or None), fill)
+        ws.row_dimensions[i].height = 60
+
+    wb.move_sheet("Lists", offset=2)
+    for s in wb.worksheets:
+        s.sheet_view.showGridLines = s.title != "How to use"
+    out = OUT / "literature-summary-table.xlsx"
+    wb.save(out)
+    return out
+
+
 if __name__ == "__main__":
+    import sys
+
     OUT.mkdir(parents=True, exist_ok=True)
-    print(build_xlsx())
-    print(build_docx())
+    builders = {"xlsx": build_xlsx, "docx": build_docx, "lit": build_lit_xlsx}
+    for name in sys.argv[1:] or builders:
+        print(builders[name]())

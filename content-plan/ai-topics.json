@@ -32,15 +32,18 @@
       "format": "post + comparison template (xlsx)",
       "ko": "ClinicalTrials.gov로 같은 분야 임상시험 조건 비교하기 — 포함·제외 기준을 표로",
       "en": "Comparing trials on ClinicalTrials.gov — inclusion/exclusion criteria in one table",
-      "scope": "Use the official search and download (and the documented API) to pull trials for one target covered in the newsletter (e.g. ivonescimab or KRAS). AI structures eligibility criteria and dosing into a table; readers check each row against the record."
+      "scope": "Use the official search and download (and the documented API) to pull trials for one target covered in the newsletter (e.g. ivonescimab or KRAS). AI structures eligibility criteria and dosing into a table; readers check each row against the record.",
+      "note": "Skipped on 2026-10-29: clinicaltrials.gov was blocked from the cloud session, so the API example and trial rows could not be verified. Do it when the site is reachable."
     },
     {
       "id": "literature-scan-consensus-perplexity",
-      "status": "todo",
+      "status": "done",
       "format": "post + summary-table template",
       "ko": "Consensus·Perplexity로 선행 연구 빠르게 훑기 — 서론 흐름, 연구 방법, 대조군을 요약표로",
       "en": "Scanning prior research with Consensus and Perplexity — intro logic, methods and controls in one table",
-      "scope": "No '3 minutes' claims. Official docs for features and limits; the author has used both tools. Always open the paper itself before citing. Elicit mentioned only as an alternative, from its docs."
+      "scope": "No '3 minutes' claims. Official docs for features and limits; the author has used both tools. Always open the paper itself before citing. Elicit mentioned only as an alternative, from its docs.",
+      "slug": "literature-scan-consensus-perplexity",
+      "date": "2026-10-29"
     },
     {
       "id": "moa-diagram-prompts",

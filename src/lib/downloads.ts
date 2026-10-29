@@ -22,6 +22,7 @@ export const downloadIds = [
   "cv-template-file",
   "glossary",
   "ai-answer-checklist",
+  "literature-table",
 ] as const;
 export type DownloadId = (typeof downloadIds)[number];
 export const isDownloadId = (id: string): id is DownloadId => (downloadIds as readonly string[]).includes(id);
@@ -34,6 +35,11 @@ const files: Partial<Record<DownloadId, { file: string; type: string; name: stri
     file: "pipeline-deal-tracker.xlsx",
     type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     name: "BIOON_Pipeline_Deal_Tracker.xlsx",
+  },
+  "literature-table": {
+    file: "literature-summary-table.xlsx",
+    type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    name: "BIOON_Literature_Summary_Table.xlsx",
   },
   "cv-template-file": {
     file: "cv-template.docx",

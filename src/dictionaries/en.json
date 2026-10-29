@@ -229,6 +229,13 @@
         "format": "html",
         "title": "Checking AI Answers: A Checklist",
         "body": "Check the citations (DOI, PubMed), trial claims (ClinicalTrials.gov), gene names (HGNC) and numbers an AI gives you against the originals. Includes research on fabricated citations and a practice exercise."
+      },
+      {
+        "id": "literature-table",
+        "type": "free",
+        "format": "xlsx",
+        "title": "Literature summary table (Excel)",
+        "body": "An Excel template for one row per paper: intro logic (background → gap → hypothesis), design, control, primary endpoint, key result and whether you checked it in the paper. Includes example rows from three phase 3 IgA nephropathy papers and a synthesis sheet."
       }
     ],
     "unlockTitle": "Enter your email to get it now",

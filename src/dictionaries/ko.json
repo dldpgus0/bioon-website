@@ -229,6 +229,13 @@
         "format": "html",
         "title": "AI 답변 검증 체크리스트",
         "body": "AI가 알려준 논문 인용(DOI·PubMed), 임상시험(ClinicalTrials.gov), 유전자 이름(HGNC), 숫자를 원문으로 확인하는 체크리스트. 가짜 인용 비율 연구와 실습 포함."
+      },
+      {
+        "id": "literature-table",
+        "type": "free",
+        "format": "xlsx",
+        "title": "선행 연구 요약표 (엑셀)",
+        "body": "논문마다 서론 흐름(배경 → 빈틈 → 가설), 연구 설계, 대조군, 1차 평가변수, 핵심 결과, 원문 확인 여부를 한 줄로 정리하는 엑셀 템플릿. IgA 신병증 3상 논문 3편으로 채운 예시와 종합 시트 포함."
       }
     ],
     "unlockTitle": "이메일을 입력하고 바로 받기",

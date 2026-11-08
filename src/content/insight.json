@@ -678,5 +678,65 @@
       "AbbVie 3상"
     ],
     "sourceFile": "BIO.ON Insight KO #22.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 23,
+    "number": 23,
+    "date": "2026-11-03",
+    "slug": "2026-11-03",
+    "title": "Fewer injections, more value? Three price tags on easier treatment",
+    "summary": "GC Biopharma and Hanmi license a subcutaneous Fabry therapy to BioMarin for up to $475M, Lilly lifts 2026 guidance to $91–92B after a $24.4B quarter, and Ferring agrees to buy IVF start-up Gameto for up to $1.38B. Three price tags on easier treatment.",
+    "tags": [
+      "Korean Fabry Out-Licence",
+      "Lilly's Q3",
+      "Ferring Buys Gameto"
+    ],
+    "sourceFile": "BIO.ON Insight EN #23.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 23,
+    "number": 23,
+    "date": "2026-11-03",
+    "slug": "2026-11-03",
+    "title": "주사를 줄이면 돈이 될까? '편한 약'에 붙은 세 가지 가격표",
+    "summary": "GC녹십자·한미약품이 파브리병 피하주사 신약을 바이오마린에 최대 $475M에 넘겼고, 릴리는 3분기 매출 $24.4B로 연간 전망을 올렸고, 페링은 호르몬 주사를 줄이는 IVF 기술 Gameto를 최대 $1.38B에 사요. 셋 다 '덜 힘든 치료'에 값을 매겼어요",
+    "tags": [
+      "파브리병 기술수출",
+      "릴리 3분기",
+      "페링 인수"
+    ],
+    "sourceFile": "BIO.ON Insight KO #23.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 24,
+    "number": 24,
+    "date": "2026-11-10",
+    "slug": "2026-11-10",
+    "title": "When is a drug's price really settled? The bill that arrives years later",
+    "summary": "Novartis confirms nine tumour reports in Zolgensma patients, Boehringer puts up to $7B on six preclinical cancer assets from China's SBP, and CMS writes Medicare price negotiation into regulation while closing the subcutaneous route. A drug's price is settled later than you think.",
+    "tags": [
+      "Zolgensma Tumour Reports",
+      "Boehringer × SBP",
+      "Medicare Negotiation Rule"
+    ],
+    "sourceFile": "BIO.ON Insight EN #24.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 24,
+    "number": 24,
+    "date": "2026-11-10",
+    "slug": "2026-11-10",
+    "title": "약의 진짜 값은 언제 정해질까? 몇 년 뒤에 날아오는 계산서",
+    "summary": "노바티스 졸겐스마 투여 환자에서 종양 9건이 보고됐고, 베링거는 중국 SBP 항암 후보 6개에 최대 $7B를 걸었고, 미국 CMS는 약값 협상을 규칙으로 못 박으며 '피하주사 전환' 우회로를 막았어요. 약값은 생각보다 늦게 정해져요",
+    "tags": [
+      "졸겐스마 종양 보고",
+      "베링거×SBP",
+      "미국 약가협상 규칙"
+    ],
+    "sourceFile": "BIO.ON Insight KO #24.html"
   }
 ]

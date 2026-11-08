@@ -1283,5 +1283,156 @@
       "Avalo",
       "IL-1"
     ]
+  },
+  "2026-11-03": {
+    "topics": [
+      "bd",
+      "specialty",
+      "obesity"
+    ],
+    "roles": [
+      "bd",
+      "access",
+      "ir"
+    ],
+    "summary": {
+      "ko": [
+        "GC녹십자·한미약품이 파브리병 장기지속형 피하주사 효소대체요법 LA-GLA를 바이오마린에 최대 $475M(계약금 $70M)에 기술수출하고 한국 권리는 지켰어요.",
+        "릴리가 3분기 매출 $24.4B(+39%)를 내고 연간 전망을 $91–92B로 올렸지만, 경구 비만약 Foundayo는 $184M으로 기대(약 $229M)에 못 미쳤어요.",
+        "페링이 호르몬 주사를 줄이는 IVF 기술 Fertilo의 Gameto를 최대 $1.38B에 인수하기로 했어요(계약금 비공개)."
+      ],
+      "en": [
+        "GC Biopharma and Hanmi licensed LA-GLA, a long-acting subcutaneous Fabry enzyme replacement therapy, to BioMarin for up to $475M ($70M upfront), keeping Korean rights.",
+        "Lilly posted $24.4B in Q3 revenue (up 39%) and raised 2026 guidance to $91–92B, while its obesity pill Foundayo brought in $184M against about $229M expected.",
+        "Ferring agreed to buy Gameto, whose IVF technology Fertilo aims to cut hormone injections, for up to $1.38B with the upfront undisclosed."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "기술수출 헤드라인 금액 중 실제로 확정된 돈은 얼마인가요?",
+        "가격이 내려가도 매출이 늘 수 있는 이유는 무엇인가요?",
+        "자기 주력 제품의 수요를 줄일 수 있는 기술을 왜 인수할까요?"
+      ],
+      "en": [
+        "How much of a licensing deal's headline value is actually guaranteed?",
+        "How can revenue grow while realised prices fall?",
+        "Why would a company buy a technology that could shrink demand for its own best-seller?"
+      ]
+    },
+    "keywords": [
+      "GC녹십자",
+      "GC Biopharma",
+      "한미약품",
+      "Hanmi",
+      "바이오마린",
+      "BioMarin",
+      "LA-GLA",
+      "HM15421",
+      "GC1134A",
+      "파브리병",
+      "Fabry disease",
+      "효소대체요법",
+      "enzyme replacement therapy",
+      "ERT",
+      "피하주사",
+      "subcutaneous",
+      "기술수출",
+      "out-licensing",
+      "릴리",
+      "Eli Lilly",
+      "마운자로",
+      "Mounjaro",
+      "젭바운드",
+      "Zepbound",
+      "Foundayo",
+      "orforglipron",
+      "가이던스",
+      "guidance",
+      "페링",
+      "Ferring",
+      "Gameto",
+      "Fertilo",
+      "IVF",
+      "체외수정",
+      "카니발라이제이션",
+      "cannibalisation",
+      "치료 부담",
+      "treatment burden"
+    ]
+  },
+  "2026-11-10": {
+    "topics": [
+      "cell-gene",
+      "bd",
+      "access"
+    ],
+    "roles": [
+      "access",
+      "bd",
+      "medical"
+    ],
+    "summary": {
+      "ko": [
+        "노바티스가 졸겐스마 투여 환자에서 종양 9건 보고를 확인했어요(투여 6,000명 이상, 2건은 AAV 벡터 삽입 근거).",
+        "베링거인겔하임이 중국 SBP의 전임상 항암 후보 6개(ADC·TCE)에 옵션을 걸었어요(계약금·단기 $358M, 최대 $7B).",
+        "미국 CMS가 메디케어 약가협상 최종 규칙을 내고, 히알루로니다제를 더한 피하주사 제형을 같은 약으로 보기로 했어요(2029년부터 적용)."
+      ],
+      "en": [
+        "Novartis confirmed nine tumour reports in Zolgensma patients (6,000+ treated), with evidence of AAV vector integration in two cases.",
+        "Boehringer Ingelheim took options on six preclinical SBP cancer programmes (ADC and TCE) for $358M upfront and near term and up to $7B.",
+        "CMS finalised the Medicare drug price negotiation rule from 2029, treating hyaluronidase subcutaneous formulations as the same drug as the IV product."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "한 번 투여하는 유전자치료제의 장기 안전성은 어떻게 추적하나요?",
+        "옵션 딜에서 계약금과 마일스톤은 위험을 어떻게 나누나요?",
+        "피하주사 제형 전환이 왜 약가협상을 피하는 수단이 될 수 있었나요?"
+      ],
+      "en": [
+        "How is the long-term safety of a one-time gene therapy tracked?",
+        "How do upfront payments and milestones split risk in an option deal?",
+        "Why could switching to a subcutaneous formulation delay Medicare negotiation?"
+      ]
+    },
+    "keywords": [
+      "노바티스",
+      "Novartis",
+      "졸겐스마",
+      "Zolgensma",
+      "척수성 근위축증",
+      "SMA",
+      "AAV",
+      "유전자치료",
+      "gene therapy",
+      "벡터 삽입",
+      "vector integration",
+      "성과기반 계약",
+      "outcomes-based",
+      "베링거인겔하임",
+      "Boehringer Ingelheim",
+      "SBP",
+      "Sino Biopharmaceutical",
+      "LaNova",
+      "ADC",
+      "T세포 인게이저",
+      "T-cell engager",
+      "옵션 딜",
+      "option deal",
+      "CMS",
+      "메디케어",
+      "Medicare",
+      "약가협상",
+      "drug price negotiation",
+      "IRA",
+      "히알루로니다제",
+      "hyaluronidase",
+      "피하주사",
+      "subcutaneous",
+      "알테오젠",
+      "Alteogen",
+      "바이오시밀러",
+      "biosimilar"
+    ]
   }
 }

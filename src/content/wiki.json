@@ -471,6 +471,46 @@
       "type": "company",
       "ko": "아발로",
       "en": "Avalo"
+    },
+    "gc-biopharma": {
+      "type": "company",
+      "ko": "GC녹십자",
+      "en": "GC Biopharma"
+    },
+    "biomarin": {
+      "type": "company",
+      "ko": "바이오마린",
+      "en": "BioMarin"
+    },
+    "la-gla": {
+      "type": "drug",
+      "ko": "LA-GLA",
+      "en": "LA-GLA"
+    },
+    "ferring": {
+      "type": "company",
+      "ko": "페링",
+      "en": "Ferring"
+    },
+    "gameto": {
+      "type": "company",
+      "ko": "Gameto",
+      "en": "Gameto"
+    },
+    "fertilo": {
+      "type": "drug",
+      "ko": "Fertilo",
+      "en": "Fertilo"
+    },
+    "zolgensma": {
+      "type": "drug",
+      "ko": "졸겐스마",
+      "en": "Zolgensma"
+    },
+    "sbp": {
+      "type": "company",
+      "ko": "중국 SBP",
+      "en": "Sino Biopharmaceutical (SBP)"
     }
   },
   "stories": {
@@ -1081,6 +1121,67 @@
           "abbvie",
           "lutikizumab",
           "avalo"
+        ]
+      }
+    ],
+    "2026-11-03": [
+      {
+        "cat": "pipeline",
+        "ko": "GC녹십자·한미약품, 파브리병 피하주사 신약 바이오마린에 최대 $475M 기술수출",
+        "en": "GC Biopharma and Hanmi license a subcutaneous Fabry therapy to BioMarin for up to $475M",
+        "entities": [
+          "gc-biopharma",
+          "hanmi",
+          "biomarin",
+          "la-gla"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "릴리 3분기 매출 $24.4B, 연간 전망 $91–92B로 상향… 알약 Foundayo는 기대 미달",
+        "en": "Lilly posts $24.4B in Q3 and lifts 2026 guidance to $91–92B; Foundayo pill misses forecasts",
+        "entities": [
+          "lilly",
+          "tirzepatide",
+          "foundayo"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "페링, 호르몬 주사 줄이는 IVF 기술 Gameto 최대 $1.38B에 인수",
+        "en": "Ferring agrees to buy IVF start-up Gameto for up to $1.38B",
+        "entities": [
+          "ferring",
+          "gameto",
+          "fertilo"
+        ]
+      }
+    ],
+    "2026-11-10": [
+      {
+        "cat": "clinical",
+        "ko": "노바티스, 졸겐스마 투여 환자 종양 9건 보고 확인",
+        "en": "Novartis confirms nine tumour reports in Zolgensma patients",
+        "entities": [
+          "novartis",
+          "zolgensma"
+        ]
+      },
+      {
+        "cat": "pipeline",
+        "ko": "베링거, 중국 SBP 전임상 항암 후보 6개에 최대 $7B 옵션 딜",
+        "en": "Boehringer takes options on six preclinical SBP cancer candidates for up to $7B",
+        "entities": [
+          "boehringer",
+          "sbp"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "미국 CMS, 약가협상 최종 규칙… 피하주사 전환 우회로 차단",
+        "en": "CMS finalises the Medicare negotiation rule and closes the subcutaneous route",
+        "entities": [
+          "cms"
         ]
       }
     ]

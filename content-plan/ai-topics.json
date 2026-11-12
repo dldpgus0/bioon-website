@@ -1,7 +1,15 @@
 {
   "_meta": {
     "note": "Queue for the weekly Thursday routine. AI & research-tool topics alternate with news-based career posts: if the most recent career post has category 'ai', write a news-based post; otherwise take the first topic here with status 'todo'. Reviewed with the owner on 2026-09-28.",
-    "toolsUsedByAuthor": ["Consensus", "ChatGPT", "Claude", "AlphaFold DB", "Gemini", "Perplexity", "Higgsfield"],
+    "toolsUsedByAuthor": [
+      "Consensus",
+      "ChatGPT",
+      "Claude",
+      "AlphaFold DB",
+      "Gemini",
+      "Perplexity",
+      "Higgsfield"
+    ],
     "experienceRule": "First-person experience ('I've used…') only for tools in toolsUsedByAuthor, and never invent specific results, prompts or screenshots the author didn't produce. Everything else is written from official documentation plus an exercise readers can follow. Tool features and pricing change: say when the official docs were checked.",
     "categoryForPosts": "ai"
   },
@@ -33,7 +41,7 @@
       "ko": "ClinicalTrials.gov로 같은 분야 임상시험 조건 비교하기 — 포함·제외 기준을 표로",
       "en": "Comparing trials on ClinicalTrials.gov — inclusion/exclusion criteria in one table",
       "scope": "Use the official search and download (and the documented API) to pull trials for one target covered in the newsletter (e.g. ivonescimab or KRAS). AI structures eligibility criteria and dosing into a table; readers check each row against the record.",
-      "note": "Skipped on 2026-10-29: clinicaltrials.gov was blocked from the cloud session, so the API example and trial rows could not be verified. Do it when the site is reachable."
+      "note": "Skipped on 2026-10-29: clinicaltrials.gov was blocked from the cloud session, so the API example and trial rows could not be verified. Do it when the site is reachable. Still blocked on 2026-11-12, so moa-diagram-prompts went first."
     },
     {
       "id": "literature-scan-consensus-perplexity",
@@ -47,11 +55,13 @@
     },
     {
       "id": "moa-diagram-prompts",
-      "status": "todo",
+      "status": "done",
       "format": "post",
       "ko": "신약 작용 기전을 도식으로 — AI에게 Mermaid 다이어그램 그려 달라고 하기",
       "en": "Drawing a drug's mechanism of action — asking AI for Mermaid diagrams",
-      "scope": "Examples from newsletter deep dives (ADC, bispecifics, targeted protein degraders). Render every Mermaid snippet to check it works. Step to compare the diagram with a figure from the paper or label, since AI diagrams can be scientifically wrong. Image tools (e.g. Higgsfield) only for concept visuals, clearly marked as illustrations."
+      "scope": "Examples from newsletter deep dives (ADC, bispecifics, targeted protein degraders). Render every Mermaid snippet to check it works. Step to compare the diagram with a figure from the paper or label, since AI diagrams can be scientifically wrong. Image tools (e.g. Higgsfield) only for concept visuals, clearly marked as illustrations.",
+      "slug": "moa-diagram-mermaid",
+      "date": "2026-11-12"
     },
     {
       "id": "bio-data-viz-with-ai",

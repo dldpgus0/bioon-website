@@ -132,3 +132,28 @@ body {
   border-radius: 0.3em;
   background: var(--surface-2);
 }
+.prose-bioon pre {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface-2);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.prose-bioon pre code {
+  padding: 0;
+  background: transparent;
+}
+/* Diagrams are drawn on a light canvas, so keep a light card behind them in dark mode too. */
+.prose-bioon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: #ffffff;
+}

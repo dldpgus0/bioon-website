@@ -9,17 +9,17 @@ Reply in Korean. This skill only **makes** content. It never posts or schedules 
 
 ## Settings (the owner can change these)
 
-- **Newsletter:** BIO:ON Insight, one KO and one EN issue a week, sent Tuesday 08:00 KST via Stibee.
+- **Newsletter:** BIO:ON Insight, one KO and one EN issue a week, sent via Stibee on Tuesday: KO at 08:00 KST, EN at 08:00 UK time.
 - **Card news:** 2 episodes a week, each in KO and EN.
   - Posted Monday and Thursday at 08:30 KST.
-  - Platforms: Instagram and LinkedIn.
+  - Platforms: Instagram and the LinkedIn BIO:ON page.
 - **Short video:** 3 a week, each in KO and EN.
   - Posted Tuesday, Friday and Sunday at 19:00 KST.
   - Platforms: Instagram Reels and YouTube Shorts.
-- **Which language goes where:** `<TO CONFIRM>`. Until the owner confirms, assume:
+- **Which language goes where (confirmed by the owner on 2026-11-23):**
   - Instagram: KO and EN as separate posts, with EN 4 hours after KO.
-  - YouTube: KO and EN as separate Shorts.
-  - LinkedIn: EN only.
+  - YouTube: KO and EN as separate Shorts, with EN 4 hours after KO.
+  - LinkedIn: the BIO:ON page only, with KO and EN as separate posts and EN 4 hours after KO.
 - **Card news design folder (on the owner's PC):** `C:\Users\yaehy\OneDrive\Desktop\BIO.ON`
 - **Output folder:** `content-out/<next Monday YYYY-MM-DD>/` inside this repository. Don't commit it, because it holds large media files.
 
@@ -54,7 +54,7 @@ Reply in Korean. This skill only **makes** content. It never posts or schedules 
 - Output for each episode:
   - `content-out/<date>/cardnews/<slug>/ko/cards/*.html` and `ko/verify/*.png`, with the same layout under `en/`
   - `caption-ko.txt` and `caption-en.txt`: caption text, 5–8 hashtags and source lines
-  - `caption-linkedin.txt`: English, 3–5 lines plus a source link
+  - `caption-linkedin-ko.txt` and `caption-linkedin-en.txt`: 3–5 lines plus a source link
 
 ## 4. Short videos (3 × KO/EN)
 

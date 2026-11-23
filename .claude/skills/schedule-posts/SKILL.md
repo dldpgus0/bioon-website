@@ -17,17 +17,18 @@ Reply in Korean. This skill controls the owner's browser and posts content publi
 
 ## Order and where to go
 
-1. **Newsletter → Stibee** (stibee.com)
-   - Create an email in each of the KO and EN address books.
-   - Paste the HTML in, then enter the subject line and preview text from `newsletter/meta.txt`.
-   - Send a test email to the owner's own address, ask the owner to check it, and only then set a **scheduled send** for Tuesday 08:00 KST.
+1. **Newsletter → Stibee** (stibee.com). The KO and EN address books are separate. Do each one the same way:
+   1. In that address book, **copy the most recently sent email**.
+   2. In the copy, change only the **issue number in the subject line** (use `newsletter/meta.txt`), then **replace the whole HTML code** with this week's file. Change nothing else.
+   3. Send a test email to the owner's own address and ask the owner to check it.
+   4. Only then set a **scheduled send**: KO Tuesday 08:00 **KST**, EN Tuesday 08:00 **UK time**. Check that Stibee's time zone setting matches.
 2. **Instagram card news and Reels → Meta Business Suite** (business.facebook.com > Planner/Content)
    - Card news: create a post, upload the PNGs in the order 01, 02, …, enter the caption, then schedule.
    - Reels: create a reel, upload the mp4 and the cover image, enter the caption, then schedule.
 3. **YouTube Shorts → YouTube Studio** (studio.youtube.com)
    - Upload the video and enter the title and description. Select **Not made for kids**, then in Visibility choose **Schedule** and set the date and time.
-4. **LinkedIn card news → LinkedIn** (the owner's profile or the BIO:ON page; ask the owner which the first time)
-   - Upload the card images (or a PDF made from them) with `caption-linkedin.txt`, then use the clock icon to schedule.
+4. **LinkedIn card news → the BIO:ON page** (post as the page, not the personal profile)
+   - Make separate KO and EN posts: upload the card images (or a PDF made from them) with `caption-linkedin-ko.txt` / `caption-linkedin-en.txt`, then use the clock icon to schedule.
 
 ## Recording and reporting
 

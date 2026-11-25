@@ -3,15 +3,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CardCarousel } from "@/components/CardCarousel";
 import { formatDate } from "@/components/IssueCard";
-import { getCardnews, getCardnewsBySlug } from "@/lib/cardnews";
+import { getCardnewsBySlug, getCardnewsSlugs } from "@/lib/cardnews";
 import { getIssue } from "@/lib/content";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 
-// Every page is built ahead of time; unknown slugs 404 without running a server render.
+// Every page is built ahead of time, scheduled episodes included (the list links to them once
+// they're out); unknown slugs 404 without running a server render.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return locales.flatMap((lang) => getCardnews(lang).map((c) => ({ lang, slug: c.slug })));
+  return locales.flatMap((lang) => getCardnewsSlugs().map((slug) => ({ lang, slug })));
 }
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/cardnews/[slug]">): Promise<Metadata> {

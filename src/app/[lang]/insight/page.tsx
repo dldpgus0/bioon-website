@@ -4,6 +4,10 @@ import { PageHeader } from "@/components/PageHeader";
 import { getIssues } from "@/lib/content";
 import { getDictionary, getLocale } from "@/lib/i18n";
 
+// Lists leave out issues and card news until their send or post time; regenerate at most every
+// 10 minutes so they appear on their own (src/lib/publish.ts).
+export const revalidate = 600;
+
 export async function generateMetadata({ params }: PageProps<"/[lang]/insight">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
   // The title already names BIO:ON Insight, so skip the layout's "· BIO:ON Insight" suffix.

@@ -19,11 +19,13 @@ const nextConfig: NextConfig = {
     "/api/resources/*": ["src/content/downloads/**/*"],
     // Share images need the Korean font.
     "/*/insight/*/opengraph-image": ["src/fonts/Pretendard-{Bold,Regular}.otf"],
+    // The sitemap regenerates on the server (scheduled issues join it on time) and lists career posts.
+    "/sitemap.xml": ["src/content/career/**/*"],
   },
   // Keep server functions small (Vercel counts their size against the Hobby storage limit):
   // - Vercel optimises images itself, so the sharp binaries aren't needed in the bundles.
   // - The newsletter web copies are only read while pages are prerendered at build time (insight
-  //   pages use dynamicParams = false), so functions never need them at runtime.
+  //   pages use dynamicParams = false and don't revalidate), so functions never need them at runtime.
   outputFileTracingExcludes: {
     "*": ["node_modules/@img/**", "node_modules/sharp/**", "public/newsletters/**", "public/cardnews/**"],
   },

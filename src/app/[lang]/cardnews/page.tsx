@@ -7,6 +7,10 @@ import { getCardnews } from "@/lib/cardnews";
 import { getDictionary, getLocale } from "@/lib/i18n";
 import { socials } from "@/lib/site";
 
+// Lists leave out issues and card news until their send or post time; regenerate at most every
+// 10 minutes so they appear on their own (src/lib/publish.ts).
+export const revalidate = 600;
+
 export async function generateMetadata({ params }: PageProps<"/[lang]/cardnews">): Promise<Metadata> {
   const dict = await getDictionary(await getLocale(params));
   return { title: dict.cardnews.metaTitle, description: dict.cardnews.lede };

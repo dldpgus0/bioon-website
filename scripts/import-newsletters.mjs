@@ -162,6 +162,15 @@ for (const it of issues) {
   if (it.number !== it.originalNumber && !isWelcome(it)) console.log(`${it.lang} ${it.date}: #${it.originalNumber} → #${it.number}`);
 }
 
+// originalNumber records the number in the owner's source file. When an issue is re-imported from
+// the site's own web copy (as the publish-issue skill does), its header already carries the site
+// number, so keep the value recorded the first time.
+const previous = fs.existsSync(OUT_JSON) ? JSON.parse(fs.readFileSync(OUT_JSON, "utf8")) : [];
+for (const it of issues) {
+  const old = previous.find((p) => p.lang === it.lang && p.slug === it.slug && p.sourceFile === it.sourceFile);
+  if (old) it.originalNumber = old.originalNumber;
+}
+
 // sourcePath is a local machine path; keep it out of the committed JSON.
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const publicIssues = issues.map(({ sourcePath, ...it }) => it);

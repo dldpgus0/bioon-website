@@ -32,11 +32,13 @@ node scripts/import-cardnews.mjs <folder>/en --slug <same slug> --lang en --titl
   - Uses each card's text as alt text, and writes the entry to `src/content/cardnews.json`. Re-running with the same slug and language replaces those cards.
 - Take titles and summaries from the cards themselves (cover headline, main point). Don't add facts that aren't on the cards.
 - `--issue`: the newsletter issue the episode is based on (its date slug), so the page links to it.
+- `--date` is the day the Korean post goes up on Instagram. The episode can be imported before then: the card news list and the sitemap leave it out until 08:30 Korean time on that date, then show it by themselves within about 10 minutes. For a different time, add `--publish-at 2026-12-03T12:00:00+09:00`.
+- The script reads the cards with Playwright if it's installed, otherwise with the installed Google Chrome (set `CHROME_PATH` if it's somewhere unusual). Nothing needs installing.
 
 ## 3. Check, then ship
 
 - Open 2–3 of the generated JPGs and confirm fonts, background images and text all look right, with nothing cut off.
-- `npm run lint` and `npm run build` pass. Under `next start`, `/ko/cardnews`, `/en/cardnews` and `/ko|en/cardnews/<slug>` return 200, and the English page shows English cards when they exist.
+- `npm run lint` and `npm run build` pass. Under `next start`, `/ko/cardnews`, `/en/cardnews` and `/ko|en/cardnews/<slug>` return 200, and the English page shows English cards when they exist. The list shows the episode only once its post time has passed.
 - Commit, push, open a PR to `main` and merge it (the owner has approved merging these), then sync the branch.
 
 ## 4. Report (short, in Korean)

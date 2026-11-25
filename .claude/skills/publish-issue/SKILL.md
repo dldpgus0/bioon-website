@@ -11,8 +11,10 @@ The owner sends the Korean and English Stibee HTML for one issue. Do all of part
 
 Work on the session's designated branch, restarted from the latest `origin/main`.
 
+**This can be done before the issue is sent.** The site keeps an issue out of the archive, the home page, the RSS feed and the sitemap until 08:00 on its date (the slug): Korean time for KO, UK time for EN, the same times Stibee sends them. It then appears by itself within about 10 minutes. Until then its page is already built at `/ko|en/insight/<slug>` but nothing links to it.
+
 1. **Import with the existing script.** `scripts/import-newsletters.mjs` rebuilds every issue from a folder, so build a temporary folder from what's already published plus the new files:
-   - For each entry in `src/content/insight.json` except `welcome`, copy `public/newsletters/<lang>/<slug>.html` to `<tmp>/Newsletter - KOR/` (ko) or `<tmp>/Newsletter - ENG/` (en), named by its `sourceFile`.
+   - For each entry in `src/content/insight.json` except `welcome`, copy `public/newsletters/<lang>/<slug>.html` to `<tmp>/Newsletter/`, named by its `sourceFile`. (The script reads `<tmp>/Newsletter` and the welcome letter from `newsletter-src/`.)
    - Copy the new files in as `BIO.ON Insight KO #<n>.html` and `BIO.ON Insight EN #<n>.html`.
    - Numbering: the welcome letter is unnumbered ("웰컴 레터"); weekly issues are #1, #2, … by date (2026-10-06 is #19). The script numbers issues by date and rewrites the header and in-text references ("#15에서 다룬", "covered in #15") to match. It also adds the "🌐 웹에서 보기 · 지난 호 아카이브" / "Read on the web" archive link above the © line when an issue doesn't already have it. If the new file's own header number doesn't match its position, tell the owner so their Stibee numbering stays in step.
    - Run `node scripts/import-newsletters.mjs <tmp>`.
@@ -28,7 +30,7 @@ Work on the session's designated branch, restarted from the latest `origin/main`
 4. **Facts come only from the issue itself.** Don't add numbers or claims that aren't in the newsletter.
 5. **Check, then ship.**
    - `npm run lint` and `npm run build` pass.
-   - Under `next start`, these return 200: `/ko|en/insight/<slug>` and `/newsletters/ko/<slug>.html`, and the home page shows the new issue.
+   - Under `next start`, these return 200: `/ko|en/insight/<slug>` and `/newsletters/ko/<slug>.html`. The home page and `/ko/insight` show the new issue once its send time has passed, and not before.
    - Commit, push, open a PR to `main` and merge it (the owner has approved merging these), then sync the branch.
 
 ## B. Give the owner, in this order

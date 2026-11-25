@@ -738,5 +738,95 @@
       "미국 약가협상 규칙"
     ],
     "sourceFile": "BIO.ON Insight KO #24.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 25,
+    "number": 25,
+    "date": "2026-11-17",
+    "slug": "2026-11-17",
+    "title": "Who carries the risk of the next blockbuster?",
+    "summary": "Bayer's Sunharbo becomes the first FDA-approved factor XIa inhibitor, Blackstone puts up to $1.5B into Pfizer's monthly obesity shot, and argenx agrees to buy oral peptide specialist Unnatural Products for up to $1.15B. Three ways to split the risk of the next big drug.",
+    "tags": [
+      "Bayer's Sunharbo",
+      "Pfizer × Blackstone",
+      "argenx Buys UNP"
+    ],
+    "sourceFile": "BIO.ON Insight EN #25.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 25,
+    "number": 25,
+    "date": "2026-11-17",
+    "slug": "2026-11-17",
+    "title": "다음 블록버스터의 위험, 누가 질까?",
+    "summary": "바이엘 선하보가 첫 FXIa 억제제로 FDA 허가를 받았고, 화이자는 비만 신약 3상 비용을 블랙스톤에서 최대 $1.5B 받기로 했고, argenx는 경구 펩타이드 기업 UNP를 최대 $1.15B에 사요. 다음 약 개발의 위험을 누가 지는지가 갈렸어요",
+    "tags": [
+      "바이엘 선하보",
+      "화이자×블랙스톤",
+      "argenx 인수"
+    ],
+    "sourceFile": "BIO.ON Insight KO #25.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 26,
+    "number": 26,
+    "date": "2026-11-24",
+    "slug": "2026-11-24",
+    "title": "What does the FDA need before it says yes?",
+    "summary": "The FDA turned down Summit and Akeso's ivonescimab despite a strong progression-free survival result, while Roche's oral breast cancer pill Wilserdly and Regeneron's first RNAi drug Livsayis were approved. What evidence made the difference?",
+    "tags": [
+      "Ivonescimab Rejected",
+      "Roche's Wilserdly",
+      "Regeneron's Livsayis"
+    ],
+    "sourceFile": "BIO.ON Insight EN #26.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 26,
+    "number": 26,
+    "date": "2026-11-24",
+    "slug": "2026-11-24",
+    "title": "FDA는 무엇을 보고 허가를 내줄까?",
+    "summary": "FDA가 PFS는 좋았지만 생존 데이터가 모자란 아이보네시맙을 거절했고, 로슈 경구 유방암약 윌서들리와 리제네론의 첫 RNAi 약 리브사이스는 허가를 받았어요. 허가를 가른 건 어떤 근거였을까요",
+    "tags": [
+      "아이보네시맙 거절",
+      "로슈 윌서들리",
+      "리제네론 리브사이스"
+    ],
+    "sourceFile": "BIO.ON Insight KO #26.html"
+  },
+  {
+    "lang": "en",
+    "originalNumber": 27,
+    "number": 27,
+    "date": "2026-12-01",
+    "slug": "2026-12-01",
+    "title": "They all said it worked. How much did they actually show?",
+    "summary": "AriBio's AR1001 worked only in patients not on other Alzheimer's drugs, Novartis called Leqvio's outcomes trial a success without giving a number, and J&J paid $2.2B upfront for an eye drug before phase 3. What was actually shown?",
+    "tags": [
+      "AriBio's AR1001",
+      "Novartis's Leqvio",
+      "J&J × Ollin"
+    ],
+    "sourceFile": "BIO.ON Insight EN #27.html"
+  },
+  {
+    "lang": "ko",
+    "originalNumber": 27,
+    "number": 27,
+    "date": "2026-12-01",
+    "slug": "2026-12-01",
+    "title": "'성공했다'는 발표, 숫자는 어디까지 나왔을까?",
+    "summary": "아리바이오 AR1001은 단독요법군에서만 효과를 보였고, 노바티스 레크비오는 수치 없이 '성공'을 알렸고, J&J는 3상 전 안과 신약에 계약금 $2.2B를 냈어요. 발표와 증거 사이를 읽어봤어요",
+    "tags": [
+      "아리바이오 AR1001",
+      "노바티스 레크비오",
+      "J&J×올린"
+    ],
+    "sourceFile": "BIO.ON Insight KO #27.html"
   }
 ]

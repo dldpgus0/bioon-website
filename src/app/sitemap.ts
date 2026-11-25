@@ -5,7 +5,9 @@ import { siteUrl } from "@/lib/site";
 import { getCardnews } from "@/lib/cardnews";
 
 // Every public page in both languages, so Google and Naver can find the archive, card news and
-// career posts. Each entry links its other-language version.
+// career posts. Each entry links its other-language version. Issues and card news join the list
+// at their send or post time (src/lib/publish.ts), so it regenerates at most every 10 minutes.
+export const revalidate = 600;
 
 type Entry = { path: string; lastModified?: string; changeFrequency?: "weekly" | "monthly"; priority?: number };
 

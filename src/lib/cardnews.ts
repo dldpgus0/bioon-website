@@ -1,5 +1,6 @@
 import data from "@/content/cardnews.json";
 import type { Locale } from "./i18n";
+import { isLive, wallClock } from "./publish";
 
 // Instagram card news (src/content/cardnews.json), written by scripts/import-cardnews.mjs.
 // Card images live in public/cardnews/<slug>/. Each episode has Korean cards; `en` adds an English
@@ -18,6 +19,8 @@ type Raw = Text & {
   en?: Partial<Text> & { cards?: Card[] };
   /** The cards themselves carry both languages (e.g. the terms series). */
   bilingual?: boolean;
+  /** When the episode goes on the site (ISO time with offset). Default: 08:30 Korean time on `date`. */
+  publishAt?: string;
 };
 
 export type Cardnews = Text & {
@@ -51,7 +54,13 @@ function localize(c: Raw, lang: Locale): Cardnews {
   };
 }
 
-export const getCardnews = (lang: Locale) => all.map((c) => localize(c, lang));
+// Card news goes up on Instagram at 08:30 Korean time on its date; the site follows.
+const live = (c: Raw) => isLive(c.publishAt ?? wallClock(c.date, "08:30", "Asia/Seoul"));
+
+/** Episodes that are out, newest first. */
+export const getCardnews = (lang: Locale) => all.filter(live).map((c) => localize(c, lang));
+/** Every slug, including scheduled episodes (their pages are built ahead of time). */
+export const getCardnewsSlugs = () => all.map((c) => c.slug);
 export function getCardnewsBySlug(slug: string, lang: Locale) {
   const c = all.find((x) => x.slug === slug);
   return c && localize(c, lang);

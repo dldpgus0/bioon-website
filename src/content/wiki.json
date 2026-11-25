@@ -511,6 +511,86 @@
       "type": "company",
       "ko": "중국 SBP",
       "en": "Sino Biopharmaceutical (SBP)"
+    },
+    "bayer": {
+      "type": "company",
+      "ko": "바이엘",
+      "en": "Bayer"
+    },
+    "sunharbo": {
+      "type": "drug",
+      "ko": "선하보",
+      "en": "Sunharbo"
+    },
+    "pfizer": {
+      "type": "company",
+      "ko": "화이자",
+      "en": "Pfizer"
+    },
+    "blackstone": {
+      "type": "company",
+      "ko": "블랙스톤",
+      "en": "Blackstone"
+    },
+    "berobenatide": {
+      "type": "drug",
+      "ko": "베로베나타이드",
+      "en": "berobenatide"
+    },
+    "argenx": {
+      "type": "company",
+      "ko": "argenx",
+      "en": "argenx"
+    },
+    "unp": {
+      "type": "company",
+      "ko": "Unnatural Products",
+      "en": "Unnatural Products"
+    },
+    "wilserdly": {
+      "type": "drug",
+      "ko": "윌서들리",
+      "en": "Wilserdly"
+    },
+    "regeneron": {
+      "type": "company",
+      "ko": "리제네론",
+      "en": "Regeneron"
+    },
+    "alnylam": {
+      "type": "company",
+      "ko": "앨나일람",
+      "en": "Alnylam"
+    },
+    "livsayis": {
+      "type": "drug",
+      "ko": "리브사이스",
+      "en": "Livsayis"
+    },
+    "aribio": {
+      "type": "company",
+      "ko": "아리바이오",
+      "en": "AriBio"
+    },
+    "ar1001": {
+      "type": "drug",
+      "ko": "AR1001",
+      "en": "AR1001"
+    },
+    "leqvio": {
+      "type": "drug",
+      "ko": "레크비오",
+      "en": "Leqvio"
+    },
+    "ollin": {
+      "type": "company",
+      "ko": "올린",
+      "en": "Ollin Biosciences"
+    },
+    "oln324": {
+      "type": "drug",
+      "ko": "OLN324",
+      "en": "OLN324"
     }
   },
   "stories": {
@@ -1182,6 +1262,101 @@
         "en": "CMS finalises the Medicare negotiation rule and closes the subcutaneous route",
         "entities": [
           "cms"
+        ]
+      }
+    ],
+    "2026-11-17": [
+      {
+        "cat": "fda",
+        "ko": "바이엘 선하보, 첫 경구 FXIa 억제제로 FDA 허가… 재발 뇌졸중 26%↓",
+        "en": "Bayer's Sunharbo becomes the first FDA-approved oral factor XIa inhibitor, cutting repeat strokes by 26%",
+        "entities": [
+          "bayer",
+          "sunharbo",
+          "fda"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "블랙스톤, 화이자 월 1회 비만 주사 3상 비용 최대 $1.5B 지원",
+        "en": "Blackstone puts up to $1.5B into Pfizer's monthly obesity shot",
+        "entities": [
+          "blackstone",
+          "pfizer",
+          "berobenatide"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "argenx, 경구 펩타이드 기업 UNP 최대 $1.15B에 인수",
+        "en": "argenx agrees to buy oral peptide specialist Unnatural Products for up to $1.15B",
+        "entities": [
+          "argenx",
+          "unp"
+        ]
+      }
+    ],
+    "2026-11-24": [
+      {
+        "cat": "fda",
+        "ko": "FDA, 서밋·아케소 아이보네시맙 폐암 허가 거절… PFS는 좋았지만 OS 부족",
+        "en": "FDA rejects Summit and Akeso's ivonescimab in lung cancer despite strong PFS",
+        "entities": [
+          "summit",
+          "akeso",
+          "ivonescimab",
+          "fda"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "로슈 경구 유방암약 윌서들리, 예정보다 한 달 빨리 FDA 허가",
+        "en": "FDA approves Roche's oral breast cancer pill Wilserdly a month early",
+        "entities": [
+          "roche",
+          "wilserdly",
+          "fda"
+        ]
+      },
+      {
+        "cat": "fda",
+        "ko": "리제네론 첫 RNAi 약 리브사이스, 중증근무력증 FDA 허가",
+        "en": "FDA approves Regeneron's first RNAi drug, Livsayis, for myasthenia gravis",
+        "entities": [
+          "regeneron",
+          "alnylam",
+          "livsayis",
+          "fda"
+        ]
+      }
+    ],
+    "2026-12-01": [
+      {
+        "cat": "clinical",
+        "ko": "아리바이오 AR1001 3상, 전체군은 차이 작고 단독요법군만 인지 저하 31% 둔화",
+        "en": "AriBio's AR1001 misses overall in phase 3 but slows decline by 31% in the monotherapy group",
+        "entities": [
+          "aribio",
+          "ar1001"
+        ]
+      },
+      {
+        "cat": "clinical",
+        "ko": "노바티스 레크비오, ORION-4 1차 목표 달성… 수치는 2027년 공개",
+        "en": "Novartis says Leqvio met its ORION-4 goal, with the numbers due in 2027",
+        "entities": [
+          "novartis",
+          "leqvio"
+        ]
+      },
+      {
+        "cat": "market",
+        "ko": "J&J, 안과 바이오텍 올린 계약금 $2.2B·최대 약 $3.3B에 인수",
+        "en": "J&J buys eye disease biotech Ollin for $2.2B upfront, up to about $3.3B",
+        "entities": [
+          "jnj",
+          "ollin",
+          "oln324"
         ]
       }
     ]

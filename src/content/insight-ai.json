@@ -1434,5 +1434,231 @@
       "바이오시밀러",
       "biosimilar"
     ]
+  },
+  "2026-11-17": {
+    "topics": [
+      "regulatory",
+      "obesity",
+      "bd"
+    ],
+    "roles": [
+      "bd",
+      "ir",
+      "medical",
+      "access"
+    ],
+    "summary": {
+      "ko": [
+        "바이엘 선하보(아순덱시안)가 첫 경구 FXIa 억제제로 FDA 허가를 받았어요(재발성 허혈성 뇌졸중 상대 26%↓, 1만 2천여 명 3상).",
+        "블랙스톤이 화이자 월 1회 비만 주사 베로베나타이드 개발비로 최대 $1.5B를 대고, 승인·매출 시 마일스톤으로 돌려받아요.",
+        "argenx가 경구 펩타이드 기업 UNP를 계약금 $550M, 최대 약 $1.15B에 인수하기로 했어요."
+      ],
+      "en": [
+        "Bayer's Sunharbo (asundexian) became the first FDA-approved oral factor XIa inhibitor, cutting recurrent ischaemic stroke by a relative 26% in a 12,000+ patient phase 3.",
+        "Blackstone will fund up to $1.5B of Pfizer's phase 3 work on its monthly obesity shot berobenatide, repaid through milestones on approval and sales.",
+        "argenx agreed to buy oral peptide specialist Unnatural Products for $550M upfront and up to about $1.15B in total."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "R&D 파이낸싱은 기술이전과 무엇이 다른가요?",
+        "주 적응증에서 실패한 약이 다른 적응증으로 허가받으면 사업성은 어떻게 달라지나요?",
+        "공동연구를 먼저 하고 인수하는 방식은 어떤 위험을 줄이나요?"
+      ],
+      "en": [
+        "How is R&D financing different from out-licensing?",
+        "What happens to a drug's commercial case when it fails its lead indication but wins approval in another?",
+        "What risk does a company reduce by collaborating before it acquires?"
+      ]
+    },
+    "keywords": [
+      "바이엘",
+      "Bayer",
+      "선하보",
+      "Sunharbo",
+      "아순덱시안",
+      "asundexian",
+      "FXIa",
+      "factor XIa",
+      "뇌졸중",
+      "stroke",
+      "자렐토",
+      "Xarelto",
+      "화이자",
+      "Pfizer",
+      "블랙스톤",
+      "Blackstone",
+      "베로베나타이드",
+      "berobenatide",
+      "Metsera",
+      "R&D 파이낸싱",
+      "R&D financing",
+      "비만",
+      "obesity",
+      "GLP-1",
+      "argenx",
+      "Unnatural Products",
+      "UNP",
+      "경구 펩타이드",
+      "oral peptide",
+      "FcRn",
+      "Vyvgart",
+      "특허 절벽",
+      "patent cliff"
+    ]
+  },
+  "2026-11-24": {
+    "topics": [
+      "regulatory",
+      "oncology",
+      "modality"
+    ],
+    "roles": [
+      "ra",
+      "clinical",
+      "access"
+    ],
+    "summary": {
+      "ko": [
+        "FDA가 서밋·아케소의 아이보네시맙(PD-1×VEGF)에 허가 거절(CRL)을 냈어요. PFS는 6.8 vs 4.4개월(HR 0.52)이었지만 전체생존기간은 유의하지 않았고 환자 70%가 아시아인이었어요.",
+        "로슈 경구 SERD 윌서들리(기레데스트란트)가 예정보다 약 한 달 빨리 FDA 허가를 받았어요(ESR1 변이 환자 진행 위험 62%↓).",
+        "리제네론의 첫 RNAi 약 리브사이스가 중증근무력증으로 FDA 허가를 받았어요(C5 생성 억제, 1년에 네 번 피하주사)."
+      ],
+      "en": [
+        "The FDA issued a complete response letter for Summit and Akeso's PD-1 × VEGF bispecific ivonescimab: PFS was 6.8 vs 4.4 months (HR 0.52), but overall survival was not significant and 70% of patients were Asian.",
+        "Roche's oral SERD Wilserdly (giredestrant) was approved about a month early, cutting progression risk by 62% in ESR1-mutated breast cancer.",
+        "Regeneron's first RNAi drug, Livsayis, was approved for generalised myasthenia gravis, silencing C5 with four injections a year."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "PFS와 전체생존기간(OS)은 어떻게 다르고, FDA는 언제 OS를 요구하나요?",
+        "한 지역 환자가 대부분인 임상 데이터로 미국 허가를 받기 어려운 이유는 무엇인가요?",
+        "동반진단(바이오마커)으로 환자를 고르면 허가 전략이 어떻게 달라지나요?"
+      ],
+      "en": [
+        "How do PFS and overall survival differ, and when does the FDA insist on OS?",
+        "Why is it hard to win a US approval with trial data drawn mostly from one region?",
+        "How does choosing patients with a companion biomarker test change an approval strategy?"
+      ]
+    },
+    "keywords": [
+      "서밋",
+      "Summit",
+      "아케소",
+      "Akeso",
+      "아이보네시맙",
+      "ivonescimab",
+      "PD-1",
+      "VEGF",
+      "이중항체",
+      "bispecific",
+      "CRL",
+      "허가 거절",
+      "complete response letter",
+      "PFS",
+      "무진행생존기간",
+      "OS",
+      "전체생존기간",
+      "overall survival",
+      "HARMONi",
+      "로슈",
+      "Roche",
+      "윌서들리",
+      "Wilserdly",
+      "기레데스트란트",
+      "giredestrant",
+      "SERD",
+      "ESR1",
+      "유방암",
+      "breast cancer",
+      "리제네론",
+      "Regeneron",
+      "Alnylam",
+      "리브사이스",
+      "Livsayis",
+      "RNAi",
+      "C5",
+      "중증근무력증",
+      "myasthenia gravis"
+    ]
+  },
+  "2026-12-01": {
+    "topics": [
+      "specialty",
+      "bd",
+      "modality"
+    ],
+    "roles": [
+      "ra",
+      "medical",
+      "ir",
+      "bd"
+    ],
+    "summary": {
+      "ko": [
+        "아리바이오 먹는 치매약 AR1001(미로데나필) 3상 POLARIS-AD에서 전체 환자군은 위약과 차이가 작았고(CDR-SB -0.11), 다른 치매약을 쓰지 않은 단독요법군에서만 1년 인지 저하가 31% 느렸어요.",
+        "노바티스가 1년에 두 번 맞는 레크비오(인클리시란)의 ORION-4(1만 6천여 명)가 주요 심혈관 사건을 유의하게 줄였다고 밝혔지만, 감소 폭 수치는 2027년 상반기에 나와요.",
+        "J&J가 안과 바이오텍 올린을 계약금 $2.2B, 최대 약 $3.3B에 인수하기로 했어요(3상 전인 VEGF×Ang2 이중항체 OLN324)."
+      ],
+      "en": [
+        "AriBio's oral Alzheimer's drug AR1001 (mirodenafil) barely differed from placebo overall in phase 3 POLARIS-AD (CDR-SB -0.11), but slowed decline by 31% at one year in patients not on other Alzheimer's drugs.",
+        "Novartis said ORION-4 (16,000+ patients) showed twice-yearly Leqvio (inclisiran) significantly cut major cardiovascular events, with the size of the reduction due in the first half of 2027.",
+        "J&J agreed to buy eye disease biotech Ollin for $2.2B upfront and up to about $3.3B, for OLN324, a VEGF × Ang2 bispecific that has not started phase 3."
+      ]
+    },
+    "questions": {
+      "ko": [
+        "탑라인 결과만으로 신약의 가치를 판단하면 왜 위험한가요?",
+        "1차 평가 집단을 두 개로 정하면 임상 결과 해석이 어떻게 달라지나요?",
+        "3상 전 신약에 큰 계약금을 내는 인수는 어떤 위험을 지는 건가요?"
+      ],
+      "en": [
+        "Why is it risky to value a drug on its topline results alone?",
+        "How does setting two primary populations change how a trial result is read?",
+        "What risk does a buyer take on when it pays a large upfront for a drug before phase 3?"
+      ]
+    },
+    "keywords": [
+      "아리바이오",
+      "AriBio",
+      "AR1001",
+      "미로데나필",
+      "mirodenafil",
+      "POLARIS-AD",
+      "알츠하이머",
+      "Alzheimer's",
+      "CDR-SB",
+      "CTAD",
+      "약물 재창출",
+      "drug repurposing",
+      "PDE5",
+      "삼진제약",
+      "Samjin",
+      "노바티스",
+      "Novartis",
+      "레크비오",
+      "Leqvio",
+      "인클리시란",
+      "inclisiran",
+      "ORION-4",
+      "siRNA",
+      "PCSK9",
+      "심혈관",
+      "cardiovascular",
+      "MACE",
+      "탑라인",
+      "topline",
+      "J&J",
+      "Johnson & Johnson",
+      "올린",
+      "Ollin",
+      "OLN324",
+      "VEGF",
+      "Ang2",
+      "황반변성",
+      "macular degeneration",
+      "Vabysmo"
+    ]
   }
 }

@@ -11,6 +11,10 @@ import { TrackedLink } from "@/components/TrackedLink";
 
 const pillarIcons = [icons.newsletter, icons.career, icons.resources];
 
+// Lists leave out issues and card news until their send or post time; regenerate at most every
+// 10 minutes so they appear on their own (src/lib/publish.ts).
+export const revalidate = 600;
+
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const lang = await getLocale(params);
   const dict = await getDictionary(lang);

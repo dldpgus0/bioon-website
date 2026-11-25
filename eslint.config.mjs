@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local weekly content drafts (git-ignored; made by the weekly-content skill).
+    "content-out/**",
   ]),
 ]);
 

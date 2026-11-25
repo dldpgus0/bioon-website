@@ -2,6 +2,9 @@
 //   node scripts/import-cardnews.mjs <folder-or-html...> --slug <slug> [--lang ko|en] [--date YYYY-MM-DD]
 //        [--title "..."] [--summary "..."] [--tags "a,b"] [--issue 2026-10-13] [--instagram URL]
 //        [--bilingual true]   (cards carry both languages, e.g. the terms series)
+//        [--publish-at 2026-12-03T12:00:00+09:00]
+// The site lists an episode from 08:30 Korean time on its --date (when it goes up on Instagram), so
+// one imported ahead of time stays hidden until then. --publish-at sets a different time.
 // Input is the card HTML as made for Instagram: one file per card (cover.html, body1.html … cta.html),
 // or one file holding several `.card` elements. If the folder has the owner's own renders in
 // `verify/<card>.png`, those are used as-is; otherwise each card is screenshotted at 1080×1350
@@ -9,11 +12,13 @@
 // Images are saved as WebP to public/cardnews/<slug>/[en-]NN.webp, and each card's text becomes its
 // alt text. --lang ko (default) writes the main entry; --lang en adds the English version to an
 // existing entry. Re-running with the same slug and language replaces those cards.
+// Cards are read with Playwright when it's installed, otherwise with the installed Google Chrome.
 import fs from "node:fs";
 import path from "node:path";
 import { execSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 import sharp from "sharp";
+import { launchChrome } from "./headless-chrome.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const W = 1080;
@@ -33,6 +38,10 @@ if (!inputs.length || !opts.slug || !["ko", "en"].includes(lang)) {
   process.exit(1);
 }
 const slug = opts.slug;
+if (opts["publish-at"] && !/^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?(Z|[+-]\d\d:\d\d)$/.test(opts["publish-at"])) {
+  console.error(`--publish-at needs a time with its offset, e.g. 2026-12-03T08:30:00+09:00: ${opts["publish-at"]}`);
+  process.exit(1);
+}
 if (!/^[a-z0-9-]+$/.test(slug)) {
   console.error(`slug must be lowercase letters, numbers and dashes: ${slug}`);
   process.exit(1);
@@ -63,16 +72,52 @@ async function loadPlaywright() {
   try {
     return await import("playwright");
   } catch {
-    const g = execSync("npm root -g").toString().trim();
-    return await import(pathToFileURL(path.join(g, "playwright", "index.mjs")).href);
+    try {
+      const g = execSync("npm root -g").toString().trim();
+      return await import(pathToFileURL(path.join(g, "playwright", "index.mjs")).href);
+    } catch {
+      return null;
+    }
   }
 }
-const { chromium } = await loadPlaywright();
-const browser = await chromium.launch();
-const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
-const missing = new Set();
-page.on("requestfailed", (r) => missing.add(r.url()));
-page.on("response", (r) => r.status() >= 400 && missing.add(r.url()));
+
+// open(url) returns the page's cards (each `.card` element, or the whole page), each with its text
+// and a shot() that screenshots it as PNG. `missing` collects files that failed to load.
+async function openBrowser() {
+  const pw = await loadPlaywright();
+  if (!pw) {
+    const chrome = await launchChrome({ width: W, height: H });
+    return {
+      missing: chrome.failed,
+      async open(url) {
+        await chrome.goto(url);
+        const els = await chrome.elements(".card");
+        const items = els.length ? els : [{ text: await chrome.bodyText(), clip: { x: 0, y: 0, width: W, height: H } }];
+        return items.map(({ text, clip }) => ({ text, shot: () => chrome.screenshot(clip) }));
+      },
+      close: () => chrome.close(),
+    };
+  }
+  const browser = await pw.chromium.launch();
+  const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
+  const missing = new Set();
+  page.on("requestfailed", (r) => missing.add(r.url()));
+  page.on("response", (r) => r.status() >= 400 && missing.add(r.url()));
+  return {
+    missing,
+    async open(url) {
+      await page.goto(url, { waitUntil: "networkidle" });
+      const els = await page.$$(".card");
+      if (!els.length) {
+        return [{ text: await page.innerText("body"), shot: () => page.screenshot({ type: "png", clip: { x: 0, y: 0, width: W, height: H } }) }];
+      }
+      return Promise.all(els.map(async (el) => ({ text: await el.innerText(), shot: () => el.screenshot({ type: "png" }) })));
+    },
+    close: () => browser.close(),
+  };
+}
+const browser = await openBrowser();
+const missing = browser.missing;
 
 const outDir = path.join(ROOT, "public", "cardnews", slug);
 const prefix = lang === "en" ? "en-" : "";
@@ -93,22 +138,18 @@ let usedRenders = 0;
 const og = path.join(outDir, `${prefix}og.jpg`);
 for (const file of files) {
   const render = path.join(path.dirname(path.dirname(file)), "verify", path.basename(file, ".html") + ".png");
-  await page.goto(pathToFileURL(path.resolve(file)).href, { waitUntil: "networkidle" });
-  const els = await page.$$(".card");
-  const shots = els.length ? els : [null];
-  for (const el of shots) {
+  const shots = await browser.open(pathToFileURL(path.resolve(file)).href);
+  for (const card of shots) {
     const n = String(cards.length + 1).padStart(2, "0");
     const out = path.join(outDir, `${prefix}${n}.webp`);
     if (shots.length === 1 && fs.existsSync(render)) {
       await sharp(render).resize(W, H, { fit: "cover" }).webp(WEBP).toFile(out);
       usedRenders++;
     } else {
-      const png = el ? await el.screenshot({ type: "png" }) : await page.screenshot({ type: "png", clip: { x: 0, y: 0, width: W, height: H } });
-      await sharp(png).webp(WEBP).toFile(out);
+      await sharp(await card.shot()).webp(WEBP).toFile(out);
     }
-    const text = el ? await el.innerText() : await page.innerText("body");
     if (!cards.length) await sharp(out).jpeg({ quality: 80, mozjpeg: true }).toFile(og);
-    cards.push({ src: `/cardnews/${slug}/${prefix}${n}.webp`, alt: cleanText(text) });
+    cards.push({ src: `/cardnews/${slug}/${prefix}${n}.webp`, alt: cleanText(card.text) });
   }
 }
 await browser.close();
@@ -132,6 +173,7 @@ if (lang === "ko") {
     ...((opts.instagram ?? old?.instagram) && { instagram: opts.instagram ?? old.instagram }),
     ...(old?.en && { en: old.en }),
     ...(opts.bilingual === "true" && { bilingual: true }),
+    ...((opts["publish-at"] ?? old?.publishAt) && { publishAt: opts["publish-at"] ?? old.publishAt }),
   };
 } else {
   if (!old) {

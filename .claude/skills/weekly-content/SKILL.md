@@ -10,10 +10,10 @@ Reply in Korean. This skill only **makes** content. It never posts or schedules 
 ## Settings (the owner can change these)
 
 - **Newsletter:** BIO:ON Insight, one KO and one EN issue a week, sent via Stibee on Tuesday: KO at 08:00 KST, EN at 08:00 UK time.
-- **Card news:** 2 episodes a week, each in KO and EN.
+- **Card news:** 2 a week (C1 news, C2 series), each in KO and EN.
   - Posted Monday and Thursday at 08:30 KST.
   - Platforms: Instagram and the LinkedIn BIO:ON page.
-- **Short video:** 3 a week, each in KO and EN.
+- **Short video:** 3 a week (S1 1분 뉴스, S2 설명·VS, S3 한국·커리어), each in KO and EN, cartoon 3D format.
   - Posted Tuesday, Friday and Sunday at 19:00 KST.
   - Platforms: Instagram Reels and YouTube Shorts.
 - **Which language goes where (confirmed by the owner on 2026-11-23):**
@@ -22,6 +22,22 @@ Reply in Korean. This skill only **makes** content. It never posts or schedules 
   - LinkedIn: the BIO:ON page only, with KO and EN as separate posts and EN 4 hours after KO.
 - **Card news design folder (on the owner's PC):** `C:\Users\yaehy\OneDrive\Desktop\BIO.ON`
 - **Output folder:** `content-out/<next Monday YYYY-MM-DD>/` inside this repository. Don't commit it, because it holds large media files.
+
+## 0. Weekly slots and topics (owner's plan: `content-out/PLAN_2026-12_2027-02.md`)
+
+Read the plan first. Each week fills the same five slots; the plan's row for the week says what goes in each.
+
+| Slot | Time (KST) | Topic |
+|---|---|---|
+| C1 card news | Mon 08:30 | **News**: the most visual newsletter story of the week |
+| C2 card news | Thu 08:30 | **Series**: 모달리티 사전 / VS / 숫자로 보는 / 일정·결산 (from the plan) |
+| S1 short | Tue 19:00 | **1분 뉴스**: one deal, approval or trial result of the week |
+| S2 short | Fri 19:00 | **설명 / VS**: the same topic as C2, as a video |
+| S3 short | Sun 19:00 | **한국 바이오 or 커리어**: a Korean company story, or "the job behind this news" |
+
+- Pick series topics that are not yet used (see the plan's series list) and connect them to this week's news where possible.
+- The cartoon history shorts (Mon/Wed/Sat, `dev/bioon-shorts/IDEAS_*.md`) run separately. Don't put the same topic in both in the same week.
+- Keep a `content-out/<date>/PROGRESS.md` checklist and update it after every step, so the work can resume after a usage limit (a session cron re-reads it).
 
 ## 1. Pick the news
 
@@ -44,7 +60,7 @@ Reply in Korean. This skill only **makes** content. It never posts or schedules 
 
 ## 3. Card news (2 episodes × KO/EN)
 
-- Pick the 2 most visual of the 3 newsletter stories.
+- C1 = the most visual newsletter story. C2 = this week's series card from the plan (VS cards use b2 as the A-vs-B compare and b5 as "when to choose which").
 - Copy the **existing design** in the card news design folder as it is (`assets/style.css`, background images, cover → body1…N → cta structure). Don't create a new design.
   - Size 1080×1350 (4:5), one HTML file per card, 5–7 cards.
 - Render a PNG of every card with headless Chrome. Then open each PNG and check:
@@ -58,16 +74,18 @@ Reply in Korean. This skill only **makes** content. It never posts or schedules 
 
 ## 4. Short videos (3 × KO/EN)
 
-- 9:16, 1080×1920, 30–45 seconds, mp4 (H.264 + AAC).
-- Script: a 3-second hook → 3 key points → a closing line (subscribe to the newsletter / follow).
-  - Every number must match the newsletter.
-- Making the video:
-  1. Build each scene as HTML in the same colours and fonts as the card news.
-  2. Capture the scenes with headless Chrome.
-  3. Join them with `ffmpeg` and burn the captions in.
-  - Add narration only if a TTS tool is connected; otherwise make a captions-only video.
+- **Format: the BIO:ON cartoon 3D short.** Follow `C:/Users/yaehy/dev/bioon-shorts/PLAYBOOK.md` (quality bar Elixir v11, newest short folder as the template). Don't make HTML-slide videos (the owner rejected them on 2026-11-23).
+- **Length: 60–70 seconds including the CTA, never shorter or longer.** Hit it by editing the script, not by speeding up the voice. The narration must stay easy to follow (KO M1 1.25, EN M1 1.1; `voice_from_script.py` may add at most 7%).
+- 9:16, 1080×1920, mp4 (H.264 + AAC).
+- Order of work (run straight through; the owner reviews the finished week, not each script):
+  1. Write `BIO.ON/reels/cartoon/<topic>/SCRIPT.md` per short: facts table with sources, ~15 KO lines, the same lines in EN, visual notes, career line last. Every number must match the newsletter.
+  2. **Pronunciation dictionary** `dev/bioon-shorts/<topic>/voice/say.json` (`{"ko": {...}, "en": {...}}`) for every company, drug, code and acronym (e.g. `"AriBio": "Ahri Bio"`, `"AR1001": "에이알 일공공일"`, `"ORION-4": "오리온 포"`). `ko_num.py` already reads 개월 as 삼 개월, 1만 6천 as 만 육천, and RA/IR/J&J in Hangul.
+  3. Generate the voice (`python scripts/voice_from_script.py <topic> penicillin`), check both languages land in 60–70 s, then run `python scripts/pron_check.py <topic> <ko|en>` and read every HEARD line against the caption. Fix say.json and re-voice anything misread.
+  4. **New places every short.** Use the set library (`scripts/extra_sets.ts` via `add_extra.py`: exam room, home, kitchen, conference hall, boardroom, plus stage, diner, desert) and `"cam": "custom"` in story.json. Never use one set twice in a short, the chalkboard at most once, and don't repeat the previous shorts' line-up (office3/office2/clinic/board were overused up to Nov 2026). Give each short its own characters (new Outfit colours, ages, hair).
+  5. Render stills of every shot (KO), and fix framing: nobody cut at the frame edge, cards inside the frame and not hidden by the caption band, **nothing important under the top-left name tag, the callout or the 2-second hook title**.
+  6. Render KO and EN (`scripts/render_short.sh`), make a contact sheet of each, and check the same points again in EN (longer words).
   - Don't make AI images that explain scientific mechanisms.
-- Use `ffprobe` to check length, resolution and that there is an audio track.
+- Use `ffprobe` to check length (60–70 s), resolution and that there is an audio track.
 - Output: `content-out/<date>/shorts/<nn>-<slug>/`
   - `ko.mp4`, `en.mp4`, `cover-ko.png`, `cover-en.png`
   - `title-ko.txt`, `title-en.txt`: a YouTube title (60 characters max)

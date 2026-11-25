@@ -15,11 +15,13 @@ import { storiesOf } from "@/lib/wiki";
 import { getDictionary, getLocale, locales } from "@/lib/i18n";
 import { roleLabel, topicLabel } from "@/lib/taxonomy";
 
-// Every page is built ahead of time; unknown slugs 404 without running a server render.
+// Every page is built ahead of time, issues not yet sent included (lists link to them once
+// they're sent); unknown slugs 404 without running a server render. No revalidation here: the
+// takeaway and sources are read from public/newsletters, which only exists at build time.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return locales.flatMap((lang) => getIssueSlugs().map((slug) => ({ lang, slug })));
+  return locales.flatMap((lang) => getIssueSlugs({ scheduled: true }).map((slug) => ({ lang, slug })));
 }
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/insight/[slug]">): Promise<Metadata> {

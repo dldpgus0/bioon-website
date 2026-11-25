@@ -7,6 +7,7 @@ import insight from "@/content/insight.json";
 import insightAi from "@/content/insight-ai.json";
 import interviewBank from "@/content/interview-bank.json";
 import type { Locale } from "./i18n";
+import { isLive, wallClock } from "./publish";
 import type { RoleId, TopicId } from "./taxonomy";
 import { entity, storiesOf, type CategoryId } from "./wiki";
 
@@ -39,7 +40,13 @@ export type Issue = RawIssue & {
   aiSummary: string[];
   questions: string[];
   keywords: string[];
+  /** When the issue is emailed (ms since the epoch); lists leave it out until then. */
+  sendsAt: number;
 };
+
+// Issues go out on their date (the slug) at 08:00: Korean time for the Korean edition, UK time
+// for the English one.
+const sendsAt = (raw: RawIssue) => wallClock(raw.date, "08:00", raw.lang === "en" ? "Europe/London" : "Asia/Seoul");
 
 const analysis = insightAi as unknown as Record<string, IssueAnalysis>;
 
@@ -53,21 +60,26 @@ const issues: Issue[] = (insight as RawIssue[]).map((raw) => {
     aiSummary: ai?.summary[raw.lang] ?? [],
     questions: ai?.questions[raw.lang] ?? [],
     keywords: ai?.keywords ?? [],
+    sendsAt: sendsAt(raw),
   };
 });
 
+/** Issues that have been sent, newest first. */
 export function getIssues(lang: Locale) {
-  // Newest first; the welcome letter shares its date with issue #1, so number breaks the tie.
-  return issues.filter((i) => i.lang === lang).sort((a, b) => b.date.localeCompare(a.date) || b.number - a.number);
+  // The welcome letter shares its date with issue #1, so number breaks the tie.
+  return issues
+    .filter((i) => i.lang === lang && isLive(i.sendsAt))
+    .sort((a, b) => b.date.localeCompare(a.date) || b.number - a.number);
 }
 
+/** One edition, including one that hasn't been sent yet (its page is built ahead of time). */
 export function getIssue(lang: Locale, slug: string) {
   return issues.find((i) => i.lang === lang && i.slug === slug);
 }
 
-/** Every date that has at least one edition, in any language. */
-export function getIssueSlugs() {
-  return [...new Set(issues.map((i) => i.slug))];
+/** Every date with at least one edition in any language: sent ones only, unless `scheduled`. */
+export function getIssueSlugs({ scheduled = false } = {}) {
+  return [...new Set(issues.filter((i) => scheduled || isLive(i.sendsAt)).map((i) => i.slug))];
 }
 
 // ---------- Issue sources (for <References />) ----------
